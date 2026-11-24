@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Módulo 4.1 · Fluxo de trabalho profissional | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>MÃ³dulo 4.1 Â· Fluxo de trabalho profissional | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .inema-toc-link.is-active { color: #fbbf24; font-weight: 600; }
+    .ARCKHÉ-toc-link.is-active { color: #fbbf24; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -182,20 +182,20 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha4/modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha4/modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Aparência e leitura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sépia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Confortável</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,65 +244,65 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-amber-400" href="../index.html">Início</a><span>/</span>
+<a class="hover:text-amber-400" href="../index.html">InÃ­cio</a><span>/</span>
 <a class="hover:text-amber-400" href="index.html">Trilha 4</a><span>/</span>
-<span class="text-amber-400">Módulo 4.1</span>
+<span class="text-amber-400">MÃ³dulo 4.1</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÓDULO 4.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🎯 Fluxo de trabalho profissional</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Antes de pensar em entregar, organize seu jeito de trabalhar: foque em um problema por vez, amplie o que já dá resultado e aprenda sempre com um destino real em mente.</p>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 4.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸŽ¯ Fluxo de trabalho profissional</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Antes de pensar em entregar, organize seu jeito de trabalhar: foque em um problema por vez, amplie o que jÃ¡ dÃ¡ resultado e aprenda sempre com um destino real em mente.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">55</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Intermediário</div><div class="text-xs text-neutral-400">Nível</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Método</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">IntermediÃ¡rio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">MÃ©todo</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Índice da página" class="hidden lg:block sticky top-20 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-2">Seção <span data-inema-section-counter="">1 de 6</span></p>
+<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 6</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400" href="#topico-1">1. Um problema, uma tecnologia</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400" href="#topico-2">2. Faça mais do que funciona</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400" href="#topico-3">3. Autopilot vs. manual</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400" href="#topico-4">4. Comparar IDEs e atualizar-se</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400" href="#topico-5">5. Escolha sua trilha de aplicação</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-amber-400" href="#topico-6">6. Erros comuns</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-1">1. Um problema, uma tecnologia</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-2">2. FaÃ§a mais do que funciona</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-3">3. Autopilot vs. manual</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-4">4. Comparar IDEs e atualizar-se</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-5">5. Escolha sua trilha de aplicaÃ§Ã£o</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-6">6. Erros comuns</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-inema-meter="modulo:4-1"><span class="text-neutral-400" data-inema-meter-frac="">0 de 6</span> · <span class="text-amber-400 font-bold" data-inema-meter-pct="">0%</span><div class="inema-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="inema-bar__fill h-full rounded-full bg-amber-500" data-inema-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHÉ-meter="modulo:4-1"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 6</span> Â· <span class="text-amber-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-amber-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-inema-module="4-1" data-inema-track="4">
-<!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHÉ-module="4-1" data-ARCKHÉ-track="4">
+<!-- TÃ“PICO 1 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">🎯 Um problema, uma tecnologia</h2>
+<h2 class="text-2xl font-bold">ðŸŽ¯ Um problema, uma tecnologia</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m41-t1-p1">A regra de ouro do profissional é simples: <strong class="text-amber-400">resolva um problema por vez</strong>, do início ao fim, com <strong class="text-neutral-100">uma única tecnologia</strong>. Em vez de abrir dez abas, três cursos e cinco ferramentas ao mesmo tempo, você escolhe um alvo e o leva até a entrega.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t1-p1">A regra de ouro do profissional Ã© simples: <strong class="text-amber-400">resolva um problema por vez</strong>, do inÃ­cio ao fim, com <strong class="text-neutral-100">uma Ãºnica tecnologia</strong>. Em vez de abrir dez abas, trÃªs cursos e cinco ferramentas ao mesmo tempo, vocÃª escolhe um alvo e o leva atÃ© a entrega.</p>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">🧭</span> A ideia central</h3>
-<p class="text-neutral-300 mb-4">Pense no foco como um <strong>funil</strong>: quanto mais você estreita o que está tentando fazer agora, mais rápido chega ao fim. Largura demais não acelera — espalha.</p>
+<h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> A ideia central</h3>
+<p class="text-neutral-300 mb-4">Pense no foco como um <strong>funil</strong>: quanto mais vocÃª estreita o que estÃ¡ tentando fazer agora, mais rÃ¡pido chega ao fim. Largura demais nÃ£o acelera â€” espalha.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span>Um <strong>problema</strong> claro: o que exatamente você quer resolver.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span>Uma <strong>tecnologia</strong>: a ferramenta com que você vai resolver (não cinco em paralelo).</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">•</span><span>Do <strong>início ao fim</strong>: termine antes de pegar o próximo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Um <strong>problema</strong> claro: o que exatamente vocÃª quer resolver.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Uma <strong>tecnologia</strong>: a ferramenta com que vocÃª vai resolver (nÃ£o cinco em paralelo).</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Do <strong>inÃ­cio ao fim</strong>: termine antes de pegar o prÃ³ximo.</span></li>
 </ul>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Comparação: muitas frentes abertas ao mesmo tempo levam ao overwhelm; um único caminho — um problema, uma tecnologia, do início ao fim — leva à entrega" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="ComparaÃ§Ã£o: muitas frentes abertas ao mesmo tempo levam ao overwhelm; um Ãºnico caminho â€” um problema, uma tecnologia, do inÃ­cio ao fim â€” leva Ã  entrega" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="m41-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop></lineargradient>
 <filter height="180%" id="m41-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -311,9 +311,9 @@
 <marker id="m41-ahr" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#f87171"></path></marker>
 </defs>
 <rect fill="url(#m41-grid)" height="220" width="1000" x="0" y="0"></rect>
-<text fill="#f87171" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="250" y="28">Tudo ao mesmo tempo → overwhelm</text>
+<text fill="#f87171" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="250" y="28">Tudo ao mesmo tempo â†’ overwhelm</text>
 <rect fill="#2a0e0e" height="40" rx="10" stroke="#f87171" stroke-width="1.8" width="180" x="160" y="44"></rect>
-<text fill="#fecaca" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="250" y="69">você</text>
+<text fill="#fecaca" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="250" y="69">vocÃª</text>
 <g fill="none" opacity="0.55" stroke="#f87171" stroke-width="1.8">
 <path d="M250,84 C200,120 120,120 120,180" marker-end="url(#m41-ahr)"></path>
 <path d="M250,84 C230,130 200,140 200,180" marker-end="url(#m41-ahr)"></path>
@@ -321,302 +321,302 @@
 <path d="M250,84 C270,130 300,140 300,180" marker-end="url(#m41-ahr)"></path>
 <path d="M250,84 C300,120 380,120 380,180" marker-end="url(#m41-ahr)"></path>
 </g>
-<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="780" y="28">Um caminho → entrega</text>
+<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="780" y="28">Um caminho â†’ entrega</text>
 <g filter="url(#m41-glow)"><rect fill="#1f1604" height="44" rx="12" stroke="url(#m41-grad)" stroke-width="2.5" width="150" x="610" y="48"></rect></g>
 <text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="685" y="75">1 problema</text>
 <rect fill="#1f1604" height="44" rx="12" stroke="#fbbf24" stroke-width="2" width="150" x="610" y="160"></rect>
-<text fill="#fde68a" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="685" y="187">entregue ✓</text>
+<text fill="#fde68a" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="685" y="187">entregue âœ“</text>
 <g fill="none" opacity="0.6" stroke="#fbbf24" stroke-width="2"><path d="M685,92 L685,158" marker-end="url(#m41-ah)"></path></g>
-<text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="900" y="128">do início</text>
+<text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="900" y="128">do inÃ­cio</text>
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="900" y="146">ao fim</text>
 </svg>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Um alvo</div><p class="text-xs text-neutral-400">problema único</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Uma ferramenta</div><p class="text-xs text-neutral-400">não cinco</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Até o fim</div><p class="text-xs text-neutral-400">termine primeiro</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Um alvo</div><p class="text-xs text-neutral-400">problema Ãºnico</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Uma ferramenta</div><p class="text-xs text-neutral-400">nÃ£o cinco</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">AtÃ© o fim</div><p class="text-xs text-neutral-400">termine primeiro</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Sem overwhelm</div><p class="text-xs text-neutral-400">foco protege</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-2" id="topico-2">
+<!-- TÃ“PICO 2 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">📈 Faça mais do que funciona</h2>
+<h2 class="text-2xl font-bold">ðŸ“ˆ FaÃ§a mais do que funciona</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m41-t2-p1">O <strong class="text-amber-400">princípio 80/20</strong> (Pareto) diz que uma pequena parte do que você faz gera a maior parte do resultado. A jogada profissional é encontrar esses 20% e <strong>amplificá-los</strong> — não recomeçar do zero toda hora.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t2-p1">O <strong class="text-amber-400">princÃ­pio 80/20</strong> (Pareto) diz que uma pequena parte do que vocÃª faz gera a maior parte do resultado. A jogada profissional Ã© encontrar esses 20% e <strong>amplificÃ¡-los</strong> â€” nÃ£o recomeÃ§ar do zero toda hora.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">✓ Dobre no que funciona</h4>
+<h4 class="font-bold text-amber-400 mb-4">âœ“ Dobre no que funciona</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Veja o que já trouxe resultado</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Amplie, repita e refine isso</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Construa em cima do que existe</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">✓</span><span>Crescimento composto e rápido</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Veja o que jÃ¡ trouxe resultado</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Amplie, repita e refine isso</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Construa em cima do que existe</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Crescimento composto e rÃ¡pido</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Evite recomeçar do zero</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Evite recomeÃ§ar do zero</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Largar tudo a cada ideia nova</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Perseguir o brilho do que ainda não testou</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Ignorar o que já está dando certo</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Sempre na estaca zero</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Largar tudo a cada ideia nova</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Perseguir o brilho do que ainda nÃ£o testou</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Ignorar o que jÃ¡ estÃ¡ dando certo</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Sempre na estaca zero</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Dica prática</h3>
-<p class="text-neutral-300">Olhe para os últimos meses e pergunte: <strong>"o que trouxe mais resultado com menos esforço?"</strong>. Essa é a alavanca. A rota mais rápida pra crescer é dobrar nela, não começar uma frente nova.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
+<p class="text-neutral-300">Olhe para os Ãºltimos meses e pergunte: <strong>"o que trouxe mais resultado com menos esforÃ§o?"</strong>. Essa Ã© a alavanca. A rota mais rÃ¡pida pra crescer Ã© dobrar nela, nÃ£o comeÃ§ar uma frente nova.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">80/20</div><p class="text-xs text-neutral-400">poucos, vital</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Ampliar</div><p class="text-xs text-neutral-400">o que funciona</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Alavanca</div><p class="text-xs text-neutral-400">menos esforço</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Alavanca</div><p class="text-xs text-neutral-400">menos esforÃ§o</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Composto</div><p class="text-xs text-neutral-400">cresce em cima</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-3" id="topico-3">
+<!-- TÃ“PICO 3 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">✈️ Autopilot vs. manual</h2>
+<h2 class="text-2xl font-bold">âœˆï¸ Autopilot vs. manual</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m41-t3-p1">A IA é o seu <strong class="text-amber-400">piloto automático</strong>: ela faz o trabalho pesado e te leva longe sem que você toque em cada detalhe. Mas entender os <strong>fundamentos por trás</strong> — os "controles manuais" — é o que te faz codar muito melhor quando algo sai do esperado.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t3-p1">A IA Ã© o seu <strong class="text-amber-400">piloto automÃ¡tico</strong>: ela faz o trabalho pesado e te leva longe sem que vocÃª toque em cada detalhe. Mas entender os <strong>fundamentos por trÃ¡s</strong> â€” os "controles manuais" â€” Ã© o que te faz codar muito melhor quando algo sai do esperado.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">✈️</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">âœˆï¸</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Autopilot — a IA conduz</h4>
-<p class="text-sm text-neutral-400 mb-2">Rápido e confortável</p>
-<p class="text-neutral-300 text-sm">Você descreve o objetivo e a IA escreve, testa e corrige. Na maior parte do tempo, é só deixar voar.</p>
+<h4 class="font-semibold text-white mb-2">Autopilot â€” a IA conduz</h4>
+<p class="text-sm text-neutral-400 mb-2">RÃ¡pido e confortÃ¡vel</p>
+<p class="text-neutral-300 text-sm">VocÃª descreve o objetivo e a IA escreve, testa e corrige. Na maior parte do tempo, Ã© sÃ³ deixar voar.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">🎛️</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸŽ›ï¸</span></div>
 <div class="flex-1 bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl p-6 border border-amber-500/30">
-<h4 class="font-semibold text-amber-400 mb-2">Manual — você entende o porquê</h4>
-<p class="text-sm text-neutral-400 mb-2">Controle quando o automático falha</p>
-<p class="text-neutral-300 text-sm">Saber os fundamentos te deixa retomar o controle, diagnosticar erros e guiar a IA com precisão.</p>
+<h4 class="font-semibold text-amber-400 mb-2">Manual â€” vocÃª entende o porquÃª</h4>
+<p class="text-sm text-neutral-400 mb-2">Controle quando o automÃ¡tico falha</p>
+<p class="text-neutral-300 text-sm">Saber os fundamentos te deixa retomar o controle, diagnosticar erros e guiar a IA com precisÃ£o.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🚗</span> A analogia do carro</h3>
-<p class="text-neutral-300">É como dirigir um <strong>automático</strong> versus um <strong>manual</strong>. No automático você anda tranquilo no dia a dia. Mas quem entende a embreagem e a marcha sabe o que está acontecendo embaixo do capô — e não fica na mão numa subida difícil.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸš—</span> A analogia do carro</h3>
+<p class="text-neutral-300">Ã‰ como dirigir um <strong>automÃ¡tico</strong> versus um <strong>manual</strong>. No automÃ¡tico vocÃª anda tranquilo no dia a dia. Mas quem entende a embreagem e a marcha sabe o que estÃ¡ acontecendo embaixo do capÃ´ â€” e nÃ£o fica na mÃ£o numa subida difÃ­cil.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">IA</div><p class="text-xs text-neutral-400">piloto automático</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">IA</div><p class="text-xs text-neutral-400">piloto automÃ¡tico</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Fundamentos</div><p class="text-xs text-neutral-400">controle manual</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Diagnóstico</div><p class="text-xs text-neutral-400">quando falha</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Melhor código</div><p class="text-xs text-neutral-400">você guia bem</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">DiagnÃ³stico</div><p class="text-xs text-neutral-400">quando falha</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Melhor cÃ³digo</div><p class="text-xs text-neutral-400">vocÃª guia bem</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-4" id="topico-4">
+<!-- TÃ“PICO 4 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">🧭 Comparar IDEs e se manter atualizado</h2>
+<h2 class="text-2xl font-bold">ðŸ§­ Comparar IDEs e se manter atualizado</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m41-t4-p1">As IDEs com IA — <strong class="text-amber-400">AntiGravity, Cursor</strong> e outras — evoluem rápido. É um <strong>campo vivo</strong>: o que era estado-da-arte há três meses pode estar para trás hoje. Saber compará-las e voltar para acompanhar novidades faz parte do trabalho.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t4-p1">As IDEs com IA â€” <strong class="text-amber-400">AntiGravity, Cursor</strong> e outras â€” evoluem rÃ¡pido. Ã‰ um <strong>campo vivo</strong>: o que era estado-da-arte hÃ¡ trÃªs meses pode estar para trÃ¡s hoje. Saber comparÃ¡-las e voltar para acompanhar novidades faz parte do trabalho.</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
-<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Critério</th><th class="text-left p-3">Como avaliar</th><th class="text-left p-3">Por que importa</th></tr></thead>
+<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">CritÃ©rio</th><th class="text-left p-3">Como avaliar</th><th class="text-left p-3">Por que importa</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-neutral-300">Modelos suportados</td><td class="p-3 text-amber-400">quais e quão recentes</td><td class="p-3">qualidade do código gerado</td></tr>
+<tr><td class="p-3 text-neutral-300">Modelos suportados</td><td class="p-3 text-amber-400">quais e quÃ£o recentes</td><td class="p-3">qualidade do cÃ³digo gerado</td></tr>
 <tr><td class="p-3 text-neutral-300">Recursos nativos</td><td class="p-3 text-amber-400">browser, multi-agente</td><td class="p-3">menos plugins, mais fluidez</td></tr>
-<tr><td class="p-3 text-neutral-300">Velocidade de updates</td><td class="p-3 text-amber-400">frequência de novidades</td><td class="p-3">acompanha o campo vivo</td></tr>
+<tr><td class="p-3 text-neutral-300">Velocidade de updates</td><td class="p-3 text-amber-400">frequÃªncia de novidades</td><td class="p-3">acompanha o campo vivo</td></tr>
 <tr><td class="p-3 text-neutral-300">Curva de uso</td><td class="p-3 text-amber-400">facilidade de adotar</td><td class="p-3">troca de ferramenta sem dor</td></tr>
 </tbody>
 </table>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Como os <strong>princípios</strong> são os mesmos (dirigir agentes, planejar, revisar), trocar de IDE é fácil. O que muda são detalhes — então mantenha o hábito de <strong class="text-amber-400">revisitar e atualizar</strong> seu arsenal.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Como os <strong>princÃ­pios</strong> sÃ£o os mesmos (dirigir agentes, planejar, revisar), trocar de IDE Ã© fÃ¡cil. O que muda sÃ£o detalhes â€” entÃ£o mantenha o hÃ¡bito de <strong class="text-amber-400">revisitar e atualizar</strong> seu arsenal.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Campo vivo</div><p class="text-xs text-neutral-400">muda rápido</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Comparar</div><p class="text-xs text-neutral-400">por critérios</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Campo vivo</div><p class="text-xs text-neutral-400">muda rÃ¡pido</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Comparar</div><p class="text-xs text-neutral-400">por critÃ©rios</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Atualizar</div><p class="text-xs text-neutral-400">volte sempre</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Portável</div><p class="text-xs text-neutral-400">princípios iguais</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">PortÃ¡vel</div><p class="text-xs text-neutral-400">princÃ­pios iguais</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-5" id="topico-5">
+<!-- TÃ“PICO 5 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">🛤️ Escolha sua trilha de aplicação</h2>
+<h2 class="text-2xl font-bold">ðŸ›¤ï¸ Escolha sua trilha de aplicaÃ§Ã£o</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m41-t5-p1">Aprender no vácuo não vira habilidade. O segredo é aprender <strong class="text-amber-400">para aplicar a um problema real</strong>. Antes de seguir, defina onde você vai usar isto: no seu trabalho, num projeto pessoal ou para um cliente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t5-p1">Aprender no vÃ¡cuo nÃ£o vira habilidade. O segredo Ã© aprender <strong class="text-amber-400">para aplicar a um problema real</strong>. Antes de seguir, defina onde vocÃª vai usar isto: no seu trabalho, num projeto pessoal ou para um cliente.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">💼</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸ’¼</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">No seu trabalho</h4>
-<p class="text-neutral-300 text-sm">Automatize uma tarefa que você já faz, ou crie uma ferramenta interna que economiza tempo do time.</p>
+<p class="text-neutral-300 text-sm">Automatize uma tarefa que vocÃª jÃ¡ faz, ou crie uma ferramenta interna que economiza tempo do time.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">🚀</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸš€</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Num projeto seu</h4>
-<p class="text-neutral-300 text-sm">Construa o app que você sempre quis ter. O motivo pessoal te mantém indo até o fim.</p>
+<p class="text-neutral-300 text-sm">Construa o app que vocÃª sempre quis ter. O motivo pessoal te mantÃ©m indo atÃ© o fim.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">🤝</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸ¤</span></div>
 <div class="flex-1 bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl p-6 border border-amber-500/30">
 <h4 class="font-semibold text-amber-400 mb-2">Para um cliente</h4>
-<p class="text-neutral-300 text-sm">Resolva um problema concreto de alguém — é a forma mais rápida de transformar a habilidade em valor real.</p>
+<p class="text-neutral-300 text-sm">Resolva um problema concreto de alguÃ©m â€” Ã© a forma mais rÃ¡pida de transformar a habilidade em valor real.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🎯</span> Defina seu destino agora</h3>
-<p class="text-neutral-300">Escolha <strong>um</strong> destino e escreva o problema real em uma frase. Tudo o que vier depois — a construção, a entrega, o checklist — fica muito mais concreto quando tem um alvo de verdade.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸŽ¯</span> Defina seu destino agora</h3>
+<p class="text-neutral-300">Escolha <strong>um</strong> destino e escreva o problema real em uma frase. Tudo o que vier depois â€” a construÃ§Ã£o, a entrega, o checklist â€” fica muito mais concreto quando tem um alvo de verdade.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Trabalho</div><p class="text-xs text-neutral-400">tarefa real</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Projeto</div><p class="text-xs text-neutral-400">algo seu</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Cliente</div><p class="text-xs text-neutral-400">valor concreto</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Âncora</div><p class="text-xs text-neutral-400">aprende aplicando</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Ã‚ncora</div><p class="text-xs text-neutral-400">aprende aplicando</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-4-1#topico-6" id="topico-6">
+<!-- TÃ“PICO 6 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">⚠️ Erros comuns</h2>
+<h2 class="text-2xl font-bold">âš ï¸ Erros comuns</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m41-t6-p1">Dois tropeços derrubam quase todo iniciante. Reconhecê-los já é metade da cura — e a outra metade é sempre a mesma receita: <strong class="text-amber-400">foco e um problema real de cada vez</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t6-p1">Dois tropeÃ§os derrubam quase todo iniciante. ReconhecÃª-los jÃ¡ Ã© metade da cura â€” e a outra metade Ã© sempre a mesma receita: <strong class="text-amber-400">foco e um problema real de cada vez</strong>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Overwhelm (tentar tudo de uma vez)</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Overwhelm (tentar tudo de uma vez)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Cinco projetos, três cursos, nada termina</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Troca de ferramenta a cada novidade</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Sensação de afogamento e paralisia</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Cinco projetos, trÃªs cursos, nada termina</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Troca de ferramenta a cada novidade</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>SensaÃ§Ã£o de afogamento e paralisia</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Aprender sem aplicar</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Aprender sem aplicar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Assistir, ler, salvar — mas nunca fazer</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Ferramenta dominada na teoria, zero na prática</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Conhecimento que não vira resultado</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Assistir, ler, salvar â€” mas nunca fazer</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Ferramenta dominada na teoria, zero na prÃ¡tica</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Conhecimento que nÃ£o vira resultado</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">✓</span> A cura</h3>
-<p class="text-neutral-300">Escolha <strong>um</strong> problema real. Resolva-o com <strong>uma</strong> tecnologia, do início ao fim. Só depois pegue o próximo. Foco e aplicação curam os dois erros de uma vez.</p>
+<h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">âœ“</span> A cura</h3>
+<p class="text-neutral-300">Escolha <strong>um</strong> problema real. Resolva-o com <strong>uma</strong> tecnologia, do inÃ­cio ao fim. SÃ³ depois pegue o prÃ³ximo. Foco e aplicaÃ§Ã£o curam os dois erros de uma vez.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Overwhelm</div><p class="text-xs text-neutral-400">tudo de uma vez</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Sem aplicar</div><p class="text-xs text-neutral-400">só teoria</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Sem aplicar</div><p class="text-xs text-neutral-400">sÃ³ teoria</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Foco</div><p class="text-xs text-neutral-400">um de cada vez</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Problema real</div><p class="text-xs text-neutral-400">aplique já</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Problema real</div><p class="text-xs text-neutral-400">aplique jÃ¡</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÁTICO -->
+<!-- EXEMPLO PRÃTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🔬</span> Exemplo prático</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Escolha <strong class="text-amber-400">um processo do seu dia que já funciona</strong> e desenhe como ampliá-lo com um app simples — aplicando o 80/20.</p>
+<p class="text-neutral-300 mb-4">Escolha <strong class="text-amber-400">um processo do seu dia que jÃ¡ funciona</strong> e desenhe como ampliÃ¡-lo com um app simples â€” aplicando o 80/20.</p>
 <ul class="space-y-2 text-neutral-300 mb-4">
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">1.</span><span><strong>Identifique a alavanca:</strong> ex. você já manda um resumo semanal manual que o time adora.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">2.</span><span><strong>Amplie, não recomece:</strong> peça à IA um app que monta esse resumo sozinho a partir dos seus dados.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">3.</span><span><strong>Um problema, uma tecnologia:</strong> resolva só isso, do início ao fim, antes de pensar no próximo.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">1.</span><span><strong>Identifique a alavanca:</strong> ex. vocÃª jÃ¡ manda um resumo semanal manual que o time adora.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">2.</span><span><strong>Amplie, nÃ£o recomece:</strong> peÃ§a Ã  IA um app que monta esse resumo sozinho a partir dos seus dados.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">3.</span><span><strong>Um problema, uma tecnologia:</strong> resolva sÃ³ isso, do inÃ­cio ao fim, antes de pensar no prÃ³ximo.</span></li>
 </ul>
-<p class="text-neutral-400 text-sm">Você dobrou no que já dava certo — e transformou um hábito manual em um ativo que roda sozinho.</p>
+<p class="text-neutral-400 text-sm">VocÃª dobrou no que jÃ¡ dava certo â€” e transformou um hÃ¡bito manual em um ativo que roda sozinho.</p>
 </div>
 </section>
-<!-- EXERCÍCIO -->
+<!-- EXERCÃCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🏋️</span> Exercício</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6">
 <p class="text-neutral-300 mb-4">Escolha <strong class="text-amber-400">um problema real</strong> e escreva o seu plano "um problema, uma tecnologia". Responda:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li><strong>O que vai resolver?</strong> O problema em uma frase clara.</li>
-<li><strong>Com qual ferramenta?</strong> Uma só — a tecnologia que você vai usar.</li>
-<li><strong>Até onde?</strong> Defina o "fim": o que precisa estar pronto para considerar resolvido.</li>
+<li><strong>Com qual ferramenta?</strong> Uma sÃ³ â€” a tecnologia que vocÃª vai usar.</li>
+<li><strong>AtÃ© onde?</strong> Defina o "fim": o que precisa estar pronto para considerar resolvido.</li>
 </ol>
-<p class="text-neutral-400 text-sm">Esse plano é o seu destino de aplicação. Vamos usá-lo no Módulo 4.2, na hora de entregar.</p>
+<p class="text-neutral-400 text-sm">Esse plano Ã© o seu destino de aplicaÃ§Ã£o. Vamos usÃ¡-lo no MÃ³dulo 4.2, na hora de entregar.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">⚡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">achar os 20% que importam</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Liste os 20% de tarefas que geram 80% do resultado em "[meu contexto]"
 e sugira qual delas eu deveria automatizar primeiro.
-Para cada sugestão, explique em 1 frase por que ela é a maior alavanca.</pre>
+Para cada sugestÃ£o, explique em 1 frase por que ela Ã© a maior alavanca.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">sair do overwhelm</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Sou iniciante e me sinto sobrecarregado com tantas ferramentas e ideias.
-Me ajude a escolher UM problema para resolver primeiro com IA e explique por quê.
+Me ajude a escolher UM problema para resolver primeiro com IA e explique por quÃª.
 Considere meu contexto: "[descreva seu trabalho/projeto/cliente]".</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Um problema, uma tecnologia</strong><span class="text-neutral-400"> — foco do início ao fim, sem abrir dez frentes.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Faça mais do que funciona</strong><span class="text-neutral-400"> — 80/20: amplie a alavanca, não recomece do zero.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Autopilot vs. manual</strong><span class="text-neutral-400"> — a IA conduz, mas os fundamentos te salvam.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Aplique a algo real</strong><span class="text-neutral-400"> — defina o destino; evite overwhelm e teoria sem prática.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Um problema, uma tecnologia</strong><span class="text-neutral-400"> â€” foco do inÃ­cio ao fim, sem abrir dez frentes.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">FaÃ§a mais do que funciona</strong><span class="text-neutral-400"> â€” 80/20: amplie a alavanca, nÃ£o recomece do zero.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Autopilot vs. manual</strong><span class="text-neutral-400"> â€” a IA conduz, mas os fundamentos te salvam.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Aplique a algo real</strong><span class="text-neutral-400"> â€” defina o destino; evite overwhelm e teoria sem prÃ¡tica.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">Próximo módulo:</h3><p class="text-neutral-300">4.2 — Entregar e aplicar profissionalmente</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">PrÃ³ximo mÃ³dulo:</h3><p class="text-neutral-300">4.2 â€” Entregar e aplicar profissionalmente</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Próximo Módulo →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para Trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">PrÃ³ximo MÃ³dulo â†’</a>
 </div>
 </div>
 </section>
@@ -625,7 +625,7 @@ Considere meu contexto: "[descreva seu trabalho/projeto/cliente]".</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — do Zero ao App Publicado com IA · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -648,11 +648,11 @@ Considere meu contexto: "[descreva seu trabalho/projeto/cliente]".</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -660,22 +660,22 @@ Considere meu contexto: "[descreva seu trabalho/projeto/cliente]".</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = '✓ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

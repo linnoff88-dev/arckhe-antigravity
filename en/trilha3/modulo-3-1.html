@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Module 3.1 · Cloning system | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>Module 3.1 Â· Cloning system | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .inema-toc-link.is-active { color: #c084fc; font-weight: 600; }
+    .ARCKHÉ-toc-link.is-active { color: #c084fc; font-weight: 600; }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -182,8 +182,8 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha3/modulo-3-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha3/modulo-3-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha3/modulo-3-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha3/modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../es/trilha3/modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha3/modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../es/trilha3/modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -191,11 +191,11 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Professional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Mastery</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Appearance and readability" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Theme</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Dark</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Clear</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Focus</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">High contrast</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Appearance and readability" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Theme</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Dark</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Clear</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Focus</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">High contrast</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Source</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">System</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Reading</button>
+<div><p class="text-xs text-neutral-400 mb-1">Source</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">System</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Reading</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Size</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Size</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Line spacing</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compact</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Comfortable</button>
+<div><p class="text-xs text-neutral-400 mb-1">Line spacing</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compact</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">Comfortable</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Journey</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Journey</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Toggle light/dark">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -253,8 +253,8 @@
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MODULE 3.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🧬 Cloning system</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">A single beautiful template hosted on GitHub becomes the source for all clones. Change 6 elements, organize by client, automate data collection — and go from 1 site to 1,000 at almost zero marginal cost.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§¬ Cloning system</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">A single beautiful template hosted on GitHub becomes the source for all clones. Change 6 elements, organize by client, automate data collection â€” and go from 1 site to 1,000 at almost zero marginal cost.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">7</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">60</div><div class="text-xs text-neutral-400">Minutes</div></div>
@@ -266,39 +266,39 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Page index" class="hidden lg:block sticky top-20 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-2">Section <span data-inema-section-counter="">1 of 7</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-2">Section <span data-ARCKHÉ-section-counter="">1 of 7</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. Master asset</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. The Cloning Skill</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. The 6 clonable elements</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. 70-20-10 Rule</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. One folder per client</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. Automate data collection</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-purple-400" href="#topico-7">7. Scale</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. Master asset</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. The Cloning Skill</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. The 6 clonable elements</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. 70-20-10 Rule</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. One folder per client</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. Automate data collection</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-7">7. Scale</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-inema-meter="modulo:3-1"><span class="text-neutral-400" data-inema-meter-frac="">0 of 7</span> · <span class="text-purple-400 font-bold" data-inema-meter-pct="">0%</span><div class="inema-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="inema-bar__fill h-full rounded-full bg-purple-500" data-inema-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHÉ-meter="modulo:3-1"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 of 7</span> Â· <span class="text-purple-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-purple-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-inema-module="3-1" data-inema-track="3">
-<!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3">
+<!-- TÃ“PICO 1 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">🧬 Master asset</h2>
+<h2 class="text-2xl font-bold">ðŸ§¬ Master asset</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t1-p1">The foundation of the system is a <strong class="text-purple-400">master asset</strong>: one beautiful, well-made website template, created once, and <strong class="text-neutral-100">hosted on GitHub</strong>. Instead of starting from scratch with every client, you <strong class="text-purple-400">clone the repository</strong> and only rebrands what changes. The template is the source; each client is a clone.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p1">The foundation of the system is a <strong class="text-purple-400">master asset</strong>: one beautiful, well-made website template, created once, and <strong class="text-neutral-100">hosted on GitHub</strong>. Instead of starting from scratch with every client, you <strong class="text-purple-400">clone the repository</strong> and only rebrands what changes. The template is the source; each client is a clone.</p>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">🧭</span> The core idea</h3>
+<h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> The core idea</h3>
 <p class="text-neutral-300 mb-4">Think of the template as a <strong>template</strong>: you design the beautiful cake once and then stamp out copies. The hard work (layout, animations, responsiveness) is already done.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>A <strong>single source</strong> on GitHub — every clone starts from it.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>Cloning the repo is <strong>almost instant</strong> — don’t recreate the structure.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">•</span><span>You only <strong>rebrand</strong>: replaces what identifies the client and keeps the rest.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>A <strong>single source</strong> on GitHub â€” every clone starts from it.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Cloning the repo is <strong>almost instant</strong> â€” donâ€™t recreate the structure.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>You only <strong>rebrand</strong>: replaces what identifies the client and keeps the rest.</span></li>
 </ul>
 </div>
 <!-- SVG -->
@@ -314,7 +314,7 @@
 <g fill="none" opacity="0.6" stroke="#c084fc" stroke-width="2"><path d="M306,110 L420,110" marker-end="url(#m31-ah)"></path></g>
 <g fill="none" opacity="0.6" stroke="#c084fc" stroke-width="2"><path d="M668,110 L760,110" marker-end="url(#m31-ah)"></path></g>
 <rect fill="#0e1b26" height="64" rx="14" stroke="#38bdf8" stroke-width="2" width="266" x="40" y="78"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="173" y="104">GitHub · master template</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="173" y="104">GitHub Â· master template</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="173" y="124">the source of everything</text>
 <g filter="url(#m31-glow)"><rect fill="#1a1230" height="64" rx="14" stroke="url(#m31-grad)" stroke-width="2.5" width="248" x="420" y="78"></rect></g>
 <text fill="#c084fc" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="544" y="104">local clone</text>
@@ -331,25 +331,25 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Mark again</div><p class="text-xs text-neutral-400">only what changes</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-2" id="topico-2">
+<!-- TÃ“PICO 2 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">🛠️ The Cloning Skill</h2>
+<h2 class="text-2xl font-bold">ðŸ› ï¸ The Cloning Skill</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t2-p1">Cloning by hand works once or twice — then you forget a detail. The solution is a <strong class="text-purple-400">skill</strong>: one <strong>reusable structured prompt</strong> that systematically goes through the elements to replace, <strong class="text-purple-400">asks questions</strong>, request assets in the right dimensions, and only then implement.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p1">Cloning by hand works once or twice â€” then you forget a detail. The solution is a <strong class="text-purple-400">skill</strong>: one <strong>reusable structured prompt</strong> that systematically goes through the elements to replace, <strong class="text-purple-400">asks questions</strong>, request assets in the right dimensions, and only then implement.</p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Goes through the elements</h4><p class="text-neutral-300 text-sm">The skill has a list of what changes and goes through it item by item — nothing gets left behind.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Goes through the elements</h4><p class="text-neutral-300 text-sm">The skill has a list of what changes and goes through it item by item â€” nothing gets left behind.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
@@ -357,11 +357,11 @@
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
-<div class="flex-1 bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl p-5 border border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">Implements</h4><p class="text-neutral-300 text-sm">With everything in hand, it applies the changes to the clone — guided and repeatable.</p></div>
+<div class="flex-1 bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl p-5 border border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">Implements</h4><p class="text-neutral-300 text-sm">With everything in hand, it applies the changes to the clone â€” guided and repeatable.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Practical tip</h3>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
 <p class="text-neutral-300">You don't need to create the skill from scratch: it's available at <strong>Library (Track 5)</strong>. Start with it and adapt it to your template.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -371,21 +371,21 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Implements</div><p class="text-xs text-neutral-400">applies the changes</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-3" id="topico-3">
+<!-- TÃ“PICO 3 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">🔁 The 6 Cloneable Elements</h2>
+<h2 class="text-2xl font-bold">ðŸ” The 6 Cloneable Elements</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t3-p1">Here’s the heart of the system: <strong class="text-purple-400">only 6 things change</strong> between one client and the next. Swap out these 6 elements, and the same template becomes one for a different client. Everything outside this list remains untouched.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p1">Hereâ€™s the heart of the system: <strong class="text-purple-400">only 6 things change</strong> between one client and the next. Swap out these 6 elements, and the same template becomes one for a different client. Everything outside this list remains untouched.</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">#</th><th class="text-left p-3">Element</th><th class="text-left p-3">What changes</th></tr></thead>
@@ -401,19 +401,19 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">✓ Switch (there are 6)</h4>
+<h4 class="font-bold text-purple-400 mb-4">âœ“ Switch (there are 6)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Logo, copy, and trusted brands</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Prices, reviews, and color scheme</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">✓</span><span>Everything that identifies that client</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Logo, copy, and trusted brands</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Prices, reviews, and color scheme</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Everything that identifies that client</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Don’t touch</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Donâ€™t touch</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Template structure and layout</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Animations and responsiveness</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>What’s already good — you wouldn’t pay again for nothing</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Template structure and layout</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Animations and responsiveness</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Whatâ€™s already good â€” you wouldnâ€™t pay again for nothing</span></li>
 </ul>
 </div>
 </div>
@@ -424,21 +424,21 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Colors</div><p class="text-xs text-neutral-400">the brand's look</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-4" id="topico-4">
+<!-- TÃ“PICO 4 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">🎨 The 70-20-10 design rule</h2>
+<h2 class="text-2xl font-bold">ðŸŽ¨ The 70-20-10 design rule</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t4-p1">Why is the color scheme so easy to change? Because the template follows the rule <strong class="text-purple-400">70-20-10</strong>: 70% of one <strong>dominant color</strong>, 20% of a secondary color, and 10% of an accent color. <em>When everything is highlighted, nothing stands out</em> — so the template already knows where the AI should change the color.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p1">Why is the color scheme so easy to change? Because the template follows the rule <strong class="text-purple-400">70-20-10</strong>: 70% of one <strong>dominant color</strong>, 20% of a secondary color, and 10% of an accent color. <em>When everything is highlighted, nothing stands out</em> â€” so the template already knows where the AI should change the color.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="The 70-20-10 color ratio: 70% for the dominant color, 20% for the secondary color, and 10% for the accent, forming a visual hierarchy bar" class="w-full h-auto" role="img" viewbox="0 0 1000 160">
@@ -448,17 +448,17 @@
 <rect fill="url(#m31b-grid)" height="160" width="1000" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif">
 <rect fill="#7c3aed" height="68" rx="10" width="630" x="40" y="46"></rect>
-<text fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle" x="355" y="86">70% · dominant</text>
+<text fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle" x="355" y="86">70% Â· dominant</text>
 <rect fill="#a855f7" height="68" rx="10" width="180" x="678" y="46"></rect>
 <text fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle" x="768" y="86">20%</text>
 <rect fill="#d8b4fe" height="68" rx="10" width="94" x="866" y="46"></rect>
 <text fill="#3b0764" font-size="14" font-weight="700" text-anchor="middle" x="913" y="86">10%</text>
-<text fill="#c084fc" font-size="13" font-weight="600" text-anchor="middle" x="500" y="30">color hierarchy — the eye knows where to look</text>
+<text fill="#c084fc" font-size="13" font-weight="600" text-anchor="middle" x="500" y="30">color hierarchy â€” the eye knows where to look</text>
 </g>
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🛡️</span> Why this helps you clone</h3>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ›¡ï¸</span> Why this helps you clone</h3>
 <p class="text-neutral-300">With a clear ratio, changing the brand is almost just a matter of changing the <strong>dominant color</strong> (the 70%). The layout stays balanced, and the new site looks professional from the start.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -468,33 +468,33 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Focus</div><p class="text-xs text-neutral-400">everything highlighted = nothing stands out</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-5" id="topico-5">
+<!-- TÃ“PICO 5 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">🗂️ One folder per client</h2>
+<h2 class="text-2xl font-bold">ðŸ—‚ï¸ One folder per client</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t5-p1">When you manage many clients, the biggest risk isn't technical — it's <strong class="text-purple-400">edit the wrong site</strong>. The simple rule that prevents this: <strong>one folder per client</strong> on your computer. Lean file management reduces confusion.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p1">When you manage many clients, the biggest risk isn't technical â€” it's <strong class="text-purple-400">edit the wrong site</strong>. The simple rule that prevents this: <strong>one folder per client</strong> on your computer. Lean file management reduces confusion.</p>
 <div class="overflow-x-auto mb-6">
 <pre class="bg-dark-900 border border-dark-600 rounded-xl p-4 text-sm text-neutral-200 font-mono whitespace-pre">clientes/
-├── dedetizadora-alfa/
-│   └── site/        (clone re-marcado)
-├── sorveteria-bela/
-│   └── site/        (clone re-marcado)
-└── advocacia-cardoso/
-    └── site/        (clone re-marcado)</pre>
+â”œâ”€â”€ dedetizadora-alfa/
+â”‚   â””â”€â”€ site/        (clone re-marcado)
+â”œâ”€â”€ sorveteria-bela/
+â”‚   â””â”€â”€ site/        (clone re-marcado)
+â””â”€â”€ advocacia-cardoso/
+    â””â”€â”€ site/        (clone re-marcado)</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Practical tip</h3>
-<p class="text-neutral-300">Open in the editor <strong>only the client’s folder</strong> you’ll be working on. That way, it’s impossible for the AI to accidentally edit another client’s site.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
+<p class="text-neutral-300">Open in the editor <strong>only the clientâ€™s folder</strong> youâ€™ll be working on. That way, itâ€™s impossible for the AI to accidentally edit another clientâ€™s site.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">1 folder</div><p class="text-xs text-neutral-400">per client</p></div>
@@ -503,21 +503,21 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Safe</div><p class="text-xs text-neutral-400">the right site, every time</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-6" id="topico-6">
+<!-- TÃ“PICO 6 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">🧾 Automate data collection</h2>
+<h2 class="text-2xl font-bold">ðŸ§¾ Automate data collection</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t6-p1">The next level is to get you out of the middle. Instead of asking everything in chat, create a <strong class="text-purple-400">custom form</strong> (logo + the 6 questions + asset upload) that saves the answers to the <strong class="text-purple-400">Supabase via MCP</strong>. Then you tell the AI to <em>"clone the latest submission"</em> — without even looking at the answers.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p1">The next level is to get you out of the middle. Instead of asking everything in chat, create a <strong class="text-purple-400">custom form</strong> (logo + the 6 questions + asset upload) that saves the answers to the <strong class="text-purple-400">Supabase via MCP</strong>. Then you tell the AI to <em>"clone the latest submission"</em> â€” without even looking at the answers.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
 <svg aria-label="The client fills out a form with the logo, six answers, and assets; the data is saved to Supabase via MCP; the AI reads the latest submission and automatically generates the clone" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
@@ -544,8 +544,8 @@
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Practical tip</h3>
-<p class="text-neutral-300">Standardize the form fields with the <strong>same names</strong> that the Cloning Skill expects. This way, the AI maps the answer → element without ambiguity.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
+<p class="text-neutral-300">Standardize the form fields with the <strong>same names</strong> that the Cloning Skill expects. This way, the AI maps the answer â†’ element without ambiguity.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Form</div><p class="text-xs text-neutral-400">logo + 6 + assets</p></div>
@@ -554,21 +554,21 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Auto</div><p class="text-xs text-neutral-400">without looking at answers</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-3-1#topico-7" id="topico-7">
+<!-- TÃ“PICO 7 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">♾️ Scale</h2>
+<h2 class="text-2xl font-bold">â™¾ï¸ Scale</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m3-1-t7-p1">With a master template + skill + form, the math works in your favor: from 1 site to 100, to 1,000. The <strong class="text-purple-400">marginal cost per clone is almost zero</strong>. And with each round, you <strong>refine the skill</strong>: run it once, see what didn’t change, adjust, repeat.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t7-p1">With a master template + skill + form, the math works in your favor: from 1 site to 100, to 1,000. The <strong class="text-purple-400">marginal cost per clone is almost zero</strong>. And with each round, you <strong>refine the skill</strong>: run it once, see what didnâ€™t change, adjust, repeat.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
@@ -588,51 +588,51 @@
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl p-6 border border-purple-500/30">
 <h4 class="font-semibold text-purple-400 mb-2">Repeat</h4>
-<p class="text-neutral-300 text-sm">With each iteration, the skill gets sharper — and the next clones come out perfect.</p>
+<p class="text-neutral-300 text-sm">With each iteration, the skill gets sharper â€” and the next clones come out perfect.</p>
 </div>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">1 → 1.000</div><p class="text-xs text-neutral-400">same foundation</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">1 â†’ 1.000</div><p class="text-xs text-neutral-400">same foundation</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Near-zero cost</div><p class="text-xs text-neutral-400">per clone</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Refine</div><p class="text-xs text-neutral-400">each round</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Repeat</div><p class="text-xs text-neutral-400">better every time</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Mark as read</span><span class="inema-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÁTICO -->
+<!-- EXEMPLO PRÃTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🔬</span> Practical example</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Practical example</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
 <p class="text-neutral-300 mb-4">Get a template called <strong class="text-purple-400">"VOLTFLOW"</strong> (a generic service website template) and generate <strong>two versions for different niches</strong>, changing only the 6 elements:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
 <div class="bg-dark-700/50 rounded-lg p-4">
-<h4 class="font-semibold text-purple-400 mb-2">Version A — Pest Control Company</h4>
+<h4 class="font-semibold text-purple-400 mb-2">Version A â€” Pest Control Company</h4>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li>Pest control company logo · dominant color: green</li>
-<li>Pest control copy · prices per visit</li>
-<li>Resident reviews · safety seals</li>
+<li>Pest control company logo Â· dominant color: green</li>
+<li>Pest control copy Â· prices per visit</li>
+<li>Resident reviews Â· safety seals</li>
 </ul>
 </div>
 <div class="bg-dark-700/50 rounded-lg p-4">
-<h4 class="font-semibold text-purple-400 mb-2">Version B — Ice Cream Shop</h4>
+<h4 class="font-semibold text-purple-400 mb-2">Version B â€” Ice Cream Shop</h4>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li>Ice cream shop logo · dominant color: pink</li>
-<li>Flavor copy · prices by size</li>
-<li>Customer reviews · supply brands</li>
+<li>Ice cream shop logo Â· dominant color: pink</li>
+<li>Flavor copy Â· prices by size</li>
+<li>Customer reviews Â· supply brands</li>
 </ul>
 </div>
 </div>
-<p class="text-neutral-400 text-sm">Same template, same structure — two sites that look custom-made. That’s cloning in action.</p>
+<p class="text-neutral-400 text-sm">Same template, same structure â€” two sites that look custom-made. Thatâ€™s cloning in action.</p>
 </div>
 </section>
-<!-- EXERCÍCIO -->
+<!-- EXERCÃCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🏋️</span> Exercise</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> Exercise</h2>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <p class="text-neutral-300 mb-4">Create or adapt the <strong class="text-purple-400">Cloning Skill</strong> and generate <strong>2 variations</strong> of the same template for different niches:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
@@ -646,7 +646,7 @@
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">⚡</span> Ready-made prompts</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Ready-made prompts</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copy, paste into your AI assistant, and adapt to your use case.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clone the repository</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copy</button></div>
@@ -656,30 +656,30 @@ and save it on the left as "site-1".</pre>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">create the Cloning Skill</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copy</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Create a "cloning protocol" skill that, when I ask for a clone, goes through
-these 6 items — logo, copy, trust marks, prices, reviews, and
+these 6 items â€” logo, copy, trust marks, prices, reviews, and
 color scheme. For each item, ask me questions and request the assets with
 the required dimensions, then implement the changes in the clone.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clone from the submission</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copy</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone o site usando os dados da submissão mais recente do Supabase
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone o site usando os dados da submissÃ£o mais recente do Supabase
 e abra no localhost.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Master asset</strong><span class="text-neutral-400"> — a beautiful template on GitHub is the source for all clones.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Cloning Skill + 6 elements</strong><span class="text-neutral-400"> — logo, copy, brands, prices, reviews, and colors; don’t touch anything else.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">70-20-10 and a folder per client</strong><span class="text-neutral-400"> — color with hierarchy and organized files help prevent errors.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Form + Supabase = scale</strong><span class="text-neutral-400"> — collect on your own and clone the latest submission, from 1 to 1,000.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Master asset</strong><span class="text-neutral-400"> â€” a beautiful template on GitHub is the source for all clones.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Cloning Skill + 6 elements</strong><span class="text-neutral-400"> â€” logo, copy, brands, prices, reviews, and colors; donâ€™t touch anything else.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">70-20-10 and a folder per client</strong><span class="text-neutral-400"> â€” color with hierarchy and organized files help prevent errors.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Form + Supabase = scale</strong><span class="text-neutral-400"> â€” collect on your own and clone the latest submission, from 1 to 1,000.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">Next module:</h3><p class="text-neutral-300">3.2 — Move sites to GoHighLevel/WordPress</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">Next module:</h3><p class="text-neutral-300">3.2 â€” Move sites to GoHighLevel/WordPress</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Back to Track</a>
-<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">Next Module →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to Track</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">Next Module â†’</a>
 </div>
 </div>
 </section>
@@ -688,7 +688,7 @@ e abra no localhost.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — From Zero to a Published App with AI · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” From Zero to a Published App with AI Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -711,11 +711,11 @@ e abra no localhost.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -723,22 +723,22 @@ e abra no localhost.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = '✓ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

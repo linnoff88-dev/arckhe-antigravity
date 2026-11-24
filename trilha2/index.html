@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Trilha 2 · Construir &amp; Publicar | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>Trilha 2 Â· Construir &amp; Publicar | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -152,7 +152,7 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -165,7 +165,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -180,20 +180,20 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha2/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha2/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha2/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha2/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha2/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha2/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha2/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -202,34 +202,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Aparência e leitura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sépia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Confortável</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -243,13 +243,13 @@
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">TRILHA 2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🏗️ Construir &amp; Publicar</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Sai do conceito e entra na prática: vá do problema bem definido até um app rodando no localhost, depois publique-o no mundo e mantenha-o vivo com versão, deploy seguro e monitoramento.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ—ï¸ Construir &amp; Publicar</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Sai do conceito e entra na prÃ¡tica: vÃ¡ do problema bem definido atÃ© um app rodando no localhost, depois publique-o no mundo e mantenha-o vivo com versÃ£o, deploy seguro e monitoramento.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2</div><div class="text-xs text-neutral-400">Módulos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">16</div><div class="text-xs text-neutral-400">Tópicos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~2h30</div><div class="text-xs text-neutral-400">Duração</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Intermediário</div><div class="text-xs text-neutral-400">Nível</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">2</div><div class="text-xs text-neutral-400">MÃ³dulos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">16</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">~2h30</div><div class="text-xs text-neutral-400">DuraÃ§Ã£o</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">IntermediÃ¡rio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
 </div>
 </div>
 </header>
@@ -273,20 +273,20 @@
 <text fill="#dbeafe" font-size="12" text-anchor="middle" x="355" y="166">app rodando</text>
 <rect fill="#0e1622" height="64" rx="14" stroke="#60a5fa" stroke-width="2" width="150" x="500" y="118"></rect>
 <text fill="#bfdbfe" font-size="15" font-weight="600" text-anchor="middle" x="575" y="146">GitHub</text>
-<text fill="#dbeafe" font-size="12" text-anchor="middle" x="575" y="166">repositório</text>
+<text fill="#dbeafe" font-size="12" text-anchor="middle" x="575" y="166">repositÃ³rio</text>
 <rect fill="#0e1622" height="64" rx="14" stroke="#60a5fa" stroke-width="2" width="150" x="710" y="118"></rect>
 <text fill="#bfdbfe" font-size="15" font-weight="600" text-anchor="middle" x="785" y="146">Vercel</text>
 <text fill="#dbeafe" font-size="12" text-anchor="middle" x="785" y="166">deploy</text>
 <g filter="url(#t2-glow)"><rect fill="#0e2018" height="52" rx="12" stroke="url(#t2-grad)" stroke-width="2.5" width="64" x="900" y="124"></rect></g>
-<text fill="#60a5fa" font-size="22" font-weight="700" text-anchor="middle" x="932" y="155">🌐</text>
+<text fill="#60a5fa" font-size="22" font-weight="700" text-anchor="middle" x="932" y="155">ðŸŒ</text>
 <g fill="none" opacity="0.6" stroke="#60a5fa" stroke-width="2">
 <path d="M210,150 L266,150" marker-end="url(#t2-ah)"></path>
 <path d="M440,150 L496,150" marker-end="url(#t2-ah)"></path>
 <path d="M650,150 L706,150" marker-end="url(#t2-ah)"></path>
 <path d="M860,150 L896,150" marker-end="url(#t2-ah)"></path>
 </g>
-<text fill="#60a5fa" font-size="14" font-weight="600" text-anchor="middle" x="500" y="56">Módulo 2.1 — construir</text>
-<text fill="#93c5fd" font-size="14" font-weight="600" text-anchor="middle" x="500" y="248">Módulo 2.2 — publicar &amp; manter</text>
+<text fill="#60a5fa" font-size="14" font-weight="600" text-anchor="middle" x="500" y="56">MÃ³dulo 2.1 â€” construir</text>
+<text fill="#93c5fd" font-size="14" font-weight="600" text-anchor="middle" x="500" y="248">MÃ³dulo 2.2 â€” publicar &amp; manter</text>
 </g>
 </svg>
 </div>
@@ -296,111 +296,111 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-1">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.1</span><span class="text-xs text-neutral-500">~75 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🎯 Seu primeiro app</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ðŸŽ¯ Seu primeiro app</h3>
 <p class="text-xs text-neutral-400">Do problema ao localhost</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-5 transition-all" href="#modulo-2-2">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold text-sm">2.2</span><span class="text-xs text-neutral-500">~75 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">🚀 Publicar e manter</h3>
+<h3 class="font-semibold mb-1 group-hover:text-blue-400 transition-colors">ðŸš€ Publicar e manter</h3>
 <p class="text-xs text-neutral-400">Vercel, env vars, rollback</p>
 </a>
 </div>
 </section>
-<h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
-<!-- MÓDULO 2.1 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-1" data-inema-track="2" id="modulo-2-1">
+<h2 class="text-2xl font-bold mb-6">ConteÃºdo detalhado</h2>
+<!-- MÃ“DULO 2.1 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-1" data-ARCKHÉ-track="2" id="modulo-2-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.1</span><span class="text-xs text-neutral-500">~75 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🎯 Seu primeiro app: do problema ao localhost</h3>
-<p class="text-neutral-400 text-sm">Antes de uma linha de código: definir bem o problema, usar a IA como sparring, gerar um SOP, alimentar referências visuais, orquestrar agentes paralelos, planejar, guardar contexto e conectar um banco via MCP.</p>
+<h3 class="text-2xl font-bold mb-2">ðŸŽ¯ Seu primeiro app: do problema ao localhost</h3>
+<p class="text-neutral-400 text-sm">Antes de uma linha de cÃ³digo: definir bem o problema, usar a IA como sparring, gerar um SOP, alimentar referÃªncias visuais, orquestrar agentes paralelos, planejar, guardar contexto e conectar um banco via MCP.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🎯</span><div><span class="font-medium">Problema antes da solução</span><span class="text-neutral-500 text-sm ml-2">- a regra 55-5</span></div>
+<span class="text-lg">ðŸŽ¯</span><div><span class="font-medium">Problema antes da soluÃ§Ã£o</span><span class="text-neutral-500 text-sm ml-2">- a regra 55-5</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">A regra "55-5": de 60 minutos, invista ~55 entendendo o problema e só ~5 na pressa da solução. A maioria dos tutoriais pula direto pro código — não faça isso.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um problema mal definido gera um app que ninguém usa. Clareza no início economiza horas de retrabalho.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Definição de problema · regra 55-5 · evitar a pressa do código.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">A regra "55-5": de 60 minutos, invista ~55 entendendo o problema e sÃ³ ~5 na pressa da soluÃ§Ã£o. A maioria dos tutoriais pula direto pro cÃ³digo â€” nÃ£o faÃ§a isso.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um problema mal definido gera um app que ninguÃ©m usa. Clareza no inÃ­cio economiza horas de retrabalho.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">DefiniÃ§Ã£o de problema Â· regra 55-5 Â· evitar a pressa do cÃ³digo.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🥊</span><div><span class="font-medium">A IA como sparring → SOP</span><span class="text-neutral-500 text-sm ml-2">- refinar e procedimentar</span></div>
+<span class="text-lg">ðŸ¥Š</span><div><span class="font-medium">A IA como sparring â†’ SOP</span><span class="text-neutral-500 text-sm ml-2">- refinar e procedimentar</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Use a IA como parceira de treino: peça que ela desafie seu raciocínio e ajude a definir o problema. Depois, peça um SOP (procedimento) curto, com no máximo 800 caracteres.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">O contraponto da IA expõe furos cedo; o SOP vira o roteiro que guia a construção.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sparring · desafiar o raciocínio · SOP ≤ 800 caracteres.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Use a IA como parceira de treino: peÃ§a que ela desafie seu raciocÃ­nio e ajude a definir o problema. Depois, peÃ§a um SOP (procedimento) curto, com no mÃ¡ximo 800 caracteres.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">O contraponto da IA expÃµe furos cedo; o SOP vira o roteiro que guia a construÃ§Ã£o.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sparring Â· desafiar o raciocÃ­nio Â· SOP â‰¤ 800 caracteres.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🎨</span><div><span class="font-medium">Design inspiration</span><span class="text-neutral-500 text-sm ml-2">- referências visuais</span></div>
+<span class="text-lg">ðŸŽ¨</span><div><span class="font-medium">Design inspiration</span><span class="text-neutral-500 text-sm ml-2">- referÃªncias visuais</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Alimente o agente com referências visuais (screenshots de sites que você gosta). A IA é ótima em design, mas fica muito melhor com especificidade.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">"Faça bonito" é vago; um print de referência transmite intenção visual em segundos.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Referência visual · especificidade · galerias (Awwwards, Dribbble, Mobbin, Land-book).</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Alimente o agente com referÃªncias visuais (screenshots de sites que vocÃª gosta). A IA Ã© Ã³tima em design, mas fica muito melhor com especificidade.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">"FaÃ§a bonito" Ã© vago; um print de referÃªncia transmite intenÃ§Ã£o visual em segundos.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">ReferÃªncia visual Â· especificidade Â· galerias (Awwwards, Dribbble, Mobbin, Land-book).</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">⚡</span><div><span class="font-medium">Agent Manager &amp; agentes paralelos</span><span class="text-neutral-500 text-sm ml-2">- vários ao mesmo tempo</span></div>
+<span class="text-lg">âš¡</span><div><span class="font-medium">Agent Manager &amp; agentes paralelos</span><span class="text-neutral-500 text-sm ml-2">- vÃ¡rios ao mesmo tempo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">No Agent Manager você gerencia vários agentes e projetos ao mesmo tempo. Cada workspace = um projeto, e você se move muito mais rápido.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Paralelizar multiplica sua produção: enquanto um agente trabalha, você revisa ou inicia outro.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Agent Manager · workspace por projeto · paralelismo.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">No Agent Manager vocÃª gerencia vÃ¡rios agentes e projetos ao mesmo tempo. Cada workspace = um projeto, e vocÃª se move muito mais rÃ¡pido.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Paralelizar multiplica sua produÃ§Ã£o: enquanto um agente trabalha, vocÃª revisa ou inicia outro.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Agent Manager Â· workspace por projeto Â· paralelismo.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">👥</span><div><span class="font-medium">Agentes = funcionários</span><span class="text-neutral-500 text-sm ml-2">- jobs separados</span></div>
+<span class="text-lg">ðŸ‘¥</span><div><span class="font-medium">Agentes = funcionÃ¡rios</span><span class="text-neutral-500 text-sm ml-2">- jobs separados</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Trate cada agente como um funcionário: dê tarefas SEPARADAS. Nunca ponha dois agentes na mesma tarefa — eles colidem e se atrapalham.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É como uma equipe onde ninguém faz o trabalho do outro: menos conflito, mais avanço.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Divisão de trabalho · evitar colisão · um agente, uma tarefa.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Trate cada agente como um funcionÃ¡rio: dÃª tarefas SEPARADAS. Nunca ponha dois agentes na mesma tarefa â€” eles colidem e se atrapalham.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ como uma equipe onde ninguÃ©m faz o trabalho do outro: menos conflito, mais avanÃ§o.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">DivisÃ£o de trabalho Â· evitar colisÃ£o Â· um agente, uma tarefa.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">📋</span><div><span class="font-medium">Planning mode &amp; inbox</span><span class="text-neutral-500 text-sm ml-2">- revisar e aprovar</span></div>
+<span class="text-lg">ðŸ“‹</span><div><span class="font-medium">Planning mode &amp; inbox</span><span class="text-neutral-500 text-sm ml-2">- revisar e aprovar</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Ponha o agente em modo de planejamento: ele propõe um plano, você revisa e aprova como faria com um empregado. Ações ficam aguardando aprovação no inbox.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Aprovar o plano antes da execução evita que o agente saia construindo a coisa errada.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Planning mode · revisão · aprovação no inbox.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Ponha o agente em modo de planejamento: ele propÃµe um plano, vocÃª revisa e aprova como faria com um empregado. AÃ§Ãµes ficam aguardando aprovaÃ§Ã£o no inbox.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Aprovar o plano antes da execuÃ§Ã£o evita que o agente saia construindo a coisa errada.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Planning mode Â· revisÃ£o Â· aprovaÃ§Ã£o no inbox.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-<span class="text-lg">📝</span><div><span class="font-medium">Arquivo de contexto (Gemini.md)</span><span class="text-neutral-500 text-sm ml-2">- regras do projeto</span></div>
+<span class="text-lg">ðŸ“</span><div><span class="font-medium">Arquivo de contexto (Gemini.md)</span><span class="text-neutral-500 text-sm ml-2">- regras do projeto</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Um arquivo .md (ex.: Gemini.md) com as regras do projeto — fonte, cores, propósito — que o agente relê sempre. Sobrevive ao "estouro" da janela de contexto. Um research.md guarda pesquisa reutilizável.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É a memória de longo prazo do projeto: o agente não "esquece" suas decisões.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Arquivo de contexto · janela de contexto · research.md.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Um arquivo .md (ex.: Gemini.md) com as regras do projeto â€” fonte, cores, propÃ³sito â€” que o agente relÃª sempre. Sobrevive ao "estouro" da janela de contexto. Um research.md guarda pesquisa reutilizÃ¡vel.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ a memÃ³ria de longo prazo do projeto: o agente nÃ£o "esquece" suas decisÃµes.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Arquivo de contexto Â· janela de contexto Â· research.md.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span>
-<span class="text-lg">🔌</span><div><span class="font-medium">MCP + Supabase</span><span class="text-neutral-500 text-sm ml-2">- conectar um banco</span></div>
+<span class="text-lg">ðŸ”Œ</span><div><span class="font-medium">MCP + Supabase</span><span class="text-neutral-500 text-sm ml-2">- conectar um banco</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">MCP (Model Context Protocol) é a "língua universal" que permite apps e serviços conversarem. Conecte um banco (Supabase) via token e o agente cria o projeto e escreve o SQL sozinho.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Com um banco conectado, seu app guarda dados de verdade — sem você escrever SQL na mão.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">MCP · token · Supabase · SQL gerado pelo agente.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">MCP (Model Context Protocol) Ã© a "lÃ­ngua universal" que permite apps e serviÃ§os conversarem. Conecte um banco (Supabase) via token e o agente cria o projeto e escreve o SQL sozinho.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Com um banco conectado, seu app guarda dados de verdade â€” sem vocÃª escrever SQL na mÃ£o.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">MCP Â· token Â· Supabase Â· SQL gerado pelo agente.</p></div>
 </div></div>
 </div>
 </div>
@@ -409,100 +409,100 @@
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-1.html">Ver Completo</a>
 </div>
 </div>
-<!-- MÓDULO 2.2 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="2-2" data-inema-track="2" id="modulo-2-2">
+<!-- MÃ“DULO 2.2 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="2-2" data-ARCKHÉ-track="2" id="modulo-2-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-blue-400 font-bold">2.2</span><span class="text-xs text-neutral-500">~75 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🚀 Publicar e manter seu app</h3>
-<p class="text-neutral-400 text-sm">Tire o app do localhost: conecte o GitHub, faça deploy na Vercel, proteja chaves com env vars, ligue analytics, depure por screenshot, comite sempre, faça rollback e controle o gasto da API.</p>
+<h3 class="text-2xl font-bold mb-2">ðŸš€ Publicar e manter seu app</h3>
+<p class="text-neutral-400 text-sm">Tire o app do localhost: conecte o GitHub, faÃ§a deploy na Vercel, proteja chaves com env vars, ligue analytics, depure por screenshot, comite sempre, faÃ§a rollback e controle o gasto da API.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🐙</span><div><span class="font-medium">GitHub MCP + token + Docker</span><span class="text-neutral-500 text-sm ml-2">- conectar o editor</span></div>
+<span class="text-lg">ðŸ™</span><div><span class="font-medium">GitHub MCP + token + Docker</span><span class="text-neutral-500 text-sm ml-2">- conectar o editor</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Conecte o AntiGravity ao GitHub via MCP para gerenciar e publicar repositórios direto do editor. Exige um Personal Access Token (fine-grained, com validade) e o Docker instalado para a integração funcionar.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Publicar sem sair do editor reduz fricção e mantém tudo num fluxo só.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">GitHub MCP · Personal Access Token · Docker.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Conecte o AntiGravity ao GitHub via MCP para gerenciar e publicar repositÃ³rios direto do editor. Exige um Personal Access Token (fine-grained, com validade) e o Docker instalado para a integraÃ§Ã£o funcionar.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Publicar sem sair do editor reduz fricÃ§Ã£o e mantÃ©m tudo num fluxo sÃ³.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">GitHub MCP Â· Personal Access Token Â· Docker.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">▲</span><div><span class="font-medium">Deploy na Vercel</span><span class="text-neutral-500 text-sm ml-2">- a ponte pro mundo</span></div>
+<span class="text-lg">â–²</span><div><span class="font-medium">Deploy na Vercel</span><span class="text-neutral-500 text-sm ml-2">- a ponte pro mundo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">A Vercel é a "ponte" do GitHub para o mundo: hospedagem em produção. Add New → Project → importar o repo → publicar, e o app fica no ar.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">É o passo que transforma um projeto local em algo que qualquer pessoa acessa por um link.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Hospedagem · importar repo · produção.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">A Vercel Ã© a "ponte" do GitHub para o mundo: hospedagem em produÃ§Ã£o. Add New â†’ Project â†’ importar o repo â†’ publicar, e o app fica no ar.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Ã‰ o passo que transforma um projeto local em algo que qualquer pessoa acessa por um link.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Hospedagem Â· importar repo Â· produÃ§Ã£o.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🔐</span><div><span class="font-medium">Environment variables</span><span class="text-neutral-500 text-sm ml-2">- proteger chaves</span></div>
+<span class="text-lg">ðŸ”</span><div><span class="font-medium">Environment variables</span><span class="text-neutral-500 text-sm ml-2">- proteger chaves</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Para proteger chaves de API, o agente só nomeia a variável; você cola a chave dentro da Vercel (Settings → Environment Variables) e dá Redeploy. A chave nunca aparece no código.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Chave exposta no código é o erro nº 1 de segurança — e pode custar caro.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Env var · nomear vs. valor · Redeploy.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Para proteger chaves de API, o agente sÃ³ nomeia a variÃ¡vel; vocÃª cola a chave dentro da Vercel (Settings â†’ Environment Variables) e dÃ¡ Redeploy. A chave nunca aparece no cÃ³digo.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Chave exposta no cÃ³digo Ã© o erro nÂº 1 de seguranÃ§a â€” e pode custar caro.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Env var Â· nomear vs. valor Â· Redeploy.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">📊</span><div><span class="font-medium">Analytics &amp; Speed Insights</span><span class="text-neutral-500 text-sm ml-2">- acessos e performance</span></div>
+<span class="text-lg">ðŸ“Š</span><div><span class="font-medium">Analytics &amp; Speed Insights</span><span class="text-neutral-500 text-sm ml-2">- acessos e performance</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Habilite Analytics e Speed Insights no painel da Vercel e instale o pacote pelo terminal (npm). Você passa a acompanhar acessos e performance, com um plano grátis generoso.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem dados, você adivinha. Com dados, você melhora o que importa.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Analytics · Speed Insights · npm · plano grátis.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Habilite Analytics e Speed Insights no painel da Vercel e instale o pacote pelo terminal (npm). VocÃª passa a acompanhar acessos e performance, com um plano grÃ¡tis generoso.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem dados, vocÃª adivinha. Com dados, vocÃª melhora o que importa.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Analytics Â· Speed Insights Â· npm Â· plano grÃ¡tis.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🩺</span><div><span class="font-medium">Troubleshooting por screenshot</span><span class="text-neutral-500 text-sm ml-2">- print do erro</span></div>
+<span class="text-lg">ðŸ©º</span><div><span class="font-medium">Troubleshooting por screenshot</span><span class="text-neutral-500 text-sm ml-2">- print do erro</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Quando o build falha, tire um screenshot dos logs de erro e mande pro agente: "houve um erro no deploy, corrija". Use o DevTools (Console/Network) e mande o print do erro.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A imagem dá ao agente o contexto exato — ele corrige muito mais rápido.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Logs de erro · screenshot · DevTools (Console/Network).</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Quando o build falha, tire um screenshot dos logs de erro e mande pro agente: "houve um erro no deploy, corrija". Use o DevTools (Console/Network) e mande o print do erro.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A imagem dÃ¡ ao agente o contexto exato â€” ele corrige muito mais rÃ¡pido.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Logs de erro Â· screenshot Â· DevTools (Console/Network).</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">💾</span><div><span class="font-medium">Commit often</span><span class="text-neutral-500 text-sm ml-2">- rede de segurança</span></div>
+<span class="text-lg">ðŸ’¾</span><div><span class="font-medium">Commit often</span><span class="text-neutral-500 text-sm ml-2">- rede de seguranÃ§a</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comite com frequência. História real: codar 6 horas sem commitar e perder a melhor versão. O controle de versão é a sua rede de segurança.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada commit é um ponto de retorno seguro — você nunca perde mais do que o último pedaço.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Commit frequente · histórico · ponto de retorno.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Comite com frequÃªncia. HistÃ³ria real: codar 6 horas sem commitar e perder a melhor versÃ£o. O controle de versÃ£o Ã© a sua rede de seguranÃ§a.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cada commit Ã© um ponto de retorno seguro â€” vocÃª nunca perde mais do que o Ãºltimo pedaÃ§o.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Commit frequente Â· histÃ³rico Â· ponto de retorno.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-<span class="text-lg">⏪</span><div><span class="font-medium">Rollback</span><span class="text-neutral-500 text-sm ml-2">- voltar no tempo</span></div>
+<span class="text-lg">âª</span><div><span class="font-medium">Rollback</span><span class="text-neutral-500 text-sm ml-2">- voltar no tempo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Na Vercel: Deployments → escolha a versão anterior estável → Redeploy. É "voltar no tempo". Também dá pra reverter pelo GitHub.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um deploy ruim deixa de ser pânico: você restaura a versão boa em segundos.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Deployments · versão estável · Redeploy · reverter no GitHub.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Na Vercel: Deployments â†’ escolha a versÃ£o anterior estÃ¡vel â†’ Redeploy. Ã‰ "voltar no tempo". TambÃ©m dÃ¡ pra reverter pelo GitHub.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Um deploy ruim deixa de ser pÃ¢nico: vocÃª restaura a versÃ£o boa em segundos.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Deployments Â· versÃ£o estÃ¡vel Â· Redeploy Â· reverter no GitHub.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span>
-<span class="text-lg">💰</span><div><span class="font-medium">Budget de API + repo privado</span><span class="text-neutral-500 text-sm ml-2">- gasto e privacidade</span></div>
+<span class="text-lg">ðŸ’°</span><div><span class="font-medium">Budget de API + repo privado</span><span class="text-neutral-500 text-sm ml-2">- gasto e privacidade</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-blue-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Defina um budget de gasto na API para não tomar uma conta gigante. E torne o repositório privado depois de publicado.</p></div>
-<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Limite de gasto evita sustos na fatura; repo privado protege seu código e suas chaves.</p></div>
-<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Budget de API · teto de gasto · repositório privado.</p></div>
+<div><span class="text-blue-400 font-semibold">O que Ã©:</span><p class="text-neutral-300 text-sm">Defina um budget de gasto na API para nÃ£o tomar uma conta gigante. E torne o repositÃ³rio privado depois de publicado.</p></div>
+<div><span class="text-blue-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Limite de gasto evita sustos na fatura; repo privado protege seu cÃ³digo e suas chaves.</p></div>
+<div><span class="text-blue-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Budget de API Â· teto de gasto Â· repositÃ³rio privado.</p></div>
 </div></div>
 </div>
 </div>
@@ -511,28 +511,28 @@
 <a class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors" href="modulo-2-2.html">Ver Completo</a>
 </div>
 </div>
-<!-- NAV PRÓXIMA TRILHA -->
+<!-- NAV PRÃ“XIMA TRILHA -->
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha1/index.html">← Trilha 1: Fundamentos</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Trilha 3: Escalar a Produção →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha1/index.html">â† Trilha 1: Fundamentos</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Trilha 3: Escalar a ProduÃ§Ã£o â†’</a>
 </div>
 </main>
 <!-- MODAIS -->
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-2-1" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold">Seu primeiro app: do problema ao localhost</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.1</span><span class="font-semibold">Seu primeiro app: do problema ao localhost</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-2-1.html"></iframe>
 </div>
 </div>
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-2-2" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.2</span><span class="font-semibold">Publicar e manter seu app</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-blue-400 font-bold">2.2</span><span class="font-semibold">Publicar e manter seu app</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-2-2.html"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — do Zero ao App Publicado com IA · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -555,11 +555,11 @@
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -567,15 +567,15 @@
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

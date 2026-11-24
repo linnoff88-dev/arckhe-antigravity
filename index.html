@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>AntiGravity — do Zero ao App Publicado com IA | INEMA.CLUB</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>AntiGravity â€” do Zero ao App Publicado com IA | ARCKHÉ AI</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -159,7 +159,7 @@
     }
   </style>
 <link href="assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -172,7 +172,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -187,20 +187,20 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="./" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="en/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -208,37 +208,37 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Escalar</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
-<!-- Aparência -->
+<!-- AparÃªncia -->
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Aparência e leitura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sépia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Confortável</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
 </div></div>
 </div>
 </div>
 <!-- Minha jornada -->
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <!-- Theme toggle -->
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
@@ -252,51 +252,51 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- HERO -->
 <section class="mb-16">
-<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-5 border border-primary/30">CURSO COMPLETO · 5 TRILHAS · 11 MÓDULOS</span>
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-5 border border-primary/30">CURSO COMPLETO Â· 5 TRILHAS Â· 11 MÃ“DULOS</span>
 <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">Do zero ao app publicado, <span class="text-primary">comandando IA por linguagem</span></h1>
-<p class="text-lg text-neutral-400 max-w-3xl mb-8">Aprenda a usar o <strong class="text-neutral-300">AntiGravity</strong> — o editor de código com agentes de IA da Google — para construir, publicar e escalar aplicações reais. Sem virar programador: você descreve, os agentes constroem. Da primeira tela ao deploy seguro e à aplicação profissional.</p>
+<p class="text-lg text-neutral-400 max-w-3xl mb-8">Aprenda a usar o <strong class="text-neutral-300">AntiGravity</strong> â€” o editor de cÃ³digo com agentes de IA da Google â€” para construir, publicar e escalar aplicaÃ§Ãµes reais. Sem virar programador: vocÃª descreve, os agentes constroem. Da primeira tela ao deploy seguro e Ã  aplicaÃ§Ã£o profissional.</p>
 <div class="flex flex-col sm:flex-row gap-4 mb-10">
-<a class="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition-colors" href="trilha1/index.html">Começar pela Trilha 1 →</a>
-<button class="inline-flex items-center justify-center px-6 py-3 bg-dark-700 hover:bg-dark-600 text-neutral-200 rounded-lg font-semibold transition-colors" data-inema-resume="" type="button">↻ Continuar de onde parei</button>
+<a class="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition-colors" href="trilha1/index.html">ComeÃ§ar pela Trilha 1 â†’</a>
+<button class="inline-flex items-center justify-center px-6 py-3 bg-dark-700 hover:bg-dark-600 text-neutral-200 rounded-lg font-semibold transition-colors" data-ARCKHÉ-resume="" type="button">â†» Continuar de onde parei</button>
 </div>
 <!-- Medidor de curso -->
-<div aria-label="Progresso do curso" aria-valuemax="100" aria-valuemin="0" class="inema-meter bg-dark-800 border border-dark-600 rounded-xl p-5 max-w-2xl" data-inema-meter="curso" role="progressbar">
+<div aria-label="Progresso do curso" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter bg-dark-800 border border-dark-600 rounded-xl p-5 max-w-2xl" data-ARCKHÉ-meter="curso" role="progressbar">
 <div class="flex items-center justify-between mb-2">
 <span class="text-sm font-semibold text-neutral-300">Seu progresso no curso</span>
-<span class="text-sm"><span class="inema-meter-label" data-inema-meter-frac="">0 de 77</span> · <span class="text-primary font-bold" data-inema-meter-pct="">0%</span></span>
+<span class="text-sm"><span class="ARCKHÉ-meter-label" data-ARCKHÉ-meter-frac="">0 de 77</span> Â· <span class="text-primary font-bold" data-ARCKHÉ-meter-pct="">0%</span></span>
 </div>
-<div class="inema-bar h-2.5 rounded-full bg-dark-600 overflow-hidden"><div class="inema-bar__fill h-full rounded-full bg-primary" data-inema-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHÉ-bar h-2.5 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-primary" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
 </div>
 </section>
 <!-- HERO IMAGE -->
 <section class="mb-16">
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-2 sm:p-3 overflow-hidden">
-<img alt="Janelas de aplicativos e blocos de código flutuando ao redor de um núcleo luminoso — construir apps com IA, sem gravidade" class="w-full h-auto rounded-xl" height="1024" loading="eager" src="assets/img/hero.png" width="1536"/>
+<img alt="Janelas de aplicativos e blocos de cÃ³digo flutuando ao redor de um nÃºcleo luminoso â€” construir apps com IA, sem gravidade" class="w-full h-auto rounded-xl" height="1024" loading="eager" src="assets/img/hero.png" width="1536"/>
 </div>
-<p class="text-sm text-neutral-500 mt-2">Você comanda; os agentes constroem em paralelo; o resultado vai ao ar.</p>
+<p class="text-sm text-neutral-500 mt-2">VocÃª comanda; os agentes constroem em paralelo; o resultado vai ao ar.</p>
 </section>
 <!-- COMO FUNCIONA -->
 <section class="mb-16">
 <h2 class="text-2xl font-bold mb-6">Como este curso funciona</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">🗣️</div>
-<h3 class="text-lg font-semibold mb-2">Você comanda por linguagem</h3>
-<p class="text-neutral-400 text-sm">Em vez de arrastar blocos ou escrever código à mão, você descreve o que quer. O AntiGravity escreve e edita o código no seu computador.</p>
+<div class="text-3xl mb-3">ðŸ—£ï¸</div>
+<h3 class="text-lg font-semibold mb-2">VocÃª comanda por linguagem</h3>
+<p class="text-neutral-400 text-sm">Em vez de arrastar blocos ou escrever cÃ³digo Ã  mÃ£o, vocÃª descreve o que quer. O AntiGravity escreve e edita o cÃ³digo no seu computador.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">⚡</div>
+<div class="text-3xl mb-3">âš¡</div>
 <h3 class="text-lg font-semibold mb-2">Agentes constroem em paralelo</h3>
-<p class="text-neutral-400 text-sm">Trate os agentes como funcionários: cada um com sua tarefa, rodando ao mesmo tempo. Você revisa e aprova os planos antes de executar.</p>
+<p class="text-neutral-400 text-sm">Trate os agentes como funcionÃ¡rios: cada um com sua tarefa, rodando ao mesmo tempo. VocÃª revisa e aprova os planos antes de executar.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">🚀</div>
+<div class="text-3xl mb-3">ðŸš€</div>
 <h3 class="text-lg font-semibold mb-2">Publique e mantenha</h3>
 <p class="text-neutral-400 text-sm">Do localhost ao mundo: GitHub, deploy na Vercel, chaves protegidas, rollback e QA profissional antes de entregar.</p>
 </div>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
-<p class="text-neutral-300"><strong class="text-primary">Cada módulo traz:</strong> conceitos explicados, passo a passo, um exemplo prático, um exercício mão-na-massa e <strong class="text-neutral-100">prompts prontos para copiar</strong>. Marque cada seção como lida — seu progresso fica salvo no navegador.</p>
+<p class="text-neutral-300"><strong class="text-primary">Cada mÃ³dulo traz:</strong> conceitos explicados, passo a passo, um exemplo prÃ¡tico, um exercÃ­cio mÃ£o-na-massa e <strong class="text-neutral-100">prompts prontos para copiar</strong>. Marque cada seÃ§Ã£o como lida â€” seu progresso fica salvo no navegador.</p>
 </div>
 </section>
 <!-- TRILHAS -->
@@ -305,63 +305,63 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all" href="trilha1/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">🧭</span><span class="inline-block px-2.5 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">TRILHA 1</span></div>
-<div class="text-right" data-inema-meter="trilha:1"><span class="text-xs text-neutral-500" data-inema-meter-frac="">0 de 21</span> <span class="text-emerald-400 font-bold text-sm" data-inema-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ðŸ§­</span><span class="inline-block px-2.5 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">TRILHA 1</span></div>
+<div class="text-right" data-ARCKHÉ-meter="trilha:1"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 de 21</span> <span class="text-emerald-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-emerald-400 transition-colors">Fundamentos</h3>
-<p class="text-neutral-400 text-sm">O que é o AntiGravity, quando usar vs. no-code, e setup completo do ambiente. 3 módulos.</p>
+<p class="text-neutral-400 text-sm">O que Ã© o AntiGravity, quando usar vs. no-code, e setup completo do ambiente. 3 mÃ³dulos.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all" href="trilha2/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">🏗️</span><span class="inline-block px-2.5 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">TRILHA 2</span></div>
-<div class="text-right" data-inema-meter="trilha:2"><span class="text-xs text-neutral-500" data-inema-meter-frac="">0 de 16</span> <span class="text-blue-400 font-bold text-sm" data-inema-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ðŸ—ï¸</span><span class="inline-block px-2.5 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">TRILHA 2</span></div>
+<div class="text-right" data-ARCKHÉ-meter="trilha:2"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 de 16</span> <span class="text-blue-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-blue-400 transition-colors">Construir &amp; Publicar</h3>
-<p class="text-neutral-400 text-sm">Do problema ao primeiro app no localhost, depois deploy seguro e manutenção. 2 módulos.</p>
+<p class="text-neutral-400 text-sm">Do problema ao primeiro app no localhost, depois deploy seguro e manutenÃ§Ã£o. 2 mÃ³dulos.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all" href="trilha3/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">📈</span><span class="inline-block px-2.5 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">TRILHA 3</span></div>
-<div class="text-right" data-inema-meter="trilha:3"><span class="text-xs text-neutral-500" data-inema-meter-frac="">0 de 13</span> <span class="text-purple-400 font-bold text-sm" data-inema-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ðŸ“ˆ</span><span class="inline-block px-2.5 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">TRILHA 3</span></div>
+<div class="text-right" data-ARCKHÉ-meter="trilha:3"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 de 13</span> <span class="text-purple-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
 </div>
-<h3 class="text-xl font-bold mb-1 group-hover:text-purple-400 transition-colors">Escalar a Produção</h3>
-<p class="text-neutral-400 text-sm">Sistema de clonagem para fazer muitos sites e levar tudo para GoHighLevel/WordPress. 2 módulos.</p>
+<h3 class="text-xl font-bold mb-1 group-hover:text-purple-400 transition-colors">Escalar a ProduÃ§Ã£o</h3>
+<p class="text-neutral-400 text-sm">Sistema de clonagem para fazer muitos sites e levar tudo para GoHighLevel/WordPress. 2 mÃ³dulos.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all" href="trilha4/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">💼</span><span class="inline-block px-2.5 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">TRILHA 4</span></div>
-<div class="text-right" data-inema-meter="trilha:4"><span class="text-xs text-neutral-500" data-inema-meter-frac="">0 de 13</span> <span class="text-amber-400 font-bold text-sm" data-inema-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ðŸ’¼</span><span class="inline-block px-2.5 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">TRILHA 4</span></div>
+<div class="text-right" data-ARCKHÉ-meter="trilha:4"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 de 13</span> <span class="text-amber-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-amber-400 transition-colors">Profissionalizar</h3>
-<p class="text-neutral-400 text-sm">Fluxo de trabalho profissional e entrega com QA, segurança e modelo de aplicação. 2 módulos.</p>
+<p class="text-neutral-400 text-sm">Fluxo de trabalho profissional e entrega com QA, seguranÃ§a e modelo de aplicaÃ§Ã£o. 2 mÃ³dulos.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all md:col-span-2" href="trilha5/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">🧠</span><span class="inline-block px-2.5 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">TRILHA 5</span></div>
-<div class="text-right" data-inema-meter="trilha:5"><span class="text-xs text-neutral-500" data-inema-meter-frac="">0 de 14</span> <span class="text-teal-400 font-bold text-sm" data-inema-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ðŸ§ </span><span class="inline-block px-2.5 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">TRILHA 5</span></div>
+<div class="text-right" data-ARCKHÉ-meter="trilha:5"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 de 14</span> <span class="text-teal-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-teal-400 transition-colors">Maestria &amp; Biblioteca</h3>
-<p class="text-neutral-400 text-sm">O framework CODA para codar como profissional e a biblioteca com todas as skills e prompts prontos do curso. 2 módulos.</p>
+<p class="text-neutral-400 text-sm">O framework CODA para codar como profissional e a biblioteca com todas as skills e prompts prontos do curso. 2 mÃ³dulos.</p>
 </a>
 </div>
 </section>
 <!-- BIBLIOTECA -->
 <section class="mb-8">
 <div class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
-<div class="text-3xl mb-3">📦</div>
+<div class="text-3xl mb-3">ðŸ“¦</div>
 <h2 class="text-2xl font-bold mb-3">Biblioteca de Skills &amp; Prompts</h2>
-<p class="text-neutral-300 mb-6 max-w-3xl">Todo o curso vem com os artefatos prontos para baixar e adaptar: a Skill de Clonagem, a Skill de conversão para GoHighLevel, o Ultimate Debugger Prompt, a configuração de MCPs, o template claude.md (CODA) e o checklist de QA Pre-Flight — além de uma biblioteca de prompts para cada etapa.</p>
-<a class="inline-flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white rounded-lg font-semibold transition-colors" href="trilha5/modulo-5-2.html">Ver a biblioteca →</a>
+<p class="text-neutral-300 mb-6 max-w-3xl">Todo o curso vem com os artefatos prontos para baixar e adaptar: a Skill de Clonagem, a Skill de conversÃ£o para GoHighLevel, o Ultimate Debugger Prompt, a configuraÃ§Ã£o de MCPs, o template claude.md (CODA) e o checklist de QA Pre-Flight â€” alÃ©m de uma biblioteca de prompts para cada etapa.</p>
+<a class="inline-flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white rounded-lg font-semibold transition-colors" href="trilha5/modulo-5-2.html">Ver a biblioteca â†’</a>
 </div>
 </section>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — do Zero ao App Publicado com IA · curso aberto por <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” do Zero ao App Publicado com IA Â· curso aberto por <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
-    // Toggle de tópicos (v1)
+    // Toggle de tÃ³picos (v1)
     function toggleTopic(button) {
       const topicItem = button.closest('.topic-item');
       if (!topicItem) return;
@@ -372,7 +372,7 @@
       explanation.classList.toggle('active');
       button.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
     }
-    // Theme toggle (v1) — sincroniza com prefs do learn.js
+    // Theme toggle (v1) â€” sincroniza com prefs do learn.js
     (function () {
       const themeToggle = document.getElementById('theme-toggle');
       const di = document.getElementById('theme-toggle-dark-icon');
@@ -382,11 +382,11 @@
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     // Modal (v1)
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
@@ -395,15 +395,15 @@
   </script>
 <script src="assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

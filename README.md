@@ -1,4 +1,4 @@
-﻿# AntiGravity â€” do Zero ao App Publicado com IA
+# AntiGravity â€” do Zero ao App Publicado com IA
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,11 +6,11 @@
 </div>
 
 
-Curso aberto do **[INEMA.CLUB](https://inema.club)** sobre como construir, publicar e
+Curso aberto do **[ARCKHÉ AI](https://ARCKHÉ AI)** sobre como construir, publicar e
 escalar **aplicaÃ§Ãµes reais com IA** usando o **AntiGravity** (o editor de cÃ³digo com
 agentes da Google). Sem virar programador: vocÃª descreve, os agentes constroem.
 
-ðŸ”— **Acesse o curso:** https://inematds.github.io/antigravity/
+ðŸ”— **Acesse o curso:** https://linnoff88-dev.github.io/
 
 ## O que tem
 
@@ -35,7 +35,7 @@ de leitura, as anotaÃ§Ãµes e as preferÃªncias de tema ficam salvos no seu 
 
 ---
 
-Feito com â¤ï¸ por [INEMA.CLUB](https://inema.club).
+Feito com â¤ï¸ por [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 

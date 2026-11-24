@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Módulo 1.2 · Automação no-code vs. apps com IA | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>MÃ³dulo 1.2 Â· AutomaÃ§Ã£o no-code vs. apps com IA | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .inema-toc-link.is-active { color: #34d399; font-weight: 600; }
+    .ARCKHÉ-toc-link.is-active { color: #34d399; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -182,20 +182,20 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha1/modulo-1-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha1/modulo-1-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha1/modulo-1-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-1-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha1/modulo-1-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha1/modulo-1-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Aparência e leitura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sépia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Confortável</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,21 +244,21 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-emerald-400" href="../index.html">Início</a><span>/</span>
+<a class="hover:text-emerald-400" href="../index.html">InÃ­cio</a><span>/</span>
 <a class="hover:text-emerald-400" href="index.html">Trilha 1</a><span>/</span>
-<span class="text-emerald-400">Módulo 1.2</span>
+<span class="text-emerald-400">MÃ³dulo 1.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÓDULO 1.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">⚖️ Automação no-code vs. apps com IA</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Dois caminhos para resolver problemas com IA: fluxos visuais de passos fixos e construção agentic que escreve código. Quando usar cada um — e por que dominar os dois te deixa imbatível.</p>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 1.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">âš–ï¸ AutomaÃ§Ã£o no-code vs. apps com IA</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Dois caminhos para resolver problemas com IA: fluxos visuais de passos fixos e construÃ§Ã£o agentic que escreve cÃ³digo. Quando usar cada um â€” e por que dominar os dois te deixa imbatÃ­vel.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">35</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Básico</div><div class="text-xs text-neutral-400">Nível</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">BÃ¡sico</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">Teoria</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
@@ -266,43 +266,43 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Índice da página" class="hidden lg:block sticky top-20 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-2">Seção <span data-inema-section-counter="">1 de 6</span></p>
+<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 6</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Automação determinística</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Construção agentic</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Tudo é JSON por baixo</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Qual ferramenta usar</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Por que aprender os dois</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. IKEA vs. construir do zero</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. AutomaÃ§Ã£o determinÃ­stica</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. ConstruÃ§Ã£o agentic</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. Tudo Ã© JSON por baixo</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Qual ferramenta usar</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. Por que aprender os dois</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. IKEA vs. construir do zero</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-inema-meter="modulo:1-2"><span class="text-neutral-400" data-inema-meter-frac="">0 de 6</span> · <span class="text-emerald-400 font-bold" data-inema-meter-pct="">0%</span><div class="inema-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="inema-bar__fill h-full rounded-full bg-emerald-500" data-inema-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHÉ-meter="modulo:1-2"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 6</span> Â· <span class="text-emerald-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-emerald-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-inema-module="1-2" data-inema-track="1">
-<!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHÉ-module="1-2" data-ARCKHÉ-track="1">
+<!-- TÃ“PICO 1 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">🔁 Automação determinística (Make/n8n)</h2>
+<h2 class="text-2xl font-bold">ðŸ” AutomaÃ§Ã£o determinÃ­stica (Make/n8n)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t1-p1">A <strong class="text-emerald-400">automação determinística</strong> é um fluxo de passos fixos: você desenha visualmente uma sequência que sempre acontece na mesma ordem — <strong class="text-neutral-100">gatilho → ação → ação</strong>. Ferramentas como Make e n8n são feitas exatamente para isso: arrastar blocos e conectá-los.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t1-p1">A <strong class="text-emerald-400">automaÃ§Ã£o determinÃ­stica</strong> Ã© um fluxo de passos fixos: vocÃª desenha visualmente uma sequÃªncia que sempre acontece na mesma ordem â€” <strong class="text-neutral-100">gatilho â†’ aÃ§Ã£o â†’ aÃ§Ã£o</strong>. Ferramentas como Make e n8n sÃ£o feitas exatamente para isso: arrastar blocos e conectÃ¡-los.</p>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">🧭</span> Conceito principal</h3>
-<p class="text-neutral-300 mb-4">"Determinístico" quer dizer <strong>sem surpresas</strong>: o mesmo gatilho sempre dispara os mesmos passos. Você não pede para a ferramenta "pensar" — você desenha o caminho inteiro de antemão.</p>
+<h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> Conceito principal</h3>
+<p class="text-neutral-300 mb-4">"DeterminÃ­stico" quer dizer <strong>sem surpresas</strong>: o mesmo gatilho sempre dispara os mesmos passos. VocÃª nÃ£o pede para a ferramenta "pensar" â€” vocÃª desenha o caminho inteiro de antemÃ£o.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">•</span><span><strong>Gatilho</strong> — o que dá a partida (um formulário enviado, um horário, uma nova linha numa planilha).</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">•</span><span><strong>Módulos</strong> — cada bloco que faz uma coisa (enviar e-mail, salvar registro, chamar uma API).</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">•</span><span><strong>Webhook</strong> — um endereço que recebe dados de fora e inicia o fluxo na hora.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span><strong>Gatilho</strong> â€” o que dÃ¡ a partida (um formulÃ¡rio enviado, um horÃ¡rio, uma nova linha numa planilha).</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span><strong>MÃ³dulos</strong> â€” cada bloco que faz uma coisa (enviar e-mail, salvar registro, chamar uma API).</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span><strong>Webhook</strong> â€” um endereÃ§o que recebe dados de fora e inicia o fluxo na hora.</span></li>
 </ul>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Fluxo determinístico: um gatilho dispara módulos em sequência fixa — receber dados, transformar e enviar — sempre na mesma ordem" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="Fluxo determinÃ­stico: um gatilho dispara mÃ³dulos em sequÃªncia fixa â€” receber dados, transformar e enviar â€” sempre na mesma ordem" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m12-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#34d399"></stop><stop offset="1" stop-color="#10b981"></stop></lineargradient>
 <filter height="180%" id="m12-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -319,88 +319,88 @@
 <text fill="#34d399" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="136" y="96">Gatilho</text>
 <text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="136" y="116">form enviado</text>
 <rect fill="#0e2018" height="60" rx="14" stroke="#34d399" stroke-width="2" width="188" x="286" y="70"></rect>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="380" y="96">Módulo 1</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="380" y="96">MÃ³dulo 1</text>
 <text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="380" y="116">transforma dado</text>
 <rect fill="#0e2018" height="60" rx="14" stroke="#34d399" stroke-width="2" width="188" x="528" y="70"></rect>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="622" y="96">Módulo 2</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="622" y="96">MÃ³dulo 2</text>
 <text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="622" y="116">salva registro</text>
 <rect fill="#0e1b26" height="60" rx="14" stroke="#38bdf8" stroke-width="2" width="190" x="770" y="70"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="865" y="96">Ação final</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="865" y="96">AÃ§Ã£o final</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="865" y="116">envia e-mail</text>
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Dica prática</h3>
-<p class="text-neutral-300">Se você consegue desenhar a tarefa inteira numa folha como uma sequência de setas que nunca muda, ela é candidata perfeita para no-code. Barato, rápido e fácil de manter.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
+<p class="text-neutral-300">Se vocÃª consegue desenhar a tarefa inteira numa folha como uma sequÃªncia de setas que nunca muda, ela Ã© candidata perfeita para no-code. Barato, rÃ¡pido e fÃ¡cil de manter.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Gatilho</div><p class="text-xs text-neutral-400">a partida</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Módulos</div><p class="text-xs text-neutral-400">blocos de ação</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">MÃ³dulos</div><p class="text-xs text-neutral-400">blocos de aÃ§Ã£o</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Webhook</div><p class="text-xs text-neutral-400">dados de fora</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Fixo</div><p class="text-xs text-neutral-400">sempre igual</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-2" id="topico-2">
+<!-- TÃ“PICO 2 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">🤖 Construção agentic (AntiGravity)</h2>
+<h2 class="text-2xl font-bold">ðŸ¤– ConstruÃ§Ã£o agentic (AntiGravity)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t2-p1">Na <strong class="text-emerald-400">construção agentic</strong>, você não desenha o caminho: você descreve o <strong class="text-neutral-100">objetivo</strong>. A IA então escreve o código, roda, vê o erro que apareceu e corrige sozinha — repetindo o ciclo até funcionar. É raciocínio, não roteiro.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t2-p1">Na <strong class="text-emerald-400">construÃ§Ã£o agentic</strong>, vocÃª nÃ£o desenha o caminho: vocÃª descreve o <strong class="text-neutral-100">objetivo</strong>. A IA entÃ£o escreve o cÃ³digo, roda, vÃª o erro que apareceu e corrige sozinha â€” repetindo o ciclo atÃ© funcionar. Ã‰ raciocÃ­nio, nÃ£o roteiro.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Você descreve o objetivo</h4>
-<p class="text-neutral-300 text-sm">"Quero um app que receba uma planilha e gere um relatório resumido." Sem dizer como — só o quê.</p>
+<h4 class="font-semibold text-white mb-2">VocÃª descreve o objetivo</h4>
+<p class="text-neutral-300 text-sm">"Quero um app que receba uma planilha e gere um relatÃ³rio resumido." Sem dizer como â€” sÃ³ o quÃª.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">A IA escreve e testa</h4>
-<p class="text-neutral-300 text-sm">Ela gera o código, executa o projeto e observa o resultado real — como um desenvolvedor faria.</p>
+<p class="text-neutral-300 text-sm">Ela gera o cÃ³digo, executa o projeto e observa o resultado real â€” como um desenvolvedor faria.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl p-6 border border-emerald-500/30">
-<h4 class="font-semibold text-emerald-400 mb-2">Vê o erro e corrige</h4>
-<p class="text-neutral-300 text-sm">Se algo quebra, ela lê a mensagem de erro, ajusta o código e tenta de novo. Esse loop é o que destrava problemas complexos.</p>
+<h4 class="font-semibold text-emerald-400 mb-2">VÃª o erro e corrige</h4>
+<p class="text-neutral-300 text-sm">Se algo quebra, ela lÃª a mensagem de erro, ajusta o cÃ³digo e tenta de novo. Esse loop Ã© o que destrava problemas complexos.</p>
 </div>
 </div>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Por isso a funcionalidade é praticamente <strong class="text-emerald-400">ilimitada</strong>: como a saída é código de verdade, você não esbarra nos limites de um conjunto fechado de blocos. Se dá para programar, dá para construir.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Por isso a funcionalidade Ã© praticamente <strong class="text-emerald-400">ilimitada</strong>: como a saÃ­da Ã© cÃ³digo de verdade, vocÃª nÃ£o esbarra nos limites de um conjunto fechado de blocos. Se dÃ¡ para programar, dÃ¡ para construir.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Objetivo</div><p class="text-xs text-neutral-400">você descreve</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Objetivo</div><p class="text-xs text-neutral-400">vocÃª descreve</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Escreve</div><p class="text-xs text-neutral-400">a IA codifica</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Corrige</div><p class="text-xs text-neutral-400">testa e ajusta</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Ilimitado</div><p class="text-xs text-neutral-400">sem blocos fixos</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-3" id="topico-3">
+<!-- TÃ“PICO 3 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">📦 "Tudo é JSON por baixo"</h2>
+<h2 class="text-2xl font-bold">ðŸ“¦ "Tudo Ã© JSON por baixo"</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t3-p1">Aqui vai um segredo que desmistifica tudo: aquela tela bonita de arrastar blocos é só uma <strong class="text-emerald-400">interface por cima de código</strong>. Por baixo, o fluxo inteiro é descrito em <strong class="text-neutral-100">JSON</strong> — um formato de texto estruturado que lista cada bloco e cada ligação.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t3-p1">Aqui vai um segredo que desmistifica tudo: aquela tela bonita de arrastar blocos Ã© sÃ³ uma <strong class="text-emerald-400">interface por cima de cÃ³digo</strong>. Por baixo, o fluxo inteiro Ã© descrito em <strong class="text-neutral-100">JSON</strong> â€” um formato de texto estruturado que lista cada bloco e cada ligaÃ§Ã£o.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">o mesmo fluxo, em JSON</span></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">{
@@ -412,222 +412,222 @@
   ]
 }</pre>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">Na prática, você consegue <strong class="text-emerald-400">copiar um workflow</strong> de uma ferramenta visual e colar — e o que viaja é justamente esse JSON. Ou seja: você já mexia com "código" sem perceber. Isso derruba o medo de descer uma camada e trabalhar mais perto da fundação.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">Na prÃ¡tica, vocÃª consegue <strong class="text-emerald-400">copiar um workflow</strong> de uma ferramenta visual e colar â€” e o que viaja Ã© justamente esse JSON. Ou seja: vocÃª jÃ¡ mexia com "cÃ³digo" sem perceber. Isso derruba o medo de descer uma camada e trabalhar mais perto da fundaÃ§Ã£o.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🔍</span> Experimente</h3>
-<p class="text-neutral-300">Numa ferramenta no-code, copie um cenário e cole num editor de texto. Você vai ver a estrutura em JSON. Não precisa entender cada linha — basta perceber que "código" é só texto organizado.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”</span> Experimente</h3>
+<p class="text-neutral-300">Numa ferramenta no-code, copie um cenÃ¡rio e cole num editor de texto. VocÃª vai ver a estrutura em JSON. NÃ£o precisa entender cada linha â€” basta perceber que "cÃ³digo" Ã© sÃ³ texto organizado.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Interface</div><p class="text-xs text-neutral-400">a tela bonita</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">JSON</div><p class="text-xs text-neutral-400">o texto por trás</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Copiar</div><p class="text-xs text-neutral-400">vê a estrutura</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">JSON</div><p class="text-xs text-neutral-400">o texto por trÃ¡s</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Copiar</div><p class="text-xs text-neutral-400">vÃª a estrutura</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Desmistifica</div><p class="text-xs text-neutral-400">menos medo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-4" id="topico-4">
+<!-- TÃ“PICO 4 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">🎯 Qual ferramenta para qual problema</h2>
+<h2 class="text-2xl font-bold">ðŸŽ¯ Qual ferramenta para qual problema</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t4-p1">Não existe ferramenta "melhor" no abstrato — existe a <strong class="text-emerald-400">certa para o problema</strong>. Duas perguntas resolvem quase toda dúvida: <strong class="text-neutral-100">"isso muda?"</strong> e <strong class="text-neutral-100">"precisa de tela própria?"</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t4-p1">NÃ£o existe ferramenta "melhor" no abstrato â€” existe a <strong class="text-emerald-400">certa para o problema</strong>. Duas perguntas resolvem quase toda dÃºvida: <strong class="text-neutral-100">"isso muda?"</strong> e <strong class="text-neutral-100">"precisa de tela prÃ³pria?"</strong>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ Use no-code quando</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ Use no-code quando</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>A tarefa é simples e estável</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Os passos são sempre os mesmos</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Não precisa de interface própria</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Rapidez vale mais que customização</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>A tarefa Ã© simples e estÃ¡vel</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Os passos sÃ£o sempre os mesmos</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>NÃ£o precisa de interface prÃ³pria</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Rapidez vale mais que customizaÃ§Ã£o</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Prefira app agentic quando</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Prefira app agentic quando</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>O problema é complexo e muda</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>A lógica é própria e não-trivial</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Você precisa de uma tela sob medida</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Controle total importa mais que pressa</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>O problema Ã© complexo e muda</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A lÃ³gica Ã© prÃ³pria e nÃ£o-trivial</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>VocÃª precisa de uma tela sob medida</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Controle total importa mais que pressa</span></li>
 </ul>
 </div>
 </div>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
-<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Pergunta</th><th class="text-left p-3">Se NÃO</th><th class="text-left p-3">Se SIM</th></tr></thead>
+<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Pergunta</th><th class="text-left p-3">Se NÃƒO</th><th class="text-left p-3">Se SIM</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-neutral-300">Isso muda com o tempo?</td><td class="p-3 text-emerald-400">→ no-code</td><td class="p-3">→ app agentic</td></tr>
-<tr><td class="p-3 text-neutral-300">Precisa de tela própria?</td><td class="p-3 text-emerald-400">→ no-code</td><td class="p-3">→ app agentic</td></tr>
-<tr><td class="p-3 text-neutral-300">A lógica é complexa?</td><td class="p-3 text-emerald-400">→ no-code</td><td class="p-3">→ app agentic</td></tr>
+<tr><td class="p-3 text-neutral-300">Isso muda com o tempo?</td><td class="p-3 text-emerald-400">â†’ no-code</td><td class="p-3">â†’ app agentic</td></tr>
+<tr><td class="p-3 text-neutral-300">Precisa de tela prÃ³pria?</td><td class="p-3 text-emerald-400">â†’ no-code</td><td class="p-3">â†’ app agentic</td></tr>
+<tr><td class="p-3 text-neutral-300">A lÃ³gica Ã© complexa?</td><td class="p-3 text-emerald-400">â†’ no-code</td><td class="p-3">â†’ app agentic</td></tr>
 </tbody>
 </table>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Muda?</div><p class="text-xs text-neutral-400">a 1ª pergunta</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Tela?</div><p class="text-xs text-neutral-400">a 2ª pergunta</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Estável</div><p class="text-xs text-neutral-400">→ no-code</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Próprio</div><p class="text-xs text-neutral-400">→ app</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Muda?</div><p class="text-xs text-neutral-400">a 1Âª pergunta</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Tela?</div><p class="text-xs text-neutral-400">a 2Âª pergunta</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">EstÃ¡vel</div><p class="text-xs text-neutral-400">â†’ no-code</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">PrÃ³prio</div><p class="text-xs text-neutral-400">â†’ app</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-5" id="topico-5">
+<!-- TÃ“PICO 5 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">🧩 Por que aprender os dois</h2>
+<h2 class="text-2xl font-bold">ðŸ§© Por que aprender os dois</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t5-p1">No-code e construção agentic não competem — eles se <strong class="text-emerald-400">completam</strong>. Quem entende como um fluxo de passos funciona dirige melhor um agente (sabe o que pedir e em que ordem). E quem já construiu um app entende melhor onde um fluxo simples já basta.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t5-p1">No-code e construÃ§Ã£o agentic nÃ£o competem â€” eles se <strong class="text-emerald-400">completam</strong>. Quem entende como um fluxo de passos funciona dirige melhor um agente (sabe o que pedir e em que ordem). E quem jÃ¡ construiu um app entende melhor onde um fluxo simples jÃ¡ basta.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ Saber no-code ajuda no agentic</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ Saber no-code ajuda no agentic</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Você pensa em etapas claras</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Descreve o objetivo com mais precisão</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Reconhece gatilhos e ações</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>VocÃª pensa em etapas claras</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Descreve o objetivo com mais precisÃ£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Reconhece gatilhos e aÃ§Ãµes</span></li>
 </ul>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">✓ Saber agentic ajuda no no-code</h4>
+<h4 class="font-bold text-emerald-400 mb-4">âœ“ Saber agentic ajuda no no-code</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Você enxerge o limite do fluxo fixo</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Sabe a hora de "subir o nível"</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Não força um app onde não precisa</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>VocÃª enxerge o limite do fluxo fixo</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Sabe a hora de "subir o nÃ­vel"</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>NÃ£o forÃ§a um app onde nÃ£o precisa</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🔌</span> Eles também se conectam</h3>
-<p class="text-neutral-300">Os dois mundos conversam via <strong>MCP</strong> (um padrão que liga ferramentas e agentes). Um app que você construiu pode ser acionado por um fluxo no-code — e vice-versa. Repertório maior = mais soluções na manga.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”Œ</span> Eles tambÃ©m se conectam</h3>
+<p class="text-neutral-300">Os dois mundos conversam via <strong>MCP</strong> (um padrÃ£o que liga ferramentas e agentes). Um app que vocÃª construiu pode ser acionado por um fluxo no-code â€” e vice-versa. RepertÃ³rio maior = mais soluÃ§Ãµes na manga.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Complementar</div><p class="text-xs text-neutral-400">não competem</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Complementar</div><p class="text-xs text-neutral-400">nÃ£o competem</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Dirigir</div><p class="text-xs text-neutral-400">pensa em etapas</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Repertório</div><p class="text-xs text-neutral-400">mais soluções</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">MCP</div><p class="text-xs text-neutral-400">integração</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">RepertÃ³rio</div><p class="text-xs text-neutral-400">mais soluÃ§Ãµes</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">MCP</div><p class="text-xs text-neutral-400">integraÃ§Ã£o</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-1-2#topico-6" id="topico-6">
+<!-- TÃ“PICO 6 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-1-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">🏠 IKEA vs. construir do zero</h2>
+<h2 class="text-2xl font-bold">ðŸ  IKEA vs. construir do zero</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m1-2-t6-p1">Uma analogia fecha a ideia: os <strong class="text-emerald-400">vibe coders de nuvem</strong> (plataformas que constroem e hospedam por você) são como uma <strong class="text-neutral-100">casa da IKEA</strong>. Vêm prontas e rápidas de montar — mas com estruturas fixas. Já construir no <strong class="text-emerald-400">ambiente local</strong> é erguer a casa do jeito que você quiser, parede por parede.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-2-t6-p1">Uma analogia fecha a ideia: os <strong class="text-emerald-400">vibe coders de nuvem</strong> (plataformas que constroem e hospedam por vocÃª) sÃ£o como uma <strong class="text-neutral-100">casa da IKEA</strong>. VÃªm prontas e rÃ¡pidas de montar â€” mas com estruturas fixas. JÃ¡ construir no <strong class="text-emerald-400">ambiente local</strong> Ã© erguer a casa do jeito que vocÃª quiser, parede por parede.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">🏠 Casa da IKEA (nuvem)</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ðŸ  Casa da IKEA (nuvem)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>Pronta e rápida — começa em minutos</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>Não precisa cuidar da fundação</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">−</span><span>Estruturas fixas — só dá para mexer até certo ponto</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">−</span><span>Você depende da plataforma</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>Pronta e rÃ¡pida â€” comeÃ§a em minutos</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>NÃ£o precisa cuidar da fundaÃ§Ã£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âˆ’</span><span>Estruturas fixas â€” sÃ³ dÃ¡ para mexer atÃ© certo ponto</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âˆ’</span><span>VocÃª depende da plataforma</span></li>
 </ul>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">🧱 Construir do zero (local)</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ðŸ§± Construir do zero (local)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>Controle total — qualquer planta é possível</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>O código é seu, fica na sua máquina</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">−</span><span>Exige mais do construtor (você + a IA)</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">−</span><span>Menos "pronto de fábrica"</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>Controle total â€” qualquer planta Ã© possÃ­vel</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">+</span><span>O cÃ³digo Ã© seu, fica na sua mÃ¡quina</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âˆ’</span><span>Exige mais do construtor (vocÃª + a IA)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âˆ’</span><span>Menos "pronto de fÃ¡brica"</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">⚖️</span> O trade-off em uma frase</h3>
-<p class="text-neutral-300">Conveniência de um lado, controle do outro. Não há resposta única: comece pela IKEA quando quiser velocidade; vá para o local quando bater no teto das estruturas fixas.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âš–ï¸</span> O trade-off em uma frase</h3>
+<p class="text-neutral-300">ConveniÃªncia de um lado, controle do outro. NÃ£o hÃ¡ resposta Ãºnica: comece pela IKEA quando quiser velocidade; vÃ¡ para o local quando bater no teto das estruturas fixas.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">IKEA</div><p class="text-xs text-neutral-400">nuvem pronta</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Do zero</div><p class="text-xs text-neutral-400">local livre</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Conveniência</div><p class="text-xs text-neutral-400">rapidez</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">ConveniÃªncia</div><p class="text-xs text-neutral-400">rapidez</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Controle</div><p class="text-xs text-neutral-400">liberdade total</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÁTICO -->
+<!-- EXEMPLO PRÃTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🔬</span> Exemplo prático</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">A mesma ideia — <strong class="text-emerald-400">"avisar quando um preço cair"</strong> — pode morar em camadas diferentes, dependendo do que você quer entregar:</p>
+<p class="text-neutral-300 mb-4">A mesma ideia â€” <strong class="text-emerald-400">"avisar quando um preÃ§o cair"</strong> â€” pode morar em camadas diferentes, dependendo do que vocÃª quer entregar:</p>
 <ul class="space-y-2 text-neutral-300 mb-4">
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">1.</span><span><strong>Só notificar?</strong> "Verificou o preço → mandou uma mensagem." Passos fixos → <strong>no-code</strong> resolve.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">2.</span><span><strong>Quer um painel com login, histórico e gráfico?</strong> Isso é uma tela própria com lógica própria → <strong>app local (agentic)</strong>.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">1.</span><span><strong>SÃ³ notificar?</strong> "Verificou o preÃ§o â†’ mandou uma mensagem." Passos fixos â†’ <strong>no-code</strong> resolve.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">2.</span><span><strong>Quer um painel com login, histÃ³rico e grÃ¡fico?</strong> Isso Ã© uma tela prÃ³pria com lÃ³gica prÃ³pria â†’ <strong>app local (agentic)</strong>.</span></li>
 </ul>
-<p class="text-neutral-400 text-sm">Repare: não é a ideia que decide a ferramenta — é o nível de complexidade e se você precisa de interface própria.</p>
+<p class="text-neutral-400 text-sm">Repare: nÃ£o Ã© a ideia que decide a ferramenta â€” Ã© o nÃ­vel de complexidade e se vocÃª precisa de interface prÃ³pria.</p>
 </div>
 </section>
-<!-- EXERCÍCIO -->
+<!-- EXERCÃCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🏋️</span> Exercício</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6">
-<p class="text-neutral-300 mb-4">Pegue uma <strong class="text-emerald-400">automação que você faria no Make</strong> (algo simples e fixo) e descreva como um <strong class="text-emerald-400">app agentic</strong> faria diferente. Para cada versão, responda:</p>
+<p class="text-neutral-300 mb-4">Pegue uma <strong class="text-emerald-400">automaÃ§Ã£o que vocÃª faria no Make</strong> (algo simples e fixo) e descreva como um <strong class="text-emerald-400">app agentic</strong> faria diferente. Para cada versÃ£o, responda:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
-<li>O que o app <strong>ganha</strong> em relação ao fluxo no-code (tela, histórico, flexibilidade)?</li>
-<li>O que ele <strong>custa</strong> a mais (tempo de construção, manutenção, complexidade)?</li>
-<li>No fim: vale a pena subir de camada, ou o fluxo simples já basta?</li>
+<li>O que o app <strong>ganha</strong> em relaÃ§Ã£o ao fluxo no-code (tela, histÃ³rico, flexibilidade)?</li>
+<li>O que ele <strong>custa</strong> a mais (tempo de construÃ§Ã£o, manutenÃ§Ã£o, complexidade)?</li>
+<li>No fim: vale a pena subir de camada, ou o fluxo simples jÃ¡ basta?</li>
 </ol>
-<p class="text-neutral-400 text-sm">Esse exercício treina o reflexo de escolher a ferramenta certa antes de começar a construir.</p>
+<p class="text-neutral-400 text-sm">Esse exercÃ­cio treina o reflexo de escolher a ferramenta certa antes de comeÃ§ar a construir.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">⚡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">comparar as duas abordagens</span><button class="text-xs px-2 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Compare como "[tarefa]" seria feita como fluxo no-code (Make/n8n)
 vs. como app agentic (um IDE com agentes de IA).
-Liste prós e contras de cada abordagem em tópicos curtos
-e termine recomendando qual usar e por quê.</pre>
+Liste prÃ³s e contras de cada abordagem em tÃ³picos curtos
+e termine recomendando qual usar e por quÃª.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">explicar com analogia</span><button class="text-xs px-2 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Sou iniciante. Explique, com uma analogia simples, a diferença entre
-automação determinística (passos fixos, tipo Make/n8n) e construção agentic
-(a IA escreve e corrige o código). Use o contexto de "[meu negócio]".</pre>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Sou iniciante. Explique, com uma analogia simples, a diferenÃ§a entre
+automaÃ§Ã£o determinÃ­stica (passos fixos, tipo Make/n8n) e construÃ§Ã£o agentic
+(a IA escreve e corrige o cÃ³digo). Use o contexto de "[meu negÃ³cio]".</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Determinístico</strong><span class="text-neutral-400"> — fluxo visual de passos fixos (gatilho → ação); barato e simples para o que é previsível.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Agentic</strong><span class="text-neutral-400"> — você descreve o objetivo, a IA escreve, testa e corrige; funcionalidade ilimitada.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Tudo é JSON por baixo</strong><span class="text-neutral-400"> — a tela visual é só interface sobre código; isso desmistifica "programar".</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">✓</span><div><strong class="text-white">Escolha pela pergunta</strong><span class="text-neutral-400"> — "isso muda? precisa de tela?"; e aprender os dois aumenta seu repertório.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">DeterminÃ­stico</strong><span class="text-neutral-400"> â€” fluxo visual de passos fixos (gatilho â†’ aÃ§Ã£o); barato e simples para o que Ã© previsÃ­vel.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Agentic</strong><span class="text-neutral-400"> â€” vocÃª descreve o objetivo, a IA escreve, testa e corrige; funcionalidade ilimitada.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Tudo Ã© JSON por baixo</strong><span class="text-neutral-400"> â€” a tela visual Ã© sÃ³ interface sobre cÃ³digo; isso desmistifica "programar".</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Escolha pela pergunta</strong><span class="text-neutral-400"> â€” "isso muda? precisa de tela?"; e aprender os dois aumenta seu repertÃ³rio.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-emerald-400 mb-2">Próximo módulo:</h3><p class="text-neutral-300">1.3 — Setup completo do ambiente</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-emerald-400 mb-2">PrÃ³ximo mÃ³dulo:</h3><p class="text-neutral-300">1.3 â€” Setup completo do ambiente</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-1-1.html">← Módulo anterior</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">Próximo Módulo →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-1-1.html">â† MÃ³dulo anterior</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="modulo-1-3.html">PrÃ³ximo MÃ³dulo â†’</a>
 </div>
 </div>
 </section>
@@ -636,7 +636,7 @@ automação determinística (passos fixos, tipo Make/n8n) e construção agentic
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — do Zero ao App Publicado com IA · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -659,11 +659,11 @@ automação determinística (passos fixos, tipo Make/n8n) e construção agentic
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -671,22 +671,22 @@ automação determinística (passos fixos, tipo Make/n8n) e construção agentic
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = '✓ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

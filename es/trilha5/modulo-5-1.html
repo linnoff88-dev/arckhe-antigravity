@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Módulo 5.1 · CODA &amp; Claude Code | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>MÃ³dulo 5.1 Â· CODA &amp; Claude Code | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .inema-toc-link.is-active { color: #2dd4bf; font-weight: 600; }
+    .ARCKHÉ-toc-link.is-active { color: #2dd4bf; font-weight: 600; }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -182,8 +182,8 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha5/modulo-5-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha5/modulo-5-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha5/modulo-5-1.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha5/modulo-5-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha5/modulo-5-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-5-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha5/modulo-5-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha5/modulo-5-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-5-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -191,47 +191,47 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Escalar</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profesional</span></a>
-<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-teal-400 bg-teal-500/10" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestría</span></a>
+<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-teal-400 bg-teal-500/10" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrÃ­a</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Oscuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Enfoque</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Oscuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Enfoque</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Lectura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Lectura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamaño</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">TamaÃ±o</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Cómodo</button>
+<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">CÃ³modo</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Trayectoria</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Trayectoria</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -246,64 +246,64 @@
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-teal-400" href="../index.html">Inicio</a><span>/</span>
 <a class="hover:text-teal-400" href="index.html">Ruta 5</a><span>/</span>
-<span class="text-teal-400">Módulo 5.1</span>
+<span class="text-teal-400">MÃ³dulo 5.1</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">MÓDULO 5.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">✈️ CODA y Claude Code</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">El método profesional para programar con IA. Separa el IDE (el cazador) del modelo (el piloto) y recorre las cinco etapas: Configure, Outline, Deploy, Automation y Review.</p>
+<span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 5.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">âœˆï¸ CODA y Claude Code</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">El mÃ©todo profesional para programar con IA. Separa el IDE (el cazador) del modelo (el piloto) y recorre las cinco etapas: Configure, Outline, Deploy, Automation y Review.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">7</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">60</div><div class="text-xs text-neutral-400">Minutos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">Avanzado</div><div class="text-xs text-neutral-400">Nivel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">Método</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">MÃ©todo</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Índice de la página" class="hidden lg:block sticky top-20 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-2">Sección <span data-inema-section-counter="">1 de 7</span></p>
+<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-2">SecciÃ³n <span data-ARCKHÉ-section-counter="">1 de 7</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-1">1. Búsqueda y piloto</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-2">2. C — Configura</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-3">3. O — Esquematiza</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-4">4. D — Deploy</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-5">5. A — Automation</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-6">6. R — Review</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-teal-400" href="#topico-7">7. Menos es más</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-1">1. BÃºsqueda y piloto</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-2">2. C â€” Configura</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-3">3. O â€” Esquematiza</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-4">4. D â€” Deploy</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-5">5. A â€” Automation</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-6">6. R â€” Review</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-7">7. Menos es mÃ¡s</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-inema-meter="modulo:5-1"><span class="text-neutral-400" data-inema-meter-frac="">0 de 7</span> · <span class="text-teal-400 font-bold" data-inema-meter-pct="">0%</span><div class="inema-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="inema-bar__fill h-full rounded-full bg-teal-500" data-inema-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHÉ-meter="modulo:5-1"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 7</span> Â· <span class="text-teal-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-teal-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-inema-module="5-1" data-inema-track="5">
-<!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHÉ-module="5-1" data-ARCKHÉ-track="5">
+<!-- TÃ“PICO 1 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">✈️ El IDE es el caza, el modelo es el piloto</h2>
+<h2 class="text-2xl font-bold">âœˆï¸ El IDE es el caza, el modelo es el piloto</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t1-p1">Antes que nada, una analogía que organiza todo: el <strong class="text-teal-400">IDE</strong> (AntiGravity, Cursor) es el <strong class="text-neutral-100">caza</strong> — la máquina donde vuelas. El <strong class="text-teal-400">modelo</strong> (Claude Code, Gemini) es el <strong class="text-neutral-100">piloto</strong> — el cerebro que toma las decisiones. Y el punto central: <strong class="text-teal-400">tú cambias de piloto según el objetivo de la misión</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t1-p1">Antes que nada, una analogÃ­a que organiza todo: el <strong class="text-teal-400">IDE</strong> (AntiGravity, Cursor) es el <strong class="text-neutral-100">caza</strong> â€” la mÃ¡quina donde vuelas. El <strong class="text-teal-400">modelo</strong> (Claude Code, Gemini) es el <strong class="text-neutral-100">piloto</strong> â€” el cerebro que toma las decisiones. Y el punto central: <strong class="text-teal-400">tÃº cambias de piloto segÃºn el objetivo de la misiÃ³n</strong>.</p>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-teal-400 mb-4 flex items-center"><span class="mr-2">🧭</span> La idea central</h3>
-<p class="text-neutral-300 mb-4">Separar la <strong>herramienta</strong> (el cazador) de <strong>cerebro</strong> (el piloto) es liberador: tu habilidad no queda atada a un producto. Si un modelo es mejor en diseño y otro en razonamiento, eliges al piloto adecuado para el vuelo.</p>
+<h3 class="text-lg font-semibold text-teal-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> La idea central</h3>
+<p class="text-neutral-300 mb-4">Separar la <strong>herramienta</strong> (el cazador) de <strong>cerebro</strong> (el piloto) es liberador: tu habilidad no queda atada a un producto. Si un modelo es mejor en diseÃ±o y otro en razonamiento, eliges al piloto adecuado para el vuelo.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">•</span><span>O <strong>caza</strong> no decide nada por sí solo: te da los instrumentos y la cabina de mando.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">•</span><span>O <strong>piloto</strong> razona, escribe y corrige, y se puede cambiar en cualquier momento.</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">•</span><span><strong>Ningún piloto despega sin una lista de verificación</strong> — es exactamente lo que es el framework CODA.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">â€¢</span><span>O <strong>caza</strong> no decide nada por sÃ­ solo: te da los instrumentos y la cabina de mando.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">â€¢</span><span>O <strong>piloto</strong> razona, escribe y corrige, y se puede cambiar en cualquier momento.</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">â€¢</span><span><strong>NingÃºn piloto despega sin una lista de verificaciÃ³n</strong> â€” es exactamente lo que es el framework CODA.</span></li>
 </ul>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="El IDE es el avión de combate que admite distintos pilotos: conectas el modelo Claude Code o el modelo Gemini según el objetivo de la misión" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="El IDE es el aviÃ³n de combate que admite distintos pilotos: conectas el modelo Claude Code o el modelo Gemini segÃºn el objetivo de la misiÃ³n" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="m51-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#2dd4bf"></stop><stop offset="1" stop-color="#14b8a6"></stop></lineargradient>
 <filter height="180%" id="m51-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -316,138 +316,138 @@
 <path d="M548,140 C640,140 660,160 740,160" marker-end="url(#m51-ah)"></path>
 </g>
 <g filter="url(#m51-glow)"><rect fill="#0c1f1c" height="60" rx="14" stroke="url(#m51-grad)" stroke-width="2.5" width="248" x="300" y="80"></rect></g>
-<text fill="#2dd4bf" font-family="Inter,sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="424" y="106">🛩️ IDE (el caza)</text>
-<text fill="#99f6e4" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="424" y="126">AntiGravity · Cursor</text>
+<text fill="#2dd4bf" font-family="Inter,sans-serif" font-size="17" font-weight="700" text-anchor="middle" x="424" y="106">ðŸ›©ï¸ IDE (el caza)</text>
+<text fill="#99f6e4" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="424" y="126">AntiGravity Â· Cursor</text>
 <g font-family="Inter,sans-serif" font-size="14" font-weight="600">
-<g><rect fill="#0c1f1c" height="44" rx="12" stroke="#14b8a6" stroke-width="2" width="230" x="740" y="40"></rect><text fill="#2dd4bf" text-anchor="middle" x="855" y="61">👨‍✈️ Claude Code</text><text fill="#99f6e4" font-size="11" text-anchor="middle" x="855" y="77">razonamiento / código</text></g>
-<g><rect fill="#0c1f1c" height="44" rx="12" stroke="#14b8a6" stroke-width="2" width="230" x="740" y="140"></rect><text fill="#2dd4bf" text-anchor="middle" x="855" y="161">👩‍✈️ Gemini</text><text fill="#99f6e4" font-size="11" text-anchor="middle" x="855" y="177">diseño / multimodal</text></g>
+<g><rect fill="#0c1f1c" height="44" rx="12" stroke="#14b8a6" stroke-width="2" width="230" x="740" y="40"></rect><text fill="#2dd4bf" text-anchor="middle" x="855" y="61">ðŸ‘¨â€âœˆï¸ Claude Code</text><text fill="#99f6e4" font-size="11" text-anchor="middle" x="855" y="77">razonamiento / cÃ³digo</text></g>
+<g><rect fill="#0c1f1c" height="44" rx="12" stroke="#14b8a6" stroke-width="2" width="230" x="740" y="140"></rect><text fill="#2dd4bf" text-anchor="middle" x="855" y="161">ðŸ‘©â€âœˆï¸ Gemini</text><text fill="#99f6e4" font-size="11" text-anchor="middle" x="855" y="177">diseÃ±o / multimodal</text></g>
 </g>
-<text fill="#2dd4bf" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="160" y="106">tú eliges</text>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="160" y="126">el piloto de la misión →</text>
+<text fill="#2dd4bf" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="160" y="106">tÃº eliges</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="160" y="126">el piloto de la misiÃ³n â†’</text>
 </svg>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Búsqueda</div><p class="text-xs text-neutral-400">el IDE</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">BÃºsqueda</div><p class="text-xs text-neutral-400">el IDE</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Piloto</div><p class="text-xs text-neutral-400">el modelo</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Intercambio</div><p class="text-xs text-neutral-400">por objetivo</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Lista de verificación</div><p class="text-xs text-neutral-400">= CODA</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Lista de verificaciÃ³n</div><p class="text-xs text-neutral-400">= CODA</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-2" id="topico-2">
+<!-- TÃ“PICO 2 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">📝 C — Configura (claude.md)</h2>
+<h2 class="text-2xl font-bold">ðŸ“ C â€” Configura (claude.md)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t2-p1">La primera etapa de CODA es <strong class="text-teal-400">Configura</strong>: crear un archivo de contexto — <strong>claude.md</strong> (o <strong>Gemini.md</strong>) — en TODO proyecto. Es la <strong class="text-teal-400">columna vertebral</strong> que el piloto lee antes de tocar cualquier cosa.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t2-p1">La primera etapa de CODA es <strong class="text-teal-400">Configura</strong>: crear un archivo de contexto â€” <strong>claude.md</strong> (o <strong>Gemini.md</strong>) â€” en TODO proyecto. Es la <strong class="text-teal-400">columna vertebral</strong> que el piloto lee antes de tocar cualquier cosa.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Stack tecnológico y directorios</h4>
-<p class="text-neutral-300 text-sm">Qué tecnologías usa el proyecto y dónde están las carpetas clave. Así la IA no tiene que adivinar la estructura.</p>
+<h4 class="font-semibold text-white mb-2">Stack tecnolÃ³gico y directorios</h4>
+<p class="text-neutral-300 text-sm">QuÃ© tecnologÃ­as usa el proyecto y dÃ³nde estÃ¡n las carpetas clave. AsÃ­ la IA no tiene que adivinar la estructura.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Comandos</h4>
-<p class="text-neutral-300 text-sm">Cómo ejecutar, compilar y probar el proyecto. El piloto necesita conocer los comandos para ejecutarlo y verificarlo.</p>
+<p class="text-neutral-300 text-sm">CÃ³mo ejecutar, compilar y probar el proyecto. El piloto necesita conocer los comandos para ejecutarlo y verificarlo.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl p-6 border border-teal-500/30">
-<h4 class="font-semibold text-teal-400 mb-2">Criterio de éxito + cómo probar</h4>
-<p class="text-neutral-300 text-sm">El corazón del archivo: qué significa "listo" y cómo demostrarlo. Sin eso, todo lo demás pierde el rumbo.</p>
+<h4 class="font-semibold text-teal-400 mb-2">Criterio de Ã©xito + cÃ³mo probar</h4>
+<p class="text-neutral-300 text-sm">El corazÃ³n del archivo: quÃ© significa "listo" y cÃ³mo demostrarlo. Sin eso, todo lo demÃ¡s pierde el rumbo.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Documento vivo</h3>
-<p class="text-neutral-300">El claude.md no se escribe una vez y se olvida. Cada vez que el proyecto cambie de rumbo, actualiza el archivo. Es la memoria compartida entre tú y el piloto.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Documento vivo</h3>
+<p class="text-neutral-300">El claude.md no se escribe una vez y se olvida. Cada vez que el proyecto cambie de rumbo, actualiza el archivo. Es la memoria compartida entre tÃº y el piloto.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Stack</div><p class="text-xs text-neutral-400">tecnologías</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Stack</div><p class="text-xs text-neutral-400">tecnologÃ­as</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Comandos</div><p class="text-xs text-neutral-400">ejecutar y probar</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Éxito</div><p class="text-xs text-neutral-400">qué significa «listo»</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Ã‰xito</div><p class="text-xs text-neutral-400">quÃ© significa Â«listoÂ»</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Activo</div><p class="text-xs text-neutral-400">siempre actualizado</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-3" id="topico-3">
+<!-- TÃ“PICO 3 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">🗺️ O — Outline (Plan Mode)</h2>
+<h2 class="text-2xl font-bold">ðŸ—ºï¸ O â€” Outline (Plan Mode)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t3-p1">La segunda etapa es <strong class="text-teal-400">Outline</strong>: planificar antes de programar. Aquí está el secreto de los profesionales: dedicar <strong class="text-teal-400">~95% del tiempo definiendo el problema y el éxito ANTES</strong> de escribir una línea de código.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t3-p1">La segunda etapa es <strong class="text-teal-400">Outline</strong>: planificar antes de programar. AquÃ­ estÃ¡ el secreto de los profesionales: dedicar <strong class="text-teal-400">~95% del tiempo definiendo el problema y el Ã©xito ANTES</strong> de escribir una lÃ­nea de cÃ³digo.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
-<h4 class="font-bold text-teal-400 mb-4">✓ Hazlo en Plan Mode</h4>
+<h4 class="font-bold text-teal-400 mb-4">âœ“ Hazlo en Plan Mode</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Definir el problema en detalle</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Conversar de ida y vuelta con el modelo</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Pedir preguntas aclaratorias</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Usar "ultrathink" para un razonamiento profundo</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Definir el problema en detalle</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Conversar de ida y vuelta con el modelo</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Pedir preguntas aclaratorias</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Usar "ultrathink" para un razonamiento profundo</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Evita</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Evita</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Decir «construye X» y empezar a programar</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Omitir la definición del éxito</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Aceptar la primera interpretación de la IA</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Descubrir el requisito solo al final</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Decir Â«construye XÂ» y empezar a programar</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Omitir la definiciÃ³n del Ã©xito</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Aceptar la primera interpretaciÃ³n de la IA</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Descubrir el requisito solo al final</span></li>
 </ul>
 </div>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">En el <strong class="text-teal-400">Plan Mode</strong>, el modelo no escribe código: conversa, plantea dudas y ayuda a preparar la especificación. Cuando el plan es sólido, la implementación se vuelve casi un detalle, porque el problema ya se resolvió sobre el papel.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">En el <strong class="text-teal-400">Plan Mode</strong>, el modelo no escribe cÃ³digo: conversa, plantea dudas y ayuda a preparar la especificaciÃ³n. Cuando el plan es sÃ³lido, la implementaciÃ³n se vuelve casi un detalle, porque el problema ya se resolviÃ³ sobre el papel.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">95%</div><p class="text-xs text-neutral-400">en el plan</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Diálogo</div><p class="text-xs text-neutral-400">ida y vuelta</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">DiÃ¡logo</div><p class="text-xs text-neutral-400">ida y vuelta</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Preguntas</div><p class="text-xs text-neutral-400">aclaratorias</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Ultrathink</div><p class="text-xs text-neutral-400">razonamiento profundo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-4" id="topico-4">
+<!-- TÃ“PICO 4 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">⚡ D — Deploy (agentes en paralelo)</h2>
+<h2 class="text-2xl font-bold">âš¡ D â€” Deploy (agentes en paralelo)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t4-p1">La tercera etapa es <strong class="text-teal-400">Deploy</strong>: hacer que los agentes despeguen. El salto de productividad viene de ejecutar <strong class="text-teal-400">varios agentes al mismo tiempo (5 a 7)</strong> — desde la terminal o desde el propio IDE.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t4-p1">La tercera etapa es <strong class="text-teal-400">Deploy</strong>: hacer que los agentes despeguen. El salto de productividad viene de ejecutar <strong class="text-teal-400">varios agentes al mismo tiempo (5 a 7)</strong> â€” desde la terminal o desde el propio IDE.</p>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center"><span class="mr-2">🛫</span> Escuadrón de agentes</h3>
-<p class="text-neutral-300 mb-3">En lugar de esperar a que un agente termine para empezar con el siguiente, pones en marcha un escuadrón. Mientras uno trabaja en el front, otro ajusta el back y otro escribe pruebas: todos en paralelo.</p>
-<p class="text-neutral-300">Incluso puedes usar <strong>agentes en la web</strong> conectados a un repositorio, funcionando incluso con el <strong>laptop cerrada</strong>. El trabajo continúa sin ti.</p>
+<h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center"><span class="mr-2">ðŸ›«</span> EscuadrÃ³n de agentes</h3>
+<p class="text-neutral-300 mb-3">En lugar de esperar a que un agente termine para empezar con el siguiente, pones en marcha un escuadrÃ³n. Mientras uno trabaja en el front, otro ajusta el back y otro escribe pruebas: todos en paralelo.</p>
+<p class="text-neutral-300">Incluso puedes usar <strong>agentes en la web</strong> conectados a un repositorio, funcionando incluso con el <strong>laptop cerrada</strong>. El trabajo continÃºa sin ti.</p>
 </div>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
-<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Dónde ejecutar</th><th class="text-left p-3">Cómo</th><th class="text-left p-3">Ventaja</th></tr></thead>
+<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">DÃ³nde ejecutar</th><th class="text-left p-3">CÃ³mo</th><th class="text-left p-3">Ventaja</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
 <tr><td class="p-3 text-neutral-300">Terminal</td><td class="p-3 text-teal-400">varias sesiones</td><td class="p-3">control directo</td></tr>
 <tr><td class="p-3 text-neutral-300">IDE</td><td class="p-3 text-teal-400">paneles paralelos</td><td class="p-3">todo en un solo lugar</td></tr>
@@ -456,30 +456,30 @@
 </table>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">5–7</div><p class="text-xs text-neutral-400">agentes juntos</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">5â€“7</div><p class="text-xs text-neutral-400">agentes juntos</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Terminal</div><p class="text-xs text-neutral-400">o IDE</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Web</div><p class="text-xs text-neutral-400">conectado al repo</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Rendimiento</div><p class="text-xs text-neutral-400">multiplica</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-5" id="topico-5">
+<!-- TÃ“PICO 5 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">🧩 A — Automation (subagentes)</h2>
+<h2 class="text-2xl font-bold">ðŸ§© A â€” Automation (subagentes)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t5-p1">La cuarta etapa es <strong class="text-teal-400">Automation</strong>: crear <strong class="text-teal-400">subagentes especializados</strong>, uno por subtarea. Cada subagente tiene la <strong>tu propia ventana de contexto</strong>, para evitar que todo se desborde en una sola conversación.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t5-p1">La cuarta etapa es <strong class="text-teal-400">Automation</strong>: crear <strong class="text-teal-400">subagentes especializados</strong>, uno por subtarea. Cada subagente tiene la <strong>tu propia ventana de contexto</strong>, para evitar que todo se desborde en una sola conversaciÃ³n.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Un agente orquestador delega en tres subagentes especializados: uno para el título, uno para la introducción y uno para el script; cada uno con su propia ventana de contexto" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="Un agente orquestador delega en tres subagentes especializados: uno para el tÃ­tulo, uno para la introducciÃ³n y uno para el script; cada uno con su propia ventana de contexto" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="m51b-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#2dd4bf"></stop><stop offset="1" stop-color="#14b8a6"></stop></lineargradient>
 <filter height="180%" id="m51b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -496,15 +496,15 @@
 <text fill="#2dd4bf" font-family="Inter,sans-serif" font-size="16" font-weight="700" text-anchor="middle" x="150" y="106">Orquestador</text>
 <text fill="#99f6e4" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="150" y="126">divide el trabajo</text>
 <g font-family="Inter,sans-serif" font-size="13" font-weight="600">
-<g><rect fill="#0c1f1c" height="40" rx="11" stroke="#14b8a6" stroke-width="2" width="340" x="620" y="26"></rect><text fill="#2dd4bf" text-anchor="middle" x="790" y="46">subagente · título</text><text fill="#99f6e4" font-size="10.5" text-anchor="middle" x="790" y="60">contexto propio</text></g>
-<g><rect fill="#0c1f1c" height="40" rx="11" stroke="#14b8a6" stroke-width="2" width="340" x="620" y="90"></rect><text fill="#2dd4bf" text-anchor="middle" x="790" y="110">subagente · introducción</text><text fill="#99f6e4" font-size="10.5" text-anchor="middle" x="790" y="124">contexto propio</text></g>
-<g><rect fill="#0c1f1c" height="40" rx="11" stroke="#14b8a6" stroke-width="2" width="340" x="620" y="154"></rect><text fill="#2dd4bf" text-anchor="middle" x="790" y="174">subagente · script</text><text fill="#99f6e4" font-size="10.5" text-anchor="middle" x="790" y="188">contexto propio</text></g>
+<g><rect fill="#0c1f1c" height="40" rx="11" stroke="#14b8a6" stroke-width="2" width="340" x="620" y="26"></rect><text fill="#2dd4bf" text-anchor="middle" x="790" y="46">subagente Â· tÃ­tulo</text><text fill="#99f6e4" font-size="10.5" text-anchor="middle" x="790" y="60">contexto propio</text></g>
+<g><rect fill="#0c1f1c" height="40" rx="11" stroke="#14b8a6" stroke-width="2" width="340" x="620" y="90"></rect><text fill="#2dd4bf" text-anchor="middle" x="790" y="110">subagente Â· introducciÃ³n</text><text fill="#99f6e4" font-size="10.5" text-anchor="middle" x="790" y="124">contexto propio</text></g>
+<g><rect fill="#0c1f1c" height="40" rx="11" stroke="#14b8a6" stroke-width="2" width="340" x="620" y="154"></rect><text fill="#2dd4bf" text-anchor="middle" x="790" y="174">subagente Â· script</text><text fill="#99f6e4" font-size="10.5" text-anchor="middle" x="790" y="188">contexto propio</text></g>
 </g>
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🧠</span> Por qué dividir</h3>
-<p class="text-neutral-300">Cada modelo tiene un límite de cuánto puede «recordar» a la vez (la ventana de contexto). Al asignar una subtarea a cada subagente, mantienes cada conversación breve y enfocada, y nada importante queda fuera de la memoria.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ§ </span> Por quÃ© dividir</h3>
+<p class="text-neutral-300">Cada modelo tiene un lÃ­mite de cuÃ¡nto puede Â«recordarÂ» a la vez (la ventana de contexto). Al asignar una subtarea a cada subagente, mantienes cada conversaciÃ³n breve y enfocada, y nada importante queda fuera de la memoria.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">1 tarea</div><p class="text-xs text-neutral-400">1 subagente</p></div>
@@ -513,78 +513,78 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Sin desbordamiento</div><p class="text-xs text-neutral-400">memoria bajo control</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-6" id="topico-6">
+<!-- TÃ“PICO 6 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">🔎 R — Revisar y verificar</h2>
+<h2 class="text-2xl font-bold">ðŸ”Ž R â€” Revisar y verificar</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t6-p1">La última etapa es <strong class="text-teal-400">Review &amp; verify</strong>: el aterrizaje. Le das <strong class="text-teal-400">criterios de éxito explícitos</strong> (escritos en claude.md) para que "listo" deje de ser una opinión y se convierta en una prueba objetiva.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t6-p1">La Ãºltima etapa es <strong class="text-teal-400">Review &amp; verify</strong>: el aterrizaje. Le das <strong class="text-teal-400">criterios de Ã©xito explÃ­citos</strong> (escritos en claude.md) para que "listo" deje de ser una opiniÃ³n y se convierta en una prueba objetiva.</p>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-<h3 class="text-lg font-semibold text-teal-400 mb-4 flex items-center"><span class="mr-2">✅</span> Lista de verificación de éxito</h3>
+<h3 class="text-lg font-semibold text-teal-400 mb-4 flex items-center"><span class="mr-2">âœ…</span> Lista de verificaciÃ³n de Ã©xito</h3>
 <ul class="space-y-3 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">✓</span><span>Se ejecuta <strong>sin errores</strong></span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">✓</span><span>Los <strong>las pruebas pasan</strong></span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">✓</span><span>Sin <strong>advertencias de lint</strong></span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">✓</span><span>Hace <strong>lo que se pidió</strong></span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">✓</span><span>Los cambios son <strong>explicables</strong></span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">âœ“</span><span>Se ejecuta <strong>sin errores</strong></span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">âœ“</span><span>Los <strong>las pruebas pasan</strong></span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">âœ“</span><span>Sin <strong>advertencias de lint</strong></span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">âœ“</span><span>Hace <strong>lo que se pidiÃ³</strong></span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400 mt-1">âœ“</span><span>Los cambios son <strong>explicables</strong></span></li>
 </ul>
 </div>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center"><span class="mr-2">🕵️</span> Revisión escéptica</h3>
-<p class="text-neutral-300">Pídele a la IA que revise su propio trabajo como un <strong>"desarrollador sénior muy escéptico"</strong>. Este enfoque obliga al modelo a buscar problemas en vez de elogiar, y revela qué fallaría antes de que el usuario lo descubra.</p>
+<h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center"><span class="mr-2">ðŸ•µï¸</span> RevisiÃ³n escÃ©ptica</h3>
+<p class="text-neutral-300">PÃ­dele a la IA que revise su propio trabajo como un <strong>"desarrollador sÃ©nior muy escÃ©ptico"</strong>. Este enfoque obliga al modelo a buscar problemas en vez de elogiar, y revela quÃ© fallarÃ­a antes de que el usuario lo descubra.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Sin errores</div><p class="text-xs text-neutral-400">se ejecuta sin problemas</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Pruebas</div><p class="text-xs text-neutral-400">pasan</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Explicable</div><p class="text-xs text-neutral-400">tú entiendes</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Escéptico</div><p class="text-xs text-neutral-400">busca fallas</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Explicable</div><p class="text-xs text-neutral-400">tÃº entiendes</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">EscÃ©ptico</div><p class="text-xs text-neutral-400">busca fallas</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-5-1#topico-7" id="topico-7">
+<!-- TÃ“PICO 7 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-5-1#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">🪶 Menos es más</h2>
+<h2 class="text-2xl font-bold">ðŸª¶ Menos es mÃ¡s</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m5-1-t7-p1">Un contrapunto importante a todo CODA: <strong class="text-teal-400">a veces un prompt corto da mejor resultado que uno súper detallado</strong>. Los modelos modernos son buenos para inferir, y un exceso de instrucciones puede confundirlos.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-1-t7-p1">Un contrapunto importante a todo CODA: <strong class="text-teal-400">a veces un prompt corto da mejor resultado que uno sÃºper detallado</strong>. Los modelos modernos son buenos para inferir, y un exceso de instrucciones puede confundirlos.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
-<h4 class="font-bold text-teal-400 mb-4">✓ Prueba primero</h4>
+<h4 class="font-bold text-teal-400 mb-4">âœ“ Prueba primero</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>El prompt corto y directo</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Dejar que la IA infiera los detalles</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Solo detallar si se equivoca</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>El prompt corto y directo</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Dejar que la IA infiera los detalles</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Solo detallar si se equivoca</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Cuidado con</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Cuidado con</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Llenar el prompt «por si acaso»</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Instrucciones que se contradicen</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Microgestionar cada paso</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Llenar el prompt Â«por si acasoÂ»</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Instrucciones que se contradicen</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Microgestionar cada paso</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">⚖️</span> El equilibrio</h3>
-<p class="text-neutral-300">CODA aporta estructura donde importa (contexto, plan, verificación). «Menos es más» recuerda que, en los prompts del día a día, la simplicidad es una fortaleza. Empieza de forma sencilla; agrega detalles solo cuando la IA los pida o se equivoque.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âš–ï¸</span> El equilibrio</h3>
+<p class="text-neutral-300">CODA aporta estructura donde importa (contexto, plan, verificaciÃ³n). Â«Menos es mÃ¡sÂ» recuerda que, en los prompts del dÃ­a a dÃ­a, la simplicidad es una fortaleza. Empieza de forma sencilla; agrega detalles solo cuando la IA los pida o se equivoque.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Corto</div><p class="text-xs text-neutral-400">primero</p></div>
@@ -593,16 +593,16 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1">Tokens</div><p class="text-xs text-neutral-400">ahorra</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como leído</span><span class="inema-label-done">Leído</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÁTICO -->
+<!-- EXEMPLO PRÃTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🔬</span> Ejemplo práctico</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Ejemplo prÃ¡ctico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Vamos a crear un <strong class="text-teal-400">claude.md</strong> para un proyecto simple —un sitio que muestra el clima de 3 ciudades—, ya con criterios de éxito y pruebas. Esa es la "C" de CODA en la práctica.</p>
+<p class="text-neutral-300 mb-4">Vamos a crear un <strong class="text-teal-400">claude.md</strong> para un proyecto simple â€”un sitio que muestra el clima de 3 ciudadesâ€”, ya con criterios de Ã©xito y pruebas. Esa es la "C" de CODA en la prÃ¡ctica.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">claude.md</span></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono"># Clima de 3 cidades
@@ -611,80 +611,80 @@
 - HTML + CSS + JS puro (sem build)
 - API: open-meteo (sem chave)
 
-## Diretórios
-- index.html  → página única
-- /assets     → css e js
+## DiretÃ³rios
+- index.html  â†’ pÃ¡gina Ãºnica
+- /assets     â†’ css e js
 
 ## Comandos
-- abrir: é só abrir index.html no navegador
+- abrir: Ã© sÃ³ abrir index.html no navegador
 - testar: rodar manualmente as 3 cidades
 
-## Critério de sucesso
-- Mostra temperatura atual de São Paulo, Rio e Salvador
+## CritÃ©rio de sucesso
+- Mostra temperatura atual de SÃ£o Paulo, Rio e Salvador
 - Carrega em &lt; 2s, sem erros no console
-- Funciona offline depois do 1º carregamento (cache)
+- Funciona offline depois do 1Âº carregamento (cache)
 
 ## Como testar
 1. Abrir index.html
 2. Conferir as 3 temperaturas aparecendo
-3. Abrir o console: não pode ter erro vermelho</pre>
+3. Abrir o console: nÃ£o pode ter erro vermelho</pre>
 </div>
-<p class="text-neutral-400 text-sm">Fíjate: el piloto (modelo) ahora sabe qué construir, cómo ejecutarlo y, sobre todo, cómo saber que terminó.</p>
+<p class="text-neutral-400 text-sm">FÃ­jate: el piloto (modelo) ahora sabe quÃ© construir, cÃ³mo ejecutarlo y, sobre todo, cÃ³mo saber que terminÃ³.</p>
 </div>
 </section>
-<!-- EXERCÍCIO -->
+<!-- EXERCÃCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🏋️</span> Ejercicio</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> Ejercicio</h2>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
-<p class="text-neutral-300 mb-4">Es hora de pilotear. Da los dos pasos siguientes en uno de tus proyectos (puede ser pequeño):</p>
+<p class="text-neutral-300 mb-4">Es hora de pilotear. Da los dos pasos siguientes en uno de tus proyectos (puede ser pequeÃ±o):</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
-<li>Escribe un <strong>claude.md</strong> con <strong>criterios de éxito</strong> claros y la sección "cómo probar".</li>
-<li>Ejecuta <strong>3 agentes en paralelo</strong> en distintas subtareas (ej.: uno en la interfaz, uno en la lógica, uno en las pruebas).</li>
+<li>Escribe un <strong>claude.md</strong> con <strong>criterios de Ã©xito</strong> claros y la secciÃ³n "cÃ³mo probar".</li>
+<li>Ejecuta <strong>3 agentes en paralelo</strong> en distintas subtareas (ej.: uno en la interfaz, uno en la lÃ³gica, uno en las pruebas).</li>
 </ol>
-<p class="text-neutral-400 text-sm">Al final, pídele a uno de ellos que revise como «desarrollador sénior escéptico» y anota lo que encontró.</p>
+<p class="text-neutral-400 text-sm">Al final, pÃ­dele a uno de ellos que revise como Â«desarrollador sÃ©nior escÃ©pticoÂ» y anota lo que encontrÃ³.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">⚡</span> Prompts listos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts listos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copia, pega en tu asistente de IA y adapta a tu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">C — Configura</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Atualize o claude.md com o escopo abaixo do projeto e me faça perguntas
-para preencher os detalhes que faltam (stack, diretórios, comandos,
-critério de sucesso e como testar).
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">C â€” Configura</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Atualize o claude.md com o escopo abaixo do projeto e me faÃ§a perguntas
+para preencher os detalhes que faltam (stack, diretÃ³rios, comandos,
+critÃ©rio de sucesso e como testar).
 
 Escopo: [descreva o projeto em 2-3 frases]</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">El — Outline (Plan Mode)</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">El â€” Outline (Plan Mode)</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">(Plan Mode) Quero construir [X]. Me ajude a definir o problema em detalhe
-e criar as especificações. Faça perguntas clarificadoras antes de escrever
-qualquer código. Não comece a implementar até o plano estar fechado.</pre>
+e criar as especificaÃ§Ãµes. FaÃ§a perguntas clarificadoras antes de escrever
+qualquer cÃ³digo. NÃ£o comece a implementar atÃ© o plano estar fechado.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">R — Review (escéptico)</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Revisa este código como un desarrollador sénior muy escéptico:
-- ¿Se ejecuta sin errores?
-- ¿Pasan las pruebas? ¿Hay casos sin cubrir?
-- ¿Qué fallaría en producción?
-Enumera los problemas por gravedad y propón una solución para cada uno.</pre>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">R â€” Review (escÃ©ptico)</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Revisa este cÃ³digo como un desarrollador sÃ©nior muy escÃ©ptico:
+- Â¿Se ejecuta sin errores?
+- Â¿Pasan las pruebas? Â¿Hay casos sin cubrir?
+- Â¿QuÃ© fallarÃ­a en producciÃ³n?
+Enumera los problemas por gravedad y propÃ³n una soluciÃ³n para cada uno.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-teal-900/40 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumen del módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumen del mÃ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Búsqueda y piloto</strong><span class="text-neutral-400"> — el IDE es la herramienta, el modelo es el cerebro; cambia de piloto según el objetivo.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">CODA</strong><span class="text-neutral-400"> — Configure, Outline, Deploy, Automation, Review: la lista de verificación de quienes programan en serio con IA.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Plan + verificación</strong><span class="text-neutral-400"> — ~95% en Outline; éxito explícito y revisión escéptica en Review.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Menos es más</strong><span class="text-neutral-400"> — empieza con el prompt corto; agrega detalles solo cuando los necesites.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">BÃºsqueda y piloto</strong><span class="text-neutral-400"> â€” el IDE es la herramienta, el modelo es el cerebro; cambia de piloto segÃºn el objetivo.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">CODA</strong><span class="text-neutral-400"> â€” Configure, Outline, Deploy, Automation, Review: la lista de verificaciÃ³n de quienes programan en serio con IA.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">Plan + verificaciÃ³n</strong><span class="text-neutral-400"> â€” ~95% en Outline; Ã©xito explÃ­cito y revisiÃ³n escÃ©ptica en Review.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">Menos es mÃ¡s</strong><span class="text-neutral-400"> â€” empieza con el prompt corto; agrega detalles solo cuando los necesites.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-teal-400 mb-2">Siguiente módulo:</h3><p class="text-neutral-300">5.2 — Biblioteca de Skills &amp; Prompts</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-teal-400 mb-2">Siguiente mÃ³dulo:</h3><p class="text-neutral-300">5.2 â€” Biblioteca de Skills &amp; Prompts</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Volver a la ruta</a>
-<a class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-colors" href="modulo-5-2.html">Siguiente módulo →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Volver a la ruta</a>
+<a class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-colors" href="modulo-5-2.html">Siguiente mÃ³dulo â†’</a>
 </div>
 </div>
 </section>
@@ -693,7 +693,7 @@ Enumera los problemas por gravedad y propón una solución para cada uno.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — de cero a la app publicada con IA · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” de cero a la app publicada con IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -716,11 +716,11 @@ Enumera los problemas por gravedad y propón una solución para cada uno.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -728,22 +728,22 @@ Enumera los problemas por gravedad y propón una solución para cada uno.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = '✓ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

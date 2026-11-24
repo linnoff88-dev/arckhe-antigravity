@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Módulo 2.2 · Publicar e manter | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>MÃ³dulo 2.2 Â· Publicar e manter | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .inema-toc-link.is-active { color: #60a5fa; font-weight: 600; }
+    .ARCKHÉ-toc-link.is-active { color: #60a5fa; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -182,20 +182,20 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha2/modulo-2-2.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha2/modulo-2-2.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha2/modulo-2-2.html" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha2/modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-2-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha2/modulo-2-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha2/modulo-2-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Aparência e leitura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sépia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Confortável</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Jornada</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,58 +244,58 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-blue-400" href="../index.html">Início</a><span>/</span>
+<a class="hover:text-blue-400" href="../index.html">InÃ­cio</a><span>/</span>
 <a class="hover:text-blue-400" href="index.html">Trilha 2</a><span>/</span>
-<span class="text-blue-400">Módulo 2.2</span>
+<span class="text-blue-400">MÃ³dulo 2.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-blue-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÓDULO 2.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">🚀 Publicar e manter seu app</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Seu app sai do localhost e vai para o mundo. Conecte o GitHub, faça deploy na Vercel, proteja chaves, ligue analytics, depure por screenshot e mantenha o app vivo com commits, rollback e controle de gasto.</p>
+<span class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 2.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸš€ Publicar e manter seu app</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Seu app sai do localhost e vai para o mundo. Conecte o GitHub, faÃ§a deploy na Vercel, proteja chaves, ligue analytics, depure por screenshot e mantenha o app vivo com commits, rollback e controle de gasto.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">8</div><div class="text-xs text-neutral-400">Tópicos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">8</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">75</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Intermediário</div><div class="text-xs text-neutral-400">Nível</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">Prática</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">IntermediÃ¡rio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-blue-400">PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Índice da página" class="hidden lg:block sticky top-20 self-start" data-inema-toc="">
-<p class="text-sm text-neutral-400 mb-2">Seção <span data-inema-section-counter="">1 de 8</span></p>
+<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 8</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-1">1. GitHub MCP + Docker</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-2">2. Deploy na Vercel</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-3">3. Environment variables</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-4">4. Analytics &amp; Speed Insights</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-5">5. Troubleshooting por screenshot</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-6">6. Commit often</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-7">7. Rollback</a></li>
-<li><a class="inema-toc-link text-neutral-400 hover:text-blue-400" href="#topico-8">8. Budget de API + repo privado</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-1">1. GitHub MCP + Docker</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-2">2. Deploy na Vercel</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-3">3. Environment variables</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-4">4. Analytics &amp; Speed Insights</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-5">5. Troubleshooting por screenshot</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-6">6. Commit often</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-7">7. Rollback</a></li>
+<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-blue-400" href="#topico-8">8. Budget de API + repo privado</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-inema-meter="modulo:2-2"><span class="text-neutral-400" data-inema-meter-frac="">0 de 8</span> · <span class="text-blue-400 font-bold" data-inema-meter-pct="">0%</span><div class="inema-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="inema-bar__fill h-full rounded-full bg-blue-500" data-inema-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHÉ-meter="modulo:2-2"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 8</span> Â· <span class="text-blue-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-blue-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-inema-module="2-2" data-inema-track="2">
-<!-- TÓPICO 1 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHÉ-module="2-2" data-ARCKHÉ-track="2">
+<!-- TÃ“PICO 1 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">🐙 GitHub MCP + token + Docker</h2>
+<h2 class="text-2xl font-bold">ðŸ™ GitHub MCP + token + Docker</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t1-p1">Para publicar sem sair do editor, conecte o <strong class="text-blue-400">AntiGravity ao GitHub via MCP</strong>: assim você gerencia e publica repositórios direto dali. A integração exige duas coisas: um <strong class="text-blue-400">Personal Access Token</strong> (fine-grained, com validade) e o <strong class="text-blue-400">Docker</strong> instalado.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t1-p1">Para publicar sem sair do editor, conecte o <strong class="text-blue-400">AntiGravity ao GitHub via MCP</strong>: assim vocÃª gerencia e publica repositÃ³rios direto dali. A integraÃ§Ã£o exige duas coisas: um <strong class="text-blue-400">Personal Access Token</strong> (fine-grained, com validade) e o <strong class="text-blue-400">Docker</strong> instalado.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="O AntiGravity conecta ao GitHub pelo GitHub MCP, que depende de um Personal Access Token e do Docker instalado para a integração funcionar" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="O AntiGravity conecta ao GitHub pelo GitHub MCP, que depende de um Personal Access Token e do Docker instalado para a integraÃ§Ã£o funcionar" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m22-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="m22-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -320,49 +320,49 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">✓ Pré-requisitos</h4>
+<h4 class="font-bold text-blue-400 mb-4">âœ“ PrÃ©-requisitos</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Personal Access Token <strong>fine-grained</strong></span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Definir uma <strong>validade</strong> para o token</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Docker <strong>instalado</strong> e rodando</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Personal Access Token <strong>fine-grained</strong></span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Definir uma <strong>validade</strong> para o token</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Docker <strong>instalado</strong> e rodando</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Erros comuns</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Erros comuns</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Token sem validade ou com escopo amplo demais</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Esquecer de abrir o Docker antes</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Colar o token no código (use o lugar certo)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Token sem validade ou com escopo amplo demais</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Esquecer de abrir o Docker antes</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Colar o token no cÃ³digo (use o lugar certo)</span></li>
 </ul>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">GitHub MCP</div><p class="text-xs text-neutral-400">do editor</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Token</div><p class="text-xs text-neutral-400">fine-grained</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Validade</div><p class="text-xs text-neutral-400">com expiração</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Validade</div><p class="text-xs text-neutral-400">com expiraÃ§Ã£o</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Docker</div><p class="text-xs text-neutral-400">instalado</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 2 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-2" id="topico-2">
+<!-- TÃ“PICO 2 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">▲ Deploy na Vercel</h2>
+<h2 class="text-2xl font-bold">â–² Deploy na Vercel</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t2-p1">A <strong class="text-blue-400">Vercel</strong> é a "ponte" do GitHub para o mundo: ela hospeda seu app em <strong>produção</strong>. O fluxo é curto e visual: <strong>Add New → Project → importar o repo → publicar</strong>. Em poucos cliques, o app fica no ar com um link público.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t2-p1">A <strong class="text-blue-400">Vercel</strong> Ã© a "ponte" do GitHub para o mundo: ela hospeda seu app em <strong>produÃ§Ã£o</strong>. O fluxo Ã© curto e visual: <strong>Add New â†’ Project â†’ importar o repo â†’ publicar</strong>. Em poucos cliques, o app fica no ar com um link pÃºblico.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Add New → Project</h4>
+<h4 class="font-semibold text-white mb-2">Add New â†’ Project</h4>
 <p class="text-neutral-300 text-sm">No painel da Vercel, comece um novo projeto.</p>
 </div>
 </div>
@@ -370,58 +370,58 @@
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Importar o repo</h4>
-<p class="text-neutral-300 text-sm">Conecte sua conta do GitHub e selecione o repositório do app.</p>
+<p class="text-neutral-300 text-sm">Conecte sua conta do GitHub e selecione o repositÃ³rio do app.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl p-6 border border-blue-500/30">
 <h4 class="font-semibold text-blue-400 mb-2">Publicar</h4>
-<p class="text-neutral-300 text-sm">A Vercel faz o build e sobe o app. Pronto: ele está no ar para o mundo.</p>
+<p class="text-neutral-300 text-sm">A Vercel faz o build e sobe o app. Pronto: ele estÃ¡ no ar para o mundo.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Localhost × produção</h3>
-<p class="text-neutral-300">No <strong>localhost</strong>, só você vê. Em <strong>produção</strong> (Vercel), qualquer pessoa com o link acessa. É o salto de "funciona na minha máquina" para "está no ar".</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Localhost Ã— produÃ§Ã£o</h3>
+<p class="text-neutral-300">No <strong>localhost</strong>, sÃ³ vocÃª vÃª. Em <strong>produÃ§Ã£o</strong> (Vercel), qualquer pessoa com o link acessa. Ã‰ o salto de "funciona na minha mÃ¡quina" para "estÃ¡ no ar".</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Ponte</div><p class="text-xs text-neutral-400">GitHub → mundo</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Ponte</div><p class="text-xs text-neutral-400">GitHub â†’ mundo</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Importar</div><p class="text-xs text-neutral-400">o repo</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Produção</div><p class="text-xs text-neutral-400">link público</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">ProduÃ§Ã£o</div><p class="text-xs text-neutral-400">link pÃºblico</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">No ar</div><p class="text-xs text-neutral-400">poucos cliques</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 3 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-3" id="topico-3">
+<!-- TÃ“PICO 3 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">🔐 Environment variables</h2>
+<h2 class="text-2xl font-bold">ðŸ” Environment variables</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t3-p1">Chaves de API <strong class="text-blue-400">nunca</strong> devem aparecer no código. A regra de ouro: o agente apenas <strong>nomeia</strong> a variável; <strong>você cola a chave</strong> dentro da Vercel (<strong class="text-blue-400">Settings → Environment Variables</strong>) e dá <strong class="text-blue-400">Redeploy</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t3-p1">Chaves de API <strong class="text-blue-400">nunca</strong> devem aparecer no cÃ³digo. A regra de ouro: o agente apenas <strong>nomeia</strong> a variÃ¡vel; <strong>vocÃª cola a chave</strong> dentro da Vercel (<strong class="text-blue-400">Settings â†’ Environment Variables</strong>) e dÃ¡ <strong class="text-blue-400">Redeploy</strong>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">✓ Jeito seguro</h4>
+<h4 class="font-bold text-blue-400 mb-4">âœ“ Jeito seguro</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>O agente só nomeia: <code>API_KEY</code></span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Você cola o valor na Vercel</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Redeploy para a chave entrar em vigor</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>O agente sÃ³ nomeia: <code>API_KEY</code></span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>VocÃª cola o valor na Vercel</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Redeploy para a chave entrar em vigor</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ Nunca faça</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— Nunca faÃ§a</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Colar a chave dentro do código</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Subir a chave para um repo público</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Mandar a chave em prints ou chats</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Colar a chave dentro do cÃ³digo</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Subir a chave para um repo pÃºblico</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Mandar a chave em prints ou chats</span></li>
 </ul>
 </div>
 </div>
@@ -429,74 +429,74 @@
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Parte</th><th class="text-left p-3">Quem cuida</th><th class="text-left p-3">Onde vive</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-neutral-300">Nome da variável</td><td class="p-3 text-blue-400">o agente</td><td class="p-3 font-mono">no código (só o nome)</td></tr>
-<tr><td class="p-3 text-neutral-300">Valor da chave</td><td class="p-3 text-blue-400">você</td><td class="p-3">Vercel → Settings → Env Vars</td></tr>
-<tr><td class="p-3 text-neutral-300">Ativar mudança</td><td class="p-3 text-blue-400">você</td><td class="p-3">Redeploy</td></tr>
+<tr><td class="p-3 text-neutral-300">Nome da variÃ¡vel</td><td class="p-3 text-blue-400">o agente</td><td class="p-3 font-mono">no cÃ³digo (sÃ³ o nome)</td></tr>
+<tr><td class="p-3 text-neutral-300">Valor da chave</td><td class="p-3 text-blue-400">vocÃª</td><td class="p-3">Vercel â†’ Settings â†’ Env Vars</td></tr>
+<tr><td class="p-3 text-neutral-300">Ativar mudanÃ§a</td><td class="p-3 text-blue-400">vocÃª</td><td class="p-3">Redeploy</td></tr>
 </tbody>
 </table>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Nomeia</div><p class="text-xs text-neutral-400">o agente</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Cola</div><p class="text-xs text-neutral-400">você, na Vercel</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Cola</div><p class="text-xs text-neutral-400">vocÃª, na Vercel</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Redeploy</div><p class="text-xs text-neutral-400">ativa a chave</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Nunca</div><p class="text-xs text-neutral-400">no código</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Nunca</div><p class="text-xs text-neutral-400">no cÃ³digo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 4 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-4" id="topico-4">
+<!-- TÃ“PICO 4 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">📊 Analytics &amp; Speed Insights</h2>
+<h2 class="text-2xl font-bold">ðŸ“Š Analytics &amp; Speed Insights</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t4-p1">Depois de no ar, você quer saber se as pessoas usam — e se o app é rápido. A Vercel oferece <strong class="text-blue-400">Analytics</strong> (acessos) e <strong class="text-blue-400">Speed Insights</strong> (performance). Habilite no painel e instale o pacote pelo terminal (<strong>npm</strong>). O plano grátis é generoso.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t4-p1">Depois de no ar, vocÃª quer saber se as pessoas usam â€” e se o app Ã© rÃ¡pido. A Vercel oferece <strong class="text-blue-400">Analytics</strong> (acessos) e <strong class="text-blue-400">Speed Insights</strong> (performance). Habilite no painel e instale o pacote pelo terminal (<strong>npm</strong>). O plano grÃ¡tis Ã© generoso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6">
 <div class="px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">terminal</span></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">npm i @vercel/analytics @vercel/speed-insights</pre>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-semibold text-blue-400 mb-2">📈 Analytics</h4>
-<p class="text-neutral-300 text-sm">Quantos acessos, de onde vêm, quais páginas. Mostra se o app está sendo usado de verdade.</p>
+<h4 class="font-semibold text-blue-400 mb-2">ðŸ“ˆ Analytics</h4>
+<p class="text-neutral-300 text-sm">Quantos acessos, de onde vÃªm, quais pÃ¡ginas. Mostra se o app estÃ¡ sendo usado de verdade.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-semibold text-blue-400 mb-2">⚡ Speed Insights</h4>
-<p class="text-neutral-300 text-sm">Mede a performance real sentida pelos usuários. App lento espanta gente — aqui você vê onde melhorar.</p>
+<h4 class="font-semibold text-blue-400 mb-2">âš¡ Speed Insights</h4>
+<p class="text-neutral-300 text-sm">Mede a performance real sentida pelos usuÃ¡rios. App lento espanta gente â€” aqui vocÃª vÃª onde melhorar.</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Decisão por dados</h3>
-<p class="text-neutral-300">Sem dados, você adivinha o que melhorar. Com Analytics e Speed Insights, você foca no que realmente afeta seus usuários.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> DecisÃ£o por dados</h3>
+<p class="text-neutral-300">Sem dados, vocÃª adivinha o que melhorar. Com Analytics e Speed Insights, vocÃª foca no que realmente afeta seus usuÃ¡rios.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Habilitar</div><p class="text-xs text-neutral-400">no painel</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">npm</div><p class="text-xs text-neutral-400">instala o pacote</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Acessos</div><p class="text-xs text-neutral-400">+ performance</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Grátis</div><p class="text-xs text-neutral-400">plano generoso</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">GrÃ¡tis</div><p class="text-xs text-neutral-400">plano generoso</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 5 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-5" id="topico-5">
+<!-- TÃ“PICO 5 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">🩺 Troubleshooting por screenshot</h2>
+<h2 class="text-2xl font-bold">ðŸ©º Troubleshooting por screenshot</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t5-p1">Quando um <strong class="text-blue-400">build falha</strong>, não entre em pânico nem tente decifrar o erro sozinho. Tire um <strong class="text-blue-400">screenshot dos logs de erro</strong> e mande pro agente: <em>"houve um erro no deploy, corrija"</em>. Para erros na tela, use o <strong class="text-blue-400">DevTools</strong> (Console/Network) e mande o print.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t5-p1">Quando um <strong class="text-blue-400">build falha</strong>, nÃ£o entre em pÃ¢nico nem tente decifrar o erro sozinho. Tire um <strong class="text-blue-400">screenshot dos logs de erro</strong> e mande pro agente: <em>"houve um erro no deploy, corrija"</em>. Para erros na tela, use o <strong class="text-blue-400">DevTools</strong> (Console/Network) e mande o print.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">1</span></div>
@@ -509,20 +509,20 @@
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Mande pro agente</h4>
-<p class="text-neutral-300 text-sm">"Houve um erro no deploy (veja o print). Corrija." A imagem dá o contexto exato.</p>
+<p class="text-neutral-300 text-sm">"Houve um erro no deploy (veja o print). Corrija." A imagem dÃ¡ o contexto exato.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center"><span class="text-blue-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl p-6 border border-blue-500/30">
-<h4 class="font-semibold text-blue-400 mb-2">Ele corrige e você re-publica</h4>
-<p class="text-neutral-300 text-sm">Com o erro à vista, o agente acerta a correção muito mais rápido.</p>
+<h4 class="font-semibold text-blue-400 mb-2">Ele corrige e vocÃª re-publica</h4>
+<p class="text-neutral-300 text-sm">Com o erro Ã  vista, o agente acerta a correÃ§Ã£o muito mais rÃ¡pido.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🔎</span> DevTools é seu amigo</h3>
-<p class="text-neutral-300">O <strong>Console</strong> mostra erros de código; a aba <strong>Network</strong> mostra requisições que falharam. Um print dessas telas vale mais que mil descrições.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”Ž</span> DevTools Ã© seu amigo</h3>
+<p class="text-neutral-300">O <strong>Console</strong> mostra erros de cÃ³digo; a aba <strong>Network</strong> mostra requisiÃ§Ãµes que falharam. Um print dessas telas vale mais que mil descriÃ§Ãµes.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Screenshot</div><p class="text-xs text-neutral-400">dos logs</p></div>
@@ -531,68 +531,68 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Contexto</div><p class="text-xs text-neutral-400">a imagem ajuda</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 6 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-6" id="topico-6">
+<!-- TÃ“PICO 6 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">💾 Commit often</h2>
+<h2 class="text-2xl font-bold">ðŸ’¾ Commit often</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t6-p1">Uma lição que dói aprender na prática: <strong class="text-blue-400">comite com frequência</strong>. História real — codar <strong>6 horas sem commitar</strong> e perder justamente a melhor versão num passo em falso. O controle de versão é a sua <strong class="text-blue-400">rede de segurança</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t6-p1">Uma liÃ§Ã£o que dÃ³i aprender na prÃ¡tica: <strong class="text-blue-400">comite com frequÃªncia</strong>. HistÃ³ria real â€” codar <strong>6 horas sem commitar</strong> e perder justamente a melhor versÃ£o num passo em falso. O controle de versÃ£o Ã© a sua <strong class="text-blue-400">rede de seguranÃ§a</strong>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-bold text-blue-400 mb-4">✓ Comite sempre</h4>
+<h4 class="font-bold text-blue-400 mb-4">âœ“ Comite sempre</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>A cada pequeno avanço que funciona</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Mensagens curtas e claras</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">✓</span><span>Cada commit = um ponto de retorno seguro</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>A cada pequeno avanÃ§o que funciona</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Mensagens curtas e claras</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">âœ“</span><span>Cada commit = um ponto de retorno seguro</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">✗ O risco de não commitar</h4>
+<h4 class="font-bold text-red-400 mb-4">âœ— O risco de nÃ£o commitar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Horas de trabalho num único bloco frágil</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Um erro apaga a melhor versão</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">✗</span><span>Sem ponto de retorno, você recomeça</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Horas de trabalho num Ãºnico bloco frÃ¡gil</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Um erro apaga a melhor versÃ£o</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Sem ponto de retorno, vocÃª recomeÃ§a</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">⚓</span> Pontos de retorno</h3>
-<p class="text-neutral-300">Pense em cada commit como um "save" do jogo. Se algo der errado, você volta ao último save — e nunca perde mais do que o último pedaço.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">âš“</span> Pontos de retorno</h3>
+<p class="text-neutral-300">Pense em cada commit como um "save" do jogo. Se algo der errado, vocÃª volta ao Ãºltimo save â€” e nunca perde mais do que o Ãºltimo pedaÃ§o.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Frequente</div><p class="text-xs text-neutral-400">cada avanço</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Histórico</div><p class="text-xs text-neutral-400">linha do tempo</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Frequente</div><p class="text-xs text-neutral-400">cada avanÃ§o</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">HistÃ³rico</div><p class="text-xs text-neutral-400">linha do tempo</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Save</div><p class="text-xs text-neutral-400">ponto de retorno</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Rede</div><p class="text-xs text-neutral-400">de segurança</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Rede</div><p class="text-xs text-neutral-400">de seguranÃ§a</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 7 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-7" id="topico-7">
+<!-- TÃ“PICO 7 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">⏪ Rollback</h2>
+<h2 class="text-2xl font-bold">âª Rollback</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t7-p1">Um deploy ruim não é o fim do mundo — é só um <strong class="text-blue-400">rollback</strong>. Na Vercel: <strong>Deployments → escolha a versão anterior estável → Redeploy</strong>. É literalmente "voltar no tempo". Também dá para reverter pelo <strong class="text-blue-400">GitHub</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t7-p1">Um deploy ruim nÃ£o Ã© o fim do mundo â€” Ã© sÃ³ um <strong class="text-blue-400">rollback</strong>. Na Vercel: <strong>Deployments â†’ escolha a versÃ£o anterior estÃ¡vel â†’ Redeploy</strong>. Ã‰ literalmente "voltar no tempo". TambÃ©m dÃ¡ para reverter pelo <strong class="text-blue-400">GitHub</strong>.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-blue-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Uma linha de deploys: a versão estável, depois um deploy ruim; o rollback volta para a versão estável anterior via Redeploy" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="Uma linha de deploys: a versÃ£o estÃ¡vel, depois um deploy ruim; o rollback volta para a versÃ£o estÃ¡vel anterior via Redeploy" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m22b-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa"></stop><stop offset="1" stop-color="#3b82f6"></stop></lineargradient>
 <filter height="180%" id="m22b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -602,13 +602,13 @@
 <rect fill="url(#m22b-grid)" height="200" width="1000" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif">
 <g filter="url(#m22b-glow)"><rect fill="#0e2018" height="60" rx="14" stroke="url(#m22b-grad)" stroke-width="2.5" width="200" x="60" y="80"></rect></g>
-<text fill="#60a5fa" font-size="16" font-weight="600" text-anchor="middle" x="160" y="106">v1 estável</text>
+<text fill="#60a5fa" font-size="16" font-weight="600" text-anchor="middle" x="160" y="106">v1 estÃ¡vel</text>
 <text fill="#dbeafe" font-size="12" text-anchor="middle" x="160" y="126">funcionava bem</text>
 <rect fill="#1f1212" height="60" rx="14" stroke="#f87171" stroke-width="2" width="200" x="400" y="80"></rect>
 <text fill="#fca5a5" font-size="16" font-weight="600" text-anchor="middle" x="500" y="106">v2 quebrada</text>
 <text fill="#fecaca" font-size="12" text-anchor="middle" x="500" y="126">deploy ruim</text>
 <g filter="url(#m22b-glow)"><rect fill="#0e2018" height="60" rx="14" stroke="url(#m22b-grad)" stroke-width="2.5" width="200" x="740" y="80"></rect></g>
-<text fill="#60a5fa" font-size="16" font-weight="600" text-anchor="middle" x="840" y="106">Rollback → v1</text>
+<text fill="#60a5fa" font-size="16" font-weight="600" text-anchor="middle" x="840" y="106">Rollback â†’ v1</text>
 <text fill="#dbeafe" font-size="12" text-anchor="middle" x="840" y="126">Redeploy</text>
 <g fill="none" opacity="0.6" stroke="#60a5fa" stroke-width="2"><path d="M260,110 L396,110" marker-end="url(#m22b-ah)"></path></g>
 <g fill="none" opacity="0.85" stroke="#60a5fa" stroke-width="2.5"><path d="M740,150 C560,185 360,185 200,150" marker-end="url(#m22b-ah)"></path></g>
@@ -620,127 +620,127 @@
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Por onde</th><th class="text-left p-3">Passo</th><th class="text-left p-3">Resultado</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-neutral-300">Vercel</td><td class="p-3">Deployments → versão estável → Redeploy</td><td class="p-3 text-blue-400">volta no tempo</td></tr>
-<tr><td class="p-3 text-neutral-300">GitHub</td><td class="p-3">reverter para o commit bom</td><td class="p-3 text-blue-400">desfaz a mudança</td></tr>
+<tr><td class="p-3 text-neutral-300">Vercel</td><td class="p-3">Deployments â†’ versÃ£o estÃ¡vel â†’ Redeploy</td><td class="p-3 text-blue-400">volta no tempo</td></tr>
+<tr><td class="p-3 text-neutral-300">GitHub</td><td class="p-3">reverter para o commit bom</td><td class="p-3 text-blue-400">desfaz a mudanÃ§a</td></tr>
 </tbody>
 </table>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Deployments</div><p class="text-xs text-neutral-400">o histórico</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Estável</div><p class="text-xs text-neutral-400">a versão boa</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Deployments</div><p class="text-xs text-neutral-400">o histÃ³rico</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">EstÃ¡vel</div><p class="text-xs text-neutral-400">a versÃ£o boa</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Redeploy</div><p class="text-xs text-neutral-400">volta no tempo</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">GitHub</div><p class="text-xs text-neutral-400">também reverte</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">GitHub</div><p class="text-xs text-neutral-400">tambÃ©m reverte</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÓPICO 8 -->
-<section class="mb-16" data-inema-topic="modulo-2-2#topico-8" id="topico-8">
+<!-- TÃ“PICO 8 -->
+<section class="mb-16" data-ARCKHÉ-topic="modulo-2-2#topico-8" id="topico-8">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xl flex-shrink-0">8</span>
-<h2 class="text-2xl font-bold">💰 Budget de API + repo privado</h2>
+<h2 class="text-2xl font-bold">ðŸ’° Budget de API + repo privado</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-inema-doubt-toggle="" title="Marcar dúvida neste tópico" type="button"><span aria-hidden="true">?</span><span>Dúvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-inema-block="m22-t8-p1">Dois cuidados finais para dormir tranquilo. Primeiro: defina um <strong class="text-blue-400">budget</strong> de gasto na API para não tomar uma conta gigante. Segundo: torne o <strong class="text-blue-400">repositório privado</strong> depois de publicado, protegendo seu código.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m22-t8-p1">Dois cuidados finais para dormir tranquilo. Primeiro: defina um <strong class="text-blue-400">budget</strong> de gasto na API para nÃ£o tomar uma conta gigante. Segundo: torne o <strong class="text-blue-400">repositÃ³rio privado</strong> depois de publicado, protegendo seu cÃ³digo.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-semibold text-blue-400 mb-2">💰 Budget de API</h4>
+<h4 class="font-semibold text-blue-400 mb-2">ðŸ’° Budget de API</h4>
 <p class="text-neutral-300 text-sm mb-2">Defina um teto de gasto no painel do provedor da API.</p>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span>Evita sustos na fatura</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span>Protege contra loops ou abuso</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Evita sustos na fatura</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Protege contra loops ou abuso</span></li>
 </ul>
 </div>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
-<h4 class="font-semibold text-blue-400 mb-2">🔒 Repo privado</h4>
-<p class="text-neutral-300 text-sm mb-2">Depois de publicar, mude a visibilidade do repositório para privado.</p>
+<h4 class="font-semibold text-blue-400 mb-2">ðŸ”’ Repo privado</h4>
+<p class="text-neutral-300 text-sm mb-2">Depois de publicar, mude a visibilidade do repositÃ³rio para privado.</p>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span>Protege seu código</span></li>
-<li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span>Reduz risco de chaves vazadas</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Protege seu cÃ³digo</span></li>
+<li class="flex items-start space-x-2"><span class="text-blue-400">â€¢</span><span>Reduz risco de chaves vazadas</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">🛡️</span> Higiene de produção</h3>
-<p class="text-neutral-300">Budget de API + repo privado + env vars formam a base da segurança do seu app no ar. São hábitos simples que evitam dores de cabeça caras.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ›¡ï¸</span> Higiene de produÃ§Ã£o</h3>
+<p class="text-neutral-300">Budget de API + repo privado + env vars formam a base da seguranÃ§a do seu app no ar. SÃ£o hÃ¡bitos simples que evitam dores de cabeÃ§a caras.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Budget</div><p class="text-xs text-neutral-400">teto de gasto</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Sem susto</div><p class="text-xs text-neutral-400">na fatura</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Privado</div><p class="text-xs text-neutral-400">após publicar</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Seguro</div><p class="text-xs text-neutral-400">código + chaves</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Privado</div><p class="text-xs text-neutral-400">apÃ³s publicar</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-blue-400 font-bold mb-1">Seguro</div><p class="text-xs text-neutral-400">cÃ³digo + chaves</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-inema-read-toggle="" type="button">
-<span aria-hidden="true" class="inema-ico-todo">○</span><span aria-hidden="true" class="inema-ico-done">●</span><span class="inema-label-todo">Marcar como lido</span><span class="inema-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÁTICO -->
+<!-- EXEMPLO PRÃTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🔬</span> Exemplo prático</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Vamos publicar o <strong class="text-blue-400">rastreador de preços</strong> da Trilha 2.1 e mantê-lo vivo:</p>
+<p class="text-neutral-300 mb-4">Vamos publicar o <strong class="text-blue-400">rastreador de preÃ§os</strong> da Trilha 2.1 e mantÃª-lo vivo:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
-<li><strong>Publique na Vercel</strong> — Add New → Project → importar o repo → publicar.</li>
-<li><strong>Proteja a chave</strong> — o agente nomeia <code>API_KEY</code>; você cola o valor em Settings → Environment Variables e dá Redeploy.</li>
-<li><strong>Simule um deploy ruim</strong> — depois faça um <strong>rollback</strong>: Deployments → versão estável → Redeploy.</li>
+<li><strong>Publique na Vercel</strong> â€” Add New â†’ Project â†’ importar o repo â†’ publicar.</li>
+<li><strong>Proteja a chave</strong> â€” o agente nomeia <code>API_KEY</code>; vocÃª cola o valor em Settings â†’ Environment Variables e dÃ¡ Redeploy.</li>
+<li><strong>Simule um deploy ruim</strong> â€” depois faÃ§a um <strong>rollback</strong>: Deployments â†’ versÃ£o estÃ¡vel â†’ Redeploy.</li>
 </ol>
-<p class="text-neutral-400 text-sm">Resultado: app no ar, chave segura, e a tranquilidade de saber que dá pra voltar no tempo.</p>
+<p class="text-neutral-400 text-sm">Resultado: app no ar, chave segura, e a tranquilidade de saber que dÃ¡ pra voltar no tempo.</p>
 </div>
 </section>
-<!-- EXERCÍCIO -->
+<!-- EXERCÃCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">🏋️</span> Exercício</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
 <div class="bg-gradient-to-br from-blue-900/30 to-dark-800 rounded-xl border border-blue-500/30 p-6">
-<p class="text-neutral-300 mb-4">Leve o app que você construiu na 2.1 até o mundo:</p>
+<p class="text-neutral-300 mb-4">Leve o app que vocÃª construiu na 2.1 atÃ© o mundo:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li><strong>Publique seu app na Vercel</strong> e confirme que o link funciona.</li>
-<li><strong>Proteja uma chave por env var</strong> — nomeie no código, cole o valor na Vercel, Redeploy.</li>
-<li><strong>Faça um rollback</strong> para a versão anterior e veja o app "voltar no tempo".</li>
+<li><strong>Proteja uma chave por env var</strong> â€” nomeie no cÃ³digo, cole o valor na Vercel, Redeploy.</li>
+<li><strong>FaÃ§a um rollback</strong> para a versÃ£o anterior e veja o app "voltar no tempo".</li>
 </ol>
-<p class="text-neutral-400 text-sm">Bônus: ligue Analytics e defina um budget de API. Na Trilha 3, você vai escalar a produção.</p>
+<p class="text-neutral-400 text-sm">BÃ´nus: ligue Analytics e defina um budget de API. Na Trilha 3, vocÃª vai escalar a produÃ§Ã£o.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">⚡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">criar repo e publicar</span><button class="text-xs px-2 py-1 rounded bg-blue-600 hover:bg-blue-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Crie um repositório no GitHub chamado [nome] e publique o projeto atual.
-Use o GitHub MCP. Não inclua chaves de API no código.</pre>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Crie um repositÃ³rio no GitHub chamado [nome] e publique o projeto atual.
+Use o GitHub MCP. NÃ£o inclua chaves de API no cÃ³digo.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">nomear env var</span><button class="text-xs px-2 py-1 rounded bg-blue-600 hover:bg-blue-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Especifique como a variável de ambiente deve se chamar (ex.: API_KEY);
-eu forneço a chave dentro da Vercel. Não coloque o valor no código.</pre>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Especifique como a variÃ¡vel de ambiente deve se chamar (ex.: API_KEY);
+eu forneÃ§o a chave dentro da Vercel. NÃ£o coloque o valor no cÃ³digo.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">corrigir erro de deploy</span><button class="text-xs px-2 py-1 rounded bg-blue-600 hover:bg-blue-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Houve um erro no deploy (veja o print). Corrija.
-Explique em uma frase o que causou e o que você mudou.</pre>
+Explique em uma frase o que causou e o que vocÃª mudou.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-blue-900/40 via-dark-800 to-dark-800 rounded-xl border border-blue-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> Resumo do módulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">GitHub MCP + Vercel</strong><span class="text-neutral-400"> — conecte (token + Docker) e publique em produção em poucos cliques.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Env vars</strong><span class="text-neutral-400"> — o agente nomeia, você cola na Vercel e dá Redeploy; nunca no código.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Manter vivo</strong><span class="text-neutral-400"> — analytics, troubleshooting por print, commit often e rollback.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">✓</span><div><strong class="text-white">Higiene final</strong><span class="text-neutral-400"> — budget de API e repositório privado depois de publicado.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">GitHub MCP + Vercel</strong><span class="text-neutral-400"> â€” conecte (token + Docker) e publique em produÃ§Ã£o em poucos cliques.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Env vars</strong><span class="text-neutral-400"> â€” o agente nomeia, vocÃª cola na Vercel e dÃ¡ Redeploy; nunca no cÃ³digo.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Manter vivo</strong><span class="text-neutral-400"> â€” analytics, troubleshooting por print, commit often e rollback.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-blue-400 mt-1">âœ“</span><div><strong class="text-white">Higiene final</strong><span class="text-neutral-400"> â€” budget de API e repositÃ³rio privado depois de publicado.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">Próxima trilha:</h3><p class="text-neutral-300">Trilha 3 — Escalar a Produção</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-blue-400 mb-2">PrÃ³xima trilha:</h3><p class="text-neutral-300">Trilha 3 â€” Escalar a ProduÃ§Ã£o</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">← Voltar para Trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Trilha 3: Escalar a Produção →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para Trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-500 transition-colors" href="../trilha3/index.html">Trilha 3: Escalar a ProduÃ§Ã£o â†’</a>
 </div>
 </div>
 </section>
@@ -749,7 +749,7 @@ Explique em uma frase o que causou e o que você mudou.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — do Zero ao App Publicado com IA · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -772,11 +772,11 @@ Explique em uma frase o que causou e o que você mudou.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -784,22 +784,22 @@ Explique em uma frase o que causou e o que você mudou.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = '✓ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

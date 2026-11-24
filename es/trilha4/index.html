@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="inema-course"/>
-<title>Ruta 4 · Profesionalizar | AntiGravity</title>
+<meta content="antigravity" name="ARCKHÉ-course"/>
+<title>Ruta 4 Â· Profesionalizar | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('inema.prefs');
+        var raw = localStorage.getItem('ARCKHÉ.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'inema-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['inema-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--inema-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -152,7 +152,7 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-inema-manifest="" type="application/json">
+<script data-ARCKHÉ-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -165,7 +165,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a Produção", "modules": [
+      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -180,8 +180,8 @@
     ]
   }
   </script>
-<link href="https://inematds.github.io/antigravity/trilha4/" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/antigravity/en/trilha4/" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/antigravity/es/trilha4/" hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="inema-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha4/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha4/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha4/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha4/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -189,47 +189,47 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">🛰️</span>
+<span class="text-2xl">ðŸ›°ï¸</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://inema.club" target="_blank">INEMA.CLUB</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Escalar</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profesional</span></a>
-<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestría</span></a>
+<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrÃ­a</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-inema-appearance-toggle="[data-inema-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">◑</span></button>
-<div class="inema-appearance-pop" data-inema-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="inema-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="inema-dark">Oscuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="foco">Enfoque</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">â—‘</span></button>
+<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Oscuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Enfoque</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-font="leitura">Lectura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Lectura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamaño</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">TamaÃ±o</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="inema-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-inema-set-leading="1.7">Cómodo</button>
+<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHÉ-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">CÃ³modo</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-inema-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">◷</span><span class="hidden sm:inline">Trayectoria</span>
-<span class="inema-journey-badge" data-count="0" data-inema-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Trayectoria</span>
+<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -243,12 +243,12 @@
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">RUTA 4</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">💼 Profesionalizar</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Saber construir es la mitad del camino. Ahora organizas tu flujo de trabajo para entregar con método, decides cómo aplicar lo que haces a problemas reales (tu trabajo, un proyecto, un cliente) y adoptas un checklist de calidad y seguridad antes de cada entrega.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ’¼ Profesionalizar</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Saber construir es la mitad del camino. Ahora organizas tu flujo de trabajo para entregar con mÃ©todo, decides cÃ³mo aplicar lo que haces a problemas reales (tu trabajo, un proyecto, un cliente) y adoptas un checklist de calidad y seguridad antes de cada entrega.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">2</div><div class="text-xs text-neutral-400">Módulos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">2</div><div class="text-xs text-neutral-400">MÃ³dulos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">13</div><div class="text-xs text-neutral-400">Temas</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">~2h</div><div class="text-xs text-neutral-400">Duración</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">~2h</div><div class="text-xs text-neutral-400">DuraciÃ³n</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Intermedio</div><div class="text-xs text-neutral-400">Nivel</div></div>
 </div>
 </div>
@@ -256,7 +256,7 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- HERO SVG -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-5 mb-12 overflow-hidden">
-<svg aria-label="El flujo profesional: enfocarse en un problema con una tecnología, ampliar lo que ya funciona, ejecutar la lista de verificación de calidad y seguridad y solo entonces entregar con monitoreo" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
+<svg aria-label="El flujo profesional: enfocarse en un problema con una tecnologÃ­a, ampliar lo que ya funciona, ejecutar la lista de verificaciÃ³n de calidad y seguridad y solo entonces entregar con monitoreo" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
 <defs>
 <lineargradient id="t4-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop></lineargradient>
 <filter height="180%" id="t4-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -267,9 +267,9 @@
 <g font-family="Inter,sans-serif">
 <rect fill="#1f1604" height="60" rx="12" stroke="#fbbf24" stroke-width="2" width="180" x="40" y="120"></rect>
 <text fill="#fbbf24" font-size="15" font-weight="600" text-anchor="middle" x="130" y="146">1 problema</text>
-<text fill="#fde68a" font-size="12" text-anchor="middle" x="130" y="166">1 tecnología</text>
+<text fill="#fde68a" font-size="12" text-anchor="middle" x="130" y="166">1 tecnologÃ­a</text>
 <rect fill="#1f1604" height="60" rx="12" stroke="#fbbf24" stroke-width="2" width="180" x="280" y="120"></rect>
-<text fill="#fbbf24" font-size="15" font-weight="600" text-anchor="middle" x="370" y="146">Amplía qué</text>
+<text fill="#fbbf24" font-size="15" font-weight="600" text-anchor="middle" x="370" y="146">AmplÃ­a quÃ©</text>
 <text fill="#fde68a" font-size="12" text-anchor="middle" x="370" y="166">ya funciona (80/20)</text>
 <g filter="url(#t4-glow)"><rect fill="#1f1604" height="68" rx="14" stroke="url(#t4-grad)" stroke-width="2.5" width="180" x="520" y="116"></rect></g>
 <text fill="#fbbf24" font-size="15" font-weight="600" text-anchor="middle" x="610" y="144">Pre-Flight</text>
@@ -283,7 +283,7 @@
 <path d="M700,150 L760,150" marker-end="url(#t4-ah)"></path>
 </g>
 <text fill="#fbbf24" font-size="14" font-weight="600" text-anchor="middle" x="500" y="70">Del enfoque a la entrega profesional</text>
-<text fill="#9ca3af" font-size="12" text-anchor="middle" x="500" y="92">método · calidad · confianza</text>
+<text fill="#9ca3af" font-size="12" text-anchor="middle" x="500" y="92">mÃ©todo Â· calidad Â· confianza</text>
 </g>
 </svg>
 </div>
@@ -293,89 +293,89 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="#modulo-4-1">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.1</span><span class="text-xs text-neutral-500">~55 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">🎯 Flujo de trabajo profesional</h3>
-<p class="text-xs text-neutral-400">Enfoque, 80/20 y aplicación a un problema real</p>
+<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">ðŸŽ¯ Flujo de trabajo profesional</h3>
+<p class="text-xs text-neutral-400">Enfoque, 80/20 y aplicaciÃ³n a un problema real</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-5 transition-all" href="#modulo-4-2">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold text-sm">4.2</span><span class="text-xs text-neutral-500">~65 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">📦 Entregar y aplicar profesionalmente</h3>
+<h3 class="font-semibold mb-1 group-hover:text-amber-400 transition-colors">ðŸ“¦ Entregar y aplicar profesionalmente</h3>
 <p class="text-xs text-neutral-400">Modelos de propiedad, Pre-Flight Checklist y entrega</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
-<!-- MÓDULO 4.1 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="4-1" data-inema-track="4" id="modulo-4-1">
+<!-- MÃ“DULO 4.1 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="4-1" data-ARCKHÉ-track="4" id="modulo-4-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.1</span><span class="text-xs text-neutral-500">~55 min</span></div>
-<h3 class="text-2xl font-bold mb-2">🎯 Flujo de trabajo profesional</h3>
+<h3 class="text-2xl font-bold mb-2">ðŸŽ¯ Flujo de trabajo profesional</h3>
 <p class="text-neutral-400 text-sm">Los principios que evitan el overwhelm: un problema a la vez, duplicar lo que funciona y aprender siempre para aplicarlo a algo real.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🎯</span><div><span class="font-medium">Un problema, una tecnología</span><span class="text-neutral-500 text-sm ml-2">- enfoque total</span></div>
+<span class="text-lg">ðŸŽ¯</span><div><span class="font-medium">Un problema, una tecnologÃ­a</span><span class="text-neutral-500 text-sm ml-2">- enfoque total</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Resuelve un problema a la vez, de principio a fin, con una sola tecnología, en lugar de abrir diez frentes al mismo tiempo.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Es el antídoto directo contra el agobio que paraliza a quien recién empieza.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Enfoque · alcance único · de principio a fin.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Resuelve un problema a la vez, de principio a fin, con una sola tecnologÃ­a, en lugar de abrir diez frentes al mismo tiempo.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el antÃ­doto directo contra el agobio que paraliza a quien reciÃ©n empieza.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Enfoque Â· alcance Ãºnico Â· de principio a fin.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">📈</span><div><span class="font-medium">Haz más de lo que funciona</span><span class="text-neutral-500 text-sm ml-2">- principio 80/20</span></div>
+<span class="text-lg">ðŸ“ˆ</span><div><span class="font-medium">Haz mÃ¡s de lo que funciona</span><span class="text-neutral-500 text-sm ml-2">- principio 80/20</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Encuentra lo que ya da resultados (el 20% que produce el 80%) y amplíalo, en lugar de empezar de cero cada vez.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">La ruta más rápida para crecer es duplicar lo que funciona.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Pareto · apalancamiento · amplificación.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Encuentra lo que ya da resultados (el 20% que produce el 80%) y amplÃ­alo, en lugar de empezar de cero cada vez.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La ruta mÃ¡s rÃ¡pida para crecer es duplicar lo que funciona.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Pareto Â· apalancamiento Â· amplificaciÃ³n.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">✈️</span><div><span class="font-medium">Autopilot vs. manual</span><span class="text-neutral-500 text-sm ml-2">- entiende los fundamentos</span></div>
+<span class="text-lg">âœˆï¸</span><div><span class="font-medium">Autopilot vs. manual</span><span class="text-neutral-500 text-sm ml-2">- entiende los fundamentos</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">La IA es el «piloto automático». Entender los fundamentos que hay detrás (los «controles manuales») te hace programar mucho mejor.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Para conducir, puedes andar solo con el automático, pero conocer el manual te saca de cualquier apuro.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Abstracción · fundamentos · control.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">La IA es el Â«piloto automÃ¡ticoÂ». Entender los fundamentos que hay detrÃ¡s (los Â«controles manualesÂ») te hace programar mucho mejor.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Para conducir, puedes andar solo con el automÃ¡tico, pero conocer el manual te saca de cualquier apuro.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">AbstracciÃ³n Â· fundamentos Â· control.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">🧭</span><div><span class="font-medium">Comparar IDEs y mantenerte al día</span><span class="text-neutral-500 text-sm ml-2">- campo vivo</span></div>
+<span class="text-lg">ðŸ§­</span><div><span class="font-medium">Comparar IDEs y mantenerte al dÃ­a</span><span class="text-neutral-500 text-sm ml-2">- campo vivo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">AntiGravity, Cursor y otros IDE con IA evolucionan rápido. Es un campo vivo que cambia mes a mes.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Volver siempre para seguir las nuevas capacidades te mantiene competitivo.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Comparación · actualización continua · portabilidad.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">AntiGravity, Cursor y otros IDE con IA evolucionan rÃ¡pido. Es un campo vivo que cambia mes a mes.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Volver siempre para seguir las nuevas capacidades te mantiene competitivo.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">ComparaciÃ³n Â· actualizaciÃ³n continua Â· portabilidad.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🛤️</span><div><span class="font-medium">Elige tu ruta de aplicación</span><span class="text-neutral-500 text-sm ml-2">- aplicarlo a algo real</span></div>
+<span class="text-lg">ðŸ›¤ï¸</span><div><span class="font-medium">Elige tu ruta de aplicaciÃ³n</span><span class="text-neutral-500 text-sm ml-2">- aplicarlo a algo real</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Aprende para aplicarlo a un problema real, no en el vacío. Define dónde vas a usar esto: en tu trabajo, un proyecto o con un cliente.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">El conocimiento sin rumbo no se convierte en habilidad; la aplicación afianza el aprendizaje.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Aplicación real · destino · proyecto ancla.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Aprende para aplicarlo a un problema real, no en el vacÃ­o. Define dÃ³nde vas a usar esto: en tu trabajo, un proyecto o con un cliente.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">El conocimiento sin rumbo no se convierte en habilidad; la aplicaciÃ³n afianza el aprendizaje.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">AplicaciÃ³n real Â· destino Â· proyecto ancla.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">⚠️</span><div><span class="font-medium">Errores comunes</span><span class="text-neutral-500 text-sm ml-2">- abrumarse y no aplicarlo</span></div>
+<span class="text-lg">âš ï¸</span><div><span class="font-medium">Errores comunes</span><span class="text-neutral-500 text-sm ml-2">- abrumarse y no aplicarlo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Los dos tropiezos clásicos: intentar hacerlo todo de una vez (overwhelm) y aprender herramientas sin llegar a aplicarlas.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">La solución es enfocarse en un problema real a la vez.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Overwhelm · aprender sin aplicar · enfoque.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Los dos tropiezos clÃ¡sicos: intentar hacerlo todo de una vez (overwhelm) y aprender herramientas sin llegar a aplicarlas.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La soluciÃ³n es enfocarse en un problema real a la vez.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Overwhelm Â· aprender sin aplicar Â· enfoque.</p></div>
 </div></div>
 </div>
 </div>
@@ -384,89 +384,89 @@
 <a class="px-4 py-2 text-sm bg-amber-600 hover:bg-amber-500 text-white rounded-lg transition-colors" href="modulo-4-1.html">Ver completo</a>
 </div>
 </div>
-<!-- MÓDULO 4.2 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-inema-module="4-2" data-inema-track="4" id="modulo-4-2">
+<!-- MÃ“DULO 4.2 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="4-2" data-ARCKHÉ-track="4" id="modulo-4-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-amber-400 font-bold">4.2</span><span class="text-xs text-neutral-500">~65 min</span></div>
-<h3 class="text-2xl font-bold mb-2">📦 Entregar y aplicar profesionalmente</h3>
-<p class="text-neutral-400 text-sm">Cómo lo que construyes se convierte en un producto real, los modelos de propiedad, el Pre-Flight Checklist de calidad y seguridad, y la entrega con monitoreo.</p>
+<h3 class="text-2xl font-bold mb-2">ðŸ“¦ Entregar y aplicar profesionalmente</h3>
+<p class="text-neutral-400 text-sm">CÃ³mo lo que construyes se convierte en un producto real, los modelos de propiedad, el Pre-Flight Checklist de calidad y seguridad, y la entrega con monitoreo.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">🔁</span><div><span class="font-medium">De la automatización al software</span><span class="text-neutral-500 text-sm ml-2">- el software es el producto</span></div>
+<span class="text-lg">ðŸ”</span><div><span class="font-medium">De la automatizaciÃ³n al software</span><span class="text-neutral-500 text-sm ml-2">- el software es el producto</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Cuando lo que entregas se convierte en un software de verdad —y no solo en una automatización aislada—, todo cambia: el software ES el producto.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Es el salto de "tarea resuelta" a "producto con valor propio".</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Producto · activo · software vs. automatización.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Cuando lo que entregas se convierte en un software de verdad â€”y no solo en una automatizaciÃ³n aisladaâ€”, todo cambia: el software ES el producto.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el salto de "tarea resuelta" a "producto con valor propio".</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Producto Â· activo Â· software vs. automatizaciÃ³n.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">🤝</span><div><span class="font-medium">Modelos de propiedad</span><span class="text-neutral-500 text-sm ml-2">- 3 formas de entregar</span></div>
+<span class="text-lg">ðŸ¤</span><div><span class="font-medium">Modelos de propiedad</span><span class="text-neutral-500 text-sm ml-2">- 3 formas de entregar</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">(1) Tú eres el dueño y el cliente obtiene una licencia; (2) el cliente es el dueño, con entrega completa y README, sin soporte; (3) preferido: el cliente es el dueño + soporte de 30–90 días.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">El modelo de propiedad define los ingresos, la responsabilidad y las expectativas.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Licencia · entrega completa · período de soporte.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">(1) TÃº eres el dueÃ±o y el cliente obtiene una licencia; (2) el cliente es el dueÃ±o, con entrega completa y README, sin soporte; (3) preferido: el cliente es el dueÃ±o + soporte de 30â€“90 dÃ­as.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">El modelo de propiedad define los ingresos, la responsabilidad y las expectativas.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Licencia Â· entrega completa Â· perÃ­odo de soporte.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">🧠</span><div><span class="font-medium">Socio de transformación</span><span class="text-neutral-500 text-sm ml-2">- relación a largo plazo</span></div>
+<span class="text-lg">ðŸ§ </span><div><span class="font-medium">Socio de transformaciÃ³n</span><span class="text-neutral-500 text-sm ml-2">- relaciÃ³n a largo plazo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Posiciónate como socio a largo plazo (como un «director de IA» fraccionario), no como un «freelancer ocasional».</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Las relaciones y los ingresos recurrentes valen más que los proyectos puntuales.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Colaboración · recurrencia · posicionamiento.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">PosiciÃ³nate como socio a largo plazo (como un Â«director de IAÂ» fraccionario), no como un Â«freelancer ocasionalÂ».</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Las relaciones y los ingresos recurrentes valen mÃ¡s que los proyectos puntuales.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">ColaboraciÃ³n Â· recurrencia Â· posicionamiento.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">✅</span><div><span class="font-medium">El Pre-Flight Checklist</span><span class="text-neutral-500 text-sm ml-2">- QA y prueba de estrés</span></div>
+<span class="text-lg">âœ…</span><div><span class="font-medium">El Pre-Flight Checklist</span><span class="text-neutral-500 text-sm ml-2">- QA y prueba de estrÃ©s</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Antes de entregar, la IA asume el papel de ingeniero de QA sénior + auditor de seguridad y recorre las fases, clasificando cada hallazgo como Crítico / Aviso / OK.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Es lo que separa un "funcionó en mi máquina" de una entrega profesional.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">QA · prueba de estrés · Crítico/Aviso/OK.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Antes de entregar, la IA asume el papel de ingeniero de QA sÃ©nior + auditor de seguridad y recorre las fases, clasificando cada hallazgo como CrÃ­tico / Aviso / OK.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es lo que separa un "funcionÃ³ en mi mÃ¡quina" de una entrega profesional.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">QA Â· prueba de estrÃ©s Â· CrÃ­tico/Aviso/OK.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">🔒</span><div><span class="font-medium">Seguridad y compliance</span><span class="text-neutral-500 text-sm ml-2">- secretos y privacidad</span></div>
+<span class="text-lg">ðŸ”’</span><div><span class="font-medium">Seguridad y compliance</span><span class="text-neutral-500 text-sm ml-2">- secretos y privacidad</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Protege los secretos (claves de API), audita las dependencias desactualizadas y considera las normas de privacidad (LGPD/GDPR y similares).</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Una filtración o una multa por incumplimiento puede echar por tierra cualquier entrega.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Secretos · dependencias · LGPD/GDPR.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Protege los secretos (claves de API), audita las dependencias desactualizadas y considera las normas de privacidad (LGPD/GDPR y similares).</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Una filtraciÃ³n o una multa por incumplimiento puede echar por tierra cualquier entrega.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Secretos Â· dependencias Â· LGPD/GDPR.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">🧪</span><div><span class="font-medium">Degradación del contexto</span><span class="text-neutral-500 text-sm ml-2">- ventana nueva y limpia</span></div>
+<span class="text-lg">ðŸ§ª</span><div><span class="font-medium">DegradaciÃ³n del contexto</span><span class="text-neutral-500 text-sm ml-2">- ventana nueva y limpia</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">Ejecuta QA en una ventana nueva y limpia: una conversación larga «deteriora» el contexto. Ejecútalo 2 veces, idealmente con modelos diferentes.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">Un contexto contaminado hace que la IA pierda rigor y deje pasar problemas.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Degradación del contexto · ventana limpia · doble verificación.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Ejecuta QA en una ventana nueva y limpia: una conversaciÃ³n larga Â«deterioraÂ» el contexto. EjecÃºtalo 2 veces, idealmente con modelos diferentes.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Un contexto contaminado hace que la IA pierda rigor y deje pasar problemas.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">DegradaciÃ³n del contexto Â· ventana limpia Â· doble verificaciÃ³n.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-<span class="text-lg">📡</span><div><span class="font-medium">Monitoreo y entrega</span><span class="text-neutral-500 text-sm ml-2">- no confíes, compruébalo</span></div>
+<span class="text-lg">ðŸ“¡</span><div><span class="font-medium">Monitoreo y entrega</span><span class="text-neutral-500 text-sm ml-2">- no confÃ­es, compruÃ©balo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-amber-400 font-semibold">Qué es:</span><p class="text-neutral-300 text-sm">"No confíes, compruébalo": ten monitoreo/uptime que demuestre, con datos, que el sistema sigue funcionando después de la entrega.</p></div>
-<div><span class="text-amber-400 font-semibold">Por qué aprender:</span><p class="text-neutral-300 text-sm">La entrega profesional no termina con el deploy: se demuestra en producción.</p></div>
-<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Monitoreo · disponibilidad · evidencia.</p></div>
+<div><span class="text-amber-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">"No confÃ­es, compruÃ©balo": ten monitoreo/uptime que demuestre, con datos, que el sistema sigue funcionando despuÃ©s de la entrega.</p></div>
+<div><span class="text-amber-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La entrega profesional no termina con el deploy: se demuestra en producciÃ³n.</p></div>
+<div><span class="text-amber-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Monitoreo Â· disponibilidad Â· evidencia.</p></div>
 </div></div>
 </div>
 </div>
@@ -475,28 +475,28 @@
 <a class="px-4 py-2 text-sm bg-amber-600 hover:bg-amber-500 text-white rounded-lg transition-colors" href="modulo-4-2.html">Ver completo</a>
 </div>
 </div>
-<!-- NAV PRÓXIMA TRILHA -->
+<!-- NAV PRÃ“XIMA TRILHA -->
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha3/index.html">← Ruta 3: Escalar la producción</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Ruta 5: Maestría y biblioteca →</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha3/index.html">â† Ruta 3: Escalar la producciÃ³n</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Ruta 5: MaestrÃ­a y biblioteca â†’</a>
 </div>
 </main>
 <!-- MODAIS -->
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-4-1" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.1</span><span class="font-semibold">Flujo de trabajo profesional</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.1</span><span class="font-semibold">Flujo de trabajo profesional</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-4-1.html"></iframe>
 </div>
 </div>
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-4-2" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.2</span><span class="font-semibold">Entregar y aplicar profesionalmente</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">×</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-amber-400 font-bold">4.2</span><span class="font-semibold">Entregar y aplicar profesionalmente</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-4-2.html"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity — de cero a la app publicada con IA · <a class="text-sky-400 hover:text-sky-300" href="https://inema.club" target="_blank">INEMA.CLUB</a> · 2026</p>
+<p>AntiGravity â€” de cero a la app publicada con IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
 </div>
 </footer>
 <script>
@@ -519,11 +519,11 @@
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.INEMA && INEMA.setPref) { INEMA.setPref('theme', nowDark ? 'inema-dark' : 'claro'); }
+        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('inema:progress', paint);
+      document.addEventListener('ARCKHÉ:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -531,15 +531,15 @@
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.INEMA && typeof window.INEMA.init === 'function') { window.INEMA.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) à API do learn.js
+    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
     (function () {
       function wire() {
-        if (!window.INEMA) return;
-        document.querySelectorAll('[data-inema-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.openJourney && INEMA.openJourney(); }); });
-        document.querySelectorAll('[data-inema-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-inema-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-inema-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-inema-set-theme','theme'],['data-inema-set-font','font'],['data-inema-set-fontscale','fontScale'],['data-inema-set-leading','leading'],['data-inema-set-accent','accent'],['data-inema-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { INEMA.setPref && INEMA.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-inema-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-inema-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHÉ) return;
+        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();
