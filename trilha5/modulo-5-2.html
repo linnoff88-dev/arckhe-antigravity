@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>MÃ³dulo 5.2 Â· Biblioteca de Skills &amp; Prompts | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>MêÂ³dulo 5.2 êÂ· Biblioteca de Skills &amp; Prompts | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .ARCKHÉ-toc-link.is-active { color: #2dd4bf; font-weight: 600; }
+    .ARCKHê-toc-link.is-active { color: #2dd4bf; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -183,19 +183,19 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-5-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha5/modulo-5-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha5/modulo-5-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-5-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha5/modulo-5-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha5/modulo-5-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-teal-400 bg-teal-500/10" href="index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="AparêÂªncia e leitura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">SêÂ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">ConfortêÂ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,21 +244,21 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-teal-400" href="../index.html">InÃ­cio</a><span>/</span>
+<a class="hover:text-teal-400" href="../index.html">InêÂ­cio</a><span>/</span>
 <a class="hover:text-teal-400" href="index.html">Trilha 5</a><span>/</span>
-<span class="text-teal-400">MÃ³dulo 5.2</span>
+<span class="text-teal-400">MêÂ³dulo 5.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 5.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§° Biblioteca de Skills &amp; Prompts</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Sua caixa de ferramentas: sete artefatos prontos para baixar e adaptar. Skills de clonagem e conversÃ£o, prompt de debug, config de MCP, template de claude.md, checklist de QA e a coletÃ¢nea de prompts.</p>
+<span class="inline-block px-3 py-1 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full mb-4">MêâDULO 5.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â° Biblioteca de Skills &amp; Prompts</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Sua caixa de ferramentas: sete artefatos prontos para baixar e adaptar. Skills de clonagem e conversêÂ£o, prompt de debug, config de MCP, template de claude.md, checklist de QA e a coletêÂ¢nea de prompts.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">7</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">7</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">60</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">AvanÃ§ado</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">AvanêÂ§ado</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-teal-400">Toolkit</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
@@ -266,25 +266,25 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 7</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeêÂ§êÂ£o <span data-ARCKHê-section-counter="">1 de 7</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-1">1. Cloning Skill</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-2">2. Transformer Skill</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-3">3. Ultimate Debugger</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-4">4. MCP Config</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-5">5. claude.md (CODA)</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-6">6. QA Pre-Flight</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-teal-400" href="#topico-7">7. Biblioteca de prompts</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-1">1. Cloning Skill</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-2">2. Transformer Skill</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-3">3. Ultimate Debugger</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-4">4. MCP Config</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-5">5. claude.md (CODA)</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-6">6. QA Pre-Flight</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-teal-400" href="#topico-7">7. Biblioteca de prompts</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-ARCKHÉ-meter="modulo:5-2"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 7</span> Â· <span class="text-teal-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-teal-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHê-meter="modulo:5-2"><span class="text-neutral-400" data-ARCKHê-meter-frac="">0 de 7</span> êÂ· <span class="text-teal-400 font-bold" data-ARCKHê-meter-pct="">0%</span><div class="ARCKHê-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-teal-500" data-ARCKHê-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-ARCKHÉ-module="5-2" data-ARCKHÉ-track="5">
+<article class="min-w-0" data-ARCKHê-module="5-2" data-ARCKHê-track="5">
 <!-- SVG: caixa de ferramentas -->
 <div class="rounded-2xl border border-teal-500/30 bg-dark-900/40 p-3 sm:p-4 mb-12 overflow-hidden">
-<svg aria-label="Uma caixa de ferramentas teal contendo vÃ¡rias caixas menores rotuladas com os sete artefatos da biblioteca: Cloning, Transformer, Debugger, MCP, claude.md, QA e Prompts" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
+<svg aria-label="Uma caixa de ferramentas teal contendo vêÂ¡rias caixas menores rotuladas com os sete artefatos da biblioteca: Cloning, Transformer, Debugger, MCP, claude.md, QA e Prompts" class="w-full h-auto" role="img" viewbox="0 0 1000 240">
 <defs>
 <lineargradient id="m52-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#2dd4bf"></stop><stop offset="1" stop-color="#14b8a6"></stop></lineargradient>
 <filter height="180%" id="m52-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -293,191 +293,191 @@
 <rect fill="url(#m52-grid)" height="240" width="1000" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif">
 <g filter="url(#m52-glow)"><rect fill="#0c1f1c" height="184" rx="18" stroke="url(#m52-grad)" stroke-width="2.5" width="940" x="30" y="30"></rect></g>
-<text fill="#2dd4bf" font-size="16" font-weight="700" x="60" y="58">ðŸ§° Biblioteca â€” caixa de ferramentas</text>
+<text fill="#2dd4bf" font-size="16" font-weight="700" x="60" y="58">ê°Å¸Â§Â° Biblioteca ê¢â¬â caixa de ferramentas</text>
 <g font-size="13" font-weight="600">
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="60" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="160" y="105">ðŸ§¬ Cloning</text></g>
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="280" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="380" y="105">ðŸ”„ Transformer</text></g>
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="500" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="600" y="105">ðŸž Debugger</text></g>
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="220" x="720" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="830" y="105">ðŸ”Œ MCP Config</text></g>
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="60" y="138"></rect><text fill="#99f6e4" text-anchor="middle" x="160" y="165">ðŸ“‹ claude.md</text></g>
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="280" y="138"></rect><text fill="#99f6e4" text-anchor="middle" x="380" y="165">âœ… QA Pre-Flight</text></g>
-<g><rect fill="#0f2a26" height="44" rx="10" stroke="#2dd4bf" stroke-width="2" width="440" x="500" y="138"></rect><text fill="#99f6e4" text-anchor="middle" x="720" y="165">âš¡ Biblioteca de prompts</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="60" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="160" y="105">ê°Å¸Â§Â¬ Cloning</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="280" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="380" y="105">ê°Å¸ââ Transformer</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="500" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="600" y="105">ê°Å¸ÂÅ¾ Debugger</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="220" x="720" y="78"></rect><text fill="#99f6e4" text-anchor="middle" x="830" y="105">ê°Å¸âÅ MCP Config</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="60" y="138"></rect><text fill="#99f6e4" text-anchor="middle" x="160" y="165">ê°Å¸ââ¹ claude.md</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#14b8a6" stroke-width="1.6" width="200" x="280" y="138"></rect><text fill="#99f6e4" text-anchor="middle" x="380" y="165">ê¢Åâ¦ QA Pre-Flight</text></g>
+<g><rect fill="#0f2a26" height="44" rx="10" stroke="#2dd4bf" stroke-width="2" width="440" x="500" y="138"></rect><text fill="#99f6e4" text-anchor="middle" x="720" y="165">ê¢Å¡Â¡ Biblioteca de prompts</text></g>
 </g>
 </g>
 </svg>
 </div>
-<!-- TÃ“PICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-1" id="topico-1">
+<!-- TêâPICO 1 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">ðŸ§¬ Cloning Skill</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â¬ Cloning Skill</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t1-p1">A <strong class="text-teal-400">Cloning Skill</strong> Ã© um protocolo que pega um template validado e o <strong class="text-teal-400">re-marca</strong> para um novo cliente ou nicho: troca logo, copy, marcas, preÃ§os, avaliaÃ§Ãµes e a cor de acento â€” sem refazer a estrutura do zero.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t1-p1">A <strong class="text-teal-400">Cloning Skill</strong> êÂ© um protocolo que pega um template validado e o <strong class="text-teal-400">re-marca</strong> para um novo cliente ou nicho: troca logo, copy, marcas, preêÂ§os, avaliaêÂ§êÂµes e a cor de acento ê¢â¬â sem refazer a estrutura do zero.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
-<h4 class="font-bold text-teal-400 mb-4">âœ“ Quando usar</h4>
+<h4 class="font-bold text-teal-400 mb-4">ê¢Åâ Quando usar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>VocÃª jÃ¡ tem um template que funciona</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Precisa servir vÃ¡rios clientes parecidos</span></li>
-<li class="flex items-start space-x-2"><span class="text-teal-400">âœ“</span><span>Quer manter a estrutura e sÃ³ trocar a marca</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">ê¢Åâ</span><span>VocêÂª jêÂ¡ tem um template que funciona</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">ê¢Åâ</span><span>Precisa servir vêÂ¡rios clientes parecidos</span></li>
+<li class="flex items-start space-x-2"><span class="text-teal-400">ê¢Åâ</span><span>Quer manter a estrutura e sêÂ³ trocar a marca</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Quando evitar</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Quando evitar</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>O novo projeto tem estrutura diferente</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>VocÃª ainda nÃ£o validou o template original</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>O conteÃºdo muda mais do que a marca</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>O novo projeto tem estrutura diferente</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>VocêÂª ainda nêÂ£o validou o template original</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>O conteêÂºdo muda mais do que a marca</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
 <div><div class="font-semibold text-teal-400">cloning-protocol.md</div><p class="text-xs text-neutral-400">protocolo de clonagem / rebrand</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/cloning-protocol.md"><span aria-hidden="true">â¬‡ï¸</span> Baixar skill</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/cloning-protocol.md"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar skill</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rÃ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rêÂ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Use a Cloning Skill neste template. Re-marque para o cliente abaixo,
-trocando: logo, copy, nome de marca, preÃ§os, avaliaÃ§Ãµes e cor de acento.
+trocando: logo, copy, nome de marca, preêÂ§os, avaliaêÂ§êÂµes e cor de acento.
 Mantenha a estrutura intacta.
 
-Cliente: [nome] Â· nicho: [nicho] Â· cor: [hex]</pre>
+Cliente: [nome] êÂ· nicho: [nicho] êÂ· cor: [hex]</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-2" id="topico-2">
+<!-- TêâPICO 2 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">ðŸ”„ Transformer Skill</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââ Transformer Skill</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t2-p1">A <strong class="text-teal-400">Transformer Skill</strong> converte um site feito num framework em <strong class="text-teal-400">um Ãºnico HTML self-contained</strong> â€” tudo embutido (CSS e JS inline) â€” pronto para colar dentro de plataformas como <strong>GoHighLevel</strong> ou <strong>WordPress</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t2-p1">A <strong class="text-teal-400">Transformer Skill</strong> converte um site feito num framework em <strong class="text-teal-400">um êÂºnico HTML self-contained</strong> ê¢â¬â tudo embutido (CSS e JS inline) ê¢â¬â pronto para colar dentro de plataformas como <strong>GoHighLevel</strong> ou <strong>WordPress</strong>.</p>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center"><span class="mr-2">ðŸ“¦</span> Entregar onde o cliente jÃ¡ estÃ¡</h3>
-<p class="text-neutral-300">Muitos clientes jÃ¡ tÃªm o site num GoHighLevel ou WordPress. Em vez de migrar tudo, vocÃª transforma sua pÃ¡gina num bloco Ãºnico e cola lÃ¡. Um arquivo, zero dependÃªncias externas.</p>
+<h3 class="text-lg font-semibold text-teal-400 mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¦</span> Entregar onde o cliente jêÂ¡ estêÂ¡</h3>
+<p class="text-neutral-300">Muitos clientes jêÂ¡ têÂªm o site num GoHighLevel ou WordPress. Em vez de migrar tudo, vocêÂª transforma sua pêÂ¡gina num bloco êÂºnico e cola lêÂ¡. Um arquivo, zero dependêÂªncias externas.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-<div><div class="font-semibold text-teal-400">converting-to-gohighlevel.md</div><p class="text-xs text-neutral-400">framework â†’ HTML self-contained</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/converting-to-gohighlevel.md"><span aria-hidden="true">â¬‡ï¸</span> Baixar skill</a>
+<div><div class="font-semibold text-teal-400">converting-to-gohighlevel.md</div><p class="text-xs text-neutral-400">framework ê¢â â HTML self-contained</p></div>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/converting-to-gohighlevel.md"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar skill</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rÃ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Use a Transformer Skill: converta este projeto num Ãºnico HTML
-self-contained (CSS e JS inline, sem dependÃªncias externas),
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rêÂ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Use a Transformer Skill: converta este projeto num êÂºnico HTML
+self-contained (CSS e JS inline, sem dependêÂªncias externas),
 pronto para colar dentro do GoHighLevel/WordPress.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-3" id="topico-3">
+<!-- TêâPICO 3 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">ðŸž Ultimate Debugger Prompt</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ÂÅ¾ Ultimate Debugger Prompt</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t3-p1">O <strong class="text-teal-400">Ultimate Debugger Prompt</strong> Ã© um template estruturado (em <strong>XML</strong>) para debugar erros com IA de forma disciplinada: o modelo <strong class="text-teal-400">gera prediÃ§Ãµes, investiga, acha a causa-raiz e dÃ¡ instruÃ§Ãµes passo a passo</strong>. Ã‰ uma ferramenta open-source de terceiros.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t3-p1">O <strong class="text-teal-400">Ultimate Debugger Prompt</strong> êÂ© um template estruturado (em <strong>XML</strong>) para debugar erros com IA de forma disciplinada: o modelo <strong class="text-teal-400">gera prediêÂ§êÂµes, investiga, acha a causa-raiz e dêÂ¡ instruêÂ§êÂµes passo a passo</strong>. êâ° uma ferramenta open-source de terceiros.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-1">PrediÃ§Ãµes</h4><p class="text-neutral-300 text-sm">A IA lista hipÃ³teses do que pode estar causando o erro antes de investigar.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-1">PrediêÂ§êÂµes</h4><p class="text-neutral-300 text-sm">A IA lista hipêÂ³teses do que pode estar causando o erro antes de investigar.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-1">InvestigaÃ§Ã£o â†’ causa-raiz</h4><p class="text-neutral-300 text-sm">Verifica cada hipÃ³tese e converge para a origem real do problema.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600"><h4 class="font-semibold text-white mb-1">InvestigaêÂ§êÂ£o ê¢â â causa-raiz</h4><p class="text-neutral-300 text-sm">Verifica cada hipêÂ³tese e converge para a origem real do problema.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-500/20 flex items-center justify-center"><span class="text-teal-400 font-bold">3</span></div>
-<div class="flex-1 bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl p-6 border border-teal-500/30"><h4 class="font-semibold text-teal-400 mb-1">InstruÃ§Ãµes passo a passo</h4><p class="text-neutral-300 text-sm">Entrega o conserto detalhado, na ordem, pronto para aplicar.</p></div>
+<div class="flex-1 bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl p-6 border border-teal-500/30"><h4 class="font-semibold text-teal-400 mb-1">InstruêÂ§êÂµes passo a passo</h4><p class="text-neutral-300 text-sm">Entrega o conserto detalhado, na ordem, pronto para aplicar.</p></div>
 </div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-<div><div class="font-semibold text-teal-400">ultimate-debugger-prompt.md</div><p class="text-xs text-neutral-400">template XML de debug Â· open-source</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/ultimate-debugger-prompt.md"><span aria-hidden="true">â¬‡ï¸</span> Baixar prompt</a>
+<div><div class="font-semibold text-teal-400">ultimate-debugger-prompt.md</div><p class="text-xs text-neutral-400">template XML de debug êÂ· open-source</p></div>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/ultimate-debugger-prompt.md"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar prompt</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rÃ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rêÂ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">&lt;debug&gt;
   &lt;erro&gt;[cole a mensagem de erro]&lt;/erro&gt;
-  &lt;contexto&gt;[o que vocÃª estava fazendo]&lt;/contexto&gt;
-  &lt;tarefa&gt;Liste prediÃ§Ãµes, investigue, ache a causa-raiz e me dÃª
-  instruÃ§Ãµes passo a passo para corrigir.&lt;/tarefa&gt;
+  &lt;contexto&gt;[o que vocêÂª estava fazendo]&lt;/contexto&gt;
+  &lt;tarefa&gt;Liste prediêÂ§êÂµes, investigue, ache a causa-raiz e me dêÂª
+  instruêÂ§êÂµes passo a passo para corrigir.&lt;/tarefa&gt;
 &lt;/debug&gt;</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-4" id="topico-4">
+<!-- TêâPICO 4 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">ðŸ”Œ MCP Config</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÅ MCP Config</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t4-p1">O <strong class="text-teal-400">MCP Config</strong> Ã© uma configuraÃ§Ã£o pronta de servidores MCP â€” <strong>n8n, Notion, Pinecone, Supabase, Vercel e Fireflies</strong> â€” com <strong class="text-teal-400">placeholders de chave</strong>. Ã‰ o que liga seu agente Ã s ferramentas externas.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t4-p1">O <strong class="text-teal-400">MCP Config</strong> êÂ© uma configuraêÂ§êÂ£o pronta de servidores MCP ê¢â¬â <strong>n8n, Notion, Pinecone, Supabase, Vercel e Fireflies</strong> ê¢â¬â com <strong class="text-teal-400">placeholders de chave</strong>. êâ° o que liga seu agente êÂ s ferramentas externas.</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
-<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">MCP</th><th class="text-left p-3">Para quÃª</th></tr></thead>
+<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">MCP</th><th class="text-left p-3">Para quêÂª</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-teal-400">n8n</td><td class="p-3">disparar e ler automaÃ§Ãµes</td></tr>
-<tr><td class="p-3 text-teal-400">Notion</td><td class="p-3">ler/escrever em pÃ¡ginas e bases</td></tr>
-<tr><td class="p-3 text-teal-400">Pinecone</td><td class="p-3">busca vetorial / memÃ³ria</td></tr>
+<tr><td class="p-3 text-teal-400">n8n</td><td class="p-3">disparar e ler automaêÂ§êÂµes</td></tr>
+<tr><td class="p-3 text-teal-400">Notion</td><td class="p-3">ler/escrever em pêÂ¡ginas e bases</td></tr>
+<tr><td class="p-3 text-teal-400">Pinecone</td><td class="p-3">busca vetorial / memêÂ³ria</td></tr>
 <tr><td class="p-3 text-teal-400">Supabase</td><td class="p-3">banco de dados e auth</td></tr>
-<tr><td class="p-3 text-teal-400">Vercel</td><td class="p-3">deploy e domÃ­nios</td></tr>
-<tr><td class="p-3 text-teal-400">Fireflies</td><td class="p-3">transcriÃ§Ãµes de reuniÃµes</td></tr>
+<tr><td class="p-3 text-teal-400">Vercel</td><td class="p-3">deploy e domêÂ­nios</td></tr>
+<tr><td class="p-3 text-teal-400">Fireflies</td><td class="p-3">transcriêÂ§êÂµes de reuniêÂµes</td></tr>
 </tbody>
 </table>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”‘</span> Cuidado com as chaves</h3>
-<p class="text-neutral-300">O arquivo vem com <strong>placeholders</strong> (ex.: <code class="text-teal-400">SUA_CHAVE_AQUI</code>). Troque pelos seus valores e nunca suba chaves reais para repositÃ³rios pÃºblicos.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ââ</span> Cuidado com as chaves</h3>
+<p class="text-neutral-300">O arquivo vem com <strong>placeholders</strong> (ex.: <code class="text-teal-400">SUA_CHAVE_AQUI</code>). Troque pelos seus valores e nunca suba chaves reais para repositêÂ³rios pêÂºblicos.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
 <div><div class="font-semibold text-teal-400">mcp-config.json</div><p class="text-xs text-neutral-400">6 MCPs com placeholders de chave</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/mcp-config.json"><span aria-hidden="true">â¬‡ï¸</span> Baixar config</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/mcp-config.json"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar config</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rÃ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rêÂ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Conecte o MCP do [Supabase] usando esta config. Me oriente passo a passo
-onde colar a configuraÃ§Ã£o e onde substituir a chave (placeholder).
-Depois, confirme que a conexÃ£o estÃ¡ funcionando.</pre>
+onde colar a configuraêÂ§êÂ£o e onde substituir a chave (placeholder).
+Depois, confirme que a conexêÂ£o estêÂ¡ funcionando.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-5" id="topico-5">
+<!-- TêâPICO 5 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">ðŸ“‹ claude.md / Gemini.md (CODA)</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââ¹ claude.md / Gemini.md (CODA)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t5-p1">O template de <strong class="text-teal-400">claude.md / Gemini.md</strong> Ã© o ponto de partida do "C" de Configure do CODA: o arquivo de contexto com <strong class="text-teal-400">tech stack, diretÃ³rios, comandos e critÃ©rio de sucesso + como testar</strong>. Comece todo projeto a partir dele.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t5-p1">O template de <strong class="text-teal-400">claude.md / Gemini.md</strong> êÂ© o ponto de partida do "C" de Configure do CODA: o arquivo de contexto com <strong class="text-teal-400">tech stack, diretêÂ³rios, comandos e critêÂ©rio de sucesso + como testar</strong>. Comece todo projeto a partir dele.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">estrutura do template</span></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono"># [Nome do projeto]
@@ -485,14 +485,14 @@ Depois, confirme que a conexÃ£o estÃ¡ funcionando.</pre>
 ## Stack
 - ...
 
-## DiretÃ³rios-chave
+## DiretêÂ³rios-chave
 - ...
 
 ## Comandos
 - rodar: ...
 - testar: ...
 
-## CritÃ©rio de sucesso
+## CritêÂ©rio de sucesso
 - ...
 
 ## Como testar
@@ -500,153 +500,153 @@ Depois, confirme que a conexÃ£o estÃ¡ funcionando.</pre>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
 <div><div class="font-semibold text-teal-400">claude-md-template.md</div><p class="text-xs text-neutral-400">arquivo de contexto do CODA</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/claude-md-template.md"><span aria-hidden="true">â¬‡ï¸</span> Baixar template</a>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/claude-md-template.md"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar template</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rÃ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Preencha este template de claude.md para o meu projeto. FaÃ§a perguntas
-sobre stack, diretÃ³rios, comandos e â€” principalmente â€” critÃ©rio de
-sucesso e como testar, atÃ© o arquivo ficar completo.</pre>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rêÂ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Preencha este template de claude.md para o meu projeto. FaêÂ§a perguntas
+sobre stack, diretêÂ³rios, comandos e ê¢â¬â principalmente ê¢â¬â critêÂ©rio de
+sucesso e como testar, atêÂ© o arquivo ficar completo.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-6" id="topico-6">
+<!-- TêâPICO 6 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">âœ… QA Pre-Flight Checklist</h2>
+<h2 class="text-2xl font-bold">ê¢Åâ¦ QA Pre-Flight Checklist</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t6-p1">O <strong class="text-teal-400">QA Pre-Flight Checklist</strong> Ã© um protocolo de QA e stress test <strong class="text-teal-400">por fases</strong>, que classifica cada achado em trÃªs nÃ­veis de severidade â€” <strong>CrÃ­tico</strong>, <strong>Aviso</strong> e <strong>OK</strong>. Ã‰ a sua checagem antes de "decolar" (publicar).</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t6-p1">O <strong class="text-teal-400">QA Pre-Flight Checklist</strong> êÂ© um protocolo de QA e stress test <strong class="text-teal-400">por fases</strong>, que classifica cada achado em trêÂªs nêÂ­veis de severidade ê¢â¬â <strong>CrêÂ­tico</strong>, <strong>Aviso</strong> e <strong>OK</strong>. êâ° a sua checagem antes de "decolar" (publicar).</p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-5"><div class="font-bold text-red-400 mb-1">ðŸ”´ CrÃ­tico</div><p class="text-xs text-neutral-300">trava o uso Â· nÃ£o pode publicar</p></div>
-<div class="bg-primary/10 rounded-xl border border-primary/30 p-5"><div class="font-bold text-primary mb-1">ðŸŸ¡ Aviso</div><p class="text-xs text-neutral-300">funciona, mas melhora depois</p></div>
-<div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-5"><div class="font-bold text-teal-400 mb-1">ðŸŸ¢ OK</div><p class="text-xs text-neutral-300">passou no teste</p></div>
+<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-5"><div class="font-bold text-red-400 mb-1">ê°Å¸âÂ´ CrêÂ­tico</div><p class="text-xs text-neutral-300">trava o uso êÂ· nêÂ£o pode publicar</p></div>
+<div class="bg-primary/10 rounded-xl border border-primary/30 p-5"><div class="font-bold text-primary mb-1">ê°Å¸Å¸Â¡ Aviso</div><p class="text-xs text-neutral-300">funciona, mas melhora depois</p></div>
+<div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-5"><div class="font-bold text-teal-400 mb-1">ê°Å¸Å¸Â¢ OK</div><p class="text-xs text-neutral-300">passou no teste</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-<div><div class="font-semibold text-teal-400">qa-pre-flight-checklist.md</div><p class="text-xs text-neutral-400">QA por fases Â· CrÃ­tico/Aviso/OK</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/qa-pre-flight-checklist.md"><span aria-hidden="true">â¬‡ï¸</span> Baixar checklist</a>
+<div><div class="font-semibold text-teal-400">qa-pre-flight-checklist.md</div><p class="text-xs text-neutral-400">QA por fases êÂ· CrêÂ­tico/Aviso/OK</p></div>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/qa-pre-flight-checklist.md"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar checklist</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rÃ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Rode o QA Pre-Flight Checklist neste projeto. FaÃ§a o stress test por fases
-e classifique cada achado como CrÃ­tico, Aviso ou OK. Liste primeiro os
-CrÃ­ticos e diga se posso publicar.</pre>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">uso rêÂ¡pido</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Rode o QA Pre-Flight Checklist neste projeto. FaêÂ§a o stress test por fases
+e classifique cada achado como CrêÂ­tico, Aviso ou OK. Liste primeiro os
+CrêÂ­ticos e diga se posso publicar.</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 7 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-5-2#topico-7" id="topico-7">
+<!-- TêâPICO 7 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-5-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">âš¡ Biblioteca de prompts</h2>
+<h2 class="text-2xl font-bold">ê¢Å¡Â¡ Biblioteca de prompts</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m5-2-t7-p1">Por fim, a <strong class="text-teal-400">Biblioteca de prompts</strong>: uma coletÃ¢nea para qualquer etapa do CODA. <strong class="text-teal-400">problemaâ†’SOP, Plan Mode, pesquisaâ†’research.md, design inspiration, review/verify, troubleshooting por screenshot, conectar MCP, env var</strong> e o lembrete "menos Ã© mais".</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m5-2-t7-p1">Por fim, a <strong class="text-teal-400">Biblioteca de prompts</strong>: uma coletêÂ¢nea para qualquer etapa do CODA. <strong class="text-teal-400">problemaê¢â âSOP, Plan Mode, pesquisaê¢â âresearch.md, design inspiration, review/verify, troubleshooting por screenshot, conectar MCP, env var</strong> e o lembrete "menos êÂ© mais".</p>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Problema â†’ SOP</div><p class="text-xs text-neutral-400">vira procedimento</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Problema ê¢â â SOP</div><p class="text-xs text-neutral-400">vira procedimento</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Plan Mode</div><p class="text-xs text-neutral-400">planejar antes</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">research.md</div><p class="text-xs text-neutral-400">pesquisa salva</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Design inspiration</div><p class="text-xs text-neutral-400">referÃªncias</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Design inspiration</div><p class="text-xs text-neutral-400">referêÂªncias</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Review/verify</div><p class="text-xs text-neutral-400">checar tudo</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Screenshot</div><p class="text-xs text-neutral-400">debug por imagem</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Conectar MCP</div><p class="text-xs text-neutral-400">ligar ferramentas</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Env var</div><p class="text-xs text-neutral-400">variÃ¡veis seguras</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Menos Ã© mais</div><p class="text-xs text-neutral-400">prompt curto</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Env var</div><p class="text-xs text-neutral-400">variêÂ¡veis seguras</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-teal-400 font-bold mb-1 text-sm">Menos êÂ© mais</div><p class="text-xs text-neutral-400">prompt curto</p></div>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-<div><div class="font-semibold text-teal-400">biblioteca-de-prompts.md</div><p class="text-xs text-neutral-400">coletÃ¢nea para todo o CODA</p></div>
-<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/biblioteca-de-prompts.md"><span aria-hidden="true">â¬‡ï¸</span> Baixar biblioteca</a>
+<div><div class="font-semibold text-teal-400">biblioteca-de-prompts.md</div><p class="text-xs text-neutral-400">coletêÂ¢nea para todo o CODA</p></div>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-sm bg-teal-600 hover:bg-teal-500 text-white rounded-lg transition-colors" download="" href="../skills/biblioteca-de-prompts.md"><span aria-hidden="true">ê¢Â¬â¡ê¯Â¸Â</span> Baixar biblioteca</a>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">problema â†’ SOP</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Transforme o problema abaixo num SOP (procedimento operacional padrÃ£o):
-passos numerados, claros e repetÃ­veis, com critÃ©rio de "feito" em cada um.
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">problema ê¢â â SOP</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Transforme o problema abaixo num SOP (procedimento operacional padrêÂ£o):
+passos numerados, claros e repetêÂ­veis, com critêÂ©rio de "feito" em cada um.
 
 Problema: [descreva]</pre>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÃTICO -->
+<!-- EXEMPLO PRêÂTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸âÂ¬</span> Exemplo prêÂ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Vamos colocar a biblioteca para rodar: baixe a <strong class="text-teal-400">Cloning Skill</strong> e use-a para trocar o nicho de um template que vocÃª jÃ¡ tenha.</p>
+<p class="text-neutral-300 mb-4">Vamos colocar a biblioteca para rodar: baixe a <strong class="text-teal-400">Cloning Skill</strong> e use-a para trocar o nicho de um template que vocêÂª jêÂ¡ tenha.</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
-<li>Baixe <strong>cloning-protocol.md</strong> no tÃ³pico 1.</li>
+<li>Baixe <strong>cloning-protocol.md</strong> no têÂ³pico 1.</li>
 <li>Aponte a skill para um template seu validado.</li>
-<li>PeÃ§a para re-marcar para um <strong>novo nicho</strong> (ex.: de "clÃ­nica" para "academia"): logo, copy, preÃ§os, avaliaÃ§Ãµes e cor.</li>
-<li>Confira que a estrutura ficou intacta e sÃ³ a marca mudou.</li>
+<li>PeêÂ§a para re-marcar para um <strong>novo nicho</strong> (ex.: de "clêÂ­nica" para "academia"): logo, copy, preêÂ§os, avaliaêÂ§êÂµes e cor.</li>
+<li>Confira que a estrutura ficou intacta e sêÂ³ a marca mudou.</li>
 </ol>
-<p class="text-neutral-400 text-sm">Em minutos vocÃª tem uma segunda versÃ£o pronta â€” esse Ã© o poder de reaproveitar artefatos da biblioteca.</p>
+<p class="text-neutral-400 text-sm">Em minutos vocêÂª tem uma segunda versêÂ£o pronta ê¢â¬â esse êÂ© o poder de reaproveitar artefatos da biblioteca.</p>
 </div>
 </section>
-<!-- EXERCÃCIO -->
+<!-- EXERCêÂCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Ââ¹ê¯Â¸Â</span> ExercêÂ­cio</h2>
 <div class="bg-gradient-to-br from-teal-900/30 to-dark-800 rounded-xl border border-teal-500/30 p-6">
 <p class="text-neutral-300 mb-4">Escolha <strong class="text-teal-400">1 skill</strong> desta biblioteca e <strong>adapte ao seu projeto</strong>:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li>Baixe o artefato (skill, config ou prompt).</li>
-<li>Edite-o para o seu contexto â€” troque placeholders, nichos, comandos ou critÃ©rios.</li>
-<li>Salve a <strong>sua versÃ£o</strong> com um nome prÃ³prio e teste no projeto.</li>
+<li>Edite-o para o seu contexto ê¢â¬â troque placeholders, nichos, comandos ou critêÂ©rios.</li>
+<li>Salve a <strong>sua versêÂ£o</strong> com um nome prêÂ³prio e teste no projeto.</li>
 </ol>
-<p class="text-neutral-400 text-sm">Dica: comece pela claude.md (tÃ³pico 5) â€” ela serve de base para todas as outras etapas do CODA.</p>
+<p class="text-neutral-400 text-sm">Dica: comece pela claude.md (têÂ³pico 5) ê¢â¬â ela serve de base para todas as outras etapas do CODA.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Å¡Â¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">adaptar uma skill</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Adapte a skill abaixo ao meu projeto: troque os placeholders, ajuste
-o nicho/contexto e me devolva a minha versÃ£o pronta para salvar.
+o nicho/contexto e me devolva a minha versêÂ£o pronta para salvar.
 
-Skill: [cole o conteÃºdo] Â· Meu contexto: [descreva]</pre>
+Skill: [cole o conteêÂºdo] êÂ· Meu contexto: [descreva]</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">troubleshooting por screenshot</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Anexei um screenshot do problema. Descreva o que estÃ¡ errado na tela,
-liste as causas provÃ¡veis e me dÃª o passo a passo para corrigir.</pre>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Anexei um screenshot do problema. Descreva o que estêÂ¡ errado na tela,
+liste as causas provêÂ¡veis e me dêÂª o passo a passo para corrigir.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">env var (chave segura)</span><button class="text-xs px-2 py-1 rounded bg-teal-600 hover:bg-teal-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Configure a chave [SERVIÃ‡O] como variÃ¡vel de ambiente (env var) neste
-projeto, sem deixÃ¡-la hardcoded no cÃ³digo. Me mostre onde colocÃ¡-la e
-como referenciÃ¡-la com seguranÃ§a.</pre>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Configure a chave [SERVIêâ¡O] como variêÂ¡vel de ambiente (env var) neste
+projeto, sem deixêÂ¡-la hardcoded no cêÂ³digo. Me mostre onde colocêÂ¡-la e
+como referenciêÂ¡-la com seguranêÂ§a.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-teal-900/40 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">Skills de produÃ§Ã£o</strong><span class="text-neutral-400"> â€” Cloning (rebrand) e Transformer (HTML self-contained p/ GoHighLevel/WordPress).</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">Debug &amp; QA</strong><span class="text-neutral-400"> â€” Ultimate Debugger (XML, causa-raiz) e QA Pre-Flight (CrÃ­tico/Aviso/OK).</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">Config &amp; contexto</strong><span class="text-neutral-400"> â€” MCP Config (6 servidores) e o template claude.md do CODA.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">âœ“</span><div><strong class="text-white">Biblioteca de prompts</strong><span class="text-neutral-400"> â€” coletÃ¢nea para cobrir todas as etapas, do problema ao deploy.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Skills de produêÂ§êÂ£o</strong><span class="text-neutral-400"> ê¢â¬â Cloning (rebrand) e Transformer (HTML self-contained p/ GoHighLevel/WordPress).</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Debug &amp; QA</strong><span class="text-neutral-400"> ê¢â¬â Ultimate Debugger (XML, causa-raiz) e QA Pre-Flight (CrêÂ­tico/Aviso/OK).</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Config &amp; contexto</strong><span class="text-neutral-400"> ê¢â¬â MCP Config (6 servidores) e o template claude.md do CODA.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Biblioteca de prompts</strong><span class="text-neutral-400"> ê¢â¬â coletêÂ¢nea para cobrir todas as etapas, do problema ao deploy.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-teal-400 mb-2">Fim da trilha:</h3><p class="text-neutral-300">VocÃª concluiu a Maestria. Volte ao inÃ­cio para revisar qualquer trilha quando quiser.</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-teal-400 mb-2">Fim da trilha:</h3><p class="text-neutral-300">VocêÂª concluiu a Maestria. Volte ao inêÂ­cio para revisar qualquer trilha quando quiser.</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para Trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-colors" href="../index.html">InÃ­cio â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para Trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold hover:bg-teal-500 transition-colors" href="../index.html">InêÂ­cio ê¢â â</a>
 </div>
 </div>
 </section>
@@ -655,7 +655,7 @@ como referenciÃ¡-la com seguranÃ§a.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â do Zero ao App Publicado com IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -678,11 +678,11 @@ como referenciÃ¡-la com seguranÃ§a.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -690,22 +690,22 @@ como referenciÃ¡-la com seguranÃ§a.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'ê¢Åâ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

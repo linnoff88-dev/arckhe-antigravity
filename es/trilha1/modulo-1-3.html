@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>MÃ³dulo 1.3 Â· ConfiguraciÃ³n completa del entorno | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>MêÂ³dulo 1.3 êÂ· ConfiguraciêÂ³n completa del entorno | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .ARCKHÉ-toc-link.is-active { color: #34d399; font-weight: 600; }
+    .ARCKHê-toc-link.is-active { color: #34d399; font-weight: 600; }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -183,7 +183,7 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha1/modulo-1-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha1/modulo-1-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-1-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha1/modulo-1-3.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha1/modulo-1-3.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="modulo-1-3.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -191,47 +191,47 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Escalar</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profesional</span></a>
-<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrÃ­a</span></a>
+<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrêÂ­a</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Oscuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Enfoque</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Oscuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Enfoque</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Lectura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Lectura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">TamaÃ±o</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">TamaêÂ±o</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">CÃ³modo</button>
+<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">CêÂ³modo</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Trayectoria</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Trayectoria</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -246,65 +246,65 @@
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
 <a class="hover:text-emerald-400" href="../index.html">Inicio</a><span>/</span>
 <a class="hover:text-emerald-400" href="index.html">Ruta 1</a><span>/</span>
-<span class="text-emerald-400">MÃ³dulo 1.3</span>
+<span class="text-emerald-400">MêÂ³dulo 1.3</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 1.3</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">âš™ï¸ ConfiguraciÃ³n completa del entorno</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Manos a la obra: instala todo lo que necesitas, familiarÃ­zate con la interfaz, importa un proyecto y mÃ­ralo funcionando en localhost. Al terminar este mÃ³dulo, tu entorno estarÃ¡ listo para la primera app.</p>
+<span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">MêâDULO 1.3</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê¢Å¡â¢ê¯Â¸Â ConfiguraciêÂ³n completa del entorno</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Manos a la obra: instala todo lo que necesitas, familiarêÂ­zate con la interfaz, importa un proyecto y mêÂ­ralo funcionando en localhost. Al terminar este mêÂ³dulo, tu entorno estarêÂ¡ listo para la primera app.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">8</div><div class="text-xs text-neutral-400">Temas</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">55</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">BÃ¡sico</div><div class="text-xs text-neutral-400">Nivel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrÃ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">BêÂ¡sico</div><div class="text-xs text-neutral-400">Nivel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">PrêÂ¡ctico</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Ãndice de la pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-2">SecciÃ³n <span data-ARCKHÉ-section-counter="">1 de 8</span></p>
+<nav aria-label="êÂndice de la pêÂ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-2">SecciêÂ³n <span data-ARCKHê-section-counter="">1 de 8</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Instalar AntiGravity</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Instalar Node.js</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. GitHub: repositorios</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Importar proyecto + localhost</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. La terminal / CLI</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Elegir el modelo segÃºn la tarea</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-7">7. La interfaz</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-8">8. Control del navegador + autocorrecciÃ³n</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-1">1. Instalar AntiGravity</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-2">2. Instalar Node.js</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-3">3. GitHub: repositorios</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-4">4. Importar proyecto + localhost</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-5">5. La terminal / CLI</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-6">6. Elegir el modelo segêÂºn la tarea</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-7">7. La interfaz</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-emerald-400" href="#topico-8">8. Control del navegador + autocorrecciêÂ³n</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-ARCKHÉ-meter="modulo:1-3"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 8</span> Â· <span class="text-emerald-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-emerald-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHê-meter="modulo:1-3"><span class="text-neutral-400" data-ARCKHê-meter-frac="">0 de 8</span> êÂ· <span class="text-emerald-400 font-bold" data-ARCKHê-meter-pct="">0%</span><div class="ARCKHê-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-emerald-500" data-ARCKHê-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-ARCKHÉ-module="1-3" data-ARCKHÉ-track="1">
-<!-- TÃ“PICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHê-module="1-3" data-ARCKHê-track="1">
+<!-- TêâPICO 1 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">â¬‡ï¸ Instalar AntiGravity</h2>
+<h2 class="text-2xl font-bold">ê¢Â¬â¡ê¯Â¸Â Instalar AntiGravity</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t1-p1">El primer paso concreto es el mÃ¡s sencillo: descargar el <strong class="text-emerald-400">AntiGravity</strong> a partir del sitio oficial â€” <strong class="text-neutral-100">antigravity.google</strong> â€” e instalarlo como instalas cualquier otra aplicaciÃ³n en tu computadora.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t1-p1">El primer paso concreto es el mêÂ¡s sencillo: descargar el <strong class="text-emerald-400">AntiGravity</strong> a partir del sitio oficial ê¢â¬â <strong class="text-neutral-100">antigravity.google</strong> ê¢â¬â e instalarlo como instalas cualquier otra aplicaciêÂ³n en tu computadora.</p>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> Concepto principal</h3>
-<p class="text-neutral-300 mb-4">AquÃ­ no hay ningÃºn secreto. Es un programa que se ejecuta en tu computadora, como un editor de texto o un navegador. DescÃ¡rgalo de la fuente oficial, abre el instalador y sigue los pasos.</p>
+<h3 class="text-lg font-semibold text-emerald-400 mb-4 flex items-center"><span class="mr-2">ê°Å¸Â§Â­</span> Concepto principal</h3>
+<p class="text-neutral-300 mb-4">AquêÂ­ no hay ningêÂºn secreto. Es un programa que se ejecuta en tu computadora, como un editor de texto o un navegador. DescêÂ¡rgalo de la fuente oficial, abre el instalador y sigue los pasos.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span>Accede al <strong>sitio oficial</strong> (antigravity.google): evita los enlaces de terceros.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span>Descarga la versiÃ³n para tu sistema (Windows, macOS o Linux).</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">â€¢</span><span>Instala y abre â€” es el mismo flujo que en cualquier app.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">ê¢â¬Â¢</span><span>Accede al <strong>sitio oficial</strong> (antigravity.google): evita los enlaces de terceros.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">ê¢â¬Â¢</span><span>Descarga la versiêÂ³n para tu sistema (Windows, macOS o Linux).</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">ê¢â¬Â¢</span><span>Instala y abre ê¢â¬â es el mismo flujo que en cualquier app.</span></li>
 </ul>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Tres pasos para instalar: acceder al sitio oficial, descargar el instalador y abrir la aplicaciÃ³n en tu mÃ¡quina" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="Tres pasos para instalar: acceder al sitio oficial, descargar el instalador y abrir la aplicaciêÂ³n en tu mêÂ¡quina" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m13-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#34d399"></stop><stop offset="1" stop-color="#10b981"></stop></lineargradient>
 <filter height="180%" id="m13-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -317,14 +317,14 @@
 <path d="M632,100 L688,100" marker-end="url(#m13-ah)"></path>
 </g>
 <g filter="url(#m13-glow)"><rect fill="#0e2018" height="64" rx="14" stroke="url(#m13-grad)" stroke-width="2.5" width="272" x="40" y="68"></rect></g>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="176" y="96">1 Â· Sitio oficial</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="176" y="96">1 êÂ· Sitio oficial</text>
 <text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="12.5" text-anchor="middle" x="176" y="117">antigravity.google</text>
 <rect fill="#0e2018" height="64" rx="14" stroke="#34d399" stroke-width="2" width="264" x="368" y="68"></rect>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="500" y="96">2 Â· Descargar</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="500" y="96">2 êÂ· Descargar</text>
 <text fill="#a7f3d0" font-family="Inter,sans-serif" font-size="12.5" text-anchor="middle" x="500" y="117">el instalador</text>
 <rect fill="#0e1b26" height="64" rx="14" stroke="#38bdf8" stroke-width="2" width="272" x="688" y="68"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="824" y="96">3 Â· Abrir</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12.5" text-anchor="middle" x="824" y="117">en tu mÃ¡quina</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="824" y="96">3 êÂ· Abrir</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12.5" text-anchor="middle" x="824" y="117">en tu mêÂ¡quina</text>
 </svg>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -334,274 +334,274 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Abrir</div><p class="text-xs text-neutral-400">y listo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-2" id="topico-2">
+<!-- TêâPICO 2 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">âš™ï¸ Instalar Node.js</h2>
+<h2 class="text-2xl font-bold">ê¢Å¡â¢ê¯Â¸Â Instalar Node.js</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t2-p1">O <strong class="text-emerald-400">Node.js</strong> es el "motor" que permite que la IA cree y ejecute proyectos al nivel de tu computadora. DescÃ¡rgalo de <strong class="text-neutral-100">nodejs.org</strong>. Sin Ã©l, la mayorÃ­a de las apps simplemente no se ejecuta localmente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t2-p1">O <strong class="text-emerald-400">Node.js</strong> es el "motor" que permite que la IA cree y ejecute proyectos al nivel de tu computadora. DescêÂ¡rgalo de <strong class="text-neutral-100">nodejs.org</strong>. Sin êÂ©l, la mayorêÂ­a de las apps simplemente no se ejecuta localmente.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">âœ“ Con Node.js instalado</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê¢Åâ Con Node.js instalado</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>La IA puede ejecutar el proyecto en tu computadora</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>Instalas dependencias de las apps</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">âœ“</span><span>localhost funciona normalmente</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>La IA puede ejecutar el proyecto en tu computadora</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>Instalas dependencias de las apps</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢Åâ</span><span>localhost funciona normalmente</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Sin Node.js</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Sin Node.js</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>La mayorÃ­a de las apps no se inicia localmente</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Los comandos de instalaciÃ³n fallan</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Te trabas desde el primer proyecto</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>La mayorêÂ­a de las apps no se inicia localmente</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Los comandos de instalaciêÂ³n fallan</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Te trabas desde el primer proyecto</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Consejo prÃ¡ctico</h3>
-<p class="text-neutral-300">En nodejs.org, elige la versiÃ³n <strong>LTS</strong> (soporte a largo plazo): es la mÃ¡s estable y la recomendada para la mayorÃ­a de las personas. DespuÃ©s de instalar, basta con volver a abrir AntiGravity.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Consejo prêÂ¡ctico</h3>
+<p class="text-neutral-300">En nodejs.org, elige la versiêÂ³n <strong>LTS</strong> (soporte a largo plazo): es la mêÂ¡s estable y la recomendada para la mayorêÂ­a de las personas. DespuêÂ©s de instalar, basta con volver a abrir AntiGravity.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Motor</div><p class="text-xs text-neutral-400">ejecuta el proyecto</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">nodejs.org</div><p class="text-xs text-neutral-400">fuente oficial</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">LTS</div><p class="text-xs text-neutral-400">versiÃ³n estable</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">LTS</div><p class="text-xs text-neutral-400">versiêÂ³n estable</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Requisito previo</div><p class="text-xs text-neutral-400">para ejecutar localmente</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-3" id="topico-3">
+<!-- TêâPICO 3 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">ðŸ™ GitHub: repositorios</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Ââ¢ GitHub: repositorios</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t3-p1">O <strong class="text-emerald-400">GitHub</strong> es donde se guardan y versionan los archivos de los proyectos. Cada proyecto vive en un <strong class="text-neutral-100">repositorio</strong> (o Â«repoÂ»). De ahÃ­ importas cÃ³digo listo y allÃ­ publicas el tuyo mÃ¡s adelante.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t3-p1">O <strong class="text-emerald-400">GitHub</strong> es donde se guardan y versionan los archivos de los proyectos. Cada proyecto vive en un <strong class="text-neutral-100">repositorio</strong> (o êÂ«repoêÂ»). De ahêÂ­ importas cêÂ³digo listo y allêÂ­ publicas el tuyo mêÂ¡s adelante.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">ðŸŒ Repositorio pÃºblico</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê°Å¸ÅÂ Repositorio pêÂºblico</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">â€¢</span><span>Cualquier persona puede verlo e importarlo</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">â€¢</span><span>Ideal para templates y ejemplos</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">â€¢</span><span>Se aprende mucho leyendo cÃ³digo abierto</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢â¬Â¢</span><span>Cualquier persona puede verlo e importarlo</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢â¬Â¢</span><span>Ideal para templates y ejemplos</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢â¬Â¢</span><span>Se aprende mucho leyendo cêÂ³digo abierto</span></li>
 </ul>
 </div>
 <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
-<h4 class="font-bold text-emerald-400 mb-4">ðŸ”’ Repositorio privado</h4>
+<h4 class="font-bold text-emerald-400 mb-4">ê°Å¸ââ Repositorio privado</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-emerald-400">â€¢</span><span>Solo tÃº (y quien invites) tienes acceso</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">â€¢</span><span>Ideal para proyectos tuyos o de clientes</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400">â€¢</span><span>La misma estructura, visibilidad cerrada</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢â¬Â¢</span><span>Solo têÂº (y quien invites) tienes acceso</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢â¬Â¢</span><span>Ideal para proyectos tuyos o de clientes</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400">ê¢â¬Â¢</span><span>La misma estructura, visibilidad cerrada</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸŸ¢</span> El botÃ³n verde "Code"</h3>
-<p class="text-neutral-300">En cualquier repositorio, el botÃ³n verde <strong>"Code"</strong> revela la <strong>URL del repo</strong>. Esta es la URL que vas a pegar en AntiGravity para importar el proyecto. Recuerda este hÃ¡bito: "Code" â†’ copiar URL.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Å¸Â¢</span> El botêÂ³n verde "Code"</h3>
+<p class="text-neutral-300">En cualquier repositorio, el botêÂ³n verde <strong>"Code"</strong> revela la <strong>URL del repo</strong>. Esta es la URL que vas a pegar en AntiGravity para importar el proyecto. Recuerda este hêÂ¡bito: "Code" ê¢â â copiar URL.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Repo</div><p class="text-xs text-neutral-400">guarda el proyecto</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Versiona</div><p class="text-xs text-neutral-400">historial de archivos</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">PÃºblico Ã— privado</div><p class="text-xs text-neutral-400">quiÃ©n ve</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">BotÃ³n Â«CodeÂ»</div><p class="text-xs text-neutral-400">da la URL</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">PêÂºblico êâ privado</div><p class="text-xs text-neutral-400">quiêÂ©n ve</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">BotêÂ³n êÂ«CodeêÂ»</div><p class="text-xs text-neutral-400">da la URL</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-4" id="topico-4">
+<!-- TêâPICO 4 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">ðŸ“¥ Importar proyecto + localhost</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¥ Importar proyecto + localhost</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t4-p1">Con la URL del repo a mano, el ciclo es directo: tÃº <strong class="text-emerald-400">pega la URL</strong> y le pide al agente que lo importe. DespuÃ©s le pide que <strong class="text-neutral-100">ejecutar</strong>, y el proyecto queda disponible en una direcciÃ³n local (localhost:porta) que solo tÃº puedes ver.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t4-p1">Con la URL del repo a mano, el ciclo es directo: têÂº <strong class="text-emerald-400">pega la URL</strong> y le pide al agente que lo importe. DespuêÂ©s le pide que <strong class="text-neutral-100">ejecutar</strong>, y el proyecto queda disponible en una direcciêÂ³n local (localhost:porta) que solo têÂº puedes ver.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Traer el cÃ³digo</h4>
-<p class="text-neutral-300 text-sm">Pega la URL del repositorio y pÃ­dele al agente que importe el proyecto a tu mÃ¡quina.</p>
+<h4 class="font-semibold text-white mb-2">Traer el cêÂ³digo</h4>
+<p class="text-neutral-300 text-sm">Pega la URL del repositorio y pêÂ­dele al agente que importe el proyecto a tu mêÂ¡quina.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Ejecutar</h4>
-<p class="text-neutral-300 text-sm">PÃ­dele al agente que inicie el proyecto. Instala lo necesario y lo pone en marcha.</p>
+<p class="text-neutral-300 text-sm">PêÂ­dele al agente que inicie el proyecto. Instala lo necesario y lo pone en marcha.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl p-6 border border-emerald-500/30">
 <h4 class="font-semibold text-emerald-400 mb-2">Ver en pantalla</h4>
-<p class="text-neutral-300 text-sm">Se publica en una direcciÃ³n local, como <strong>localhost:3000</strong>. Ãbrelo en el navegador y mira la app funcionando, solo en tu mÃ¡quina.</p>
+<p class="text-neutral-300 text-sm">Se publica en una direcciêÂ³n local, como <strong>localhost:3000</strong>. êÂbrelo en el navegador y mira la app funcionando, solo en tu mêÂ¡quina.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸŒ</span> QuÃ© es "localhost"</h3>
-<p class="text-neutral-300">"localhost" es tu propia computadora funcionando como servidor. La <strong>puerta</strong> (p. ej.: 3000, 5173) es solo el "canal" en el que la app estÃ¡ escuchando. Es una direcciÃ³n privada: nadie en internet puede verla, solo tÃº.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ÅÂ</span> QuêÂ© es "localhost"</h3>
+<p class="text-neutral-300">"localhost" es tu propia computadora funcionando como servidor. La <strong>puerta</strong> (p. ej.: 3000, 5173) es solo el "canal" en el que la app estêÂ¡ escuchando. Es una direcciêÂ³n privada: nadie en internet puede verla, solo têÂº.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Pegar URL</div><p class="text-xs text-neutral-400">del repo</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Importar</div><p class="text-xs text-neutral-400">trae el cÃ³digo</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Importar</div><p class="text-xs text-neutral-400">trae el cêÂ³digo</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Ejecutar</div><p class="text-xs text-neutral-400">da el primer paso</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">localhost</div><p class="text-xs text-neutral-400">solo tÃº lo ves</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">localhost</div><p class="text-xs text-neutral-400">solo têÂº lo ves</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-5" id="topico-5">
+<!-- TêâPICO 5 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">âŒ¨ï¸ La terminal / CLI</h2>
+<h2 class="text-2xl font-bold">ê¢ÅÂ¨ê¯Â¸Â La terminal / CLI</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t5-p1">O <strong class="text-emerald-400">terminal</strong> (tambiÃ©n llamado CLI, por Â«interfaz de lÃ­nea de comandosÂ») es como hablas con la computadora <strong class="text-neutral-100">por texto</strong>, en lugar de clics. Muchas acciones â€”instalar cosas, ejecutar comandos, hacer buildsâ€” pasan por ahÃ­.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t5-p1">O <strong class="text-emerald-400">terminal</strong> (tambiêÂ©n llamado CLI, por êÂ«interfaz de lêÂ­nea de comandosêÂ») es como hablas con la computadora <strong class="text-neutral-100">por texto</strong>, en lugar de clics. Muchas acciones ê¢â¬âinstalar cosas, ejecutar comandos, hacer buildsê¢â¬â pasan por ahêÂ­.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-6">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">ejemplos de comandos en la terminal</span></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">npm install      # instala o que o projeto precisa
 npm run dev      # roda o projeto em modo de desenvolvimento
-node --version   # mostra a versÃ£o do Node.js instalada</pre>
+node --version   # mostra a versêÂ£o do Node.js instalada</pre>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">La buena noticia: en el flujo agentic, la mayor parte del tiempo es el <strong class="text-emerald-400">agente</strong> quiÃ©n escribe esos comandos por ti. Pero entender que el terminal existe â€”y que es solo Â«la computadora escuchando textoÂ»â€” quita el miedo cuando necesitas pegar un comando manualmente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">La buena noticia: en el flujo agentic, la mayor parte del tiempo es el <strong class="text-emerald-400">agente</strong> quiêÂ©n escribe esos comandos por ti. Pero entender que el terminal existe ê¢â¬ây que es solo êÂ«la computadora escuchando textoêÂ»ê¢â¬â quita el miedo cuando necesitas pegar un comando manualmente.</p>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Consejo prÃ¡ctico</h3>
-<p class="text-neutral-300">No memorices comandos. Cuando necesites uno, pÃ­dele al agente: "Â¿quÃ© comando ejecuto para [objetivo]?". La terminal deja de intimidar cuando la tratas como otro canal de conversaciÃ³n.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Consejo prêÂ¡ctico</h3>
+<p class="text-neutral-300">No memorices comandos. Cuando necesites uno, pêÂ­dele al agente: "êÂ¿quêÂ© comando ejecuto para [objetivo]?". La terminal deja de intimidar cuando la tratas como otro canal de conversaciêÂ³n.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Texto</div><p class="text-xs text-neutral-400">no hagas clic</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Instalar</div><p class="text-xs text-neutral-400">y ejecutar builds</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">El agente escribe</div><p class="text-xs text-neutral-400">en la mayor parte</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Sin miedo</div><p class="text-xs text-neutral-400">es solo conversaciÃ³n</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Sin miedo</div><p class="text-xs text-neutral-400">es solo conversaciêÂ³n</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-6" id="topico-6">
+<!-- TêâPICO 6 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">ðŸ§  Elegir el modelo segÃºn la tarea</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Elegir el modelo segêÂºn la tarea</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t6-p1">AntiGravity te permite <strong class="text-emerald-400">elegir el modelo de IA</strong> que va a trabajar. La regla prÃ¡ctica es sencilla: usa un modelo potente en <strong class="text-neutral-100">diseÃ±o</strong> para diseÃ±o, y uno fuerte en <strong class="text-neutral-100">razonamiento/cÃ³digo</strong> para lÃ³gica y troubleshooting.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t6-p1">AntiGravity te permite <strong class="text-emerald-400">elegir el modelo de IA</strong> que va a trabajar. La regla prêÂ¡ctica es sencilla: usa un modelo potente en <strong class="text-neutral-100">diseêÂ±o</strong> para diseêÂ±o, y uno fuerte en <strong class="text-neutral-100">razonamiento/cêÂ³digo</strong> para lêÂ³gica y troubleshooting.</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
-<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Tarea</th><th class="text-left p-3">Modelo ideal</th><th class="text-left p-3">Por quÃ©</th></tr></thead>
+<thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Tarea</th><th class="text-left p-3">Modelo ideal</th><th class="text-left p-3">Por quêÂ©</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-neutral-300">Armar el diseÃ±o / aspecto visual</td><td class="p-3 text-emerald-400">bueno en diseÃ±o</td><td class="p-3">cuida la apariencia y el gusto estÃ©tico</td></tr>
-<tr><td class="p-3 text-neutral-300">LÃ³gica y funcionalidad</td><td class="p-3 text-emerald-400">bueno en razonamiento</td><td class="p-3">resuelve problemas complejos y encadenados</td></tr>
-<tr><td class="p-3 text-neutral-300">Buscar y corregir errores</td><td class="p-3 text-emerald-400">bueno en cÃ³digo</td><td class="p-3">lee el error y propone la correcciÃ³n adecuada</td></tr>
+<tr><td class="p-3 text-neutral-300">Armar el diseêÂ±o / aspecto visual</td><td class="p-3 text-emerald-400">bueno en diseêÂ±o</td><td class="p-3">cuida la apariencia y el gusto estêÂ©tico</td></tr>
+<tr><td class="p-3 text-neutral-300">LêÂ³gica y funcionalidad</td><td class="p-3 text-emerald-400">bueno en razonamiento</td><td class="p-3">resuelve problemas complejos y encadenados</td></tr>
+<tr><td class="p-3 text-neutral-300">Buscar y corregir errores</td><td class="p-3 text-emerald-400">bueno en cêÂ³digo</td><td class="p-3">lee el error y propone la correcciêÂ³n adecuada</td></tr>
 </tbody>
 </table>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Consejo prÃ¡ctico</h3>
-<p class="text-neutral-300">Para un uso profesional y continuo, un <strong>plan de pago</strong> puede con el volumen: ejecutas mÃ¡s tareas sin chocar con lÃ­mites. Empieza gratis para probar la herramienta; sube de plan cuando el uso lo justifique.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Consejo prêÂ¡ctico</h3>
+<p class="text-neutral-300">Para un uso profesional y continuo, un <strong>plan de pago</strong> puede con el volumen: ejecutas mêÂ¡s tareas sin chocar con lêÂ­mites. Empieza gratis para probar la herramienta; sube de plan cuando el uso lo justifique.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">DiseÃ±o</div><p class="text-xs text-neutral-400">para diseÃ±o</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Razonamiento</div><p class="text-xs text-neutral-400">para lÃ³gica</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Por tarea</div><p class="text-xs text-neutral-400">cambia segÃºn corresponda</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Plan pago</div><p class="text-xs text-neutral-400">soporta grandes volÃºmenes</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">DiseêÂ±o</div><p class="text-xs text-neutral-400">para diseêÂ±o</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Razonamiento</div><p class="text-xs text-neutral-400">para lêÂ³gica</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Por tarea</div><p class="text-xs text-neutral-400">cambia segêÂºn corresponda</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Plan pago</div><p class="text-xs text-neutral-400">soporta grandes volêÂºmenes</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 7 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-7" id="topico-7">
+<!-- TêâPICO 7 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">ðŸ–¥ï¸ La interfaz</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¥ê¯Â¸Â La interfaz</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t7-p1">Vale la pena conocer las cuatro Ã¡reas principales de la pantalla. No necesitas memorizar nada: solo saber dÃ³nde estÃ¡ cada cosa para no perderte cuando empieces a construir.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t7-p1">Vale la pena conocer las cuatro êÂ¡reas principales de la pantalla. No necesitas memorizar nada: solo saber dêÂ³nde estêÂ¡ cada cosa para no perderte cuando empieces a construir.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Panel de comandos</h4><p class="text-neutral-300 text-sm">DÃ³nde conversas con el agente y le pides lo que quieres. Es el corazÃ³n del flujo.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Panel de comandos</h4><p class="text-neutral-300 text-sm">DêÂ³nde conversas con el agente y le pides lo que quieres. Es el corazêÂ³n del flujo.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">NavegaciÃ³n de archivos</h4><p class="text-neutral-300 text-sm">La lista de carpetas y archivos del proyecto. Es Ãºtil para ver quÃ© creÃ³ la IA y dÃ³nde.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">NavegaciêÂ³n de archivos</h4><p class="text-neutral-300 text-sm">La lista de carpetas y archivos del proyecto. Es êÂºtil para ver quêÂ© creêÂ³ la IA y dêÂ³nde.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">"Publicar en GitHub"</h4><p class="text-neutral-300 text-sm">Un atajo para enviar tu proyecto a un repositorio cuando estÃ© listo.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">"Publicar en GitHub"</h4><p class="text-neutral-300 text-sm">Un atajo para enviar tu proyecto a un repositorio cuando estêÂ© listo.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center"><span class="text-emerald-400 font-bold">4</span></div>
-<div class="flex-1 bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl p-5 border border-emerald-500/30"><h4 class="font-semibold text-emerald-400 mb-1">Agent Manager</h4><p class="text-neutral-300 text-sm">Gestiona varios agentes y proyectos al mismo tiempo: no te quedas atrapado en una sola conversaciÃ³n.</p></div>
+<div class="flex-1 bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl p-5 border border-emerald-500/30"><h4 class="font-semibold text-emerald-400 mb-1">Agent Manager</h4><p class="text-neutral-300 text-sm">Gestiona varios agentes y proyectos al mismo tiempo: no te quedas atrapado en una sola conversaciêÂ³n.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ“‚</span> Crear tu workspace</h3>
-<p class="text-neutral-300">Para iniciar un espacio de trabajo, usa <strong>File â†’ Open Folder</strong> y apunta a la carpeta del proyecto. Ese es el gesto que le dice a AntiGravity: "es aquÃ­ donde vamos a trabajar".</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸ââ</span> Crear tu workspace</h3>
+<p class="text-neutral-300">Para iniciar un espacio de trabajo, usa <strong>File ê¢â â Open Folder</strong> y apunta a la carpeta del proyecto. Ese es el gesto que le dice a AntiGravity: "es aquêÂ­ donde vamos a trabajar".</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Comandos</div><p class="text-xs text-neutral-400">tÃº pides</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Comandos</div><p class="text-xs text-neutral-400">têÂº pides</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Archivos</div><p class="text-xs text-neutral-400">recorre el proyecto</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Publicar</div><p class="text-xs text-neutral-400">en GitHub</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Agent Manager</div><p class="text-xs text-neutral-400">varios agentes</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 8 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-1-3#topico-8" id="topico-8">
+<!-- TêâPICO 8 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-1-3#topico-8" id="topico-8">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xl flex-shrink-0">8</span>
-<h2 class="text-2xl font-bold">ðŸŒ Control del navegador + autocorrecciÃ³n</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ÅÂ Control del navegador + autocorrecciêÂ³n</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar una duda en este tema" type="button"><span aria-hidden="true">?</span><span>Duda</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m1-3-t8-p1">Este es el recurso que cambia las reglas del juego: el agente <strong class="text-emerald-400">abre el navegador</strong>, hace clic en botones, comprueba el resultado en pantalla y <strong class="text-neutral-100">se autocorrige</strong> â€” sin necesidad de plugins. Â«VeÂ» lo que ocurriÃ³ y se ajusta por sÃ­ solo.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m1-3-t8-p1">Este es el recurso que cambia las reglas del juego: el agente <strong class="text-emerald-400">abre el navegador</strong>, hace clic en botones, comprueba el resultado en pantalla y <strong class="text-neutral-100">se autocorrige</strong> ê¢â¬â sin necesidad de plugins. êÂ«VeêÂ» lo que ocurriêÂ³ y se ajusta por sêÂ­ solo.</p>
 <!-- SVG 2 -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Bucle de autocorrecciÃ³n: el agente abre el navegador, revisa el resultado y, si algo estÃ¡ mal, lo corrige y vuelve a intentarlo hasta que quede bien" class="w-full h-auto" role="img" viewbox="0 0 1000 230">
+<svg aria-label="Bucle de autocorrecciêÂ³n: el agente abre el navegador, revisa el resultado y, si algo estêÂ¡ mal, lo corrige y vuelve a intentarlo hasta que quede bien" class="w-full h-auto" role="img" viewbox="0 0 1000 230">
 <defs>
 <marker id="m13b-ah" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#34d399"></path></marker>
 <marker id="m13b-ahc" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#38bdf8"></path></marker>
@@ -624,10 +624,10 @@ node --version   # mostra a versÃ£o do Node.js instalada</pre>
 <rect fill="#0e1b26" height="60" rx="14" stroke="#38bdf8" stroke-width="2" width="200" x="600" y="60"></rect>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="700" y="86">Se autocorrige</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="700" y="106">e intenta de nuevo</text>
-<text fill="#38bdf8" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="470" y="208">si se equivoca, vuelve y ajusta â€” hasta que quede bien</text>
+<text fill="#38bdf8" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="470" y="208">si se equivoca, vuelve y ajusta ê¢â¬â hasta que quede bien</text>
 </svg>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">En la prÃ¡ctica, eso <strong class="text-emerald-400">ahorra muchos intercambios</strong>: en vez de probar, copiar el error, pegarlo de vuelta y pedir que lo corrija, el agente cierra ese ciclo por sÃ­ solo. TÃº describes, Ã©l hace, verifica y corrige.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">En la prêÂ¡ctica, eso <strong class="text-emerald-400">ahorra muchos intercambios</strong>: en vez de probar, copiar el error, pegarlo de vuelta y pedir que lo corrija, el agente cierra ese ciclo por sêÂ­ solo. TêÂº describes, êÂ©l hace, verifica y corrige.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Abre</div><p class="text-xs text-neutral-400">el navegador</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Comprueba</div><p class="text-xs text-neutral-400">el resultado en pantalla</p></div>
@@ -635,71 +635,71 @@ node --version   # mostra a versÃ£o do Node.js instalada</pre>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-emerald-400 font-bold mb-1">Ahorra</div><p class="text-xs text-neutral-400">idas y vueltas</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como leÃ­do</span><span class="ARCKHÉ-label-done">LeÃ­do</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como leêÂ­do</span><span class="ARCKHê-label-done">LeêÂ­do</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÃTICO -->
+<!-- EXEMPLO PRêÂTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Ejemplo prÃ¡ctico</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸âÂ¬</span> Ejemplo prêÂ¡ctico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Vamos a unirlo todo en un solo gesto. Importa un <strong class="text-emerald-400">plantilla de landing page</strong> de un repositorio pÃºblico y sÃºbelo a localhost:</p>
+<p class="text-neutral-300 mb-4">Vamos a unirlo todo en un solo gesto. Importa un <strong class="text-emerald-400">plantilla de landing page</strong> de un repositorio pêÂºblico y sêÂºbelo a localhost:</p>
 <ul class="space-y-2 text-neutral-300 mb-4">
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">1.</span><span>Busca la URL de un repo pÃºblico con una plantilla sencilla de landing page.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">2.</span><span>Pega en AntiGravity y pÃ­dele que lo importe; despuÃ©s, pÃ­dele que lo ejecute.</span></li>
-<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">3.</span><span>Abre la direcciÃ³n local (ej.: localhost:3000) y mira el sitio en tu mÃ¡quina.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">1.</span><span>Busca la URL de un repo pêÂºblico con una plantilla sencilla de landing page.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">2.</span><span>Pega en AntiGravity y pêÂ­dele que lo importe; despuêÂ©s, pêÂ­dele que lo ejecute.</span></li>
+<li class="flex items-start space-x-2"><span class="text-emerald-400 mt-1">3.</span><span>Abre la direcciêÂ³n local (ej.: localhost:3000) y mira el sitio en tu mêÂ¡quina.</span></li>
 </ul>
-<p class="text-neutral-400 text-sm">En pocos minutos, pasas de cero a tener un sitio funcionando localmente, sin haber escrito una sola lÃ­nea a mano.</p>
+<p class="text-neutral-400 text-sm">En pocos minutos, pasas de cero a tener un sitio funcionando localmente, sin haber escrito una sola lêÂ­nea a mano.</p>
 </div>
 </section>
-<!-- EXERCÃCIO -->
+<!-- EXERCêÂCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> Ejercicio</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Ââ¹ê¯Â¸Â</span> Ejercicio</h2>
 <div class="bg-gradient-to-br from-emerald-900/30 to-dark-800 rounded-xl border border-emerald-500/30 p-6">
 <p class="text-neutral-300 mb-4">Deja tu entorno realmente listo. Completa todo el proceso:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
-<li>Instala <strong>AntiGravity</strong> (de antigravity.google) y el <strong>Node.js</strong> (de nodejs.org, versiÃ³n LTS).</li>
-<li>Importa uno <strong>cualquier repositorio pÃºblico</strong> (una plantilla simple sirve).</li>
-<li>Ejecuta en <strong>localhost</strong> e <strong>anota el puerto</strong> que apareciÃ³ (p. ej., 3000, 5173).</li>
+<li>Instala <strong>AntiGravity</strong> (de antigravity.google) y el <strong>Node.js</strong> (de nodejs.org, versiêÂ³n LTS).</li>
+<li>Importa uno <strong>cualquier repositorio pêÂºblico</strong> (una plantilla simple sirve).</li>
+<li>Ejecuta en <strong>localhost</strong> e <strong>anota el puerto</strong> que apareciêÂ³ (p. ej., 3000, 5173).</li>
 </ol>
-<p class="text-neutral-400 text-sm">Si viste abrirse la app en el navegador, tu entorno estÃ¡ listo para la Trilha 2, donde construiremos la primera app desde cero.</p>
+<p class="text-neutral-400 text-sm">Si viste abrirse la app en el navegador, tu entorno estêÂ¡ listo para la Trilha 2, donde construiremos la primera app desde cero.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts listos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Å¡Â¡</span> Prompts listos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copia, pega en el panel de comandos de AntiGravity y adapta a tu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">importar un proyecto</span><button class="text-xs px-2 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Importa este proyecto desde el repositorio de GitHub: [URL].
-DespuÃ©s explÃ­came, en 2 lÃ­neas, quÃ© hace este proyecto.</pre>
+DespuêÂ©s explêÂ­came, en 2 lêÂ­neas, quêÂ© hace este proyecto.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">ejecutar en localhost</span><button class="text-xs px-2 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Abra este projeto inteiro no localhost para eu visualizar.
-Me diga em qual endereÃ§o e porta ele subiu.</pre>
+Me diga em qual endereêÂ§o e porta ele subiu.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">crear una carpeta de trabajo</span><button class="text-xs px-2 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Crea una carpeta en mi escritorio llamada [nombre]
-y Ãºsala como el workspace de este proyecto.</pre>
+y êÂºsala como el workspace de este proyecto.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-emerald-900/40 via-dark-800 to-dark-800 rounded-xl border border-emerald-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumen del mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumen del mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">InstalaciÃ³n</strong><span class="text-neutral-400"> â€” AntiGravity (antigravity.google) + Node.js (nodejs.org, LTS): la base para ejecutarlo en local.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">GitHub y localhost</strong><span class="text-neutral-400"> â€” repo (botÃ³n "Code" â†’ URL) â†’ importar â†’ ejecutar â†’ ver en localhost, solo tÃº.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Terminal y modelos</strong><span class="text-neutral-400"> â€” el CLI es la computadora que escucha texto; elige el modelo adecuado para diseÃ±o o lÃ³gica.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">âœ“</span><div><strong class="text-white">Interfaz y control del navegador</strong><span class="text-neutral-400"> â€” comandos, archivos, Agent Manager; y el agente que abre el navegador y se autocorrige.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">InstalaciêÂ³n</strong><span class="text-neutral-400"> ê¢â¬â AntiGravity (antigravity.google) + Node.js (nodejs.org, LTS): la base para ejecutarlo en local.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">GitHub y localhost</strong><span class="text-neutral-400"> ê¢â¬â repo (botêÂ³n "Code" ê¢â â URL) ê¢â â importar ê¢â â ejecutar ê¢â â ver en localhost, solo têÂº.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Terminal y modelos</strong><span class="text-neutral-400"> ê¢â¬â el CLI es la computadora que escucha texto; elige el modelo adecuado para diseêÂ±o o lêÂ³gica.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-emerald-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Interfaz y control del navegador</strong><span class="text-neutral-400"> ê¢â¬â comandos, archivos, Agent Manager; y el agente que abre el navegador y se autocorrige.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-emerald-400 mb-2">Siguiente mÃ³dulo:</h3><p class="text-neutral-300">Ruta 2 Â· 2.1 â€” Tu primera app</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-emerald-400 mb-2">Siguiente mêÂ³dulo:</h3><p class="text-neutral-300">Ruta 2 êÂ· 2.1 ê¢â¬â Tu primera app</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-1-2.html">â† MÃ³dulo anterior</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Siguiente mÃ³dulo â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="modulo-1-2.html">ê¢â Â MêÂ³dulo anterior</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Siguiente mêÂ³dulo ê¢â â</a>
 </div>
 </div>
 </section>
@@ -708,7 +708,7 @@ y Ãºsala como el workspace de este proyecto.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” de cero a la app publicada con IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â de cero a la app publicada con IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -731,11 +731,11 @@ y Ãºsala como el workspace de este proyecto.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -743,22 +743,22 @@ y Ãºsala como el workspace de este proyecto.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'ê¢Åâ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

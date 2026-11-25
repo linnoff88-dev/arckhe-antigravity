@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>Ruta 3 Â· Escalar la producciÃ³n | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>Ruta 3 êÂ· Escalar la producciêÂ³n | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -152,7 +152,7 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -165,7 +165,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -181,7 +181,7 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha3/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha3/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha3/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha3/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -189,47 +189,47 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-purple-400 bg-purple-500/10" href="index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Escalar</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profesional</span></a>
-<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrÃ­a</span></a>
+<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrêÂ­a</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Oscuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Enfoque</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Oscuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Enfoque</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Lectura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Lectura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">TamaÃ±o</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">TamaêÂ±o</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">CÃ³modo</button>
+<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">CêÂ³modo</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Trayectoria</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Trayectoria</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -243,12 +243,12 @@
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">RUTA 3</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ“ˆ Escalar la producciÃ³n</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Ya sabes construir y publicar una app. Ahora cambia la pregunta: Â¿cÃ³mo pasar de 1 sitio a 100 sin rehacerlo todo? AquÃ­ montas un sistema de clonaciÃ³n a partir de una plantilla maestra y llevas sitios listos a creadores como GoHighLevel y WordPress.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âË Escalar la producciêÂ³n</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Ya sabes construir y publicar una app. Ahora cambia la pregunta: êÂ¿cêÂ³mo pasar de 1 sitio a 100 sin rehacerlo todo? AquêÂ­ montas un sistema de clonaciêÂ³n a partir de una plantilla maestra y llevas sitios listos a creadores como GoHighLevel y WordPress.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">2</div><div class="text-xs text-neutral-400">MÃ³dulos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">2</div><div class="text-xs text-neutral-400">MêÂ³dulos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">13</div><div class="text-xs text-neutral-400">Temas</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">~2h</div><div class="text-xs text-neutral-400">DuraciÃ³n</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">~2h</div><div class="text-xs text-neutral-400">DuraciêÂ³n</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">Intermedio</div><div class="text-xs text-neutral-400">Nivel</div></div>
 </div>
 </div>
@@ -256,7 +256,7 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- HERO SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-5 mb-12 overflow-hidden">
-<svg aria-label="Una plantilla maestra alojada en GitHub se clona varias veces; en cada clon cambias 6 elementos (logo, copy, marcas, precios, reseÃ±as, colores) y generas un sitio nuevo para cada cliente" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
+<svg aria-label="Una plantilla maestra alojada en GitHub se clona varias veces; en cada clon cambias 6 elementos (logo, copy, marcas, precios, reseêÂ±as, colores) y generas un sitio nuevo para cada cliente" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
 <defs>
 <lineargradient id="t3-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c084fc"></stop><stop offset="1" stop-color="#a855f7"></stop></lineargradient>
 <filter height="180%" id="t3-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -275,21 +275,21 @@
 </g>
 <g>
 <rect fill="#1a1230" height="48" rx="11" stroke="#a855f7" stroke-width="2" width="190" x="470" y="30"></rect>
-<text fill="#e9d5ff" font-size="14" font-weight="600" text-anchor="middle" x="565" y="59">clon Â· cliente 1</text>
+<text fill="#e9d5ff" font-size="14" font-weight="600" text-anchor="middle" x="565" y="59">clon êÂ· cliente 1</text>
 </g>
 <g>
 <rect fill="#1a1230" height="48" rx="11" stroke="#a855f7" stroke-width="2" width="190" x="470" y="126"></rect>
-<text fill="#e9d5ff" font-size="14" font-weight="600" text-anchor="middle" x="565" y="155">clon Â· cliente 2</text>
+<text fill="#e9d5ff" font-size="14" font-weight="600" text-anchor="middle" x="565" y="155">clon êÂ· cliente 2</text>
 </g>
 <g>
 <rect fill="#1a1230" height="48" rx="11" stroke="#a855f7" stroke-width="2" width="190" x="470" y="222"></rect>
-<text fill="#e9d5ff" font-size="14" font-weight="600" text-anchor="middle" x="565" y="251">clon Â· cliente N</text>
+<text fill="#e9d5ff" font-size="14" font-weight="600" text-anchor="middle" x="565" y="251">clon êÂ· cliente N</text>
 </g>
 <rect fill="#0e1b26" height="108" rx="14" stroke="#38bdf8" stroke-width="2" width="240" x="720" y="96"></rect>
 <text fill="#bfe6ff" font-size="14" font-weight="600" text-anchor="middle" x="840" y="124">cambiar 6 elementos</text>
-<text fill="#9ad6ff" font-size="12" text-anchor="middle" x="840" y="148">logo Â· copy Â· marcas</text>
-<text fill="#9ad6ff" font-size="12" text-anchor="middle" x="840" y="168">precios Â· reseÃ±as Â· colores</text>
-<text fill="#c084fc" font-size="12" font-weight="600" text-anchor="middle" x="840" y="190">costo marginal â‰ˆ 0</text>
+<text fill="#9ad6ff" font-size="12" text-anchor="middle" x="840" y="148">logo êÂ· copy êÂ· marcas</text>
+<text fill="#9ad6ff" font-size="12" text-anchor="middle" x="840" y="168">precios êÂ· reseêÂ±as êÂ· colores</text>
+<text fill="#c084fc" font-size="12" font-weight="600" text-anchor="middle" x="840" y="190">costo marginal ê¢â°Ë 0</text>
 </g>
 </svg>
 </div>
@@ -299,100 +299,100 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition-all" href="#modulo-3-1">
 <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.1</span><span class="text-xs text-neutral-500">~60 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-purple-400 transition-colors">ðŸ§¬ Sistema de clonaciÃ³n</h3>
+<h3 class="font-semibold mb-1 group-hover:text-purple-400 transition-colors">ê°Å¸Â§Â¬ Sistema de clonaciêÂ³n</h3>
 <p class="text-xs text-neutral-400">De 1 sitio a 100</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-5 transition-all" href="#modulo-3-2">
 <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold text-sm">3.2</span><span class="text-xs text-neutral-500">~50 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-purple-400 transition-colors">ðŸ§© GoHighLevel / WordPress</h3>
+<h3 class="font-semibold mb-1 group-hover:text-purple-400 transition-colors">ê°Å¸Â§Â© GoHighLevel / WordPress</h3>
 <p class="text-xs text-neutral-400">Llevar el sitio al constructor</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
-<!-- MÃ“DULO 3.1 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3" id="modulo-3-1">
+<!-- MêâDULO 3.1 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="3-1" data-ARCKHê-track="3" id="modulo-3-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.1</span><span class="text-xs text-neutral-500">~60 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ§¬ Sistema de clonaciÃ³n</h3>
-<p class="text-neutral-400 text-sm">Una plantilla hermosa se convierte en la fuente de todos los clones. Cambia 6 elementos, organÃ­zalos por cliente y escala de 1 a 1.000 sitios con un costo marginal casi nulo.</p>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸Â§Â¬ Sistema de clonaciêÂ³n</h3>
+<p class="text-neutral-400 text-sm">Una plantilla hermosa se convierte en la fuente de todos los clones. Cambia 6 elementos, organêÂ­zalos por cliente y escala de 1 a 1.000 sitios con un costo marginal casi nulo.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ§¬</span><div><span class="font-medium">Master asset</span><span class="text-neutral-500 text-sm ml-2">- la fuente de los clones</span></div>
+<span class="text-lg">ê°Å¸Â§Â¬</span><div><span class="font-medium">Master asset</span><span class="text-neutral-500 text-sm ml-2">- la fuente de los clones</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una plantilla de sitio web hermosa, alojada en GitHub, que se convierte en la fuente de todos los clones. Clonas el repo y la re-marcas para cada cliente.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Construirlo bien una vez y reutilizarlo es lo que hace posible producir a escala.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Plantilla maestra Â· fuente Ãºnica Â· clonar repo Â· volver a etiquetar.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una plantilla de sitio web hermosa, alojada en GitHub, que se convierte en la fuente de todos los clones. Clonas el repo y la re-marcas para cada cliente.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Construirlo bien una vez y reutilizarlo es lo que hace posible producir a escala.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Plantilla maestra êÂ· fuente êÂºnica êÂ· clonar repo êÂ· volver a etiquetar.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ› ï¸</span><div><span class="font-medium">La Cloning Skill</span><span class="text-neutral-500 text-sm ml-2">- prompt reutilizable</span></div>
+<span class="text-lg">ê°Å¸âºÂ ê¯Â¸Â</span><div><span class="font-medium">La Cloning Skill</span><span class="text-neutral-500 text-sm ml-2">- prompt reutilizable</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una "skill" (prompt estructurado reutilizable) que recorre los elementos que hay que cambiar, hace preguntas, pide los assets con las dimensiones adecuadas y luego implementa.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Convierte la clonaciÃ³n en un proceso guiado, repetible y a prueba de olvidos.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Skill Â· prompt estructurado Â· preguntas guiadas Â· Biblioteca (Trilha 5).</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una "skill" (prompt estructurado reutilizable) que recorre los elementos que hay que cambiar, hace preguntas, pide los assets con las dimensiones adecuadas y luego implementa.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Convierte la clonaciêÂ³n en un proceso guiado, repetible y a prueba de olvidos.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Skill êÂ· prompt estructurado êÂ· preguntas guiadas êÂ· Biblioteca (Trilha 5).</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ”</span><div><span class="font-medium">Los 6 elementos clonables</span><span class="text-neutral-500 text-sm ml-2">- quÃ© cambia</span></div>
+<span class="text-lg">ê°Å¸âÂ</span><div><span class="font-medium">Los 6 elementos clonables</span><span class="text-neutral-500 text-sm ml-2">- quêÂ© cambia</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Logo Â· copy Â· marcas de confianza Â· precios Â· reseÃ±as Â· esquema de colores. Al cambiar estos 6 elementos, el sitio se convierte en el de otro cliente.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Saber exactamente quÃ© cambia evita tocar lo que no debe cambiar.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Logo Â· copy Â· marcas de confianza Â· precios Â· reseÃ±as Â· colores.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Logo êÂ· copy êÂ· marcas de confianza êÂ· precios êÂ· reseêÂ±as êÂ· esquema de colores. Al cambiar estos 6 elementos, el sitio se convierte en el de otro cliente.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Saber exactamente quêÂ© cambia evita tocar lo que no debe cambiar.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Logo êÂ· copy êÂ· marcas de confianza êÂ· precios êÂ· reseêÂ±as êÂ· colores.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸŽ¨</span><div><span class="font-medium">Regla de diseÃ±o 70-20-10</span><span class="text-neutral-500 text-sm ml-2">- jerarquÃ­a de color</span></div>
+<span class="text-lg">ê°Å¸Å½Â¨</span><div><span class="font-medium">Regla de diseêÂ±o 70-20-10</span><span class="text-neutral-500 text-sm ml-2">- jerarquêÂ­a de color</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">70% de un color dominante, 20% y 10% de acentos. "Si todo destaca, nada destaca" â€” por eso la plantilla estÃ¡ hecha para que la IA sepa dÃ³nde intervenir.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Una proporciÃ³n clara hace que el clon parezca profesional con solo cambiar el color dominante.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">70-20-10 Â· color dominante Â· acentos Â· jerarquÃ­a visual.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">70% de un color dominante, 20% y 10% de acentos. "Si todo destaca, nada destaca" ê¢â¬â por eso la plantilla estêÂ¡ hecha para que la IA sepa dêÂ³nde intervenir.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Una proporciêÂ³n clara hace que el clon parezca profesional con solo cambiar el color dominante.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">70-20-10 êÂ· color dominante êÂ· acentos êÂ· jerarquêÂ­a visual.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ—‚ï¸</span><div><span class="font-medium">Una carpeta por cliente</span><span class="text-neutral-500 text-sm ml-2">- gestiÃ³n de archivos</span></div>
+<span class="text-lg">ê°Å¸ââê¯Â¸Â</span><div><span class="font-medium">Una carpeta por cliente</span><span class="text-neutral-500 text-sm ml-2">- gestiêÂ³n de archivos</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Organiza cada cliente en su carpeta en la computadora. Evita modificar el sitio equivocado cuando gestionas muchos.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Una gestiÃ³n de archivos sencilla reduce la confusiÃ³n y los errores tontos a gran escala.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Una carpeta por cliente Â· organizaciÃ³n Â· evitar modificar el sitio equivocado.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Organiza cada cliente en su carpeta en la computadora. Evita modificar el sitio equivocado cuando gestionas muchos.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Una gestiêÂ³n de archivos sencilla reduce la confusiêÂ³n y los errores tontos a gran escala.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Una carpeta por cliente êÂ· organizaciêÂ³n êÂ· evitar modificar el sitio equivocado.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ§¾</span><div><span class="font-medium">Automatizar la recopilaciÃ³n de datos</span><span class="text-neutral-500 text-sm ml-2">- formulario + Supabase</span></div>
+<span class="text-lg">ê°Å¸Â§Â¾</span><div><span class="font-medium">Automatizar la recopilaciêÂ³n de datos</span><span class="text-neutral-500 text-sm ml-2">- formulario + Supabase</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un formulario propio (logo + las 6 preguntas + carga de assets) que guarda en Supabase mediante MCP; despuÃ©s, la IA "clona el envÃ­o mÃ¡s reciente".</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Te saca del medio: el cliente completa el formulario, la IA clona, sin que tengas que mirar las respuestas.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Formulario Â· Supabase Â· MCP Â· envÃ­o mÃ¡s reciente.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un formulario propio (logo + las 6 preguntas + carga de assets) que guarda en Supabase mediante MCP; despuêÂ©s, la IA "clona el envêÂ­o mêÂ¡s reciente".</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Te saca del medio: el cliente completa el formulario, la IA clona, sin que tengas que mirar las respuestas.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Formulario êÂ· Supabase êÂ· MCP êÂ· envêÂ­o mêÂ¡s reciente.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-<span class="text-lg">â™¾ï¸</span><div><span class="font-medium">Escalar</span><span class="text-neutral-500 text-sm ml-2">- de 1 a 1.000</span></div>
+<span class="text-lg">ê¢â¢Â¾ê¯Â¸Â</span><div><span class="font-medium">Escalar</span><span class="text-neutral-500 text-sm ml-2">- de 1 a 1.000</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">De 1 sitio a 100, 1.000; costo marginal casi cero por clon. Refina la skill en cada ronda: ejecÃºtala una vez, ajusta lo que no cambiÃ³ y repite.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es lo que separa "hacer un sitio web" de "tener una fÃ¡brica de sitios web".</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Costo marginal Â· refinamiento iterativo Â· escala.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">De 1 sitio a 100, 1.000; costo marginal casi cero por clon. Refina la skill en cada ronda: ejecêÂºtala una vez, ajusta lo que no cambiêÂ³ y repite.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es lo que separa "hacer un sitio web" de "tener una fêÂ¡brica de sitios web".</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Costo marginal êÂ· refinamiento iterativo êÂ· escala.</p></div>
 </div></div>
 </div>
 </div>
@@ -401,78 +401,78 @@
 <a class="px-4 py-2 text-sm bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors" href="modulo-3-1.html">Ver completo</a>
 </div>
 </div>
-<!-- MÃ“DULO 3.2 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="3-2" data-ARCKHÉ-track="3" id="modulo-3-2">
+<!-- MêâDULO 3.2 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="3-2" data-ARCKHê-track="3" id="modulo-3-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-purple-400 font-bold">3.2</span><span class="text-xs text-neutral-500">~50 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ§© Llevar sitios a GoHighLevel/WordPress</h3>
-<p class="text-neutral-400 text-sm">Los sitios en frameworks no se pueden integrar directamente en los constructores. Una skill convierte el codebase en un Ãºnico HTML self-contained que puedes pegar en el bloque "Custom HTML/JS" de GHL o WordPress.</p>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸Â§Â© Llevar sitios a GoHighLevel/WordPress</h3>
+<p class="text-neutral-400 text-sm">Los sitios en frameworks no se pueden integrar directamente en los constructores. Una skill convierte el codebase en un êÂºnico HTML self-contained que puedes pegar en el bloque "Custom HTML/JS" de GHL o WordPress.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ§©</span><div><span class="font-medium">El problema</span><span class="text-neutral-500 text-sm ml-2">- desajuste de lenguaje</span></div>
+<span class="text-lg">ê°Å¸Â§Â©</span><div><span class="font-medium">El problema</span><span class="text-neutral-500 text-sm ml-2">- desajuste de lenguaje</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Los sitios creados con frameworks (React/Next/Vue/Svelte) no se pueden integrar directamente en constructores de "arrastrar y soltar" como GoHighLevel (GHL) o WordPress.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Entender la discrepancia evita la frustraciÃ³n de Â«lo peguÃ© y se rompiÃ³Â».</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Framework Â· constructor visual Â· desajuste de lenguaje.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Los sitios creados con frameworks (React/Next/Vue/Svelte) no se pueden integrar directamente en constructores de "arrastrar y soltar" como GoHighLevel (GHL) o WordPress.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Entender la discrepancia evita la frustraciêÂ³n de êÂ«lo peguêÂ© y se rompiêÂ³êÂ».</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Framework êÂ· constructor visual êÂ· desajuste de lenguaje.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ”„</span><div><span class="font-medium">La Transformer Skill</span><span class="text-neutral-500 text-sm ml-2">- 1 HTML autocontenido</span></div>
+<span class="text-lg">ê°Å¸ââ</span><div><span class="font-medium">La Transformer Skill</span><span class="text-neutral-500 text-sm ml-2">- 1 HTML autocontenido</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una skill que convierte todo el codebase en un Ãºnico archivo HTML autocontenido, compatible con el bloque "Custom HTML/JS" de GHL.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el puente entre lo que construiste en el framework y lo que acepta el constructor.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Transformer Skill Â· self-contained Â· Custom HTML/JS Â· Biblioteca (Trilha 5).</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una skill que convierte todo el codebase en un êÂºnico archivo HTML autocontenido, compatible con el bloque "Custom HTML/JS" de GHL.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el puente entre lo que construiste en el framework y lo que acepta el constructor.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Transformer Skill êÂ· self-contained êÂ· Custom HTML/JS êÂ· Biblioteca (Trilha 5).</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸš«</span><div><span class="font-medium">Restricciones del bloque Custom HTML</span><span class="text-neutral-500 text-sm ml-2">- quÃ© se puede y quÃ© no</span></div>
+<span class="text-lg">ê°Å¸Å¡Â«</span><div><span class="font-medium">Restricciones del bloque Custom HTML</span><span class="text-neutral-500 text-sm ml-2">- quêÂ© se puede y quêÂ© no</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Sin JSX/Babel, sin ES modules, sin build tools, sin APIs de Node, sin etiquetas html/head/body. Solo HTML + style + script vanilla, SVG inline, CDN.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Conocer los lÃ­mites es lo que hace que la conversiÃ³n funcione a la primera.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Sin import/export Â· sin build Â· vanilla Â· Tailwind vÃ­a CDN Â· poner prefijos en las clases.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Sin JSX/Babel, sin ES modules, sin build tools, sin APIs de Node, sin etiquetas html/head/body. Solo HTML + style + script vanilla, SVG inline, CDN.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Conocer los lêÂ­mites es lo que hace que la conversiêÂ³n funcione a la primera.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Sin import/export êÂ· sin build êÂ· vanilla êÂ· Tailwind vêÂ­a CDN êÂ· poner prefijos en las clases.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸŽ¬</span><div><span class="font-medium">Build Â«design-firstÂ»</span><span class="text-neutral-500 text-sm ml-2">- en AI Studio</span></div>
+<span class="text-lg">ê°Å¸Å½Â¬</span><div><span class="font-medium">Build êÂ«design-firstêÂ»</span><span class="text-neutral-500 text-sm ml-2">- en AI Studio</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Construir primero en una plataforma enfocada en el diseÃ±o, descargar el archivo, luego clonarlo en AntiGravity y convertirlo. Cubre ~99% de los sitios.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Empezar por el diseÃ±o da un resultado mÃ¡s atractivo antes de la conversiÃ³n tÃ©cnica.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Design-first Â· AI Studio Â· descargar â†’ clonar â†’ convertir Â· ~99%.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Construir primero en una plataforma enfocada en el diseêÂ±o, descargar el archivo, luego clonarlo en AntiGravity y convertirlo. Cubre ~99% de los sitios.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Empezar por el diseêÂ±o da un resultado mêÂ¡s atractivo antes de la conversiêÂ³n têÂ©cnica.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Design-first êÂ· AI Studio êÂ· descargar ê¢â â clonar ê¢â â convertir êÂ· ~99%.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">âœ‚ï¸</span><div><span class="font-medium">HTML Sniping</span><span class="text-neutral-500 text-sm ml-2">- bloques puntuales</span></div>
+<span class="text-lg">ê¢Åâê¯Â¸Â</span><div><span class="font-medium">HTML Sniping</span><span class="text-neutral-500 text-sm ml-2">- bloques puntuales</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">En lugar de migrar toda la pÃ¡gina, inserta bloques premium puntuales de HTML de alta calidad dentro de una pÃ¡gina existente de GHL/WordPress.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Mejora visualmente la pÃ¡gina de forma precisa sin rehacerla por completo.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Sniping Â· bloque premium Â· inyecciÃ³n puntual Â· pÃ¡gina existente.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">En lugar de migrar toda la pêÂ¡gina, inserta bloques premium puntuales de HTML de alta calidad dentro de una pêÂ¡gina existente de GHL/WordPress.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Mejora visualmente la pêÂ¡gina de forma precisa sin rehacerla por completo.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Sniping êÂ· bloque premium êÂ· inyecciêÂ³n puntual êÂ· pêÂ¡gina existente.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ“‹</span><div><span class="font-medium">Pegar en GHL y ajustar</span><span class="text-neutral-500 text-sm ml-2">- en el editor</span></div>
+<span class="text-lg">ê°Å¸ââ¹</span><div><span class="font-medium">Pegar en GHL y ajustar</span><span class="text-neutral-500 text-sm ml-2">- en el editor</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-purple-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">En el editor: agrega el bloque "Custom Code" â†’ pega el HTML â†’ guarda/publica â†’ prueba. Si falla en el mÃ³vil, vuelve al agente, copia de nuevo y pega otra vez.</p></div>
-<div><span class="text-purple-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el paso final que pone el sitio en lÃ­nea dentro del constructor del cliente.</p></div>
-<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Custom Code Â· pegar Â· publicar Â· probar Â· corregir la versiÃ³n mÃ³vil.</p></div>
+<div><span class="text-purple-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">En el editor: agrega el bloque "Custom Code" ê¢â â pega el HTML ê¢â â guarda/publica ê¢â â prueba. Si falla en el mêÂ³vil, vuelve al agente, copia de nuevo y pega otra vez.</p></div>
+<div><span class="text-purple-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el paso final que pone el sitio en lêÂ­nea dentro del constructor del cliente.</p></div>
+<div><span class="text-purple-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Custom Code êÂ· pegar êÂ· publicar êÂ· probar êÂ· corregir la versiêÂ³n mêÂ³vil.</p></div>
 </div></div>
 </div>
 </div>
@@ -481,28 +481,28 @@
 <a class="px-4 py-2 text-sm bg-purple-600 hover:bg-purple-500 text-white rounded-lg transition-colors" href="modulo-3-2.html">Ver completo</a>
 </div>
 </div>
-<!-- NAV PRÃ“XIMA TRILHA -->
+<!-- NAV PRêâXIMA TRILHA -->
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha2/index.html">â† Ruta 2: Construir y publicar</a>
-<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="../trilha4/index.html">Ruta 4: Profesionalizar â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../trilha2/index.html">ê¢â Â Ruta 2: Construir y publicar</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="../trilha4/index.html">Ruta 4: Profesionalizar ê¢â â</a>
 </div>
 </main>
 <!-- MODAIS -->
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-1" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.1</span><span class="font-semibold">Sistema de clonaciÃ³n</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.1</span><span class="font-semibold">Sistema de clonaciêÂ³n</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-1.html"></iframe>
 </div>
 </div>
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-3-2" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.2</span><span class="font-semibold">Llevar sitios a GoHighLevel/WordPress</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-purple-400 font-bold">3.2</span><span class="font-semibold">Llevar sitios a GoHighLevel/WordPress</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-3-2.html"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” de cero a la app publicada con IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â de cero a la app publicada con IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -525,11 +525,11 @@
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -537,15 +537,15 @@
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

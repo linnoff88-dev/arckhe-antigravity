@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>MÃ³dulo 3.2 Â· Levar sites para GoHighLevel/WordPress | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>MêÂ³dulo 3.2 êÂ· Levar sites para GoHighLevel/WordPress | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .ARCKHÉ-toc-link.is-active { color: #c084fc; font-weight: 600; }
+    .ARCKHê-toc-link.is-active { color: #c084fc; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -183,19 +183,19 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha3/modulo-3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha3/modulo-3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha3/modulo-3-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha3/modulo-3-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="AparêÂªncia e leitura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">SêÂ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">ConfortêÂ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,100 +244,100 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-purple-400" href="../index.html">InÃ­cio</a><span>/</span>
+<a class="hover:text-purple-400" href="../index.html">InêÂ­cio</a><span>/</span>
 <a class="hover:text-purple-400" href="index.html">Trilha 3</a><span>/</span>
-<span class="text-purple-400">MÃ³dulo 3.2</span>
+<span class="text-purple-400">MêÂ³dulo 3.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 3.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§© Levar sites para GoHighLevel/WordPress</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Sites feitos em frameworks nÃ£o cabem direto nos construtores visuais. A soluÃ§Ã£o: uma skill que converte o codebase num Ãºnico HTML self-contained que cola no bloco "Custom HTML/JS" do GHL ou do WordPress â€” e ajustar o que escapar.</p>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MêâDULO 3.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â© Levar sites para GoHighLevel/WordPress</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Sites feitos em frameworks nêÂ£o cabem direto nos construtores visuais. A soluêÂ§êÂ£o: uma skill que converte o codebase num êÂºnico HTML self-contained que cola no bloco "Custom HTML/JS" do GHL ou do WordPress ê¢â¬â e ajustar o que escapar.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">6</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">50</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">IntermediÃ¡rio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">IntermediêÂ¡rio</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrêÂ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 6</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeêÂ§êÂ£o <span data-ARCKHê-section-counter="">1 de 6</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. O problema</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. A Transformer Skill</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. RestriÃ§Ãµes do Custom HTML</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. Build design-first</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. HTML Sniping</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. Colar no GHL e ajustar</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. O problema</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. A Transformer Skill</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. RestriêÂ§êÂµes do Custom HTML</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. Build design-first</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. HTML Sniping</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. Colar no GHL e ajustar</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-ARCKHÉ-meter="modulo:3-2"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 6</span> Â· <span class="text-purple-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-purple-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHê-meter="modulo:3-2"><span class="text-neutral-400" data-ARCKHê-meter-frac="">0 de 6</span> êÂ· <span class="text-purple-400 font-bold" data-ARCKHê-meter-pct="">0%</span><div class="ARCKHê-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-purple-500" data-ARCKHê-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-ARCKHÉ-module="3-2" data-ARCKHÉ-track="3">
-<!-- TÃ“PICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHê-module="3-2" data-ARCKHê-track="3">
+<!-- TêâPICO 1 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">ðŸ§© O problema</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â© O problema</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t1-p1">VocÃª construiu um site lindo num <strong class="text-purple-400">framework</strong> (React, Next, Vue, Svelte). AÃ­ o cliente diz: "eu uso GoHighLevel" (ou WordPress). Problema: esses construtores sÃ£o <strong>"arrastar e soltar"</strong> e <strong class="text-purple-400">nÃ£o aceitam um codebase de framework direto</strong>. Ã‰ um descompasso de linguagem.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-2-t1-p1">VocêÂª construiu um site lindo num <strong class="text-purple-400">framework</strong> (React, Next, Vue, Svelte). AêÂ­ o cliente diz: "eu uso GoHighLevel" (ou WordPress). Problema: esses construtores sêÂ£o <strong>"arrastar e soltar"</strong> e <strong class="text-purple-400">nêÂ£o aceitam um codebase de framework direto</strong>. êâ° um descompasso de linguagem.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">âœ“ O que vocÃª tem</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê¢Åâ O que vocêÂª tem</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Site em React / Next / Vue / Svelte</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>VÃ¡rios arquivos, componentes, build</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Roda lindo no localhost</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Site em React / Next / Vue / Svelte</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>VêÂ¡rios arquivos, componentes, build</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Roda lindo no localhost</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— O que o construtor aceita</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ O que o construtor aceita</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Blocos visuais "arrastar e soltar"</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>NÃ£o entende componentes nem build</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Cola o framework cru â†’ quebra</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Blocos visuais "arrastar e soltar"</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>NêÂ£o entende componentes nem build</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Cola o framework cru ê¢â â quebra</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> A ideia</h3>
-<p class="text-neutral-300">O caminho nÃ£o Ã© desistir do framework â€” Ã© <strong>traduzir</strong> o resultado para um formato que o construtor entenda. Ã‰ disso que trata o resto do mÃ³dulo.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> A ideia</h3>
+<p class="text-neutral-300">O caminho nêÂ£o êÂ© desistir do framework ê¢â¬â êÂ© <strong>traduzir</strong> o resultado para um formato que o construtor entenda. êâ° disso que trata o resto do mêÂ³dulo.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Framework</div><p class="text-xs text-neutral-400">React/Next/Vue</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Construtor</div><p class="text-xs text-neutral-400">GHL / WordPress</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Descompasso</div><p class="text-xs text-neutral-400">linguagens diferentes</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">SoluÃ§Ã£o</div><p class="text-xs text-neutral-400">traduzir, nÃ£o desistir</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">SoluêÂ§êÂ£o</div><p class="text-xs text-neutral-400">traduzir, nêÂ£o desistir</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-2" id="topico-2">
+<!-- TêâPICO 2 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">ðŸ”„ A Transformer Skill</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââ A Transformer Skill</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t2-p1">A traduÃ§Ã£o Ã© feita por uma <strong class="text-purple-400">Transformer Skill</strong>: uma skill que pega o codebase inteiro e o converte num <strong>Ãºnico arquivo HTML self-contained</strong> â€” tudo num sÃ³ lugar (HTML + CSS + JS), compatÃ­vel com o bloco "Custom HTML/JS" do GHL.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-2-t2-p1">A traduêÂ§êÂ£o êÂ© feita por uma <strong class="text-purple-400">Transformer Skill</strong>: uma skill que pega o codebase inteiro e o converte num <strong>êÂºnico arquivo HTML self-contained</strong> ê¢â¬â tudo num sêÂ³ lugar (HTML + CSS + JS), compatêÂ­vel com o bloco "Custom HTML/JS" do GHL.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="A Transformer Skill recebe um codebase com vÃ¡rios arquivos de framework e produz um Ãºnico arquivo HTML self-contained pronto para colar no bloco Custom HTML do construtor" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="A Transformer Skill recebe um codebase com vêÂ¡rios arquivos de framework e produz um êÂºnico arquivo HTML self-contained pronto para colar no bloco Custom HTML do construtor" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m32-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c084fc"></stop><stop offset="1" stop-color="#a855f7"></stop></lineargradient>
 <filter height="180%" id="m32-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -352,7 +352,7 @@
 <g font-family="Inter,sans-serif">
 <rect fill="#0e1b26" height="80" rx="14" stroke="#38bdf8" stroke-width="2" width="230" x="40" y="60"></rect>
 <text fill="#bfe6ff" font-size="15" font-weight="600" text-anchor="middle" x="155" y="92">Codebase</text>
-<text fill="#9ad6ff" font-size="12" text-anchor="middle" x="155" y="113">muitos arquivos Â· build</text>
+<text fill="#9ad6ff" font-size="12" text-anchor="middle" x="155" y="113">muitos arquivos êÂ· build</text>
 <g filter="url(#m32-glow)"><rect fill="#1a1230" height="80" rx="14" stroke="url(#m32-grad)" stroke-width="2.5" width="240" x="380" y="60"></rect></g>
 <text fill="#c084fc" font-size="15" font-weight="600" text-anchor="middle" x="500" y="92">Transformer Skill</text>
 <text fill="#e9d5ff" font-size="12" text-anchor="middle" x="500" y="113">converte tudo</text>
@@ -363,92 +363,92 @@
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300">A Transformer Skill tambÃ©m estÃ¡ na <strong>Biblioteca (Trilha 5)</strong>. Use-a como ponto de partida e teste o HTML antes de entregar ao cliente.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300">A Transformer Skill tambêÂ©m estêÂ¡ na <strong>Biblioteca (Trilha 5)</strong>. Use-a como ponto de partida e teste o HTML antes de entregar ao cliente.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Entrada</div><p class="text-xs text-neutral-400">codebase inteiro</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Skill</div><p class="text-xs text-neutral-400">converte</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">SaÃ­da</div><p class="text-xs text-neutral-400">1 HTML Ãºnico</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">SaêÂ­da</div><p class="text-xs text-neutral-400">1 HTML êÂºnico</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Destino</div><p class="text-xs text-neutral-400">Custom HTML/JS</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-3" id="topico-3">
+<!-- TêâPICO 3 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">ðŸš« RestriÃ§Ãµes do bloco Custom HTML</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å¡Â« RestriêÂ§êÂµes do bloco Custom HTML</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t3-p1">O bloco "Custom HTML/JS" Ã© poderoso, mas tem <strong class="text-purple-400">regras claras</strong>. ConhecÃª-las Ã© o que faz a conversÃ£o funcionar de primeira. Em resumo: nada de ferramentas de framework, sÃ³ o bÃ¡sico da web.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-2-t3-p1">O bloco "Custom HTML/JS" êÂ© poderoso, mas tem <strong class="text-purple-400">regras claras</strong>. ConhecêÂª-las êÂ© o que faz a conversêÂ£o funcionar de primeira. Em resumo: nada de ferramentas de framework, sêÂ³ o bêÂ¡sico da web.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— NÃ£o pode</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ NêÂ£o pode</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>JSX / Babel</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>ES modules (import / export)</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Build tools (Vite / Webpack)</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>APIs de Node (process.env)</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Tags html / head / body (o GHL injeta o shell)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>JSX / Babel</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>ES modules (import / export)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Build tools (Vite / Webpack)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>APIs de Node (process.env)</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Tags html / head / body (o GHL injeta o shell)</span></li>
 </ul>
 </div>
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">âœ“ Pode</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê¢Åâ Pode</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>HTML + style + script vanilla</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>SVG inline</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>CDN (scripts externos por URL)</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Tailwind via CDN</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Prefixar as classes CSS pra nÃ£o conflitar</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>HTML + style + script vanilla</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>SVG inline</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>CDN (scripts externos por URL)</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Tailwind via CDN</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Prefixar as classes CSS pra nêÂ£o conflitar</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">âš ï¸</span> Armadilha comum</h3>
-<p class="text-neutral-300">Esquecer de <strong>prefixar as classes</strong>. O construtor tem CSS prÃ³prio; se suas classes tÃªm nomes genÃ©ricos, elas colidem e o layout quebra. Prefixe (ex.: <code class="font-mono text-purple-400">vf-</code>) e fique seguro.</p>
+<h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> Armadilha comum</h3>
+<p class="text-neutral-300">Esquecer de <strong>prefixar as classes</strong>. O construtor tem CSS prêÂ³prio; se suas classes têÂªm nomes genêÂ©ricos, elas colidem e o layout quebra. Prefixe (ex.: <code class="font-mono text-purple-400">vf-</code>) e fique seguro.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Sem import</div><p class="text-xs text-neutral-400">nem export</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Sem build</div><p class="text-xs text-neutral-400">vanilla sÃ³</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Sem build</div><p class="text-xs text-neutral-400">vanilla sêÂ³</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">CDN ok</div><p class="text-xs text-neutral-400">Tailwind via CDN</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Prefixe</div><p class="text-xs text-neutral-400">classes prÃ³prias</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Prefixe</div><p class="text-xs text-neutral-400">classes prêÂ³prias</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-4" id="topico-4">
+<!-- TêâPICO 4 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">ðŸŽ¬ Build "design-first" no AI Studio</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¬ Build "design-first" no AI Studio</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t4-p1">Um fluxo que dÃ¡ um resultado mais bonito: construa <strong class="text-purple-400">primeiro numa plataforma focada em design</strong> (um AI Studio de design), baixe o arquivo, e <strong>depois</strong> clone no AntiGravity e converta. Esse caminho cobre <strong class="text-purple-400">~99% dos sites</strong> â€” sÃ³ animaÃ§Ãµes muito especÃ­ficas podem nÃ£o passar.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-2-t4-p1">Um fluxo que dêÂ¡ um resultado mais bonito: construa <strong class="text-purple-400">primeiro numa plataforma focada em design</strong> (um AI Studio de design), baixe o arquivo, e <strong>depois</strong> clone no AntiGravity e converta. Esse caminho cobre <strong class="text-purple-400">~99% dos sites</strong> ê¢â¬â sêÂ³ animaêÂ§êÂµes muito especêÂ­ficas podem nêÂ£o passar.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Construa no AI Studio (design-first)</h4>
-<p class="text-neutral-300 text-sm">Foque no visual numa plataforma de design â€” Ã© onde o site fica bonito mais rÃ¡pido.</p>
+<p class="text-neutral-300 text-sm">Foque no visual numa plataforma de design ê¢â¬â êÂ© onde o site fica bonito mais rêÂ¡pido.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Baixe e clone no AntiGravity</h4>
-<p class="text-neutral-300 text-sm">Traga o arquivo para o ambiente local, onde vocÃª tem controle total.</p>
+<p class="text-neutral-300 text-sm">Traga o arquivo para o ambiente local, onde vocêÂª tem controle total.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
@@ -460,8 +460,8 @@
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Por que design-first</h3>
-<p class="text-neutral-300">ComeÃ§ar pelo design entrega um site mais bonito <strong>antes</strong> da parte tÃ©cnica. A conversÃ£o vem depois, sobre uma base que jÃ¡ agrada o cliente.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Por que design-first</h3>
+<p class="text-neutral-300">ComeêÂ§ar pelo design entrega um site mais bonito <strong>antes</strong> da parte têÂ©cnica. A conversêÂ£o vem depois, sobre uma base que jêÂ¡ agrada o cliente.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Design</div><p class="text-xs text-neutral-400">primeiro</p></div>
@@ -470,71 +470,71 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">~99%</div><p class="text-xs text-neutral-400">cobre quase tudo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-5" id="topico-5">
+<!-- TêâPICO 5 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">âœ‚ï¸ HTML Sniping</h2>
+<h2 class="text-2xl font-bold">ê¢Åâê¯Â¸Â HTML Sniping</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t5-p1">Nem sempre vocÃª quer migrar a pÃ¡gina inteira. Ã€s vezes o cliente jÃ¡ tem uma pÃ¡gina no GHL/WordPress e sÃ³ quer uma seÃ§Ã£o mais bonita. AÃ­ entra o <strong class="text-purple-400">HTML Sniping</strong>: em vez de migrar tudo, vocÃª injeta <strong>blocos premium pontuais</strong> de HTML de alta qualidade dentro da pÃ¡gina existente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-2-t5-p1">Nem sempre vocêÂª quer migrar a pêÂ¡gina inteira. êâ¬s vezes o cliente jêÂ¡ tem uma pêÂ¡gina no GHL/WordPress e sêÂ³ quer uma seêÂ§êÂ£o mais bonita. AêÂ­ entra o <strong class="text-purple-400">HTML Sniping</strong>: em vez de migrar tudo, vocêÂª injeta <strong>blocos premium pontuais</strong> de HTML de alta qualidade dentro da pêÂ¡gina existente.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-semibold text-white mb-2">MigraÃ§Ã£o completa</h4>
-<p class="text-neutral-300 text-sm mb-2">A pÃ¡gina inteira vira 1 HTML self-contained.</p>
-<p class="text-neutral-400 text-xs">Quando: o site Ã© novo ou todo refeito.</p>
+<h4 class="font-semibold text-white mb-2">MigraêÂ§êÂ£o completa</h4>
+<p class="text-neutral-300 text-sm mb-2">A pêÂ¡gina inteira vira 1 HTML self-contained.</p>
+<p class="text-neutral-400 text-xs">Quando: o site êÂ© novo ou todo refeito.</p>
 </div>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <h4 class="font-semibold text-purple-400 mb-2">HTML Sniping</h4>
-<p class="text-neutral-300 text-sm mb-2">Um bloco premium pontual entra numa pÃ¡gina que jÃ¡ existe.</p>
-<p class="text-neutral-400 text-xs">Quando: sÃ³ uma seÃ§Ã£o precisa de upgrade.</p>
+<p class="text-neutral-300 text-sm mb-2">Um bloco premium pontual entra numa pêÂ¡gina que jêÂ¡ existe.</p>
+<p class="text-neutral-400 text-xs">Quando: sêÂ³ uma seêÂ§êÂ£o precisa de upgrade.</p>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300">Sniping Ã© <strong>cirÃºrgico</strong>: gera valor visual sem mexer no resto. Ideal para "deixar essa dobra mais bonita" sem refazer a pÃ¡gina toda.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300">Sniping êÂ© <strong>cirêÂºrgico</strong>: gera valor visual sem mexer no resto. Ideal para "deixar essa dobra mais bonita" sem refazer a pêÂ¡gina toda.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Pontual</div><p class="text-xs text-neutral-400">sÃ³ um bloco</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Pontual</div><p class="text-xs text-neutral-400">sêÂ³ um bloco</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Premium</div><p class="text-xs text-neutral-400">alta qualidade</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Injetar</div><p class="text-xs text-neutral-400">na pÃ¡gina existente</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">CirÃºrgico</div><p class="text-xs text-neutral-400">sem refazer tudo</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Injetar</div><p class="text-xs text-neutral-400">na pêÂ¡gina existente</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">CirêÂºrgico</div><p class="text-xs text-neutral-400">sem refazer tudo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-2#topico-6" id="topico-6">
+<!-- TêâPICO 6 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">ðŸ“‹ Colar no GHL e ajustar</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââ¹ Colar no GHL e ajustar</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-2-t6-p1">Com o HTML em mÃ£os, o passo final Ã© mecÃ¢nico. No editor do GHL: adicione um bloco <strong class="text-purple-400">"Custom Code"</strong> â†’ cole o HTML â†’ salve/publique â†’ <strong>teste</strong>. Se quebrar no mobile, volte ao agente, peÃ§a o conserto, recopie e recole.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-2-t6-p1">Com o HTML em mêÂ£os, o passo final êÂ© mecêÂ¢nico. No editor do GHL: adicione um bloco <strong class="text-purple-400">"Custom Code"</strong> ê¢â â cole o HTML ê¢â â salve/publique ê¢â â <strong>teste</strong>. Se quebrar no mobile, volte ao agente, peêÂ§a o conserto, recopie e recole.</p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Adicione "Custom Code"</h4><p class="text-neutral-300 text-sm">No editor, arraste o bloco de cÃ³digo personalizado para onde a seÃ§Ã£o deve aparecer.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Adicione "Custom Code"</h4><p class="text-neutral-300 text-sm">No editor, arraste o bloco de cêÂ³digo personalizado para onde a seêÂ§êÂ£o deve aparecer.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Cole, salve e publique</h4><p class="text-neutral-300 text-sm">Cole o HTML self-contained, salve e publique a pÃ¡gina.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Cole, salve e publique</h4><p class="text-neutral-300 text-sm">Cole o HTML self-contained, salve e publique a pêÂ¡gina.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Teste â€” inclusive no mobile</h4><p class="text-neutral-300 text-sm">Veja no desktop e no celular. Quebrou no mobile? VÃ¡ para o passo 4.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Teste ê¢â¬â inclusive no mobile</h4><p class="text-neutral-300 text-sm">Veja no desktop e no celular. Quebrou no mobile? VêÂ¡ para o passo 4.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">4</span></div>
@@ -542,8 +542,8 @@
 </div>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">âš ï¸</span> O loop de ajuste</h3>
-<p class="text-neutral-300">Mobile Ã© onde mais quebra. Trate como um ciclo curto: <strong>descreva o problema â†’ corrige â†’ recopie â†’ recole â†’ teste</strong>. Repita atÃ© ficar redondo nos dois tamanhos.</p>
+<h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> O loop de ajuste</h3>
+<p class="text-neutral-300">Mobile êÂ© onde mais quebra. Trate como um ciclo curto: <strong>descreva o problema ê¢â â corrige ê¢â â recopie ê¢â â recole ê¢â â teste</strong>. Repita atêÂ© ficar redondo nos dois tamanhos.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Custom Code</div><p class="text-xs text-neutral-400">o bloco certo</p></div>
@@ -552,72 +552,72 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Corrigir</div><p class="text-xs text-neutral-400">volte ao agente</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÃTICO -->
+<!-- EXEMPLO PRêÂTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸âÂ¬</span> Exemplo prêÂ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">VocÃª tem um site em <strong class="text-purple-400">React</strong> de uma oficina mecÃ¢nica e o cliente usa GoHighLevel. O caminho:</p>
+<p class="text-neutral-300 mb-4">VocêÂª tem um site em <strong class="text-purple-400">React</strong> de uma oficina mecêÂ¢nica e o cliente usa GoHighLevel. O caminho:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li>Rode a Transformer Skill: o codebase React vira <strong>1 HTML self-contained</strong> (sem import/export, sem build, classes prefixadas).</li>
 <li>No GHL, adicione um bloco <strong>Custom Code</strong>, cole o HTML, salve e publique.</li>
-<li>Abra no celular: a seÃ§Ã£o de preÃ§os estÃ¡ estourando a largura.</li>
-<li>Volte ao agente: <em>"no mobile a tabela de preÃ§os vaza; corrija mantendo o HTML Ãºnico"</em>. Recopie e recole.</li>
+<li>Abra no celular: a seêÂ§êÂ£o de preêÂ§os estêÂ¡ estourando a largura.</li>
+<li>Volte ao agente: <em>"no mobile a tabela de preêÂ§os vaza; corrija mantendo o HTML êÂºnico"</em>. Recopie e recole.</li>
 </ol>
 <p class="text-neutral-400 text-sm">Resultado: o site React do cliente roda dentro do GoHighLevel, redondo no desktop e no mobile.</p>
 </div>
 </section>
-<!-- EXERCÃCIO -->
+<!-- EXERCêÂCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Ââ¹ê¯Â¸Â</span> ExercêÂ­cio</h2>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
 <p class="text-neutral-300 mb-4">Converta um site (feito antes) para <strong class="text-purple-400">1 HTML self-contained</strong> e cole num bloco Custom Code do GHL ou WordPress:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li>Pegue um site seu da Trilha 2 (ou um clone da Trilha 3.1).</li>
-<li>Rode a Transformer Skill e gere o HTML Ãºnico â€” respeitando todas as restriÃ§Ãµes.</li>
+<li>Rode a Transformer Skill e gere o HTML êÂºnico ê¢â¬â respeitando todas as restriêÂ§êÂµes.</li>
 <li>Cole num bloco Custom Code do GHL ou do WordPress, salve e publique.</li>
-<li>Teste no <strong>mobile</strong> e rode o loop de ajuste atÃ© ficar redondo.</li>
+<li>Teste no <strong>mobile</strong> e rode o loop de ajuste atêÂ© ficar redondo.</li>
 </ol>
 <p class="text-neutral-400 text-sm">Meta: um site de framework rodando dentro de um construtor visual, sem quebrar.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Å¡Â¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clonar o repositÃ³rio</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone este repositÃ³rio e adicione Ã  esquerda: [URL].</pre>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clonar o repositêÂ³rio</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone este repositêÂ³rio e adicione êÂ  esquerda: [URL].</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">converter para 1 HTML</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Converta este codebase inteiro num Ãºnico arquivo HTML self-contained,
-compatÃ­vel com bloco Custom HTML (sem import/export, sem JSX, sem build,
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Converta este codebase inteiro num êÂºnico arquivo HTML self-contained,
+compatêÂ­vel com bloco Custom HTML (sem import/export, sem JSX, sem build,
 classes CSS prefixadas).</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">corrigir o mobile</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">No mobile, esta seÃ§Ã£o faz [X]. Corrija mantendo o HTML Ãºnico.</pre>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">No mobile, esta seêÂ§êÂ£o faz [X]. Corrija mantendo o HTML êÂºnico.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">O problema</strong><span class="text-neutral-400"> â€” frameworks nÃ£o cabem direto em GHL/WordPress; Ã© descompasso de linguagem.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Transformer Skill + restriÃ§Ãµes</strong><span class="text-neutral-400"> â€” converte tudo em 1 HTML vanilla, sem import/export/build, classes prefixadas.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Design-first e HTML Sniping</strong><span class="text-neutral-400"> â€” construa bonito antes; ou injete sÃ³ um bloco premium quando bastar.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Colar e ajustar</strong><span class="text-neutral-400"> â€” Custom Code â†’ colar â†’ publicar â†’ testar; loop curto pro mobile.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">O problema</strong><span class="text-neutral-400"> ê¢â¬â frameworks nêÂ£o cabem direto em GHL/WordPress; êÂ© descompasso de linguagem.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Transformer Skill + restriêÂ§êÂµes</strong><span class="text-neutral-400"> ê¢â¬â converte tudo em 1 HTML vanilla, sem import/export/build, classes prefixadas.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Design-first e HTML Sniping</strong><span class="text-neutral-400"> ê¢â¬â construa bonito antes; ou injete sêÂ³ um bloco premium quando bastar.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Colar e ajustar</strong><span class="text-neutral-400"> ê¢â¬â Custom Code ê¢â â colar ê¢â â publicar ê¢â â testar; loop curto pro mobile.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">PrÃ³xima trilha:</h3><p class="text-neutral-300">Trilha 4 â€” Profissionalizar</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">PrêÂ³xima trilha:</h3><p class="text-neutral-300">Trilha 4 ê¢â¬â Profissionalizar</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para Trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="../trilha4/index.html">Trilha 4: Profissionalizar â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para Trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="../trilha4/index.html">Trilha 4: Profissionalizar ê¢â â</a>
 </div>
 </div>
 </section>
@@ -626,7 +626,7 @@ classes CSS prefixadas).</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â do Zero ao App Publicado com IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -649,11 +649,11 @@ classes CSS prefixadas).</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -661,22 +661,22 @@ classes CSS prefixadas).</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'ê¢Åâ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

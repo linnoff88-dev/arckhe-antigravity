@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>Ruta 1 Â· Fundamentos | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>Ruta 1 êÂ· Fundamentos | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -152,7 +152,7 @@
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -165,7 +165,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -181,7 +181,7 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha1/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha1/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha1/" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="../../en/trilha1/" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="./" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">ES</a></div>
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -189,47 +189,47 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10" href="index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors" href="../trilha2/index.html"><span class="sm:hidden">T2</span><span class="hidden sm:inline">Construir</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="../trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Escalar</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profesional</span></a>
-<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrÃ­a</span></a>
+<a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">MaestrêÂ­a</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Oscuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Enfoque</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="Apariencia y lectura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Oscuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Enfoque</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Lectura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fuente</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Lectura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">TamaÃ±o</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">TamaêÂ±o</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">CÃ³modo</button>
+<div><p class="text-xs text-neutral-400 mb-1">Interlineado</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">CêÂ³modo</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Mi recorrido" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Trayectoria</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Mi recorrido" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Trayectoria</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/oscuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -243,20 +243,20 @@
 <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">RUTA 1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§­ Fundamentos</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Antes de construir, entiende el terreno: quÃ© es AntiGravity, dÃ³nde encaja en el mapa de las herramientas de IA, cuÃ¡ndo usarlo (y cuÃ¡ndo no) y cÃ³mo dejar listo tu entorno para la primera app.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â­ Fundamentos</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Antes de construir, entiende el terreno: quêÂ© es AntiGravity, dêÂ³nde encaja en el mapa de las herramientas de IA, cuêÂ¡ndo usarlo (y cuêÂ¡ndo no) y cêÂ³mo dejar listo tu entorno para la primera app.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">3</div><div class="text-xs text-neutral-400">MÃ³dulos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">3</div><div class="text-xs text-neutral-400">MêÂ³dulos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">21</div><div class="text-xs text-neutral-400">Temas</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~3h</div><div class="text-xs text-neutral-400">DuraciÃ³n</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">BÃ¡sico</div><div class="text-xs text-neutral-400">Nivel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">~3h</div><div class="text-xs text-neutral-400">DuraciêÂ³n</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-emerald-400">BêÂ¡sico</div><div class="text-xs text-neutral-400">Nivel</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- HERO SVG -->
 <div class="rounded-2xl border border-emerald-500/30 bg-dark-900/40 p-3 sm:p-5 mb-12 overflow-hidden">
-<svg aria-label="El pastel de tres capas: herramientas visuales arriba, vibe coding en la nube en el medio y el entorno local de AntiGravity en la base: la capa final, con mÃ¡s control" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
+<svg aria-label="El pastel de tres capas: herramientas visuales arriba, vibe coding en la nube en el medio y el entorno local de AntiGravity en la base: la capa final, con mêÂ¡s control" class="w-full h-auto" role="img" viewbox="0 0 1000 300">
 <defs>
 <lineargradient id="t1-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#34d399"></stop><stop offset="1" stop-color="#10b981"></stop></lineargradient>
 <filter height="180%" id="t1-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -265,18 +265,18 @@
 <rect fill="url(#t1-grid)" height="300" width="1000" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif">
 <rect fill="#0e1b26" height="56" rx="12" stroke="#38bdf8" stroke-width="2" width="400" x="300" y="30"></rect>
-<text fill="#bfe6ff" font-size="16" font-weight="600" text-anchor="middle" x="500" y="58">Capa visual â€” Make / n8n</text>
+<text fill="#bfe6ff" font-size="16" font-weight="600" text-anchor="middle" x="500" y="58">Capa visual ê¢â¬â Make / n8n</text>
 <text fill="#9ad6ff" font-size="12" text-anchor="middle" x="500" y="76">arrastrar bloques</text>
 <rect fill="#0e1b26" height="56" rx="12" stroke="#38bdf8" stroke-width="2" width="460" x="270" y="120"></rect>
-<text fill="#bfe6ff" font-size="16" font-weight="600" text-anchor="middle" x="500" y="148">Nube â€” vibe coding</text>
+<text fill="#bfe6ff" font-size="16" font-weight="600" text-anchor="middle" x="500" y="148">Nube ê¢â¬â vibe coding</text>
 <text fill="#9ad6ff" font-size="12" text-anchor="middle" x="500" y="166">la IA aloja todo</text>
 <g filter="url(#t1-glow)"><rect fill="#0e2018" height="64" rx="14" stroke="url(#t1-grad)" stroke-width="2.5" width="540" x="230" y="210"></rect></g>
-<text fill="#34d399" font-size="18" font-weight="600" text-anchor="middle" x="500" y="240">Local â€” AntiGravity</text>
-<text fill="#a7f3d0" font-size="12.5" text-anchor="middle" x="500" y="261">el cÃ³digo en sÃ­ Â· la capa final</text>
+<text fill="#34d399" font-size="18" font-weight="600" text-anchor="middle" x="500" y="240">Local ê¢â¬â AntiGravity</text>
+<text fill="#a7f3d0" font-size="12.5" text-anchor="middle" x="500" y="261">el cêÂ³digo en sêÂ­ êÂ· la capa final</text>
 <g fill="none" opacity="0.55" stroke="#9ca3af" stroke-width="1.6">
 <path d="M500,86 L500,118"></path><path d="M500,176 L500,208"></path>
 </g>
-<text fill="#34d399" font-size="13" font-weight="600" text-anchor="middle" x="800" y="150">â†“ mÃ¡s control</text>
+<text fill="#34d399" font-size="13" font-weight="600" text-anchor="middle" x="800" y="150">ê¢â â mêÂ¡s control</text>
 <text fill="#9ca3af" font-size="12" text-anchor="middle" x="800" y="170">y funcionalidad</text>
 </g>
 </svg>
@@ -287,105 +287,105 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-1">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.1</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ðŸ›°ï¸ QuÃ© es AntiGravity</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê°Å¸âºÂ°ê¯Â¸Â QuêÂ© es AntiGravity</h3>
 <p class="text-xs text-neutral-400">El pastel de 3 capas</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-2">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.2</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">âš–ï¸ No-code vs. apps con IA</h3>
-<p class="text-xs text-neutral-400">DeterminÃ­stico vs. agentic</p>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê¢Å¡âê¯Â¸Â No-code vs. apps con IA</h3>
+<p class="text-xs text-neutral-400">DeterminêÂ­stico vs. agentic</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all" href="#modulo-1-3">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold text-sm">1.3</span><span class="text-xs text-neutral-500">~55 min</span></div>
-<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">âš™ï¸ ConfiguraciÃ³n completa</h3>
+<h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">ê¢Å¡â¢ê¯Â¸Â ConfiguraciêÂ³n completa</h3>
 <p class="text-xs text-neutral-400">Todo listo para la primera app</p>
 </a>
 </div>
 </section>
 <h2 class="text-2xl font-bold mb-6">Contenido detallado</h2>
-<!-- MÃ“DULO 1.1 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-1" data-ARCKHÉ-track="1" id="modulo-1-1">
+<!-- MêâDULO 1.1 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-1" data-ARCKHê-track="1" id="modulo-1-1">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.1</span><span class="text-xs text-neutral-500">~45 min</span></div>
-<h3 class="text-2xl font-bold mb-2">ðŸ›°ï¸ QuÃ© es AntiGravity y el pastel de 3 capas</h3>
-<p class="text-neutral-400 text-sm">La definiciÃ³n de AntiGravity, el mapa mental de las 3 capas de herramientas de IA y por quÃ© el cÃ³digo es Â«la capa finalÂ».</p>
+<h3 class="text-2xl font-bold mb-2">ê°Å¸âºÂ°ê¯Â¸Â QuêÂ© es AntiGravity y el pastel de 3 capas</h3>
+<p class="text-neutral-400 text-sm">La definiciêÂ³n de AntiGravity, el mapa mental de las 3 capas de herramientas de IA y por quêÂ© el cêÂ³digo es êÂ«la capa finalêÂ».</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ›°ï¸</span><div><span class="font-medium">QuÃ© es AntiGravity</span><span class="text-neutral-500 text-sm ml-2">- IDE local con agentes</span></div>
+<span class="text-lg">ê°Å¸âºÂ°ê¯Â¸Â</span><div><span class="font-medium">QuêÂ© es AntiGravity</span><span class="text-neutral-500 text-sm ml-2">- IDE local con agentes</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un editor de cÃ³digo de Google, impulsado por agentes de IA, que funciona en tu mÃ¡quina y edita archivos de verdad: tÃº lo diriges en lenguaje natural.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es la forma mÃ¡s directa de dejar de Â«arrastrar bloquesÂ» y crear aplicaciones completas sin dominar la sintaxis.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Agentes Â· lenguaje natural Â· entorno local Â· Gemini 3 Pro / Claude / otros modelos.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un editor de cêÂ³digo de Google, impulsado por agentes de IA, que funciona en tu mêÂ¡quina y edita archivos de verdad: têÂº lo diriges en lenguaje natural.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es la forma mêÂ¡s directa de dejar de êÂ«arrastrar bloquesêÂ» y crear aplicaciones completas sin dominar la sintaxis.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Agentes êÂ· lenguaje natural êÂ· entorno local êÂ· Gemini 3 Pro / Claude / otros modelos.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸŽ‚</span><div><span class="font-medium">El pastel de 3 capas</span><span class="text-neutral-500 text-sm ml-2">- visual, nube, local</span></div>
+<span class="text-lg">ê°Å¸Å½â</span><div><span class="font-medium">El pastel de 3 capas</span><span class="text-neutral-500 text-sm ml-2">- visual, nube, local</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Un mapa mental: arriba = herramientas visuales (Make/n8n), en medio = vibe coding en la nube, abajo = entorno local (AntiGravity).</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Saber en quÃ© capa estÃ¡s te ayuda a elegir la herramienta correcta y entender quÃ© sacrifica cada una.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">AbstracciÃ³n vs. control Â· la nube simplifica a costa de la funcionalidad Â· local = control total.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Un mapa mental: arriba = herramientas visuales (Make/n8n), en medio = vibe coding en la nube, abajo = entorno local (AntiGravity).</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Saber en quêÂ© capa estêÂ¡s te ayuda a elegir la herramienta correcta y entender quêÂ© sacrifica cada una.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">AbstracciêÂ³n vs. control êÂ· la nube simplifica a costa de la funcionalidad êÂ· local = control total.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">âš–ï¸</span><div><span class="font-medium">DeterminÃ­stico vs. agentic</span><span class="text-neutral-500 text-sm ml-2">- dos modos</span></div>
+<span class="text-lg">ê¢Å¡âê¯Â¸Â</span><div><span class="font-medium">DeterminêÂ­stico vs. agentic</span><span class="text-neutral-500 text-sm ml-2">- dos modos</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">DeterminÃ­stico = flujo fijo y repetitivo (ideal para Make/n8n). Agentic = la IA escribe y administra cÃ³digo para problemas que cambian.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">La pregunta Â«Â¿esto cambia o siempre es igual?Â» decide quÃ© enfoque usar.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Flujo fijo Â· flujo adaptativo Â· complejidad Â· autonomÃ­a.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">DeterminêÂ­stico = flujo fijo y repetitivo (ideal para Make/n8n). Agentic = la IA escribe y administra cêÂ³digo para problemas que cambian.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">La pregunta êÂ«êÂ¿esto cambia o siempre es igual?êÂ» decide quêÂ© enfoque usar.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Flujo fijo êÂ· flujo adaptativo êÂ· complejidad êÂ· autonomêÂ­a.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ§±</span><div><span class="font-medium">"El cÃ³digo es la capa final"</span><span class="text-neutral-500 text-sm ml-2">- anti-FOMO</span></div>
+<span class="text-lg">ê°Å¸Â§Â±</span><div><span class="font-medium">"El cêÂ³digo es la capa final"</span><span class="text-neutral-500 text-sm ml-2">- anti-FOMO</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Toda herramienta visual es solo una interfaz sobre cÃ³digo. Dominar el cÃ³digo (con IA) es la base que no queda obsoleta.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Te inmuniza contra el miedo a Â«la prÃ³xima herramienta de modaÂ»: ya estÃ¡s en la capa que lo hace todo.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Interfaz vs. fundamento Â· longevidad de la habilidad.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Toda herramienta visual es solo una interfaz sobre cêÂ³digo. Dominar el cêÂ³digo (con IA) es la base que no queda obsoleta.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Te inmuniza contra el miedo a êÂ«la prêÂ³xima herramienta de modaêÂ»: ya estêÂ¡s en la capa que lo hace todo.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Interfaz vs. fundamento êÂ· longevidad de la habilidad.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ†š</span><div><span class="font-medium">AntiGravity vs. Cursor y otros IDE</span><span class="text-neutral-500 text-sm ml-2">- las mismas reglas</span></div>
+<span class="text-lg">ê°Å¸â Å¡</span><div><span class="font-medium">AntiGravity vs. Cursor y otros IDE</span><span class="text-neutral-500 text-sm ml-2">- las mismas reglas</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Cursor, Windsurf y AntiGravity son IDE con IA que compiten entre sÃ­. El curso usa AntiGravity, pero los principios se aplican a todos.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Aprendes un concepto, no un botÃ³n, y cambias de herramienta sin empezar de nuevo.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Recursos nativos Â· portabilidad de habilidades.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Cursor, Windsurf y AntiGravity son IDE con IA que compiten entre sêÂ­. El curso usa AntiGravity, pero los principios se aplican a todos.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Aprendes un concepto, no un botêÂ³n, y cambias de herramienta sin empezar de nuevo.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Recursos nativos êÂ· portabilidad de habilidades.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸš«</span><div><span class="font-medium">CuÃ¡ndo NO usar AntiGravity</span><span class="text-neutral-500 text-sm ml-2">- honestidad</span></div>
+<span class="text-lg">ê°Å¸Å¡Â«</span><div><span class="font-medium">CuêÂ¡ndo NO usar AntiGravity</span><span class="text-neutral-500 text-sm ml-2">- honestidad</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Para tareas simples, repetitivas y estables (p. ej., "formulario completado â†’ agrega a la lista"), un flujo no-code es mÃ¡s rÃ¡pido y barato.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Usar la herramienta adecuada ahorra tiempo: no todo tiene que convertirse en una app.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">RelaciÃ³n costo-beneficio Â· simplicidad Â· mantenimiento.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Para tareas simples, repetitivas y estables (p. ej., "formulario completado ê¢â â agrega a la lista"), un flujo no-code es mêÂ¡s rêÂ¡pido y barato.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Usar la herramienta adecuada ahorra tiempo: no todo tiene que convertirse en una app.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">RelaciêÂ³n costo-beneficio êÂ· simplicidad êÂ· mantenimiento.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-<span class="text-lg">ðŸ§­</span><div><span class="font-medium">CÃ³mo usar este curso</span><span class="text-neutral-500 text-sm ml-2">- mapa, prompts, ejercicios</span></div>
+<span class="text-lg">ê°Å¸Â§Â­</span><div><span class="font-medium">CêÂ³mo usar este curso</span><span class="text-neutral-500 text-sm ml-2">- mapa, prompts, ejercicios</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Cada mÃ³dulo tiene conceptos, paso a paso, un ejemplo, un ejercicio y prompts listos. Marca cada secciÃ³n como leÃ­da para seguir tu progreso.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Conocer la estructura te ayuda a estudiar con mÃ©todo y retomar donde lo dejaste.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Progreso guardado Â· biblioteca de prompts Â· manos a la obra.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Cada mêÂ³dulo tiene conceptos, paso a paso, un ejemplo, un ejercicio y prompts listos. Marca cada secciêÂ³n como leêÂ­da para seguir tu progreso.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Conocer la estructura te ayuda a estudiar con mêÂ©todo y retomar donde lo dejaste.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Progreso guardado êÂ· biblioteca de prompts êÂ· manos a la obra.</p></div>
 </div></div>
 </div>
 </div>
@@ -394,78 +394,78 @@
 <a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors" href="modulo-1-1.html">Ver completo</a>
 </div>
 </div>
-<!-- MÃ“DULO 1.2 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-2" data-ARCKHÉ-track="1" id="modulo-1-2">
+<!-- MêâDULO 1.2 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-2" data-ARCKHê-track="1" id="modulo-1-2">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.2</span><span class="text-xs text-neutral-500">~35 min</span></div>
-<h3 class="text-2xl font-bold mb-2">âš–ï¸ AutomatizaciÃ³n no-code vs. apps con IA</h3>
-<p class="text-neutral-400 text-sm">CuÃ¡ndo usar constructores visuales (Make/n8n) y cuÃ¡ndo pasar a la construcciÃ³n agÃ©ntica, y por quÃ© vale la pena entender ambos enfoques.</p>
+<h3 class="text-2xl font-bold mb-2">ê¢Å¡âê¯Â¸Â AutomatizaciêÂ³n no-code vs. apps con IA</h3>
+<p class="text-neutral-400 text-sm">CuêÂ¡ndo usar constructores visuales (Make/n8n) y cuêÂ¡ndo pasar a la construcciêÂ³n agêÂ©ntica, y por quêÂ© vale la pena entender ambos enfoques.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">ðŸ”</span><div><span class="font-medium">AutomatizaciÃ³n determinista</span><span class="text-neutral-500 text-sm ml-2">- Make/n8n</span></div>
+<span class="text-lg">ê°Å¸âÂ</span><div><span class="font-medium">AutomatizaciêÂ³n determinista</span><span class="text-neutral-500 text-sm ml-2">- Make/n8n</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Flujos visuales con pasos fijos: disparador â†’ acciÃ³n â†’ acciÃ³n. Ideales para tareas predecibles que no cambian.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es la forma mÃ¡s sencilla y barata de resolver problemas repetitivos.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Disparador Â· mÃ³dulos Â· webhook Â· previsibilidad.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Flujos visuales con pasos fijos: disparador ê¢â â acciêÂ³n ê¢â â acciêÂ³n. Ideales para tareas predecibles que no cambian.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es la forma mêÂ¡s sencilla y barata de resolver problemas repetitivos.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Disparador êÂ· mêÂ³dulos êÂ· webhook êÂ· previsibilidad.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">ðŸ¤–</span><div><span class="font-medium">ConstrucciÃ³n agÃ©ntica</span><span class="text-neutral-500 text-sm ml-2">- AntiGravity</span></div>
+<span class="text-lg">ê°Å¸Â¤â</span><div><span class="font-medium">ConstrucciêÂ³n agêÂ©ntica</span><span class="text-neutral-500 text-sm ml-2">- AntiGravity</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Describes el objetivo y la IA escribe y edita cÃ³digo, prueba y corrige: para problemas complejos y en evoluciÃ³n.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Desbloquea lo que un flujo fijo no puede hacer: aplicaciones completas y funcionalidad ilimitada.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">AutonomÃ­a Â· adaptaciÃ³n Â· cÃ³digo generado.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Describes el objetivo y la IA escribe y edita cêÂ³digo, prueba y corrige: para problemas complejos y en evoluciêÂ³n.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Desbloquea lo que un flujo fijo no puede hacer: aplicaciones completas y funcionalidad ilimitada.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">AutonomêÂ­a êÂ· adaptaciêÂ³n êÂ· cêÂ³digo generado.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ“¦</span><div><span class="font-medium">"Todo es JSON por debajo"</span><span class="text-neutral-500 text-sm ml-2">- la abstracciÃ³n</span></div>
+<span class="text-lg">ê°Å¸âÂ¦</span><div><span class="font-medium">"Todo es JSON por debajo"</span><span class="text-neutral-500 text-sm ml-2">- la abstracciêÂ³n</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Las herramientas visuales son una capa atractiva sobre JSON/cÃ³digo. Copia un workflow y verÃ¡s el JSON que hay detrÃ¡s.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Entender esto desmitifica el Â«cÃ³digoÂ» y muestra que ya trabajabas con Ã©l sin saberlo.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Capa de abstracciÃ³n Â· JSON Â· interfaz visual.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Las herramientas visuales son una capa atractiva sobre JSON/cêÂ³digo. Copia un workflow y verêÂ¡s el JSON que hay detrêÂ¡s.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Entender esto desmitifica el êÂ«cêÂ³digoêÂ» y muestra que ya trabajabas con êÂ©l sin saberlo.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Capa de abstracciêÂ³n êÂ· JSON êÂ· interfaz visual.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸŽ¯</span><div><span class="font-medium">QuÃ© herramienta usar para cada problema</span><span class="text-neutral-500 text-sm ml-2">- decisiÃ³n</span></div>
+<span class="text-lg">ê°Å¸Å½Â¯</span><div><span class="font-medium">QuêÂ© herramienta usar para cada problema</span><span class="text-neutral-500 text-sm ml-2">- decisiêÂ³n</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Una guÃ­a para decidir: tarea sencilla y estable â†’ no-code; problema complejo, con interfaz y lÃ³gica propias â†’ app agentic.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Evita usar un caÃ±Ã³n para matar una mosca (o viceversa).</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Criterio de elecciÃ³n Â· costo Â· complejidad.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Una guêÂ­a para decidir: tarea sencilla y estable ê¢â â no-code; problema complejo, con interfaz y lêÂ³gica propias ê¢â â app agentic.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Evita usar un caêÂ±êÂ³n para matar una mosca (o viceversa).</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Criterio de elecciêÂ³n êÂ· costo êÂ· complejidad.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">ðŸ§©</span><div><span class="font-medium">Por quÃ© aprender ambos</span><span class="text-neutral-500 text-sm ml-2">- complementarios</span></div>
+<span class="text-lg">ê°Å¸Â§Â©</span><div><span class="font-medium">Por quêÂ© aprender ambos</span><span class="text-neutral-500 text-sm ml-2">- complementarios</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">El no-code y las apps agentic se complementan; entender los flujos te ayuda a dirigir mejor a los agentes (y viceversa).</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Obtienes un repertorio mÃ¡s amplio de soluciones.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Complementariedad Â· repertorio Â· integraciÃ³n (MCP).</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">El no-code y las apps agentic se complementan; entender los flujos te ayuda a dirigir mejor a los agentes (y viceversa).</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Obtienes un repertorio mêÂ¡s amplio de soluciones.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Complementariedad êÂ· repertorio êÂ· integraciêÂ³n (MCP).</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ </span><div><span class="font-medium">IKEA vs. construir desde cero</span><span class="text-neutral-500 text-sm ml-2">- nube vs. local</span></div>
+<span class="text-lg">ê°Å¸ÂÂ </span><div><span class="font-medium">IKEA vs. construir desde cero</span><span class="text-neutral-500 text-sm ml-2">- nube vs. local</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Los creadores de cÃ³digo con IA en la nube son como una casa de IKEA: entregan algo listo, pero con estructuras fijas. En local puedes construir como quieras.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Muestra el equilibrio entre rapidez y libertad.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Comodidad vs. control Â· lÃ­mites de la nube.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Los creadores de cêÂ³digo con IA en la nube son como una casa de IKEA: entregan algo listo, pero con estructuras fijas. En local puedes construir como quieras.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Muestra el equilibrio entre rapidez y libertad.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Comodidad vs. control êÂ· lêÂ­mites de la nube.</p></div>
 </div></div>
 </div>
 </div>
@@ -474,100 +474,100 @@
 <a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors" href="modulo-1-2.html">Ver completo</a>
 </div>
 </div>
-<!-- MÃ“DULO 1.3 -->
-<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHÉ-module="1-3" data-ARCKHÉ-track="1" id="modulo-1-3">
+<!-- MêâDULO 1.3 -->
+<div class="bg-dark-800 rounded-xl border border-dark-600 mb-6" data-ARCKHê-module="1-3" data-ARCKHê-track="1" id="modulo-1-3">
 <div class="p-6 border-b border-dark-600">
 <div class="flex items-center justify-between mb-2"><span class="text-emerald-400 font-bold">1.3</span><span class="text-xs text-neutral-500">~55 min</span></div>
-<h3 class="text-2xl font-bold mb-2">âš™ï¸ ConfiguraciÃ³n completa del entorno</h3>
+<h3 class="text-2xl font-bold mb-2">ê¢Å¡â¢ê¯Â¸Â ConfiguraciêÂ³n completa del entorno</h3>
 <p class="text-neutral-400 text-sm">Instalar todo, entender la interfaz e importar/ejecutar tu primer proyecto en localhost.</p>
 </div>
 <div class="divide-y divide-dark-600">
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
-<span class="text-lg">â¬‡ï¸</span><div><span class="font-medium">Instalar AntiGravity</span><span class="text-neutral-500 text-sm ml-2">- descarga</span></div>
+<span class="text-lg">ê¢Â¬â¡ê¯Â¸Â</span><div><span class="font-medium">Instalar AntiGravity</span><span class="text-neutral-500 text-sm ml-2">- descarga</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Descargar e instalar la app desde el sitio oficial (antigravity.google).</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el primer paso concreto: sin esto, nada funciona.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Descarga oficial Â· instalaciÃ³n.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Descargar e instalar la app desde el sitio oficial (antigravity.google).</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el primer paso concreto: sin esto, nada funciona.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Descarga oficial êÂ· instalaciêÂ³n.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
-<span class="text-lg">âš™ï¸</span><div><span class="font-medium">Instalar Node.js</span><span class="text-neutral-500 text-sm ml-2">- el motor local</span></div>
+<span class="text-lg">ê¢Å¡â¢ê¯Â¸Â</span><div><span class="font-medium">Instalar Node.js</span><span class="text-neutral-500 text-sm ml-2">- el motor local</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Node.js es el "motor" que permite que la IA cree y ejecute proyectos al nivel de tu computadora.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Sin Ã©l, el agente no puede ejecutar la mayorÃ­a de las aplicaciones localmente.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Runtime Â· npm Â· entorno local.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Node.js es el "motor" que permite que la IA cree y ejecute proyectos al nivel de tu computadora.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Sin êÂ©l, el agente no puede ejecutar la mayorêÂ­a de las aplicaciones localmente.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Runtime êÂ· npm êÂ· entorno local.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
-<span class="text-lg">ðŸ™</span><div><span class="font-medium">GitHub: repositorios</span><span class="text-neutral-500 text-sm ml-2">- pÃºblico vs. privado</span></div>
+<span class="text-lg">ê°Å¸Ââ¢</span><div><span class="font-medium">GitHub: repositorios</span><span class="text-neutral-500 text-sm ml-2">- pêÂºblico vs. privado</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">GitHub es donde se guardan y versionan los archivos. Los repositorios pueden ser pÃºblicos (cualquiera puede verlos) o privados.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es desde donde importas proyectos y donde publicas el tuyo.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Repo Â· visibilidad Â· colaboraciÃ³n.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">GitHub es donde se guardan y versionan los archivos. Los repositorios pueden ser pêÂºblicos (cualquiera puede verlos) o privados.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es desde donde importas proyectos y donde publicas el tuyo.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Repo êÂ· visibilidad êÂ· colaboraciêÂ³n.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
-<span class="text-lg">ðŸ“¥</span><div><span class="font-medium">Importar proyecto + localhost</span><span class="text-neutral-500 text-sm ml-2">- ejecutar localmente</span></div>
+<span class="text-lg">ê°Å¸âÂ¥</span><div><span class="font-medium">Importar proyecto + localhost</span><span class="text-neutral-500 text-sm ml-2">- ejecutar localmente</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Importar un repo (pegando la URL) y pedir que lo ejecute â€” se abre en una direcciÃ³n local (localhost) que solo tÃº ves.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es el ciclo bÃ¡sico: traer cÃ³digo, ejecutarlo y verlo en pantalla.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Import Â· localhost Â· preview.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Importar un repo (pegando la URL) y pedir que lo ejecute ê¢â¬â se abre en una direcciêÂ³n local (localhost) que solo têÂº ves.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es el ciclo bêÂ¡sico: traer cêÂ³digo, ejecutarlo y verlo en pantalla.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Import êÂ· localhost êÂ· preview.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
-<span class="text-lg">âŒ¨ï¸</span><div><span class="font-medium">La terminal / CLI</span><span class="text-neutral-500 text-sm ml-2">- hablar con la mÃ¡quina</span></div>
+<span class="text-lg">ê¢ÅÂ¨ê¯Â¸Â</span><div><span class="font-medium">La terminal / CLI</span><span class="text-neutral-500 text-sm ml-2">- hablar con la mêÂ¡quina</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">La terminal es la forma de comunicarte con la computadora mediante texto: instalar cosas, ejecutar comandos y realizar acciones.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Muchas acciones (instalar paquetes, ejecutar builds) pasan por ahÃ­.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">CLI Â· comando Â· instalaciÃ³n.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">La terminal es la forma de comunicarte con la computadora mediante texto: instalar cosas, ejecutar comandos y realizar acciones.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Muchas acciones (instalar paquetes, ejecutar builds) pasan por ahêÂ­.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">CLI êÂ· comando êÂ· instalaciêÂ³n.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
-<span class="text-lg">ðŸ§ </span><div><span class="font-medium">Elegir el modelo segÃºn la tarea</span><span class="text-neutral-500 text-sm ml-2">- diseÃ±o vs. cÃ³digo</span></div>
+<span class="text-lg">ê°Å¸Â§Â </span><div><span class="font-medium">Elegir el modelo segêÂºn la tarea</span><span class="text-neutral-500 text-sm ml-2">- diseêÂ±o vs. cêÂ³digo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Regla prÃ¡ctica: un modelo sÃ³lido en diseÃ±o para el layout y otro sÃ³lido en razonamiento para el cÃ³digo y la resoluciÃ³n de problemas.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Elegir el modelo adecuado mejora mucho el resultado.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">SelecciÃ³n de modelo Â· caso de uso.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Regla prêÂ¡ctica: un modelo sêÂ³lido en diseêÂ±o para el layout y otro sêÂ³lido en razonamiento para el cêÂ³digo y la resoluciêÂ³n de problemas.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Elegir el modelo adecuado mejora mucho el resultado.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">SelecciêÂ³n de modelo êÂ· caso de uso.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">7</span>
-<span class="text-lg">ðŸ–¥ï¸</span><div><span class="font-medium">La interfaz</span><span class="text-neutral-500 text-sm ml-2">- Agent Manager</span></div>
+<span class="text-lg">ê°Å¸âÂ¥ê¯Â¸Â</span><div><span class="font-medium">La interfaz</span><span class="text-neutral-500 text-sm ml-2">- Agent Manager</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">Panel de comandos, navegaciÃ³n de archivos, "publicar en GitHub" y Agent Manager (donde gestionas varios agentes).</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Conocer la interfaz acelera todo lo que viene despuÃ©s.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Panel Â· Agent Manager Â· workspaces.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">Panel de comandos, navegaciêÂ³n de archivos, "publicar en GitHub" y Agent Manager (donde gestionas varios agentes).</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Conocer la interfaz acelera todo lo que viene despuêÂ©s.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Panel êÂ· Agent Manager êÂ· workspaces.</p></div>
 </div></div>
 </div>
 <div class="topic-item">
 <button aria-expanded="false" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left" onclick="toggleTopic(this)">
 <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">8</span>
-<span class="text-lg">ðŸŒ</span><div><span class="font-medium">Control del navegador + autocorrecciÃ³n</span><span class="text-neutral-500 text-sm ml-2">- nativo</span></div>
+<span class="text-lg">ê°Å¸ÅÂ</span><div><span class="font-medium">Control del navegador + autocorrecciêÂ³n</span><span class="text-neutral-500 text-sm ml-2">- nativo</span></div>
 </button>
 <div class="topic-explanation px-6 pb-4"><div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-<div><span class="text-emerald-400 font-semibold">QuÃ© es:</span><p class="text-neutral-300 text-sm">El agente abre el navegador, hace clic en botones, comprueba el resultado en pantalla y se corrige solo, sin plugins adicionales.</p></div>
-<div><span class="text-emerald-400 font-semibold">Por quÃ© aprender:</span><p class="text-neutral-300 text-sm">Es una ventaja que ahorra muchos idas y vueltas.</p></div>
-<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Control del navegador Â· autocorrecciÃ³n.</p></div>
+<div><span class="text-emerald-400 font-semibold">QuêÂ© es:</span><p class="text-neutral-300 text-sm">El agente abre el navegador, hace clic en botones, comprueba el resultado en pantalla y se corrige solo, sin plugins adicionales.</p></div>
+<div><span class="text-emerald-400 font-semibold">Por quêÂ© aprender:</span><p class="text-neutral-300 text-sm">Es una ventaja que ahorra muchos idas y vueltas.</p></div>
+<div><span class="text-emerald-400 font-semibold">Conceptos clave:</span><p class="text-neutral-300 text-sm">Control del navegador êÂ· autocorrecciêÂ³n.</p></div>
 </div></div>
 </div>
 </div>
@@ -576,34 +576,34 @@
 <a class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors" href="modulo-1-3.html">Ver completo</a>
 </div>
 </div>
-<!-- NAV PRÃ“XIMA TRILHA -->
+<!-- NAV PRêâXIMA TRILHA -->
 <div class="flex flex-col sm:flex-row gap-4 mt-12">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../index.html">â† Inicio</a>
-<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Ruta 2: Construir y publicar â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="../index.html">ê¢â Â Inicio</a>
+<a class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors" href="../trilha2/index.html">Ruta 2: Construir y publicar ê¢â â</a>
 </div>
 </main>
 <!-- MODAIS -->
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-1" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">QuÃ© es AntiGravity y el pastel de 3 capas</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">QuêÂ© es AntiGravity y el pastel de 3 capas</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-1.html"></iframe>
 </div>
 </div>
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-2" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">AutomatizaciÃ³n no-code vs. apps con IA</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">AutomatizaciêÂ³n no-code vs. apps con IA</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-2.html"></iframe>
 </div>
 </div>
 <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" id="modal-1-3" onclick="if(event.target === this) closeModal()">
 <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
-<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">ConfiguraciÃ³n completa del entorno</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">Ã—</button></div>
+<div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0"><div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">ConfiguraciêÂ³n completa del entorno</span></div><button class="text-neutral-400 hover:text-white text-2xl leading-none" onclick="closeModal()">êâ</button></div>
 <iframe class="flex-1 w-full rounded-b-xl" src="modulo-1-3.html"></iframe>
 </div>
 </div>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” de cero a la app publicada con IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â de cero a la app publicada con IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -626,11 +626,11 @@
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -638,15 +638,15 @@
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

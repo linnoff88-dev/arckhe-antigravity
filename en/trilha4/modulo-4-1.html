@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>Module 4.1 Â· Professional workflow | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>Module 4.1 êÂ· Professional workflow | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .ARCKHÉ-toc-link.is-active { color: #fbbf24; font-weight: 600; }
+    .ARCKHê-toc-link.is-active { color: #fbbf24; font-weight: 600; }
   </style>
 <link href="../../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -183,7 +183,7 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../es/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../../trilha4/modulo-4-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="modulo-4-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../../es/trilha4/modulo-4-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -191,11 +191,11 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Professional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Mastery</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Appearance and readability" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Theme</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Dark</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Clear</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Focus</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">High contrast</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="Appearance and readability" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Theme</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Dark</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Clear</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Focus</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">High contrast</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Source</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">System</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Reading</button>
+<div><p class="text-xs text-neutral-400 mb-1">Source</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">System</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Reading</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Size</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Size</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Line spacing</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compact</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">Comfortable</button>
+<div><p class="text-xs text-neutral-400 mb-1">Line spacing</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compact</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">Comfortable</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Journey</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Journey</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Toggle light/dark">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -253,8 +253,8 @@
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MODULE 4.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸŽ¯ Professional Workflow</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Before thinking about delivering, organize how you work: focus on one problem at a time, expand whatâ€™s already working, and keep learning with a real goal in mind.</p>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Å½Â¯ Professional Workflow</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Before thinking about delivering, organize how you work: focus on one problem at a time, expand whatê¢â¬â¢s already working, and keep learning with a real goal in mind.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Topics</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">55</div><div class="text-xs text-neutral-400">Minutes</div></div>
@@ -266,43 +266,43 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Page index" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-2">Section <span data-ARCKHÉ-section-counter="">1 of 6</span></p>
+<nav aria-label="Page index" class="hidden lg:block sticky top-20 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-2">Section <span data-ARCKHê-section-counter="">1 of 6</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-1">1. One problem, one technology</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-2">2. Do more than what works</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-3">3. Autopilot vs. manual</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-4">4. Compare IDEs and stay up to date</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-5">5. Choose your application path</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-6">6. Common errors</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-1">1. One problem, one technology</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-2">2. Do more than what works</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-3">3. Autopilot vs. manual</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-4">4. Compare IDEs and stay up to date</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-5">5. Choose your application path</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-6">6. Common errors</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-ARCKHÉ-meter="modulo:4-1"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 of 6</span> Â· <span class="text-amber-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-amber-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHê-meter="modulo:4-1"><span class="text-neutral-400" data-ARCKHê-meter-frac="">0 of 6</span> êÂ· <span class="text-amber-400 font-bold" data-ARCKHê-meter-pct="">0%</span><div class="ARCKHê-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-amber-500" data-ARCKHê-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-ARCKHÉ-module="4-1" data-ARCKHÉ-track="4">
-<!-- TÃ“PICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHê-module="4-1" data-ARCKHê-track="4">
+<!-- TêâPICO 1 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">ðŸŽ¯ One Problem, One Technology</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¯ One Problem, One Technology</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t1-p1">A professionalâ€™s golden rule is simple: <strong class="text-amber-400">solve one problem at a time</strong>, from start to finish, with <strong class="text-neutral-100">a single technology</strong>. Instead of opening ten tabs, three courses, and five tools at once, you choose one goal and carry it through to delivery.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m41-t1-p1">A professionalê¢â¬â¢s golden rule is simple: <strong class="text-amber-400">solve one problem at a time</strong>, from start to finish, with <strong class="text-neutral-100">a single technology</strong>. Instead of opening ten tabs, three courses, and five tools at once, you choose one goal and carry it through to delivery.</p>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> The core idea</h3>
-<p class="text-neutral-300 mb-4">Think of focus as a <strong>funnel</strong>: the more you narrow down what youâ€™re trying to do right now, the faster youâ€™ll finish. Too much scope doesnâ€™t speed things up â€” it spreads them out.</p>
+<h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê°Å¸Â§Â­</span> The core idea</h3>
+<p class="text-neutral-300 mb-4">Think of focus as a <strong>funnel</strong>: the more you narrow down what youê¢â¬â¢re trying to do right now, the faster youê¢â¬â¢ll finish. Too much scope doesnê¢â¬â¢t speed things up ê¢â¬â it spreads them out.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>A <strong>problem</strong> clear: what exactly you want to solve.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>A <strong>technology</strong>: the tool youâ€™ll use to get it done (not five at once).</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">â€¢</span><span>Of <strong>from start to finish</strong>: finish before picking up the next one.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>A <strong>problem</strong> clear: what exactly you want to solve.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>A <strong>technology</strong>: the tool youê¢â¬â¢ll use to get it done (not five at once).</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">ê¢â¬Â¢</span><span>Of <strong>from start to finish</strong>: finish before picking up the next one.</span></li>
 </ul>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Comparison: too many fronts open at once lead to overwhelm; a single path â€” one problem, one technology, from start to finish â€” leads to delivery" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="Comparison: too many fronts open at once lead to overwhelm; a single path ê¢â¬â one problem, one technology, from start to finish ê¢â¬â leads to delivery" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="m41-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop></lineargradient>
 <filter height="180%" id="m41-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -311,7 +311,7 @@
 <marker id="m41-ahr" markerheight="9" markerwidth="9" orient="auto" refx="6.5" refy="4.5"><path d="M0,0 L8,4.5 L0,9 L2.4,4.5 Z" fill="#f87171"></path></marker>
 </defs>
 <rect fill="url(#m41-grid)" height="220" width="1000" x="0" y="0"></rect>
-<text fill="#f87171" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="250" y="28">Everything at once â†’ overwhelm</text>
+<text fill="#f87171" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="250" y="28">Everything at once ê¢â â overwhelm</text>
 <rect fill="#2a0e0e" height="40" rx="10" stroke="#f87171" stroke-width="1.8" width="180" x="160" y="44"></rect>
 <text fill="#fecaca" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="250" y="69">you</text>
 <g fill="none" opacity="0.55" stroke="#f87171" stroke-width="1.8">
@@ -321,11 +321,11 @@
 <path d="M250,84 C270,130 300,140 300,180" marker-end="url(#m41-ahr)"></path>
 <path d="M250,84 C300,120 380,120 380,180" marker-end="url(#m41-ahr)"></path>
 </g>
-<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="780" y="28">One path â†’ delivery</text>
+<text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="780" y="28">One path ê¢â â delivery</text>
 <g filter="url(#m41-glow)"><rect fill="#1f1604" height="44" rx="12" stroke="url(#m41-grad)" stroke-width="2.5" width="150" x="610" y="48"></rect></g>
 <text fill="#fbbf24" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="685" y="75">1 problem</text>
 <rect fill="#1f1604" height="44" rx="12" stroke="#fbbf24" stroke-width="2" width="150" x="610" y="160"></rect>
-<text fill="#fde68a" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="685" y="187">delivered âœ“</text>
+<text fill="#fde68a" font-family="Inter,sans-serif" font-size="13" text-anchor="middle" x="685" y="187">delivered ê¢Åâ</text>
 <g fill="none" opacity="0.6" stroke="#fbbf24" stroke-width="2"><path d="M685,92 L685,158" marker-end="url(#m41-ah)"></path></g>
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="900" y="128">from the beginning</text>
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="900" y="146">at the end</text>
@@ -338,43 +338,43 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">No overwhelm</div><p class="text-xs text-neutral-400">focus protects</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-2" id="topico-2">
+<!-- TêâPICO 2 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">ðŸ“ˆ Do More of What Works</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âË Do More of What Works</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t2-p1">O <strong class="text-amber-400">80/20 principle</strong> (Pareto) says that a small part of what you do generates most of the results. The professional move is to find that 20% and <strong>amplify them</strong> â€” donâ€™t start from scratch every time.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m41-t2-p1">O <strong class="text-amber-400">80/20 principle</strong> (Pareto) says that a small part of what you do generates most of the results. The professional move is to find that 20% and <strong>amplify them</strong> ê¢â¬â donê¢â¬â¢t start from scratch every time.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ Double down on what works</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ Double down on what works</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>See what has already delivered results</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Expand, repeat, and refine this</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Build on what already exists</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Fast compound growth</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>See what has already delivered results</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Expand, repeat, and refine this</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Build on what already exists</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Fast compound growth</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Avoid starting over from scratch</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Avoid starting over from scratch</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Drop everything with every new idea</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Chasing the excitement of what you havenâ€™t tried yet</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Ignore whatâ€™s already working</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Always back at square one</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Drop everything with every new idea</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Chasing the excitement of what you havenê¢â¬â¢t tried yet</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Ignore whatê¢â¬â¢s already working</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Always back at square one</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Practical tip</h3>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Practical tip</h3>
 <p class="text-neutral-300">Look at the last few months and ask: <strong>"what delivered the most results with the least effort?"</strong>. That's the lever. The fastest way to grow is to double down on it, not start something new.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -384,42 +384,42 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Composite</div><p class="text-xs text-neutral-400">builds on top</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-3" id="topico-3">
+<!-- TêâPICO 3 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">âœˆï¸ Autopilot vs. manual</h2>
+<h2 class="text-2xl font-bold">ê¢ÅËê¯Â¸Â Autopilot vs. manual</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t3-p1">AI is your <strong class="text-amber-400">autopilot</strong>: it does the heavy lifting and takes you far without you touching every detail. But understanding the <strong>underlying fundamentals</strong> â€” the "manual controls" â€” theyâ€™re what help you code much better when something goes wrong.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m41-t3-p1">AI is your <strong class="text-amber-400">autopilot</strong>: it does the heavy lifting and takes you far without you touching every detail. But understanding the <strong>underlying fundamentals</strong> ê¢â¬â the "manual controls" ê¢â¬â theyê¢â¬â¢re what help you code much better when something goes wrong.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">âœˆï¸</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê¢ÅËê¯Â¸Â</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Autopilot â€” AI takes the lead</h4>
+<h4 class="font-semibold text-white mb-2">Autopilot ê¢â¬â AI takes the lead</h4>
 <p class="text-sm text-neutral-400 mb-2">Fast and comfortable</p>
 <p class="text-neutral-300 text-sm">You describe the goal, and AI writes, tests, and fixes the code. Most of the time, you can just let it run.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸŽ›ï¸</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê°Å¸Å½âºê¯Â¸Â</span></div>
 <div class="flex-1 bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl p-6 border border-amber-500/30">
-<h4 class="font-semibold text-amber-400 mb-2">Manual â€” you understand why</h4>
+<h4 class="font-semibold text-amber-400 mb-2">Manual ê¢â¬â you understand why</h4>
 <p class="text-sm text-neutral-400 mb-2">Control when automation fails</p>
 <p class="text-neutral-300 text-sm">Knowing the fundamentals lets you regain control, diagnose errors, and guide AI with precision.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸš—</span> The car analogy</h3>
-<p class="text-neutral-300">It's like driving a <strong>automatic</strong> versus one <strong>manual</strong>. With automatic transmission, you can cruise through your day. But if you understand the clutch and gears, you know what's happening under the hoodâ€”and you won't get stuck on a tough hill.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Å¡â</span> The car analogy</h3>
+<p class="text-neutral-300">It's like driving a <strong>automatic</strong> versus one <strong>manual</strong>. With automatic transmission, you can cruise through your day. But if you understand the clutch and gears, you know what's happening under the hoodê¢â¬âand you won't get stuck on a tough hill.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">AI</div><p class="text-xs text-neutral-400">autopilot</p></div>
@@ -428,21 +428,21 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Better code</div><p class="text-xs text-neutral-400">you guide well</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-4" id="topico-4">
+<!-- TêâPICO 4 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">ðŸ§­ Compare IDEs and stay up to date</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â­ Compare IDEs and stay up to date</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t4-p1">AI IDEs â€” <strong class="text-amber-400">AntiGravity, Cursor</strong> and othersâ€”evolve quickly. Itâ€™s a <strong>living field</strong>: what was cutting-edge three months ago may be behind today. Knowing how to compare them and check back for updates is part of the job.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m41-t4-p1">AI IDEs ê¢â¬â <strong class="text-amber-400">AntiGravity, Cursor</strong> and othersê¢â¬âevolve quickly. Itê¢â¬â¢s a <strong>living field</strong>: what was cutting-edge three months ago may be behind today. Knowing how to compare them and check back for updates is part of the job.</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Criteria</th><th class="text-left p-3">How to evaluate</th><th class="text-left p-3">Why it matters</th></tr></thead>
@@ -454,7 +454,7 @@
 </tbody>
 </table>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed">How the <strong>principles</strong> are the same (directing agents, planning, reviewing), switching IDEs is easy. What changes are the details â€” so keep up the habit of <strong class="text-amber-400">revisit and update</strong> your toolkit.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed">How the <strong>principles</strong> are the same (directing agents, planning, reviewing), switching IDEs is easy. What changes are the details ê¢â¬â so keep up the habit of <strong class="text-amber-400">revisit and update</strong> your toolkit.</p>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Live field</div><p class="text-xs text-neutral-400">changes quickly</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Compare</div><p class="text-xs text-neutral-400">by criteria</p></div>
@@ -462,47 +462,47 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Portable</div><p class="text-xs text-neutral-400">same principles</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-5" id="topico-5">
+<!-- TêâPICO 5 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">ðŸ›¤ï¸ Choose your application track</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âºÂ¤ê¯Â¸Â Choose your application track</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t5-p1">Learning in a vacuum doesnâ€™t become a skill. The secret is to learn <strong class="text-amber-400">to apply it to a real problem</strong>. Before moving on, decide where youâ€™ll use this: at work, for a personal project, or for a client.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m41-t5-p1">Learning in a vacuum doesnê¢â¬â¢t become a skill. The secret is to learn <strong class="text-amber-400">to apply it to a real problem</strong>. Before moving on, decide where youê¢â¬â¢ll use this: at work, for a personal project, or for a client.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸ’¼</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê°Å¸âÂ¼</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">In your work</h4>
 <p class="text-neutral-300 text-sm">Automate a task you already do, or create an internal tool that saves your team time.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸš€</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê°Å¸Å¡â¬</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">In one of your projects</h4>
 <p class="text-neutral-300 text-sm">Build the app you've always wanted. A personal reason keeps you going until the end.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸ¤</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê°Å¸Â¤Â</span></div>
 <div class="flex-1 bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl p-6 border border-amber-500/30">
 <h4 class="font-semibold text-amber-400 mb-2">For a client</h4>
-<p class="text-neutral-300 text-sm">Solve a concrete problem for someone â€” itâ€™s the fastest way to turn your skill into real value.</p>
+<p class="text-neutral-300 text-sm">Solve a concrete problem for someone ê¢â¬â itê¢â¬â¢s the fastest way to turn your skill into real value.</p>
 </div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸŽ¯</span> Define your destination now</h3>
-<p class="text-neutral-300">Choose <strong>one</strong> destination and write the real problem in one sentence. Everything that comes nextâ€”the build, the delivery, the checklistâ€”becomes much more concrete when it has a real target.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Å½Â¯</span> Define your destination now</h3>
+<p class="text-neutral-300">Choose <strong>one</strong> destination and write the real problem in one sentence. Everything that comes nextê¢â¬âthe build, the delivery, the checklistê¢â¬âbecomes much more concrete when it has a real target.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Work</div><p class="text-xs text-neutral-400">real task</p></div>
@@ -511,41 +511,41 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Anchor</div><p class="text-xs text-neutral-400">learn by applying</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-1#topico-6" id="topico-6">
+<!-- TêâPICO 6 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">âš ï¸ Common errors</h2>
+<h2 class="text-2xl font-bold">ê¢Å¡Â ê¯Â¸Â Common errors</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Flag a question on this topic" type="button"><span aria-hidden="true">?</span><span>Question</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m41-t6-p1">Two stumbling blocks trip up almost every beginner. Recognizing them is half the cureâ€”and the other half is always the same recipe: <strong class="text-amber-400">focus on one real problem at a time</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m41-t6-p1">Two stumbling blocks trip up almost every beginner. Recognizing them is half the cureê¢â¬âand the other half is always the same recipe: <strong class="text-amber-400">focus on one real problem at a time</strong>.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Overwhelm (trying everything at once)</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Overwhelm (trying everything at once)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Five projects, three courses, nothing ends</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Switching tools every time something new comes along</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A feeling of drowning and paralysis</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Five projects, three courses, nothing ends</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Switching tools every time something new comes along</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A feeling of drowning and paralysis</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Learning without applying</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Learning without applying</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Watch, read, save â€” but never do</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Tool mastered in theory, zero practice</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Knowledge that doesn't lead to results</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Watch, read, save ê¢â¬â but never do</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Tool mastered in theory, zero practice</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Knowledge that doesn't lead to results</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">âœ“</span> The cure</h3>
+<h3 class="text-lg font-semibold text-amber-400 mb-3 flex items-center"><span class="mr-2">ê¢Åâ</span> The cure</h3>
 <p class="text-neutral-300">Choose <strong>one</strong> real problem. Solve it with <strong>one</strong> technology, from start to finish. Only then move on to the next one. Focus and application fix both mistakes at once.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
@@ -555,40 +555,40 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Real problem</div><p class="text-xs text-neutral-400">apply it now</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Mark as read</span><span class="ARCKHÉ-label-done">Read</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Mark as read</span><span class="ARCKHê-label-done">Read</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÃTICO -->
+<!-- EXEMPLO PRêÂTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Practical example</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸âÂ¬</span> Practical example</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Choose <strong class="text-amber-400">a process from your day that already works</strong> and sketch how to expand it with a simple appâ€”applying the 80/20 principle.</p>
+<p class="text-neutral-300 mb-4">Choose <strong class="text-amber-400">a process from your day that already works</strong> and sketch how to expand it with a simple appê¢â¬âapplying the 80/20 principle.</p>
 <ul class="space-y-2 text-neutral-300 mb-4">
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">1.</span><span><strong>Identify the leverage:</strong> e.g., you already send a manual weekly summary that the team loves.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">2.</span><span><strong>Expand, donâ€™t start over:</strong> ask the AI for an app that builds this summary on its own from your data.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">2.</span><span><strong>Expand, donê¢â¬â¢t start over:</strong> ask the AI for an app that builds this summary on its own from your data.</span></li>
 <li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">3.</span><span><strong>One problem, one technology:</strong> solve just this, from start to finish, before thinking about the next one.</span></li>
 </ul>
-<p class="text-neutral-400 text-sm">You doubled down on what was already working â€” and turned a manual habit into an asset that runs on its own.</p>
+<p class="text-neutral-400 text-sm">You doubled down on what was already working ê¢â¬â and turned a manual habit into an asset that runs on its own.</p>
 </div>
 </section>
-<!-- EXERCÃCIO -->
+<!-- EXERCêÂCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> Exercise</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Ââ¹ê¯Â¸Â</span> Exercise</h2>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6">
 <p class="text-neutral-300 mb-4">Choose <strong class="text-amber-400">a real problem</strong> and write your "one problem, one technology" plan. Answer:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li><strong>What will it solve?</strong> The problem in one clear sentence.</li>
-<li><strong>Which tool?</strong> Just one â€” the technology youâ€™re going to use.</li>
-<li><strong>How far?</strong> Define the â€œdoneâ€: what needs to be ready for you to consider it resolved.</li>
+<li><strong>Which tool?</strong> Just one ê¢â¬â the technology youê¢â¬â¢re going to use.</li>
+<li><strong>How far?</strong> Define the ê¢â¬Ådoneê¢â¬Â: what needs to be ready for you to consider it resolved.</li>
 </ol>
-<p class="text-neutral-400 text-sm">This plan is your application destination. Weâ€™ll use it in Module 4.2, when itâ€™s time to deliver.</p>
+<p class="text-neutral-400 text-sm">This plan is your application destination. Weê¢â¬â¢ll use it in Module 4.2, when itê¢â¬â¢s time to deliver.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Ready-made prompts</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Å¡Â¡</span> Ready-made prompts</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copy, paste into your AI assistant, and adapt to your use case.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">find the 20% that matter</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copy</button></div>
@@ -606,17 +606,17 @@ Consider my context: "[describe your work/project/client]".</pre>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Module summary</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Module summary</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">One problem, one technology</strong><span class="text-neutral-400"> â€” focus from start to finish, without opening ten fronts.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Do more of what works</strong><span class="text-neutral-400"> â€” 80/20: expand your leverage; donâ€™t start over from scratch.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Autopilot vs. manual</strong><span class="text-neutral-400"> â€” AI leads the way, but the fundamentals will save you.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Apply it to something real</strong><span class="text-neutral-400"> â€” define the destination; avoid overwhelm and theory without practice.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">One problem, one technology</strong><span class="text-neutral-400"> ê¢â¬â focus from start to finish, without opening ten fronts.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Do more of what works</strong><span class="text-neutral-400"> ê¢â¬â 80/20: expand your leverage; donê¢â¬â¢t start over from scratch.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Autopilot vs. manual</strong><span class="text-neutral-400"> ê¢â¬â AI leads the way, but the fundamentals will save you.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Apply it to something real</strong><span class="text-neutral-400"> ê¢â¬â define the destination; avoid overwhelm and theory without practice.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">Next module:</h3><p class="text-neutral-300">4.2 â€” Deliver and apply professionally</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">Next module:</h3><p class="text-neutral-300">4.2 ê¢â¬â Deliver and apply professionally</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Back to Track</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Next Module â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Back to Track</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="modulo-4-2.html">Next Module ê¢â â</a>
 </div>
 </div>
 </section>
@@ -625,7 +625,7 @@ Consider my context: "[describe your work/project/client]".</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” From Zero to a Published App with AI Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â From Zero to a Published App with AI êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -648,11 +648,11 @@ Consider my context: "[describe your work/project/client]".</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -660,22 +660,22 @@ Consider my context: "[describe your work/project/client]".</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'ê¢Åâ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

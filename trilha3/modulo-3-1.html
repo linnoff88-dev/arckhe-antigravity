@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>MÃ³dulo 3.1 Â· Sistema de clonagem | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>MêÂ³dulo 3.1 êÂ· Sistema de clonagem | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .ARCKHÉ-toc-link.is-active { color: #c084fc; font-weight: 600; }
+    .ARCKHê-toc-link.is-active { color: #c084fc; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -183,19 +183,19 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha3/modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha3/modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-3-1.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha3/modulo-3-1.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha3/modulo-3-1.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="../trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="AparêÂªncia e leitura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">SêÂ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">ConfortêÂ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,66 +244,66 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-purple-400" href="../index.html">InÃ­cio</a><span>/</span>
+<a class="hover:text-purple-400" href="../index.html">InêÂ­cio</a><span>/</span>
 <a class="hover:text-purple-400" href="index.html">Trilha 3</a><span>/</span>
-<span class="text-purple-400">MÃ³dulo 3.1</span>
+<span class="text-purple-400">MêÂ³dulo 3.1</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-purple-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 3.1</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ§¬ Sistema de clonagem</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">Um Ãºnico template lindo, hospedado no GitHub, vira a fonte de todos os clones. Troque 6 elementos, organize por cliente, automatize a coleta â€” e vÃ¡ de 1 site para 1.000 com custo marginal quase zero.</p>
+<span class="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full mb-4">MêâDULO 3.1</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸Â§Â¬ Sistema de clonagem</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">Um êÂºnico template lindo, hospedado no GitHub, vira a fonte de todos os clones. Troque 6 elementos, organize por cliente, automatize a coleta ê¢â¬â e vêÂ¡ de 1 site para 1.000 com custo marginal quase zero.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">7</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">7</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">60</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">IntermediÃ¡rio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrÃ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">IntermediêÂ¡rio</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-purple-400">PrêÂ¡tica</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
 </header>
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 7</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeêÂ§êÂ£o <span data-ARCKHê-section-counter="">1 de 7</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. Master asset</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. A Cloning Skill</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. Os 6 elementos clonÃ¡veis</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. Regra 70-20-10</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. Uma pasta por cliente</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. Automatizar a coleta</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-purple-400" href="#topico-7">7. Escalar</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-1">1. Master asset</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-2">2. A Cloning Skill</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-3">3. Os 6 elementos clonêÂ¡veis</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-4">4. Regra 70-20-10</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-5">5. Uma pasta por cliente</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-6">6. Automatizar a coleta</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-purple-400" href="#topico-7">7. Escalar</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-ARCKHÉ-meter="modulo:3-1"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 7</span> Â· <span class="text-purple-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-purple-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHê-meter="modulo:3-1"><span class="text-neutral-400" data-ARCKHê-meter-frac="">0 de 7</span> êÂ· <span class="text-purple-400 font-bold" data-ARCKHê-meter-pct="">0%</span><div class="ARCKHê-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-purple-500" data-ARCKHê-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-ARCKHÉ-module="3-1" data-ARCKHÉ-track="3">
-<!-- TÃ“PICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHê-module="3-1" data-ARCKHê-track="3">
+<!-- TêâPICO 1 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">ðŸ§¬ Master asset</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â¬ Master asset</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t1-p1">A base do sistema Ã© um <strong class="text-purple-400">master asset</strong>: um template de site lindo, bem feito uma Ãºnica vez, e <strong class="text-neutral-100">hospedado no GitHub</strong>. Em vez de comeÃ§ar do zero a cada cliente, vocÃª <strong class="text-purple-400">clona o repositÃ³rio</strong> e apenas re-marca o que muda. O template Ã© a fonte; cada cliente Ã© um clone.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t1-p1">A base do sistema êÂ© um <strong class="text-purple-400">master asset</strong>: um template de site lindo, bem feito uma êÂºnica vez, e <strong class="text-neutral-100">hospedado no GitHub</strong>. Em vez de comeêÂ§ar do zero a cada cliente, vocêÂª <strong class="text-purple-400">clona o repositêÂ³rio</strong> e apenas re-marca o que muda. O template êÂ© a fonte; cada cliente êÂ© um clone.</p>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">ðŸ§­</span> A ideia central</h3>
-<p class="text-neutral-300 mb-4">Pense no template como um <strong>molde</strong>: vocÃª desenha o bolo lindo uma vez e depois carimba cÃ³pias. O esforÃ§o difÃ­cil (layout, animaÃ§Ãµes, responsividade) jÃ¡ estÃ¡ pago.</p>
+<h3 class="text-lg font-semibold text-purple-400 mb-4 flex items-center"><span class="mr-2">ê°Å¸Â§Â­</span> A ideia central</h3>
+<p class="text-neutral-300 mb-4">Pense no template como um <strong>molde</strong>: vocêÂª desenha o bolo lindo uma vez e depois carimba cêÂ³pias. O esforêÂ§o difêÂ­cil (layout, animaêÂ§êÂµes, responsividade) jêÂ¡ estêÂ¡ pago.</p>
 <ul class="space-y-2 text-neutral-300">
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Uma <strong>fonte Ãºnica</strong> no GitHub â€” todo clone parte dela.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>Clonar o repo Ã© <strong>quase instantÃ¢neo</strong> â€” nada de recriar a estrutura.</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">â€¢</span><span>VocÃª sÃ³ <strong>re-marca</strong>: troca o que identifica o cliente, mantÃ©m o resto.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">ê¢â¬Â¢</span><span>Uma <strong>fonte êÂºnica</strong> no GitHub ê¢â¬â todo clone parte dela.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">ê¢â¬Â¢</span><span>Clonar o repo êÂ© <strong>quase instantêÂ¢neo</strong> ê¢â¬â nada de recriar a estrutura.</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400 mt-1">ê¢â¬Â¢</span><span>VocêÂª sêÂ³ <strong>re-marca</strong>: troca o que identifica o cliente, mantêÂ©m o resto.</span></li>
 </ul>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="O template-mestre vive no GitHub; ao clonar o repositÃ³rio vocÃª obtÃ©m uma cÃ³pia local idÃªntica, pronta para ser re-marcada para um cliente especÃ­fico" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
+<svg aria-label="O template-mestre vive no GitHub; ao clonar o repositêÂ³rio vocêÂª obtêÂ©m uma cêÂ³pia local idêÂªntica, pronta para ser re-marcada para um cliente especêÂ­fico" class="w-full h-auto" role="img" viewbox="0 0 1000 220">
 <defs>
 <lineargradient id="m31-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c084fc"></stop><stop offset="1" stop-color="#a855f7"></stop></lineargradient>
 <filter height="180%" id="m31-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -314,213 +314,213 @@
 <g fill="none" opacity="0.6" stroke="#c084fc" stroke-width="2"><path d="M306,110 L420,110" marker-end="url(#m31-ah)"></path></g>
 <g fill="none" opacity="0.6" stroke="#c084fc" stroke-width="2"><path d="M668,110 L760,110" marker-end="url(#m31-ah)"></path></g>
 <rect fill="#0e1b26" height="64" rx="14" stroke="#38bdf8" stroke-width="2" width="266" x="40" y="78"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="173" y="104">GitHub Â· template-mestre</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="173" y="104">GitHub êÂ· template-mestre</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="173" y="124">a fonte de tudo</text>
 <g filter="url(#m31-glow)"><rect fill="#1a1230" height="64" rx="14" stroke="url(#m31-grad)" stroke-width="2.5" width="248" x="420" y="78"></rect></g>
 <text fill="#c084fc" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="544" y="104">clone local</text>
-<text fill="#e9d5ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="544" y="124">cÃ³pia idÃªntica</text>
+<text fill="#e9d5ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="544" y="124">cêÂ³pia idêÂªntica</text>
 <rect fill="#1a1230" height="64" rx="14" stroke="#a855f7" stroke-width="2" width="200" x="760" y="78"></rect>
 <text fill="#c084fc" font-family="Inter,sans-serif" font-size="16" font-weight="600" text-anchor="middle" x="860" y="104">re-marcar</text>
 <text fill="#e9d5ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="860" y="124">vira do cliente</text>
 </svg>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Fonte</div><p class="text-xs text-neutral-400">um sÃ³ template</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Fonte</div><p class="text-xs text-neutral-400">um sêÂ³ template</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">GitHub</div><p class="text-xs text-neutral-400">hospeda o mestre</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Clonar</div><p class="text-xs text-neutral-400">cÃ³pia instantÃ¢nea</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Re-marcar</div><p class="text-xs text-neutral-400">sÃ³ o que muda</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Clonar</div><p class="text-xs text-neutral-400">cêÂ³pia instantêÂ¢nea</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Re-marcar</div><p class="text-xs text-neutral-400">sêÂ³ o que muda</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-2" id="topico-2">
+<!-- TêâPICO 2 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">ðŸ› ï¸ A Cloning Skill</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âºÂ ê¯Â¸Â A Cloning Skill</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t2-p1">Clonar Ã  mÃ£o funciona uma ou duas vezes â€” depois vocÃª esquece um detalhe. A soluÃ§Ã£o Ã© uma <strong class="text-purple-400">skill</strong>: um <strong>prompt estruturado reutilizÃ¡vel</strong> que percorre sistematicamente os elementos a trocar, <strong class="text-purple-400">faz perguntas</strong>, pede os assets nas dimensÃµes certas e sÃ³ entÃ£o implementa.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t2-p1">Clonar êÂ  mêÂ£o funciona uma ou duas vezes ê¢â¬â depois vocêÂª esquece um detalhe. A soluêÂ§êÂ£o êÂ© uma <strong class="text-purple-400">skill</strong>: um <strong>prompt estruturado reutilizêÂ¡vel</strong> que percorre sistematicamente os elementos a trocar, <strong class="text-purple-400">faz perguntas</strong>, pede os assets nas dimensêÂµes certas e sêÂ³ entêÂ£o implementa.</p>
 <div class="space-y-4 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Percorre os elementos</h4><p class="text-neutral-300 text-sm">A skill tem a lista do que muda e passa item por item â€” nada fica para trÃ¡s.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Percorre os elementos</h4><p class="text-neutral-300 text-sm">A skill tem a lista do que muda e passa item por item ê¢â¬â nada fica para trêÂ¡s.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
-<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Faz perguntas e pede assets</h4><p class="text-neutral-300 text-sm">Pergunta o nome, a cor, os preÃ§os; pede o logo jÃ¡ dizendo a dimensÃ£o certa.</p></div>
+<div class="flex-1 bg-dark-800 rounded-xl p-5 border border-dark-600"><h4 class="font-semibold text-white mb-1">Faz perguntas e pede assets</h4><p class="text-neutral-300 text-sm">Pergunta o nome, a cor, os preêÂ§os; pede o logo jêÂ¡ dizendo a dimensêÂ£o certa.</p></div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
-<div class="flex-1 bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl p-5 border border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">Implementa</h4><p class="text-neutral-300 text-sm">Com tudo em mÃ£os, ela aplica as trocas no clone â€” guiada e repetÃ­vel.</p></div>
+<div class="flex-1 bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl p-5 border border-purple-500/30"><h4 class="font-semibold text-purple-400 mb-1">Implementa</h4><p class="text-neutral-300 text-sm">Com tudo em mêÂ£os, ela aplica as trocas no clone ê¢â¬â guiada e repetêÂ­vel.</p></div>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300">VocÃª nÃ£o precisa criar a skill do zero: ela estÃ¡ disponÃ­vel na <strong>Biblioteca (Trilha 5)</strong>. Comece dela e ajuste ao seu template.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300">VocêÂª nêÂ£o precisa criar a skill do zero: ela estêÂ¡ disponêÂ­vel na <strong>Biblioteca (Trilha 5)</strong>. Comece dela e ajuste ao seu template.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Skill</div><p class="text-xs text-neutral-400">prompt reutilizÃ¡vel</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Skill</div><p class="text-xs text-neutral-400">prompt reutilizêÂ¡vel</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Pergunta</div><p class="text-xs text-neutral-400">coleta guiada</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Assets</div><p class="text-xs text-neutral-400">dimensÃµes certas</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Assets</div><p class="text-xs text-neutral-400">dimensêÂµes certas</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Implementa</div><p class="text-xs text-neutral-400">aplica as trocas</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-3" id="topico-3">
+<!-- TêâPICO 3 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">ðŸ” Os 6 elementos clonÃ¡veis</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ Os 6 elementos clonêÂ¡veis</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t3-p1">Aqui estÃ¡ o coraÃ§Ã£o do sistema: <strong class="text-purple-400">sÃ³ 6 coisas mudam</strong> entre um cliente e outro. Trocando esses 6 elementos, o mesmo template vira de outro cliente. Tudo o que estÃ¡ fora dessa lista permanece intocado.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t3-p1">Aqui estêÂ¡ o coraêÂ§êÂ£o do sistema: <strong class="text-purple-400">sêÂ³ 6 coisas mudam</strong> entre um cliente e outro. Trocando esses 6 elementos, o mesmo template vira de outro cliente. Tudo o que estêÂ¡ fora dessa lista permanece intocado.</p>
 <div class="overflow-x-auto mb-6">
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">#</th><th class="text-left p-3">Elemento</th><th class="text-left p-3">O que troca</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-purple-400 font-bold">1</td><td class="p-3 text-neutral-300">Logo</td><td class="p-3">a marca no topo e no rodapÃ©</td></tr>
-<tr><td class="p-3 text-purple-400 font-bold">2</td><td class="p-3 text-neutral-300">Copy</td><td class="p-3">tÃ­tulos e textos do negÃ³cio</td></tr>
-<tr><td class="p-3 text-purple-400 font-bold">3</td><td class="p-3 text-neutral-300">Marcas de confianÃ§a</td><td class="p-3">trusted brands / parceiros</td></tr>
-<tr><td class="p-3 text-purple-400 font-bold">4</td><td class="p-3 text-neutral-300">PreÃ§os</td><td class="p-3">planos e valores</td></tr>
-<tr><td class="p-3 text-purple-400 font-bold">5</td><td class="p-3 text-neutral-300">AvaliaÃ§Ãµes</td><td class="p-3">depoimentos de clientes</td></tr>
+<tr><td class="p-3 text-purple-400 font-bold">1</td><td class="p-3 text-neutral-300">Logo</td><td class="p-3">a marca no topo e no rodapêÂ©</td></tr>
+<tr><td class="p-3 text-purple-400 font-bold">2</td><td class="p-3 text-neutral-300">Copy</td><td class="p-3">têÂ­tulos e textos do negêÂ³cio</td></tr>
+<tr><td class="p-3 text-purple-400 font-bold">3</td><td class="p-3 text-neutral-300">Marcas de confianêÂ§a</td><td class="p-3">trusted brands / parceiros</td></tr>
+<tr><td class="p-3 text-purple-400 font-bold">4</td><td class="p-3 text-neutral-300">PreêÂ§os</td><td class="p-3">planos e valores</td></tr>
+<tr><td class="p-3 text-purple-400 font-bold">5</td><td class="p-3 text-neutral-300">AvaliaêÂ§êÂµes</td><td class="p-3">depoimentos de clientes</td></tr>
 <tr><td class="p-3 text-purple-400 font-bold">6</td><td class="p-3 text-neutral-300">Esquema de cores</td><td class="p-3">a cor dominante da marca</td></tr>
 </tbody>
 </table>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-<h4 class="font-bold text-purple-400 mb-4">âœ“ Troque (sÃ£o os 6)</h4>
+<h4 class="font-bold text-purple-400 mb-4">ê¢Åâ Troque (sêÂ£o os 6)</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Logo, copy e marcas de confianÃ§a</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>PreÃ§os, avaliaÃ§Ãµes e esquema de cores</span></li>
-<li class="flex items-start space-x-2"><span class="text-purple-400">âœ“</span><span>Tudo que identifica aquele cliente</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Logo, copy e marcas de confianêÂ§a</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>PreêÂ§os, avaliaêÂ§êÂµes e esquema de cores</span></li>
+<li class="flex items-start space-x-2"><span class="text-purple-400">ê¢Åâ</span><span>Tudo que identifica aquele cliente</span></li>
 </ul>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— NÃ£o mexa</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ NêÂ£o mexa</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Estrutura e layout do template</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>AnimaÃ§Ãµes e responsividade</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>O que jÃ¡ estÃ¡ bom â€” vocÃª pagaria de novo por nada</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Estrutura e layout do template</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>AnimaêÂ§êÂµes e responsividade</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>O que jêÂ¡ estêÂ¡ bom ê¢â¬â vocêÂª pagaria de novo por nada</span></li>
 </ul>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Logo + Copy</div><p class="text-xs text-neutral-400">a identidade</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Marcas</div><p class="text-xs text-neutral-400">confianÃ§a</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">PreÃ§os + Reviews</div><p class="text-xs text-neutral-400">a oferta</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Marcas</div><p class="text-xs text-neutral-400">confianêÂ§a</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">PreêÂ§os + Reviews</div><p class="text-xs text-neutral-400">a oferta</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Cores</div><p class="text-xs text-neutral-400">a cara da marca</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-4" id="topico-4">
+<!-- TêâPICO 4 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">ðŸŽ¨ Regra de design 70-20-10</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Å½Â¨ Regra de design 70-20-10</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t4-p1">Por que o esquema de cores Ã© tÃ£o fÃ¡cil de trocar? Porque o template segue a regra <strong class="text-purple-400">70-20-10</strong>: 70% de uma <strong>cor dominante</strong>, 20% de uma cor secundÃ¡ria e 10% de um acento. <em>Se tudo Ã© destaque, nada Ã© destaque</em> â€” entÃ£o o template jÃ¡ sabe onde a IA deve mexer na cor.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t4-p1">Por que o esquema de cores êÂ© têÂ£o fêÂ¡cil de trocar? Porque o template segue a regra <strong class="text-purple-400">70-20-10</strong>: 70% de uma <strong>cor dominante</strong>, 20% de uma cor secundêÂ¡ria e 10% de um acento. <em>Se tudo êÂ© destaque, nada êÂ© destaque</em> ê¢â¬â entêÂ£o o template jêÂ¡ sabe onde a IA deve mexer na cor.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="A proporÃ§Ã£o de cor 70-20-10: 70% para a cor dominante, 20% para a secundÃ¡ria e 10% para o acento, formando uma barra de hierarquia visual" class="w-full h-auto" role="img" viewbox="0 0 1000 160">
+<svg aria-label="A proporêÂ§êÂ£o de cor 70-20-10: 70% para a cor dominante, 20% para a secundêÂ¡ria e 10% para o acento, formando uma barra de hierarquia visual" class="w-full h-auto" role="img" viewbox="0 0 1000 160">
 <defs>
 <pattern height="32" id="m31b-grid" patternunits="userSpaceOnUse" width="32"><circle cx="1.3" cy="1.3" fill="#a855f7" opacity="0.1" r="1.3"></circle></pattern>
 </defs>
 <rect fill="url(#m31b-grid)" height="160" width="1000" x="0" y="0"></rect>
 <g font-family="Inter,sans-serif">
 <rect fill="#7c3aed" height="68" rx="10" width="630" x="40" y="46"></rect>
-<text fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle" x="355" y="86">70% Â· dominante</text>
+<text fill="#ffffff" font-size="20" font-weight="700" text-anchor="middle" x="355" y="86">70% êÂ· dominante</text>
 <rect fill="#a855f7" height="68" rx="10" width="180" x="678" y="46"></rect>
 <text fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle" x="768" y="86">20%</text>
 <rect fill="#d8b4fe" height="68" rx="10" width="94" x="866" y="46"></rect>
 <text fill="#3b0764" font-size="14" font-weight="700" text-anchor="middle" x="913" y="86">10%</text>
-<text fill="#c084fc" font-size="13" font-weight="600" text-anchor="middle" x="500" y="30">hierarquia de cor â€” o olho sabe onde olhar</text>
+<text fill="#c084fc" font-size="13" font-weight="600" text-anchor="middle" x="500" y="30">hierarquia de cor ê¢â¬â o olho sabe onde olhar</text>
 </g>
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ›¡ï¸</span> Por que isso ajuda a clonar</h3>
-<p class="text-neutral-300">Com uma proporÃ§Ã£o clara, trocar a marca Ã© quase sÃ³ mudar a <strong>cor dominante</strong> (o 70%). O layout permanece equilibrado, e o site novo jÃ¡ nasce profissional.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âºÂ¡ê¯Â¸Â</span> Por que isso ajuda a clonar</h3>
+<p class="text-neutral-300">Com uma proporêÂ§êÂ£o clara, trocar a marca êÂ© quase sêÂ³ mudar a <strong>cor dominante</strong> (o 70%). O layout permanece equilibrado, e o site novo jêÂ¡ nasce profissional.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">70%</div><p class="text-xs text-neutral-400">cor dominante</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">20%</div><p class="text-xs text-neutral-400">secundÃ¡ria</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">20%</div><p class="text-xs text-neutral-400">secundêÂ¡ria</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">10%</div><p class="text-xs text-neutral-400">acento</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Foco</div><p class="text-xs text-neutral-400">tudo destaque = nada</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-5" id="topico-5">
+<!-- TêâPICO 5 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">ðŸ—‚ï¸ Uma pasta por cliente</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââê¯Â¸Â Uma pasta por cliente</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t5-p1">Quando vocÃª gerencia muitos clientes, o maior risco nÃ£o Ã© tÃ©cnico â€” Ã© <strong class="text-purple-400">mexer no site errado</strong>. A regra simples que evita isso: <strong>uma pasta por cliente</strong> no seu computador. GestÃ£o de arquivos enxuta reduz confusÃ£o.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t5-p1">Quando vocêÂª gerencia muitos clientes, o maior risco nêÂ£o êÂ© têÂ©cnico ê¢â¬â êÂ© <strong class="text-purple-400">mexer no site errado</strong>. A regra simples que evita isso: <strong>uma pasta por cliente</strong> no seu computador. GestêÂ£o de arquivos enxuta reduz confusêÂ£o.</p>
 <div class="overflow-x-auto mb-6">
 <pre class="bg-dark-900 border border-dark-600 rounded-xl p-4 text-sm text-neutral-200 font-mono whitespace-pre">clientes/
-â”œâ”€â”€ dedetizadora-alfa/
-â”‚   â””â”€â”€ site/        (clone re-marcado)
-â”œâ”€â”€ sorveteria-bela/
-â”‚   â””â”€â”€ site/        (clone re-marcado)
-â””â”€â”€ advocacia-cardoso/
-    â””â”€â”€ site/        (clone re-marcado)</pre>
+ê¢âÅê¢ââ¬ê¢ââ¬ dedetizadora-alfa/
+ê¢ââ   ê¢ââê¢ââ¬ê¢ââ¬ site/        (clone re-marcado)
+ê¢âÅê¢ââ¬ê¢ââ¬ sorveteria-bela/
+ê¢ââ   ê¢ââê¢ââ¬ê¢ââ¬ site/        (clone re-marcado)
+ê¢ââê¢ââ¬ê¢ââ¬ advocacia-cardoso/
+    ê¢ââê¢ââ¬ê¢ââ¬ site/        (clone re-marcado)</pre>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300">Abra no editor <strong>sÃ³ a pasta do cliente</strong> em que vocÃª vai trabalhar. Assim, Ã© impossÃ­vel a IA editar por engano o site de outro cliente.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300">Abra no editor <strong>sêÂ³ a pasta do cliente</strong> em que vocêÂª vai trabalhar. Assim, êÂ© impossêÂ­vel a IA editar por engano o site de outro cliente.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">1 pasta</div><p class="text-xs text-neutral-400">por cliente</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Isolado</div><p class="text-xs text-neutral-400">sem cruzar arquivos</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Enxuto</div><p class="text-xs text-neutral-400">menos confusÃ£o</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Enxuto</div><p class="text-xs text-neutral-400">menos confusêÂ£o</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Seguro</div><p class="text-xs text-neutral-400">site certo, sempre</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-6" id="topico-6">
+<!-- TêâPICO 6 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">ðŸ§¾ Automatizar a coleta de dados</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â¾ Automatizar a coleta de dados</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t6-p1">O prÃ³ximo nÃ­vel Ã© tirar vocÃª do meio. Em vez de perguntar tudo no chat, crie um <strong class="text-purple-400">formulÃ¡rio prÃ³prio</strong> (logo + as 6 perguntas + upload de assets) que salva as respostas no <strong class="text-purple-400">Supabase via MCP</strong>. Depois vocÃª manda a IA <em>"clonar a submissÃ£o mais recente"</em> â€” sem nem olhar as respostas.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t6-p1">O prêÂ³ximo nêÂ­vel êÂ© tirar vocêÂª do meio. Em vez de perguntar tudo no chat, crie um <strong class="text-purple-400">formulêÂ¡rio prêÂ³prio</strong> (logo + as 6 perguntas + upload de assets) que salva as respostas no <strong class="text-purple-400">Supabase via MCP</strong>. Depois vocêÂª manda a IA <em>"clonar a submissêÂ£o mais recente"</em> ê¢â¬â sem nem olhar as respostas.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-purple-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="O cliente preenche um formulÃ¡rio com logo, as seis respostas e os assets; os dados sÃ£o gravados no Supabase via MCP; a IA lÃª a submissÃ£o mais recente e gera o clone automaticamente" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="O cliente preenche um formulêÂ¡rio com logo, as seis respostas e os assets; os dados sêÂ£o gravados no Supabase via MCP; a IA lêÂª a submissêÂ£o mais recente e gera o clone automaticamente" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m31c-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#c084fc"></stop><stop offset="1" stop-color="#a855f7"></stop></lineargradient>
 <filter height="180%" id="m31c-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -533,153 +533,153 @@
 <path d="M600,100 L690,100" marker-end="url(#m31c-ah)"></path>
 </g>
 <rect fill="#0e1b26" height="68" rx="14" stroke="#38bdf8" stroke-width="2" width="230" x="40" y="66"></rect>
-<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="155" y="94">FormulÃ¡rio</text>
+<text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="155" y="94">FormulêÂ¡rio</text>
 <text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="155" y="115">logo + 6 perguntas + assets</text>
 <rect fill="#0e1b26" height="68" rx="14" stroke="#38bdf8" stroke-width="2" width="240" x="360" y="66"></rect>
 <text fill="#bfe6ff" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="480" y="94">Supabase (via MCP)</text>
-<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="480" y="115">guarda as submissÃµes</text>
+<text fill="#9ad6ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="480" y="115">guarda as submissêÂµes</text>
 <g filter="url(#m31c-glow)"><rect fill="#1a1230" height="68" rx="14" stroke="url(#m31c-grad)" stroke-width="2.5" width="270" x="690" y="66"></rect></g>
-<text fill="#c084fc" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="825" y="94">IA clona a submissÃ£o</text>
+<text fill="#c084fc" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="825" y="94">IA clona a submissêÂ£o</text>
 <text fill="#e9d5ff" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="825" y="115">"a mais recente"</text>
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ’¡</span> Dica prÃ¡tica</h3>
-<p class="text-neutral-300">Padronize os campos do formulÃ¡rio com os <strong>mesmos nomes</strong> que a Cloning Skill espera. Assim, a IA mapeia resposta â†’ elemento sem ambiguidade.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ¡</span> Dica prêÂ¡tica</h3>
+<p class="text-neutral-300">Padronize os campos do formulêÂ¡rio com os <strong>mesmos nomes</strong> que a Cloning Skill espera. Assim, a IA mapeia resposta ê¢â â elemento sem ambiguidade.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Form</div><p class="text-xs text-neutral-400">logo + 6 + assets</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Supabase</div><p class="text-xs text-neutral-400">guarda os dados</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">MCP</div><p class="text-xs text-neutral-400">a IA lÃª o banco</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">MCP</div><p class="text-xs text-neutral-400">a IA lêÂª o banco</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Auto</div><p class="text-xs text-neutral-400">sem olhar respostas</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 7 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-3-1#topico-7" id="topico-7">
+<!-- TêâPICO 7 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-3-1#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">â™¾ï¸ Escalar</h2>
+<h2 class="text-2xl font-bold">ê¢â¢Â¾ê¯Â¸Â Escalar</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m3-1-t7-p1">Com template-mestre + skill + formulÃ¡rio, a conta vira a seu favor: de 1 site para 100, para 1.000. O <strong class="text-purple-400">custo marginal por clone fica quase zero</strong>. E a cada rodada vocÃª <strong>refina a skill</strong>: rode uma vez, veja o que nÃ£o trocou, ajuste, repita.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m3-1-t7-p1">Com template-mestre + skill + formulêÂ¡rio, a conta vira a seu favor: de 1 site para 100, para 1.000. O <strong class="text-purple-400">custo marginal por clone fica quase zero</strong>. E a cada rodada vocêÂª <strong>refina a skill</strong>: rode uma vez, veja o que nêÂ£o trocou, ajuste, repita.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Rode uma vez</h4>
-<p class="text-neutral-300 text-sm">Gere um clone com a skill atual e olhe o resultado com atenÃ§Ã£o.</p>
+<p class="text-neutral-300 text-sm">Gere um clone com a skill atual e olhe o resultado com atenêÂ§êÂ£o.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Ajuste o que nÃ£o trocou</h4>
-<p class="text-neutral-300 text-sm">Achou um texto antigo ou uma cor esquecida? Acrescente esse item Ã  skill.</p>
+<h4 class="font-semibold text-white mb-2">Ajuste o que nêÂ£o trocou</h4>
+<p class="text-neutral-300 text-sm">Achou um texto antigo ou uma cor esquecida? Acrescente esse item êÂ  skill.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center"><span class="text-purple-400 font-bold">3</span></div>
 <div class="flex-1 bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl p-6 border border-purple-500/30">
 <h4 class="font-semibold text-purple-400 mb-2">Repita</h4>
-<p class="text-neutral-300 text-sm">A cada rodada a skill fica mais afiada â€” e os prÃ³ximos clones saem perfeitos.</p>
+<p class="text-neutral-300 text-sm">A cada rodada a skill fica mais afiada ê¢â¬â e os prêÂ³ximos clones saem perfeitos.</p>
 </div>
 </div>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">1 â†’ 1.000</div><p class="text-xs text-neutral-400">mesma base</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Custo â‰ˆ 0</div><p class="text-xs text-neutral-400">por clone</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">1 ê¢â â 1.000</div><p class="text-xs text-neutral-400">mesma base</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Custo ê¢â°Ë 0</div><p class="text-xs text-neutral-400">por clone</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Refinar</div><p class="text-xs text-neutral-400">a cada rodada</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-purple-400 font-bold mb-1">Repetir</div><p class="text-xs text-neutral-400">cada vez melhor</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÃTICO -->
+<!-- EXEMPLO PRêÂTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸âÂ¬</span> Exemplo prêÂ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Pegue um template chamado <strong class="text-purple-400">"VOLTFLOW"</strong> (um template genÃ©rico de site de serviÃ§os) e gere <strong>duas versÃµes para nichos diferentes</strong>, trocando apenas os 6 elementos:</p>
+<p class="text-neutral-300 mb-4">Pegue um template chamado <strong class="text-purple-400">"VOLTFLOW"</strong> (um template genêÂ©rico de site de serviêÂ§os) e gere <strong>duas versêÂµes para nichos diferentes</strong>, trocando apenas os 6 elementos:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
 <div class="bg-dark-700/50 rounded-lg p-4">
-<h4 class="font-semibold text-purple-400 mb-2">VersÃ£o A â€” Dedetizadora</h4>
+<h4 class="font-semibold text-purple-400 mb-2">VersêÂ£o A ê¢â¬â Dedetizadora</h4>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li>Logo da dedetizadora Â· cor dominante verde</li>
-<li>Copy sobre controle de pragas Â· preÃ§os por visita</li>
-<li>AvaliaÃ§Ãµes de moradores Â· selos de seguranÃ§a</li>
+<li>Logo da dedetizadora êÂ· cor dominante verde</li>
+<li>Copy sobre controle de pragas êÂ· preêÂ§os por visita</li>
+<li>AvaliaêÂ§êÂµes de moradores êÂ· selos de seguranêÂ§a</li>
 </ul>
 </div>
 <div class="bg-dark-700/50 rounded-lg p-4">
-<h4 class="font-semibold text-purple-400 mb-2">VersÃ£o B â€” Sorveteria</h4>
+<h4 class="font-semibold text-purple-400 mb-2">VersêÂ£o B ê¢â¬â Sorveteria</h4>
 <ul class="space-y-1 text-neutral-300 text-sm">
-<li>Logo da sorveteria Â· cor dominante rosa</li>
-<li>Copy sobre sabores Â· preÃ§os por tamanho</li>
-<li>AvaliaÃ§Ãµes de clientes Â· marcas de insumos</li>
+<li>Logo da sorveteria êÂ· cor dominante rosa</li>
+<li>Copy sobre sabores êÂ· preêÂ§os por tamanho</li>
+<li>AvaliaêÂ§êÂµes de clientes êÂ· marcas de insumos</li>
 </ul>
 </div>
 </div>
-<p class="text-neutral-400 text-sm">Mesmo template, mesma estrutura â€” dois sites que parecem feitos sob medida. Isso Ã© a clonagem em aÃ§Ã£o.</p>
+<p class="text-neutral-400 text-sm">Mesmo template, mesma estrutura ê¢â¬â dois sites que parecem feitos sob medida. Isso êÂ© a clonagem em aêÂ§êÂ£o.</p>
 </div>
 </section>
-<!-- EXERCÃCIO -->
+<!-- EXERCêÂCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Ââ¹ê¯Â¸Â</span> ExercêÂ­cio</h2>
 <div class="bg-gradient-to-br from-purple-900/30 to-dark-800 rounded-xl border border-purple-500/30 p-6">
-<p class="text-neutral-300 mb-4">Crie ou adapte a <strong class="text-purple-400">Cloning Skill</strong> e gere <strong>2 variaÃ§Ãµes</strong> do mesmo template para nichos diferentes:</p>
+<p class="text-neutral-300 mb-4">Crie ou adapte a <strong class="text-purple-400">Cloning Skill</strong> e gere <strong>2 variaêÂ§êÂµes</strong> do mesmo template para nichos diferentes:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
 <li>Escolha um template-mestre (ou use o seu da Trilha 2) e hospede no GitHub.</li>
 <li>Adapte a skill da Biblioteca para percorrer os <strong>6 elementos</strong> do seu template.</li>
-<li>Gere 2 clones para nichos distintos (ex.: oficina e escritÃ³rio de advocacia).</li>
+<li>Gere 2 clones para nichos distintos (ex.: oficina e escritêÂ³rio de advocacia).</li>
 <li>Anote o que a skill esqueceu de trocar e <strong>refine-a</strong>.</li>
 </ol>
-<p class="text-neutral-400 text-sm">Meta: na segunda variaÃ§Ã£o, a skill jÃ¡ nÃ£o esquece nada.</p>
+<p class="text-neutral-400 text-sm">Meta: na segunda variaêÂ§êÂ£o, a skill jêÂ¡ nêÂ£o esquece nada.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Å¡Â¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clonar o repositÃ³rio</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone este repositÃ³rio: [URL]
-e salve Ã  esquerda como "site-1".</pre>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clonar o repositêÂ³rio</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone este repositêÂ³rio: [URL]
+e salve êÂ  esquerda como "site-1".</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
 <div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">criar a Cloning Skill</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Crie uma skill "protocolo de clonagem" que, ao pedir um clone, percorra
-estes 6 itens â€” logo, copy, marcas de confianÃ§a, preÃ§os, avaliaÃ§Ãµes e
-esquema de cores. Para cada item, me faÃ§a perguntas e peÃ§a os assets com
-as dimensÃµes necessÃ¡rias, e entÃ£o implemente as trocas no clone.</pre>
+estes 6 itens ê¢â¬â logo, copy, marcas de confianêÂ§a, preêÂ§os, avaliaêÂ§êÂµes e
+esquema de cores. Para cada item, me faêÂ§a perguntas e peêÂ§a os assets com
+as dimensêÂµes necessêÂ¡rias, e entêÂ£o implemente as trocas no clone.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clonar da submissÃ£o</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone o site usando os dados da submissÃ£o mais recente do Supabase
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">clonar da submissêÂ£o</span><button class="text-xs px-2 py-1 rounded bg-purple-600 hover:bg-purple-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Clone o site usando os dados da submissêÂ£o mais recente do Supabase
 e abra no localhost.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Master asset</strong><span class="text-neutral-400"> â€” um template lindo no GitHub Ã© a fonte de todos os clones.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">Cloning Skill + 6 elementos</strong><span class="text-neutral-400"> â€” logo, copy, marcas, preÃ§os, reviews e cores; o resto nÃ£o se toca.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">70-20-10 e pasta por cliente</strong><span class="text-neutral-400"> â€” cor com hierarquia e arquivos organizados evitam erro.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">âœ“</span><div><strong class="text-white">FormulÃ¡rio + Supabase = escala</strong><span class="text-neutral-400"> â€” colete sozinho e clone a submissÃ£o mais recente, de 1 a 1.000.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Master asset</strong><span class="text-neutral-400"> ê¢â¬â um template lindo no GitHub êÂ© a fonte de todos os clones.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Cloning Skill + 6 elementos</strong><span class="text-neutral-400"> ê¢â¬â logo, copy, marcas, preêÂ§os, reviews e cores; o resto nêÂ£o se toca.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">70-20-10 e pasta por cliente</strong><span class="text-neutral-400"> ê¢â¬â cor com hierarquia e arquivos organizados evitam erro.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">ê¢Åâ</span><div><strong class="text-white">FormulêÂ¡rio + Supabase = escala</strong><span class="text-neutral-400"> ê¢â¬â colete sozinho e clone a submissêÂ£o mais recente, de 1 a 1.000.</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">PrÃ³ximo mÃ³dulo:</h3><p class="text-neutral-300">3.2 â€” Levar sites para GoHighLevel/WordPress</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-purple-400 mb-2">PrêÂ³ximo mêÂ³dulo:</h3><p class="text-neutral-300">3.2 ê¢â¬â Levar sites para GoHighLevel/WordPress</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para Trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">PrÃ³ximo MÃ³dulo â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para Trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-500 transition-colors" href="modulo-3-2.html">PrêÂ³ximo MêÂ³dulo ê¢â â</a>
 </div>
 </div>
 </section>
@@ -688,7 +688,7 @@ e abra no localhost.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â do Zero ao App Publicado com IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -711,11 +711,11 @@ e abra no localhost.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -723,22 +723,22 @@ e abra no localhost.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'ê¢Åâ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

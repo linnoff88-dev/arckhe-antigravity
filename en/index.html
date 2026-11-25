@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>AntiGravity â€” From Zero to a Published App with AI | ARCKHÉ AI</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>AntiGravity ê¢â¬â From Zero to a Published App with AI | ARCKHê AI</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -159,7 +159,7 @@
     }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -172,7 +172,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -188,7 +188,7 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="../" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">PT</a><a href="./" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">EN</a><a href="../es/" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
 <a class="skip" href="#conteudo">Skip to content</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
@@ -196,11 +196,11 @@
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentals</span></a>
@@ -208,37 +208,37 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors" href="trilha3/index.html"><span class="sm:hidden">T3</span><span class="hidden sm:inline">Scale</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors" href="trilha4/index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Professional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Mastery</span></a>
-<!-- AparÃªncia -->
+<!-- AparêÂªncia -->
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="Appearance and readability" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Theme</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Dark</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Clear</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">Sepia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Focus</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">High contrast</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="Appearance and readability" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Theme</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Dark</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Clear</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">Sepia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Focus</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">High contrast</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Source</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">System</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Reading</button>
+<div><p class="text-xs text-neutral-400 mb-1">Source</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">System</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Reading</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Size</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Size</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Line spacing</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compact</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">Comfortable</button>
+<div><p class="text-xs text-neutral-400 mb-1">Line spacing</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compact</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">Comfortable</button>
 </div></div>
 </div>
 </div>
 <!-- Minha jornada -->
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="My journey" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Journey</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="My journey" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Journey</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <!-- Theme toggle -->
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Toggle light/dark">
@@ -252,26 +252,26 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="conteudo">
 <!-- HERO -->
 <section class="mb-16">
-<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-5 border border-primary/30">COMPLETE COURSE Â· 5 TRACKS Â· 11 MODULES</span>
+<span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full mb-5 border border-primary/30">COMPLETE COURSE êÂ· 5 TRACKS êÂ· 11 MODULES</span>
 <h1 class="text-4xl sm:text-5xl font-bold mb-5 leading-tight">From scratch to a published app, <span class="text-primary">commanding AI through language</span></h1>
-<p class="text-lg text-neutral-400 max-w-3xl mb-8">Learn to use the <strong class="text-neutral-300">AntiGravity</strong> â€” Googleâ€™s code editor with AI agents â€” for building, publishing, and scaling real applications. Without becoming a programmer: you describe, the agents build. From the first screen to secure deployment and a professional application.</p>
+<p class="text-lg text-neutral-400 max-w-3xl mb-8">Learn to use the <strong class="text-neutral-300">AntiGravity</strong> ê¢â¬â Googleê¢â¬â¢s code editor with AI agents ê¢â¬â for building, publishing, and scaling real applications. Without becoming a programmer: you describe, the agents build. From the first screen to secure deployment and a professional application.</p>
 <div class="flex flex-col sm:flex-row gap-4 mb-10">
-<a class="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition-colors" href="trilha1/index.html">Start with Track 1 â†’</a>
-<button class="inline-flex items-center justify-center px-6 py-3 bg-dark-700 hover:bg-dark-600 text-neutral-200 rounded-lg font-semibold transition-colors" data-ARCKHÉ-resume="" type="button">â†» Continue where I left off</button>
+<a class="inline-flex items-center justify-center px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-semibold transition-colors" href="trilha1/index.html">Start with Track 1 ê¢â â</a>
+<button class="inline-flex items-center justify-center px-6 py-3 bg-dark-700 hover:bg-dark-600 text-neutral-200 rounded-lg font-semibold transition-colors" data-ARCKHê-resume="" type="button">ê¢â Â» Continue where I left off</button>
 </div>
 <!-- Medidor de curso -->
-<div aria-label="Course progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHÉ-meter bg-dark-800 border border-dark-600 rounded-xl p-5 max-w-2xl" data-ARCKHÉ-meter="curso" role="progressbar">
+<div aria-label="Course progress" aria-valuemax="100" aria-valuemin="0" class="ARCKHê-meter bg-dark-800 border border-dark-600 rounded-xl p-5 max-w-2xl" data-ARCKHê-meter="curso" role="progressbar">
 <div class="flex items-center justify-between mb-2">
 <span class="text-sm font-semibold text-neutral-300">Your course progress</span>
-<span class="text-sm"><span class="ARCKHÉ-meter-label" data-ARCKHÉ-meter-frac="">0 of 77</span> Â· <span class="text-primary font-bold" data-ARCKHÉ-meter-pct="">0%</span></span>
+<span class="text-sm"><span class="ARCKHê-meter-label" data-ARCKHê-meter-frac="">0 of 77</span> êÂ· <span class="text-primary font-bold" data-ARCKHê-meter-pct="">0%</span></span>
 </div>
-<div class="ARCKHÉ-bar h-2.5 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-primary" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div>
+<div class="ARCKHê-bar h-2.5 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-primary" data-ARCKHê-meter-fill="" style="width:0%"></div></div>
 </div>
 </section>
 <!-- HERO IMAGE -->
 <section class="mb-16">
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-2 sm:p-3 overflow-hidden">
-<img alt="App windows and code blocks floating around a luminous core â€” building apps with AI, gravity-free" class="w-full h-auto rounded-xl" height="1024" loading="eager" src="../assets/img/hero.png" width="1536"/>
+<img alt="App windows and code blocks floating around a luminous core ê¢â¬â building apps with AI, gravity-free" class="w-full h-auto rounded-xl" height="1024" loading="eager" src="../assets/img/hero.png" width="1536"/>
 </div>
 <p class="text-sm text-neutral-500 mt-2">You give the commands; the agents build in parallel; the result goes live.</p>
 </section>
@@ -280,23 +280,23 @@
 <h2 class="text-2xl font-bold mb-6">How this course works</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">ðŸ—£ï¸</div>
+<div class="text-3xl mb-3">ê°Å¸âÂ£ê¯Â¸Â</div>
 <h3 class="text-lg font-semibold mb-2">You give commands in natural language</h3>
 <p class="text-neutral-400 text-sm">Instead of dragging blocks or writing code by hand, you describe what you want. AntiGravity writes and edits the code on your computer.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">âš¡</div>
+<div class="text-3xl mb-3">ê¢Å¡Â¡</div>
 <h3 class="text-lg font-semibold mb-2">Agents build in parallel</h3>
 <p class="text-neutral-400 text-sm">Treat agents like employees: each with their own task, running at the same time. You review and approve the plans before execution.</p>
 </div>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<div class="text-3xl mb-3">ðŸš€</div>
+<div class="text-3xl mb-3">ê°Å¸Å¡â¬</div>
 <h3 class="text-lg font-semibold mb-2">Publish and maintain</h3>
 <p class="text-neutral-400 text-sm">From localhost to the world: GitHub, deployment on Vercel, protected keys, rollback, and professional QA before delivery.</p>
 </div>
 </div>
 <div class="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
-<p class="text-neutral-300"><strong class="text-primary">Each module includes:</strong> explained concepts, step by step, a practical example, a hands-on exercise, and <strong class="text-neutral-100">ready-to-copy prompts</strong>. Mark each section as readâ€”your progress is saved in the browser.</p>
+<p class="text-neutral-300"><strong class="text-primary">Each module includes:</strong> explained concepts, step by step, a practical example, a hands-on exercise, and <strong class="text-neutral-100">ready-to-copy prompts</strong>. Mark each section as readê¢â¬âyour progress is saved in the browser.</p>
 </div>
 </section>
 <!-- TRILHAS -->
@@ -305,63 +305,63 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-6 transition-all" href="trilha1/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">ðŸ§­</span><span class="inline-block px-2.5 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">TRACK 1</span></div>
-<div class="text-right" data-ARCKHÉ-meter="trilha:1"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 of 21</span> <span class="text-emerald-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ê°Å¸Â§Â­</span><span class="inline-block px-2.5 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full">TRACK 1</span></div>
+<div class="text-right" data-ARCKHê-meter="trilha:1"><span class="text-xs text-neutral-500" data-ARCKHê-meter-frac="">0 of 21</span> <span class="text-emerald-400 font-bold text-sm" data-ARCKHê-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-emerald-400 transition-colors">Fundamentals</h3>
 <p class="text-neutral-400 text-sm">What AntiGravity is, when to use it vs. no-code, and a complete environment setup. 3 modules.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-blue-500/30 p-6 transition-all" href="trilha2/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">ðŸ—ï¸</span><span class="inline-block px-2.5 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">TRACK 2</span></div>
-<div class="text-right" data-ARCKHÉ-meter="trilha:2"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 of 16</span> <span class="text-blue-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ê°Å¸Ââê¯Â¸Â</span><span class="inline-block px-2.5 py-0.5 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full">TRACK 2</span></div>
+<div class="text-right" data-ARCKHê-meter="trilha:2"><span class="text-xs text-neutral-500" data-ARCKHê-meter-frac="">0 of 16</span> <span class="text-blue-400 font-bold text-sm" data-ARCKHê-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-blue-400 transition-colors">Build &amp; Publish</h3>
 <p class="text-neutral-400 text-sm">From the problem to your first app on localhost, then secure deployment and maintenance. 2 modules.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-purple-500/30 p-6 transition-all" href="trilha3/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">ðŸ“ˆ</span><span class="inline-block px-2.5 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">TRACK 3</span></div>
-<div class="text-right" data-ARCKHÉ-meter="trilha:3"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 of 13</span> <span class="text-purple-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ê°Å¸âË</span><span class="inline-block px-2.5 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-semibold rounded-full">TRACK 3</span></div>
+<div class="text-right" data-ARCKHê-meter="trilha:3"><span class="text-xs text-neutral-500" data-ARCKHê-meter-frac="">0 of 13</span> <span class="text-purple-400 font-bold text-sm" data-ARCKHê-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-purple-400 transition-colors">Scale production</h3>
 <p class="text-neutral-400 text-sm">A cloning system for building lots of websites and moving everything to GoHighLevel/WordPress. 2 modules.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-amber-500/30 p-6 transition-all" href="trilha4/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">ðŸ’¼</span><span class="inline-block px-2.5 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">TRACK 4</span></div>
-<div class="text-right" data-ARCKHÉ-meter="trilha:4"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 of 13</span> <span class="text-amber-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ê°Å¸âÂ¼</span><span class="inline-block px-2.5 py-0.5 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full">TRACK 4</span></div>
+<div class="text-right" data-ARCKHê-meter="trilha:4"><span class="text-xs text-neutral-500" data-ARCKHê-meter-frac="">0 of 13</span> <span class="text-amber-400 font-bold text-sm" data-ARCKHê-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-amber-400 transition-colors">Professionalize</h3>
 <p class="text-neutral-400 text-sm">Professional workflow and delivery with QA, security, and an application model. 2 modules.</p>
 </a>
 <a class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-teal-500/30 p-6 transition-all md:col-span-2" href="trilha5/index.html">
 <div class="flex items-start justify-between mb-3">
-<div class="flex items-center gap-3"><span class="text-2xl">ðŸ§ </span><span class="inline-block px-2.5 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">TRACK 5</span></div>
-<div class="text-right" data-ARCKHÉ-meter="trilha:5"><span class="text-xs text-neutral-500" data-ARCKHÉ-meter-frac="">0 of 14</span> <span class="text-teal-400 font-bold text-sm" data-ARCKHÉ-meter-pct="">0%</span></div>
+<div class="flex items-center gap-3"><span class="text-2xl">ê°Å¸Â§Â </span><span class="inline-block px-2.5 py-0.5 bg-teal-500/20 text-teal-400 text-xs font-semibold rounded-full">TRACK 5</span></div>
+<div class="text-right" data-ARCKHê-meter="trilha:5"><span class="text-xs text-neutral-500" data-ARCKHê-meter-frac="">0 of 14</span> <span class="text-teal-400 font-bold text-sm" data-ARCKHê-meter-pct="">0%</span></div>
 </div>
 <h3 class="text-xl font-bold mb-1 group-hover:text-teal-400 transition-colors">Mastery &amp; Library</h3>
-<p class="text-neutral-400 text-sm">The CODA framework for coding like a professional and the library with all the courseâ€™s ready-to-use skills and prompts. 2 modules.</p>
+<p class="text-neutral-400 text-sm">The CODA framework for coding like a professional and the library with all the courseê¢â¬â¢s ready-to-use skills and prompts. 2 modules.</p>
 </a>
 </div>
 </section>
 <!-- BIBLIOTECA -->
 <section class="mb-8">
 <div class="bg-gradient-to-br from-teal-900/30 via-dark-800 to-dark-800 rounded-xl border border-teal-500/30 p-8">
-<div class="text-3xl mb-3">ðŸ“¦</div>
+<div class="text-3xl mb-3">ê°Å¸âÂ¦</div>
 <h2 class="text-2xl font-bold mb-3">Skills &amp; Prompts Library</h2>
-<p class="text-neutral-300 mb-6 max-w-3xl">The entire course comes with ready-to-download, adaptable artifacts: the Cloning Skill, the GoHighLevel conversion Skill, the Ultimate Debugger Prompt, the MCP configuration, the claude.md template (CODA), and the QA Pre-Flight checklist â€” plus a prompt library for every step.</p>
-<a class="inline-flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white rounded-lg font-semibold transition-colors" href="trilha5/modulo-5-2.html">View the library â†’</a>
+<p class="text-neutral-300 mb-6 max-w-3xl">The entire course comes with ready-to-download, adaptable artifacts: the Cloning Skill, the GoHighLevel conversion Skill, the Ultimate Debugger Prompt, the MCP configuration, the claude.md template (CODA), and the QA Pre-Flight checklist ê¢â¬â plus a prompt library for every step.</p>
+<a class="inline-flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-500 text-white rounded-lg font-semibold transition-colors" href="trilha5/modulo-5-2.html">View the library ê¢â â</a>
 </div>
 </section>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” From Zero to a Published App with AI Â· open course by <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â From Zero to a Published App with AI êÂ· open course by <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
-    // Toggle de tÃ³picos (v1)
+    // Toggle de têÂ³picos (v1)
     function toggleTopic(button) {
       const topicItem = button.closest('.topic-item');
       if (!topicItem) return;
@@ -372,7 +372,7 @@
       explanation.classList.toggle('active');
       button.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
     }
-    // Theme toggle (v1) â€” sincroniza com prefs do learn.js
+    // Theme toggle (v1) ê¢â¬â sincroniza com prefs do learn.js
     (function () {
       const themeToggle = document.getElementById('theme-toggle');
       const di = document.getElementById('theme-toggle-dark-icon');
@@ -382,11 +382,11 @@
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     // Modal (v1)
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
@@ -395,15 +395,15 @@
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();

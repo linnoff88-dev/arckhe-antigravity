@@ -4,35 +4,35 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="antigravity" name="ARCKHÉ-course"/>
-<title>MÃ³dulo 4.2 Â· Entregar e aplicar profissionalmente | AntiGravity</title>
+<meta content="antigravity" name="ARCKHê-course"/>
+<title>MêÂ³dulo 4.2 êÂ· Entregar e aplicar profissionalmente | AntiGravity</title>
 <!-- ANTI-FOUC: bloqueante, ANTES do Tailwind e de qualquer <style>/<link> -->
 <script>
   (function () {
     try {
       var html = document.documentElement;
-      var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+      var DEF = { theme: 'ARCKHê-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
       function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
       var p = clone(DEF);
       try {
-        var raw = localStorage.getItem('ARCKHÉ.prefs');
+        var raw = localStorage.getItem('ARCKHê.prefs');
         if (raw) {
           var parsed = JSON.parse(raw);
           if (parsed && typeof parsed === 'object') { for (var k in DEF) if (parsed[k] != null) p[k] = parsed[k]; }
         } else {
           var legacy = localStorage.getItem('theme');
           if (legacy === 'light') p.theme = 'claro';
-          else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
+          else if (legacy === 'dark') p.theme = 'ARCKHê-dark';
         }
       } catch (e) { p = clone(DEF); }
       var THEMES = {
-        'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
+        'ARCKHê-dark': { dark: true,  attr: null,        cs: 'dark'  },
         'claro':      { dark: false, attr: null,        cs: 'light' },
         'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
         'foco':       { dark: null,  attr: 'foco',      cs: null    },
         'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
       };
-      var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
+      var t = THEMES[p.theme] || THEMES['ARCKHê-dark'];
       if (t.dark === true) html.classList.add('dark');
       else if (t.dark === false) html.classList.remove('dark');
       if (t.attr) html.setAttribute('data-theme', t.attr); else html.removeAttribute('data-theme');
@@ -40,7 +40,7 @@
       html.setAttribute('data-font', p.font || 'inter');
       html.setAttribute('data-accent', p.accent || 'emerald');
       var s = html.style, scale = (+p.fontScale || 100);
-      s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
+      s.setProperty('--ARCKHê-font-scale', (scale / 100).toString());
       s.setProperty('font-size', scale + '%');
       s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
       s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -151,10 +151,10 @@
     /* SVG diagramas: suavizar no claro */
     html:not(.dark) svg[role="img"] { filter: saturate(0.82) brightness(0.96); }
 
-    .ARCKHÉ-toc-link.is-active { color: #fbbf24; font-weight: 600; }
+    .ARCKHê-toc-link.is-active { color: #fbbf24; font-weight: 600; }
   </style>
 <link href="../assets/learn.css" rel="stylesheet"/>
-<script data-ARCKHÉ-manifest="" type="application/json">
+<script data-ARCKHê-manifest="" type="application/json">
   {
     "course": "antigravity",
     "tracks": [
@@ -167,7 +167,7 @@
         { "id": "2-1", "title": "Seu primeiro app", "topics": 8 },
         { "id": "2-2", "title": "Publicar e manter", "topics": 8 }
       ]},
-      { "n": "3", "title": "Escalar a ProduÃ§Ã£o", "modules": [
+      { "n": "3", "title": "Escalar a ProduêÂ§êÂ£o", "modules": [
         { "id": "3-1", "title": "Sistema de clonagem", "topics": 7 },
         { "id": "3-2", "title": "GoHighLevel/WordPress", "topics": 6 }
       ]},
@@ -183,19 +183,19 @@
   }
   </script>
 <link href="https://linnoff88-dev.github.io/ hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/ hreflang="es" rel="alternate"/></head>
-<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHÉ-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha4/modulo-4-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha4/modulo-4-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
-<a class="skip" href="#conteudo">Pular para o conteÃºdo</a>
+<body class="bg-dark-900 text-neutral-100 min-h-screen"><div class="ARCKHê-lang" style="position:fixed;right:14px;bottom:14px;z-index:9999;display:flex;gap:2px;padding:4px;border-radius:10px;background:rgba(12,12,16,.82);border:1px solid rgba(226,162,59,.45);font:600 12px/1 Sora,Inter,system-ui,sans-serif;backdrop-filter:blur(8px)" translate="no"><a href="modulo-4-2.html" hreflang="pt-BR" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#1a1206;background:#E2A23B">PT</a><a href="../en/trilha4/modulo-4-2.html" hreflang="en" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">EN</a><a href="../es/trilha4/modulo-4-2.html" hreflang="es" style="padding:6px 8px;border-radius:7px;text-decoration:none;color:#e9e9ee">ES</a></div>
+<a class="skip" href="#conteudo">Pular para o conteêÂºdo</a>
 <!-- NAVIGATION -->
 <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-14">
 <div class="flex items-center space-x-4">
 <a class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300" href="../index.html">
-<span class="text-2xl">ðŸ›°ï¸</span>
+<span class="text-2xl">ê°Å¸âºÂ°ê¯Â¸Â</span>
 <span class="font-bold text-lg hidden sm:inline">AntiGravity</span>
 </a>
 <span class="text-neutral-600">|</span>
-<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a>
+<a class="text-sky-400 hover:text-sky-300 text-sm font-medium" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a>
 </div>
 <div class="flex items-center space-x-1 sm:space-x-2">
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors" href="../trilha1/index.html"><span class="sm:hidden">T1</span><span class="hidden sm:inline">Fundamentos</span></a>
@@ -204,34 +204,34 @@
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-amber-400 bg-amber-500/10" href="index.html"><span class="sm:hidden">T4</span><span class="hidden sm:inline">Profissional</span></a>
 <a class="px-2.5 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors" href="../trilha5/index.html"><span class="sm:hidden">T5</span><span class="hidden sm:inline">Maestria</span></a>
 <div class="relative">
-<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHÉ-appearance-toggle="[data-ARCKHÉ-appearance]" title="AparÃªncia e leitura" type="button"><span aria-hidden="true">â—‘</span></button>
-<div class="ARCKHÉ-appearance-pop" data-ARCKHÉ-appearance="" style="right:0">
-<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHÉ-segment flex flex-wrap gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="claro">Claro</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="sepia">SÃ©pia</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="foco">Foco</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
+<button aria-expanded="false" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" data-ARCKHê-appearance-toggle="[data-ARCKHê-appearance]" title="AparêÂªncia e leitura" type="button"><span aria-hidden="true">ê¢ââ</span></button>
+<div class="ARCKHê-appearance-pop" data-ARCKHê-appearance="" style="right:0">
+<div><p class="text-xs text-neutral-400 mb-1">Tema</p><div class="ARCKHê-segment flex flex-wrap gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="ARCKHê-dark">Escuro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="claro">Claro</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="sepia">SêÂ©pia</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="foco">Foco</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-theme="contraste">Alto contraste</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="inter">Inter</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="system">Sistema</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-font="leitura">Leitura</button>
+<div><p class="text-xs text-neutral-400 mb-1">Fonte</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="inter">Inter</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="system">Sistema</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-font="leitura">Leitura</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="100">A</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="112">A+</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-fontscale="125">A++</button>
+<div><p class="text-xs text-neutral-400 mb-1">Tamanho</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="100">A</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="112">A+</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-fontscale="125">A++</button>
 </div></div>
-<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHÉ-segment flex gap-1">
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.45">Compacto</button>
-<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHÉ-set-leading="1.7">ConfortÃ¡vel</button>
+<div><p class="text-xs text-neutral-400 mb-1">Entrelinha</p><div class="ARCKHê-segment flex gap-1">
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.45">Compacto</button>
+<button class="px-2 py-1 text-xs rounded bg-dark-700" data-ARCKHê-set-leading="1.7">ConfortêÂ¡vel</button>
 </div></div>
 </div>
 </div>
-<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHÉ-journey-open="" title="Minha jornada" type="button">
-<span aria-hidden="true">â—·</span><span class="hidden sm:inline">Jornada</span>
-<span class="ARCKHÉ-journey-badge" data-count="0" data-ARCKHÉ-journey-badge=""></span>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-sm text-neutral-300 hover:text-neutral-100 hover:bg-dark-700 transition-colors" data-ARCKHê-journey-open="" title="Minha jornada" type="button">
+<span aria-hidden="true">ê¢âÂ·</span><span class="hidden sm:inline">Jornada</span>
+<span class="ARCKHê-journey-badge" data-count="0" data-ARCKHê-journey-badge=""></span>
 </button>
 <button class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors" id="theme-toggle" title="Alternar claro/escuro">
 <svg class="hidden w-5 h-5 text-neutral-300" fill="currentColor" id="theme-toggle-dark-icon" viewbox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -244,21 +244,21 @@
 <!-- BREADCRUMB -->
 <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
 <div class="flex items-center space-x-2 text-sm text-neutral-400">
-<a class="hover:text-amber-400" href="../index.html">InÃ­cio</a><span>/</span>
+<a class="hover:text-amber-400" href="../index.html">InêÂ­cio</a><span>/</span>
 <a class="hover:text-amber-400" href="index.html">Trilha 4</a><span>/</span>
-<span class="text-amber-400">MÃ³dulo 4.2</span>
+<span class="text-amber-400">MêÂ³dulo 4.2</span>
 </div>
 </nav>
 <!-- HEADER -->
 <header class="bg-gradient-to-br from-amber-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÃ“DULO 4.2</span>
-<h1 class="text-3xl sm:text-4xl font-bold mb-4">ðŸ“¦ Entregar e aplicar profissionalmente</h1>
-<p class="text-lg text-neutral-400 max-w-3xl">A construÃ§Ã£o terminou; agora vem a parte que separa o amador do profissional: o que vocÃª entrega vira produto, com modelo de posse claro, um checklist de qualidade e seguranÃ§a rodado com rigor, e monitoramento que prova que tudo funciona.</p>
+<span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MêâDULO 4.2</span>
+<h1 class="text-3xl sm:text-4xl font-bold mb-4">ê°Å¸âÂ¦ Entregar e aplicar profissionalmente</h1>
+<p class="text-lg text-neutral-400 max-w-3xl">A construêÂ§êÂ£o terminou; agora vem a parte que separa o amador do profissional: o que vocêÂª entrega vira produto, com modelo de posse claro, um checklist de qualidade e seguranêÂ§a rodado com rigor, e monitoramento que prova que tudo funciona.</p>
 <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">7</div><div class="text-xs text-neutral-400">TÃ³picos</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">7</div><div class="text-xs text-neutral-400">TêÂ³picos</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">65</div><div class="text-xs text-neutral-400">Minutos</div></div>
-<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">IntermediÃ¡rio</div><div class="text-xs text-neutral-400">NÃ­vel</div></div>
+<div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">IntermediêÂ¡rio</div><div class="text-xs text-neutral-400">NêÂ­vel</div></div>
 <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Entrega</div><div class="text-xs text-neutral-400">Tipo</div></div>
 </div>
 </div>
@@ -266,53 +266,53 @@
 <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="conteudo">
 <div class="lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
 <!-- TOC -->
-<nav aria-label="Ãndice da pÃ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHÉ-toc="">
-<p class="text-sm text-neutral-400 mb-2">SeÃ§Ã£o <span data-ARCKHÉ-section-counter="">1 de 7</span></p>
+<nav aria-label="êÂndice da pêÂ¡gina" class="hidden lg:block sticky top-20 self-start" data-ARCKHê-toc="">
+<p class="text-sm text-neutral-400 mb-2">SeêÂ§êÂ£o <span data-ARCKHê-section-counter="">1 de 7</span></p>
 <ol class="space-y-1 text-sm">
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-1">1. De automaÃ§Ã£o a software</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-2">2. Modelos de posse</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-3">3. Parceiro de transformaÃ§Ã£o</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-4">4. O Pre-Flight Checklist</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-5">5. SeguranÃ§a &amp; compliance</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-6">6. Context rot</a></li>
-<li><a class="ARCKHÉ-toc-link text-neutral-400 hover:text-amber-400" href="#topico-7">7. Monitoramento &amp; entrega</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-1">1. De automaêÂ§êÂ£o a software</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-2">2. Modelos de posse</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-3">3. Parceiro de transformaêÂ§êÂ£o</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-4">4. O Pre-Flight Checklist</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-5">5. SeguranêÂ§a &amp; compliance</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-6">6. Context rot</a></li>
+<li><a class="ARCKHê-toc-link text-neutral-400 hover:text-amber-400" href="#topico-7">7. Monitoramento &amp; entrega</a></li>
 </ol>
 <div class="mt-4 pt-4 border-t border-dark-600">
-<div class="text-sm" data-ARCKHÉ-meter="modulo:4-2"><span class="text-neutral-400" data-ARCKHÉ-meter-frac="">0 de 7</span> Â· <span class="text-amber-400 font-bold" data-ARCKHÉ-meter-pct="">0%</span><div class="ARCKHÉ-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHÉ-bar__fill h-full rounded-full bg-amber-500" data-ARCKHÉ-meter-fill="" style="width:0%"></div></div></div>
+<div class="text-sm" data-ARCKHê-meter="modulo:4-2"><span class="text-neutral-400" data-ARCKHê-meter-frac="">0 de 7</span> êÂ· <span class="text-amber-400 font-bold" data-ARCKHê-meter-pct="">0%</span><div class="ARCKHê-bar h-1.5 mt-2 rounded-full bg-dark-600 overflow-hidden"><div class="ARCKHê-bar__fill h-full rounded-full bg-amber-500" data-ARCKHê-meter-fill="" style="width:0%"></div></div></div>
 </div>
 </nav>
-<article class="min-w-0" data-ARCKHÉ-module="4-2" data-ARCKHÉ-track="4">
-<!-- TÃ“PICO 1 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-1" id="topico-1">
+<article class="min-w-0" data-ARCKHê-module="4-2" data-ARCKHê-track="4">
+<!-- TêâPICO 1 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-1" id="topico-1">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">1</span>
-<h2 class="text-2xl font-bold">ðŸ” De automaÃ§Ã£o a software</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ De automaêÂ§êÂ£o a software</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t1-p1">Existe um salto de valor enorme quando o que vocÃª entrega <strong class="text-amber-400">deixa de ser uma automaÃ§Ã£o avulsa e vira um software de verdade</strong>. A automaÃ§Ã£o resolve uma tarefa; o software <strong>Ã‰ o produto</strong> â€” tem interface, lÃ³gica prÃ³pria e vida independente.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t1-p1">Existe um salto de valor enorme quando o que vocêÂª entrega <strong class="text-amber-400">deixa de ser uma automaêÂ§êÂ£o avulsa e vira um software de verdade</strong>. A automaêÂ§êÂ£o resolve uma tarefa; o software <strong>êâ° o produto</strong> ê¢â¬â tem interface, lêÂ³gica prêÂ³pria e vida independente.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<h4 class="font-bold text-neutral-300 mb-4">ðŸ”§ AutomaÃ§Ã£o avulsa</h4>
+<h4 class="font-bold text-neutral-300 mb-4">ê°Å¸âÂ§ AutomaêÂ§êÂ£o avulsa</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-neutral-500">â€¢</span><span>Resolve uma tarefa especÃ­fica</span></li>
-<li class="flex items-start space-x-2"><span class="text-neutral-500">â€¢</span><span>Vive dentro de outra ferramenta</span></li>
-<li class="flex items-start space-x-2"><span class="text-neutral-500">â€¢</span><span>DifÃ­cil de cobrar como produto</span></li>
+<li class="flex items-start space-x-2"><span class="text-neutral-500">ê¢â¬Â¢</span><span>Resolve uma tarefa especêÂ­fica</span></li>
+<li class="flex items-start space-x-2"><span class="text-neutral-500">ê¢â¬Â¢</span><span>Vive dentro de outra ferramenta</span></li>
+<li class="flex items-start space-x-2"><span class="text-neutral-500">ê¢â¬Â¢</span><span>DifêÂ­cil de cobrar como produto</span></li>
 </ul>
 </div>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">ðŸ“¦ Software como produto</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê°Å¸âÂ¦ Software como produto</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Tem interface e identidade prÃ³prias</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Funciona sozinho, Ã© um ativo</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Pode ser licenciado, vendido, mantido</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Tem interface e identidade prêÂ³prias</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Funciona sozinho, êÂ© um ativo</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Pode ser licenciado, vendido, mantido</span></li>
 </ul>
 </div>
 </div>
 <!-- SVG -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="A evoluÃ§Ã£o: uma automaÃ§Ã£o avulsa se transforma em um software que Ã© o produto, com mais valor e independÃªncia" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="A evoluêÂ§êÂ£o: uma automaêÂ§êÂ£o avulsa se transforma em um software que êÂ© o produto, com mais valor e independêÂªncia" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m42-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop></lineargradient>
 <filter height="180%" id="m42-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -321,61 +321,61 @@
 </defs>
 <rect fill="url(#m42-grid)" height="200" width="1000" x="0" y="0"></rect>
 <rect fill="#1f1604" height="56" opacity="0.85" rx="12" stroke="#fbbf24" stroke-width="1.8" width="220" x="80" y="74"></rect>
-<text fill="#fde68a" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="190" y="100">AutomaÃ§Ã£o avulsa</text>
+<text fill="#fde68a" font-family="Inter,sans-serif" font-size="15" font-weight="600" text-anchor="middle" x="190" y="100">AutomaêÂ§êÂ£o avulsa</text>
 <text fill="#fcd34d" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="190" y="120">resolve 1 tarefa</text>
 <g filter="url(#m42-glow)"><rect fill="#1f1604" height="72" rx="14" stroke="url(#m42-grad)" stroke-width="2.5" width="220" x="700" y="66"></rect></g>
 <text fill="#fbbf24" font-family="Inter,sans-serif" font-size="16" font-weight="700" text-anchor="middle" x="810" y="96">Software = produto</text>
-<text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="810" y="118">interface Â· ativo Â· valor</text>
+<text fill="#fde68a" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="810" y="118">interface êÂ· ativo êÂ· valor</text>
 <g fill="none" opacity="0.65" stroke="#fbbf24" stroke-width="2.5"><path d="M300,102 L700,102" marker-end="url(#m42-ah)"></path></g>
 <text fill="#fbbf24" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="500" y="86">vira</text>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="500" y="130">mais valor + independÃªncia</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="12" text-anchor="middle" x="500" y="130">mais valor + independêÂªncia</text>
 </svg>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Tarefa</div><p class="text-xs text-neutral-400">automaÃ§Ã£o</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Tarefa</div><p class="text-xs text-neutral-400">automaêÂ§êÂ£o</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Produto</div><p class="text-xs text-neutral-400">software</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Ativo</div><p class="text-xs text-neutral-400">vida prÃ³pria</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Ativo</div><p class="text-xs text-neutral-400">vida prêÂ³pria</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Valor</div><p class="text-xs text-neutral-400">muda o jogo</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 2 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-2" id="topico-2">
+<!-- TêâPICO 2 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-2" id="topico-2">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">2</span>
-<h2 class="text-2xl font-bold">ðŸ¤ Modelos de posse</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â¤Â Modelos de posse</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t2-p1">Quando vocÃª entrega um software a alguÃ©m, precisa definir <strong class="text-amber-400">quem Ã© o dono</strong> e <strong>quem cuida da manutenÃ§Ã£o</strong>. Existem trÃªs modelos clÃ¡ssicos â€” cada um com seu equilÃ­brio de receita, responsabilidade e expectativa.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t2-p1">Quando vocêÂª entrega um software a alguêÂ©m, precisa definir <strong class="text-amber-400">quem êÂ© o dono</strong> e <strong>quem cuida da manutenêÂ§êÂ£o</strong>. Existem trêÂªs modelos clêÂ¡ssicos ê¢â¬â cada um com seu equilêÂ­brio de receita, responsabilidade e expectativa.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">1</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">VocÃª Ã© dono, o cliente licencia</h4>
+<h4 class="font-semibold text-white mb-2">VocêÂª êÂ© dono, o cliente licencia</h4>
 <p class="text-sm text-neutral-400 mb-2">Receita recorrente</p>
-<p class="text-neutral-300 text-sm">O cliente paga para usar; vocÃª mantÃ©m tudo e segue como dono. Renda previsÃ­vel, mas vocÃª carrega a operaÃ§Ã£o.</p>
+<p class="text-neutral-300 text-sm">O cliente paga para usar; vocêÂª mantêÂ©m tudo e segue como dono. Renda previsêÂ­vel, mas vocêÂª carrega a operaêÂ§êÂ£o.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
 <div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">2</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Cliente Ã© dono, entrega total</h4>
+<h4 class="font-semibold text-white mb-2">Cliente êÂ© dono, entrega total</h4>
 <p class="text-sm text-neutral-400 mb-2">README detalhado, sem suporte</p>
-<p class="text-neutral-300 text-sm">VocÃª entrega o cÃ³digo completo com documentaÃ§Ã£o e encerra. Simples e fechado, mas sem relaÃ§Ã£o contÃ­nua.</p>
+<p class="text-neutral-300 text-sm">VocêÂª entrega o cêÂ³digo completo com documentaêÂ§êÂ£o e encerra. Simples e fechado, mas sem relaêÂ§êÂ£o contêÂ­nua.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">â˜…</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê¢Ëâ¦</span></div>
 <div class="flex-1 bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl p-6 border border-amber-500/30">
-<h4 class="font-semibold text-amber-400 mb-2">Cliente Ã© dono + janela de suporte (preferido)</h4>
+<h4 class="font-semibold text-amber-400 mb-2">Cliente êÂ© dono + janela de suporte (preferido)</h4>
 <p class="text-sm text-neutral-400 mb-2">Suporte de 30 a 90 dias</p>
-<p class="text-neutral-300 text-sm">O cliente fica dono, mas vocÃª mantÃ©m e corrige por um perÃ­odo combinado. EquilÃ­brio entre confianÃ§a, responsabilidade limitada e uma boa relaÃ§Ã£o.</p>
+<p class="text-neutral-300 text-sm">O cliente fica dono, mas vocêÂª mantêÂ©m e corrige por um perêÂ­odo combinado. EquilêÂ­brio entre confianêÂ§a, responsabilidade limitada e uma boa relaêÂ§êÂ£o.</p>
 </div>
 </div>
 </div>
@@ -383,199 +383,199 @@
 <table class="w-full text-sm border border-dark-600 rounded-lg overflow-hidden">
 <thead class="bg-dark-700/50 text-neutral-300"><tr><th class="text-left p-3">Modelo</th><th class="text-left p-3">Dono</th><th class="text-left p-3">Suporte</th><th class="text-left p-3">Receita</th></tr></thead>
 <tbody class="divide-y divide-dark-600 text-neutral-400">
-<tr><td class="p-3 text-neutral-300">1. VocÃª licencia</td><td class="p-3">vocÃª</td><td class="p-3">contÃ­nuo</td><td class="p-3 text-amber-400">recorrente</td></tr>
-<tr><td class="p-3 text-neutral-300">2. Entrega total</td><td class="p-3">cliente</td><td class="p-3">nenhum</td><td class="p-3">Ãºnico</td></tr>
-<tr><td class="p-3 text-amber-400">3. Dono + janela â˜…</td><td class="p-3">cliente</td><td class="p-3 text-amber-400">30â€“90 dias</td><td class="p-3">projeto + extra</td></tr>
+<tr><td class="p-3 text-neutral-300">1. VocêÂª licencia</td><td class="p-3">vocêÂª</td><td class="p-3">contêÂ­nuo</td><td class="p-3 text-amber-400">recorrente</td></tr>
+<tr><td class="p-3 text-neutral-300">2. Entrega total</td><td class="p-3">cliente</td><td class="p-3">nenhum</td><td class="p-3">êÂºnico</td></tr>
+<tr><td class="p-3 text-amber-400">3. Dono + janela ê¢Ëâ¦</td><td class="p-3">cliente</td><td class="p-3 text-amber-400">30ê¢â¬â90 dias</td><td class="p-3">projeto + extra</td></tr>
 </tbody>
 </table>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">LicenÃ§a</div><p class="text-xs text-neutral-400">vocÃª Ã© dono</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">LicenêÂ§a</div><p class="text-xs text-neutral-400">vocêÂª êÂ© dono</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Entrega total</div><p class="text-xs text-neutral-400">README, sem suporte</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">30â€“90 dias</div><p class="text-xs text-neutral-400">o preferido</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">EquilÃ­brio</div><p class="text-xs text-neutral-400">confianÃ§a + limite</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">30ê¢â¬â90 dias</div><p class="text-xs text-neutral-400">o preferido</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">EquilêÂ­brio</div><p class="text-xs text-neutral-400">confianêÂ§a + limite</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 3 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-3" id="topico-3">
+<!-- TêâPICO 3 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-3" id="topico-3">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">3</span>
-<h2 class="text-2xl font-bold">ðŸ§  Parceiro de transformaÃ§Ã£o</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Â  Parceiro de transformaêÂ§êÂ£o</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t3-p1">A forma como vocÃª se posiciona muda tudo. Em vez de "freelancer de bico" que faz uma entrega e some, posicione-se como <strong class="text-amber-400">parceiro de transformaÃ§Ã£o de longo prazo</strong> â€” algo como um "diretor de IA" fracionÃ¡rio que ajuda a organizaÃ§Ã£o a evoluir.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t3-p1">A forma como vocêÂª se posiciona muda tudo. Em vez de "freelancer de bico" que faz uma entrega e some, posicione-se como <strong class="text-amber-400">parceiro de transformaêÂ§êÂ£o de longo prazo</strong> ê¢â¬â algo como um "diretor de IA" fracionêÂ¡rio que ajuda a organizaêÂ§êÂ£o a evoluir.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Freelancer de bico</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Freelancer de bico</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Faz a entrega e desaparece</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>RelaÃ§Ã£o transacional, sempre recomeÃ§ando</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Receita imprevisÃ­vel, projeto a projeto</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Faz a entrega e desaparece</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>RelaêÂ§êÂ£o transacional, sempre recomeêÂ§ando</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Receita imprevisêÂ­vel, projeto a projeto</span></li>
 </ul>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ Parceiro de transformaÃ§Ã£o</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ Parceiro de transformaêÂ§êÂ£o</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Acompanha a evoluÃ§Ã£o ao longo do tempo</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Vira referÃªncia interna em IA</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>RelaÃ§Ã£o e receita recorrentes</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Acompanha a evoluêÂ§êÂ£o ao longo do tempo</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Vira referêÂªncia interna em IA</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>RelaêÂ§êÂ£o e receita recorrentes</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸŽ–ï¸</span> O "diretor de IA" fracionÃ¡rio</h3>
-<p class="text-neutral-300">Ã‰ como ter um cargo de lideranÃ§a em IA, mas em meio perÃ­odo e para vÃ¡rias organizaÃ§Ãµes. VocÃª nÃ£o entrega sÃ³ software: entrega <strong>direÃ§Ã£o, critÃ©rio e continuidade</strong> â€” e isso vale muito mais do que um projeto isolado.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸Å½âê¯Â¸Â</span> O "diretor de IA" fracionêÂ¡rio</h3>
+<p class="text-neutral-300">êâ° como ter um cargo de lideranêÂ§a em IA, mas em meio perêÂ­odo e para vêÂ¡rias organizaêÂ§êÂµes. VocêÂª nêÂ£o entrega sêÂ³ software: entrega <strong>direêÂ§êÂ£o, critêÂ©rio e continuidade</strong> ê¢â¬â e isso vale muito mais do que um projeto isolado.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Longo prazo</div><p class="text-xs text-neutral-400">nÃ£o bico</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">DireÃ§Ã£o</div><p class="text-xs text-neutral-400">diretor de IA</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">RecorrÃªncia</div><p class="text-xs text-neutral-400">relaÃ§Ã£o que dura</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Posicionamento</div><p class="text-xs text-neutral-400">parceiro, nÃ£o fornecedor</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Longo prazo</div><p class="text-xs text-neutral-400">nêÂ£o bico</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">DireêÂ§êÂ£o</div><p class="text-xs text-neutral-400">diretor de IA</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">RecorrêÂªncia</div><p class="text-xs text-neutral-400">relaêÂ§êÂ£o que dura</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Posicionamento</div><p class="text-xs text-neutral-400">parceiro, nêÂ£o fornecedor</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 4 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-4" id="topico-4">
+<!-- TêâPICO 4 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-4" id="topico-4">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">4</span>
-<h2 class="text-2xl font-bold">âœ… O Pre-Flight Checklist (QA &amp; stress test)</h2>
+<h2 class="text-2xl font-bold">ê¢Åâ¦ O Pre-Flight Checklist (QA &amp; stress test)</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t4-p1">Antes de qualquer entrega, rode o <strong class="text-amber-400">Pre-Flight Checklist</strong>: vocÃª pede para a IA assumir o papel de <strong>engenheiro de QA sÃªnior + auditor de seguranÃ§a</strong> e percorrer o projeto por fases, classificando cada achado como <strong class="text-red-400">CrÃ­tico</strong>, <strong class="text-amber-400">Aviso</strong> ou <strong class="text-emerald-400">OK</strong>.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t4-p1">Antes de qualquer entrega, rode o <strong class="text-amber-400">Pre-Flight Checklist</strong>: vocêÂª pede para a IA assumir o papel de <strong>engenheiro de QA sêÂªnior + auditor de seguranêÂ§a</strong> e percorrer o projeto por fases, classificando cada achado como <strong class="text-red-400">CrêÂ­tico</strong>, <strong class="text-amber-400">Aviso</strong> ou <strong class="text-emerald-400">OK</strong>.</p>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ðŸ›«</span> As fases do checklist</h3>
+<h3 class="text-lg font-semibold text-amber-400 mb-4 flex items-center"><span class="mr-2">ê°Å¸âºÂ«</span> As fases do checklist</h3>
 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm text-neutral-300">
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Descoberta</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>DependÃªncias</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>SeguranÃ§a</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>AutenticaÃ§Ã£o</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>ValidaÃ§Ã£o de entrada</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>ProteÃ§Ã£o de dados</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>API</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Infraestrutura</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Testes</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Compliance</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Acessibilidade</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Deploy</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Monitoramento</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>Backup</span></div>
-<div class="flex items-center space-x-2"><span class="text-amber-400">â†’</span><span>ProntidÃ£o de entrega</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Descoberta</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>DependêÂªncias</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>SeguranêÂ§a</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>AutenticaêÂ§êÂ£o</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>ValidaêÂ§êÂ£o de entrada</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>ProteêÂ§êÂ£o de dados</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>API</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Infraestrutura</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Testes</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Compliance</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Acessibilidade</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Deploy</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Monitoramento</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>Backup</span></div>
+<div class="flex items-center space-x-2"><span class="text-amber-400">ê¢â â</span><span>ProntidêÂ£o de entrega</span></div>
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-5"><div class="text-red-400 font-bold mb-1">CrÃ­tico</div><p class="text-xs text-neutral-400">trava a entrega; corrija antes de tudo</p></div>
-<div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-5"><div class="text-amber-400 font-bold mb-1">Aviso</div><p class="text-xs text-neutral-400">nÃ£o bloqueia, mas precisa de atenÃ§Ã£o</p></div>
-<div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-5"><div class="text-emerald-400 font-bold mb-1">OK</div><p class="text-xs text-neutral-400">passou; estÃ¡ pronto para essa fase</p></div>
+<div class="bg-red-900/20 rounded-xl border border-red-500/30 p-5"><div class="text-red-400 font-bold mb-1">CrêÂ­tico</div><p class="text-xs text-neutral-400">trava a entrega; corrija antes de tudo</p></div>
+<div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-5"><div class="text-amber-400 font-bold mb-1">Aviso</div><p class="text-xs text-neutral-400">nêÂ£o bloqueia, mas precisa de atenêÂ§êÂ£o</p></div>
+<div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-5"><div class="text-emerald-400 font-bold mb-1">OK</div><p class="text-xs text-neutral-400">passou; estêÂ¡ pronto para essa fase</p></div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ“š</span> Checklist completo</h3>
-<p class="text-neutral-300">A versÃ£o completa do Pre-Flight Checklist, com todas as perguntas de cada fase, estÃ¡ na <strong>Biblioteca</strong> â€” na Trilha 5. Aqui o objetivo Ã© entender a lÃ³gica: fases + classificaÃ§Ã£o CrÃ­tico/Aviso/OK.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ¡</span> Checklist completo</h3>
+<p class="text-neutral-300">A versêÂ£o completa do Pre-Flight Checklist, com todas as perguntas de cada fase, estêÂ¡ na <strong>Biblioteca</strong> ê¢â¬â na Trilha 5. Aqui o objetivo êÂ© entender a lêÂ³gica: fases + classificaêÂ§êÂ£o CrêÂ­tico/Aviso/OK.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">QA sÃªnior</div><p class="text-xs text-neutral-400">papel da IA</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">QA sêÂªnior</div><p class="text-xs text-neutral-400">papel da IA</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Por fases</div><p class="text-xs text-neutral-400">cobertura ampla</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Classifica</div><p class="text-xs text-neutral-400">CrÃ­tico/Aviso/OK</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">PrÃ©-entrega</div><p class="text-xs text-neutral-400">antes de entregar</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Classifica</div><p class="text-xs text-neutral-400">CrêÂ­tico/Aviso/OK</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">PrêÂ©-entrega</div><p class="text-xs text-neutral-400">antes de entregar</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 5 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-5" id="topico-5">
+<!-- TêâPICO 5 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-5" id="topico-5">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">5</span>
-<h2 class="text-2xl font-bold">ðŸ”’ SeguranÃ§a &amp; compliance</h2>
+<h2 class="text-2xl font-bold">ê°Å¸ââ SeguranêÂ§a &amp; compliance</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t5-p1">TrÃªs frentes de seguranÃ§a nÃ£o podem faltar em nenhuma entrega: <strong class="text-amber-400">proteger segredos</strong>, <strong class="text-amber-400">auditar dependÃªncias</strong> e <strong class="text-amber-400">respeitar a privacidade</strong>. Um deslize aqui derruba qualquer trabalho bem feito.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t5-p1">TrêÂªs frentes de seguranêÂ§a nêÂ£o podem faltar em nenhuma entrega: <strong class="text-amber-400">proteger segredos</strong>, <strong class="text-amber-400">auditar dependêÂªncias</strong> e <strong class="text-amber-400">respeitar a privacidade</strong>. Um deslize aqui derruba qualquer trabalho bem feito.</p>
 <div class="space-y-6 mb-6">
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸ”‘</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê°Å¸ââ</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
 <h4 class="font-semibold text-white mb-2">Proteja os segredos</h4>
-<p class="text-neutral-300 text-sm">Nunca deixe chaves de API ou senhas no cÃ³digo. Use variÃ¡veis de ambiente e mantenha-as fora do repositÃ³rio.</p>
+<p class="text-neutral-300 text-sm">Nunca deixe chaves de API ou senhas no cêÂ³digo. Use variêÂ¡veis de ambiente e mantenha-as fora do repositêÂ³rio.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ðŸ“¦</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê°Å¸âÂ¦</span></div>
 <div class="flex-1 bg-dark-800 rounded-xl p-6 border border-dark-600">
-<h4 class="font-semibold text-white mb-2">Audite dependÃªncias</h4>
+<h4 class="font-semibold text-white mb-2">Audite dependêÂªncias</h4>
 <p class="text-neutral-300 text-sm">Bibliotecas desatualizadas abrem brechas conhecidas. Verifique e atualize antes de entregar.</p>
 </div>
 </div>
 <div class="flex items-start space-x-4">
-<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">âš–ï¸</span></div>
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center"><span class="text-amber-400 font-bold">ê¢Å¡âê¯Â¸Â</span></div>
 <div class="flex-1 bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl p-6 border border-amber-500/30">
 <h4 class="font-semibold text-amber-400 mb-2">Considere privacidade (LGPD/GDPR)</h4>
-<p class="text-neutral-300 text-sm">Se o app lida com dados de pessoas, pense em consentimento, retenÃ§Ã£o e acesso â€” regras como LGPD e GDPR existem por um motivo.</p>
+<p class="text-neutral-300 text-sm">Se o app lida com dados de pessoas, pense em consentimento, retenêÂ§êÂ£o e acesso ê¢â¬â regras como LGPD e GDPR existem por um motivo.</p>
 </div>
 </div>
 </div>
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">âš ï¸</span> O custo de ignorar</h3>
-<p class="text-neutral-300">Uma chave vazada vira conta gigante ou dado roubado. Uma dependÃªncia velha vira porta de entrada. Uma multa de compliance vira prejuÃ­zo. SeguranÃ§a nÃ£o Ã© opcional na entrega profissional.</p>
+<h3 class="text-lg font-semibold text-red-400 mb-3 flex items-center"><span class="mr-2">ê¢Å¡Â ê¯Â¸Â</span> O custo de ignorar</h3>
+<p class="text-neutral-300">Uma chave vazada vira conta gigante ou dado roubado. Uma dependêÂªncia velha vira porta de entrada. Uma multa de compliance vira prejuêÂ­zo. SeguranêÂ§a nêÂ£o êÂ© opcional na entrega profissional.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Segredos</div><p class="text-xs text-neutral-400">fora do cÃ³digo</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">DependÃªncias</div><p class="text-xs text-neutral-400">audite e atualize</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Segredos</div><p class="text-xs text-neutral-400">fora do cêÂ³digo</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">DependêÂªncias</div><p class="text-xs text-neutral-400">audite e atualize</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Privacidade</div><p class="text-xs text-neutral-400">LGPD/GDPR</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">NÃ£o opcional</div><p class="text-xs text-neutral-400">parte da entrega</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">NêÂ£o opcional</div><p class="text-xs text-neutral-400">parte da entrega</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 6 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-6" id="topico-6">
+<!-- TêâPICO 6 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-6" id="topico-6">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">6</span>
-<h2 class="text-2xl font-bold">ðŸ§ª Context rot</h2>
+<h2 class="text-2xl font-bold">ê°Å¸Â§Âª Context rot</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t6-p1">Uma conversa longa e cheia faz o contexto da IA <strong class="text-amber-400">"apodrecer"</strong> â€” Ã© o <strong>context rot</strong>. Por isso, rode o QA numa <strong class="text-amber-400">janela nova e limpa</strong>, sem o histÃ³rico da construÃ§Ã£o atrapalhando o julgamento.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t6-p1">Uma conversa longa e cheia faz o contexto da IA <strong class="text-amber-400">"apodrecer"</strong> ê¢â¬â êÂ© o <strong>context rot</strong>. Por isso, rode o QA numa <strong class="text-amber-400">janela nova e limpa</strong>, sem o histêÂ³rico da construêÂ§êÂ£o atrapalhando o julgamento.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-<h4 class="font-bold text-red-400 mb-4">âœ— Janela poluÃ­da</h4>
+<h4 class="font-bold text-red-400 mb-4">ê¢Åâ Janela poluêÂ­da</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Mesma conversa onde vocÃª construiu tudo</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>A IA jÃ¡ "torce" pelo prÃ³prio cÃ³digo</span></li>
-<li class="flex items-start space-x-2"><span class="text-red-400">âœ—</span><span>Contexto cheio deixa passar problemas</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Mesma conversa onde vocêÂª construiu tudo</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>A IA jêÂ¡ "torce" pelo prêÂ³prio cêÂ³digo</span></li>
+<li class="flex items-start space-x-2"><span class="text-red-400">ê¢Åâ</span><span>Contexto cheio deixa passar problemas</span></li>
 </ul>
 </div>
 <div class="bg-amber-900/20 rounded-xl border border-amber-500/30 p-6">
-<h4 class="font-bold text-amber-400 mb-4">âœ“ Janela nova e limpa</h4>
+<h4 class="font-bold text-amber-400 mb-4">ê¢Åâ Janela nova e limpa</h4>
 <ul class="space-y-3 text-neutral-300 text-sm">
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Conversa zerada, olhar fresco e cÃ©tico</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Rode 2 vezes para cobrir mais</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400">âœ“</span><span>Idealmente com modelos diferentes</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Conversa zerada, olhar fresco e cêÂ©tico</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Rode 2 vezes para cobrir mais</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400">ê¢Åâ</span><span>Idealmente com modelos diferentes</span></li>
 </ul>
 </div>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ”</span> Dupla checagem</h3>
-<p class="text-neutral-300">Dois modelos diferentes enxergam coisas diferentes. Rodar o checklist <strong>duas vezes, em janelas limpas e com modelos distintos</strong>, Ã© como ter dois revisores independentes â€” muito mais difÃ­cil algo crÃ­tico escapar.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÂ</span> Dupla checagem</h3>
+<p class="text-neutral-300">Dois modelos diferentes enxergam coisas diferentes. Rodar o checklist <strong>duas vezes, em janelas limpas e com modelos distintos</strong>, êÂ© como ter dois revisores independentes ê¢â¬â muito mais difêÂ­cil algo crêÂ­tico escapar.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Context rot</div><p class="text-xs text-neutral-400">contexto apodrece</p></div>
@@ -584,24 +584,24 @@
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Modelos diff.</div><p class="text-xs text-neutral-400">dois revisores</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- TÃ“PICO 7 -->
-<section class="mb-16" data-ARCKHÉ-topic="modulo-4-2#topico-7" id="topico-7">
+<!-- TêâPICO 7 -->
+<section class="mb-16" data-ARCKHê-topic="modulo-4-2#topico-7" id="topico-7">
 <div class="flex items-center justify-between mb-6 gap-3">
 <div class="flex items-center space-x-4">
 <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl flex-shrink-0">7</span>
-<h2 class="text-2xl font-bold">ðŸ“¡ Monitoramento &amp; entrega</h2>
+<h2 class="text-2xl font-bold">ê°Å¸âÂ¡ Monitoramento &amp; entrega</h2>
 </div>
-<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHÉ-doubt-toggle="" title="Marcar dÃºvida neste tÃ³pico" type="button"><span aria-hidden="true">?</span><span>DÃºvida</span></button>
+<button aria-pressed="false" class="hidden sm:inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-dark-700 border border-dark-600 text-neutral-300 hover:bg-dark-600 transition-colors text-sm flex-shrink-0" data-ARCKHê-doubt-toggle="" title="Marcar dêÂºvida neste têÂ³pico" type="button"><span aria-hidden="true">?</span><span>DêÂºvida</span></button>
 </div>
-<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHÉ-block="m42-t7-p1">O lema da entrega profissional Ã© <strong class="text-amber-400">"nÃ£o confie, prove"</strong>. Entregar nÃ£o Ã© sÃ³ fazer o deploy: Ã© ter <strong>monitoramento e uptime</strong> que mostrem, com dados, que o sistema continua funcionando depois que saiu das suas mÃ£os.</p>
+<p class="text-neutral-300 mb-6 leading-relaxed" data-ARCKHê-block="m42-t7-p1">O lema da entrega profissional êÂ© <strong class="text-amber-400">"nêÂ£o confie, prove"</strong>. Entregar nêÂ£o êÂ© sêÂ³ fazer o deploy: êÂ© ter <strong>monitoramento e uptime</strong> que mostrem, com dados, que o sistema continua funcionando depois que saiu das suas mêÂ£os.</p>
 <!-- SVG -->
 <div class="rounded-2xl border border-amber-500/30 bg-dark-900/40 p-3 sm:p-4 mb-6 overflow-hidden">
-<svg aria-label="Depois do deploy, o monitoramento observa o app continuamente e gera evidÃªncia de uptime, provando que tudo segue no ar" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
+<svg aria-label="Depois do deploy, o monitoramento observa o app continuamente e gera evidêÂªncia de uptime, provando que tudo segue no ar" class="w-full h-auto" role="img" viewbox="0 0 1000 200">
 <defs>
 <lineargradient id="m42b-grad" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fbbf24"></stop><stop offset="1" stop-color="#f59e0b"></stop></lineargradient>
 <filter height="180%" id="m42b-glow" width="180%" x="-40%" y="-40%"><fegaussianblur result="b" stddeviation="1.8"></fegaussianblur><femerge><femergenode in="b"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -618,93 +618,93 @@
 <text fill="#fde68a" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="685" y="100">Uptime</text>
 <text fill="#fcd34d" font-family="Inter,sans-serif" font-size="11" text-anchor="middle" x="685" y="117">99,9%</text>
 <rect fill="#0e2018" height="48" rx="12" stroke="#34d399" stroke-width="1.8" width="140" x="820" y="78"></rect>
-<text fill="#34d399" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="890" y="107">prova âœ“</text>
+<text fill="#34d399" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle" x="890" y="107">prova ê¢Åâ</text>
 <g fill="none" opacity="0.6" stroke="#fbbf24" stroke-width="2">
 <path d="M230,102 L320,102" marker-end="url(#m42b-ah)"></path>
 <path d="M520,102 L610,102" marker-end="url(#m42b-ah)"></path>
 <path d="M760,102 L820,102" marker-end="url(#m42b-ah)"></path>
 </g>
-<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="500" y="160">"nÃ£o confie, prove"</text>
+<text fill="#9ca3af" font-family="Inter,sans-serif" font-size="13" font-weight="600" text-anchor="middle" x="500" y="160">"nêÂ£o confie, prove"</text>
 </svg>
 </div>
 <div class="bg-primary/10 rounded-xl border border-primary/30 p-6 mb-6">
-<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ðŸ“Š</span> EvidÃªncia, nÃ£o promessa</h3>
-<p class="text-neutral-300">Dizer "estÃ¡ funcionando" Ã© promessa. Mostrar um painel de <strong>uptime e alertas</strong> Ã© evidÃªncia. O monitoramento transforma a confianÃ§a do cliente em algo verificÃ¡vel â€” e te protege se algo quebrar.</p>
+<h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">ê°Å¸âÅ </span> EvidêÂªncia, nêÂ£o promessa</h3>
+<p class="text-neutral-300">Dizer "estêÂ¡ funcionando" êÂ© promessa. Mostrar um painel de <strong>uptime e alertas</strong> êÂ© evidêÂªncia. O monitoramento transforma a confianêÂ§a do cliente em algo verificêÂ¡vel ê¢â¬â e te protege se algo quebrar.</p>
 </div>
 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Prove</div><p class="text-xs text-neutral-400">nÃ£o confie</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Prove</div><p class="text-xs text-neutral-400">nêÂ£o confie</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Uptime</div><p class="text-xs text-neutral-400">segue no ar</p></div>
 <div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">Alertas</div><p class="text-xs text-neutral-400">avisa se cai</p></div>
-<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">EvidÃªncia</div><p class="text-xs text-neutral-400">dados, nÃ£o fÃ©</p></div>
+<div class="bg-dark-800 rounded-lg p-4 border border-dark-600"><div class="text-amber-400 font-bold mb-1">EvidêÂªncia</div><p class="text-xs text-neutral-400">dados, nêÂ£o fêÂ©</p></div>
 </div>
 <div class="flex justify-start mt-6">
-<button aria-pressed="false" data-ARCKHÉ-read-toggle="" type="button">
-<span aria-hidden="true" class="ARCKHÉ-ico-todo">â—‹</span><span aria-hidden="true" class="ARCKHÉ-ico-done">â—</span><span class="ARCKHÉ-label-todo">Marcar como lido</span><span class="ARCKHÉ-label-done">Lido</span>
+<button aria-pressed="false" data-ARCKHê-read-toggle="" type="button">
+<span aria-hidden="true" class="ARCKHê-ico-todo">ê¢ââ¹</span><span aria-hidden="true" class="ARCKHê-ico-done">ê¢âÂ</span><span class="ARCKHê-label-todo">Marcar como lido</span><span class="ARCKHê-label-done">Lido</span>
 </button>
 </div>
 </section>
-<!-- EXEMPLO PRÃTICO -->
+<!-- EXEMPLO PRêÂTICO -->
 <section class="mb-12" id="exemplo">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ”¬</span> Exemplo prÃ¡tico</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸âÂ¬</span> Exemplo prêÂ¡tico</h2>
 <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
-<p class="text-neutral-300 mb-4">Rode o <strong class="text-amber-400">Pre-Flight Checklist no seu app</strong> e gere um relatÃ³rio com itens CrÃ­tico / Aviso / OK antes de "entregar".</p>
+<p class="text-neutral-300 mb-4">Rode o <strong class="text-amber-400">Pre-Flight Checklist no seu app</strong> e gere um relatêÂ³rio com itens CrêÂ­tico / Aviso / OK antes de "entregar".</p>
 <ul class="space-y-2 text-neutral-300 mb-4">
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">1.</span><span><strong>Janela limpa:</strong> abra uma conversa nova, sem o histÃ³rico da construÃ§Ã£o.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">2.</span><span><strong>Papel + fases:</strong> peÃ§a Ã  IA para ser QA sÃªnior + auditor e percorrer as fases.</span></li>
-<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">3.</span><span><strong>RelatÃ³rio classificado:</strong> cada achado marcado como CrÃ­tico, Aviso ou OK.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">1.</span><span><strong>Janela limpa:</strong> abra uma conversa nova, sem o histêÂ³rico da construêÂ§êÂ£o.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">2.</span><span><strong>Papel + fases:</strong> peêÂ§a êÂ  IA para ser QA sêÂªnior + auditor e percorrer as fases.</span></li>
+<li class="flex items-start space-x-2"><span class="text-amber-400 mt-1">3.</span><span><strong>RelatêÂ³rio classificado:</strong> cada achado marcado como CrêÂ­tico, Aviso ou OK.</span></li>
 </ul>
-<p class="text-neutral-400 text-sm">No fim, vocÃª tem um retrato honesto do estado do app â€” e uma lista clara do que corrigir antes de entregar.</p>
+<p class="text-neutral-400 text-sm">No fim, vocêÂª tem um retrato honesto do estado do app ê¢â¬â e uma lista clara do que corrigir antes de entregar.</p>
 </div>
 </section>
-<!-- EXERCÃCIO -->
+<!-- EXERCêÂCIO -->
 <section class="mb-12" id="exercicio">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ðŸ‹ï¸</span> ExercÃ­cio</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê°Å¸Ââ¹ê¯Â¸Â</span> ExercêÂ­cio</h2>
 <div class="bg-gradient-to-br from-amber-900/30 to-dark-800 rounded-xl border border-amber-500/30 p-6">
 <p class="text-neutral-300 mb-4">Rode o <strong class="text-amber-400">Pre-Flight Checklist no seu app</strong> e classifique os achados. Depois:</p>
 <ol class="space-y-2 text-neutral-300 mb-4 list-decimal list-inside">
-<li>Liste os achados em <strong>CrÃ­tico</strong>, <strong>Aviso</strong> e <strong>OK</strong>.</li>
-<li>Corrija pelo menos <strong>um crÃ­tico</strong> do inÃ­cio ao fim.</li>
-<li>Rode o checklist de novo, numa <strong>janela nova</strong>, para confirmar que o crÃ­tico sumiu.</li>
+<li>Liste os achados em <strong>CrêÂ­tico</strong>, <strong>Aviso</strong> e <strong>OK</strong>.</li>
+<li>Corrija pelo menos <strong>um crêÂ­tico</strong> do inêÂ­cio ao fim.</li>
+<li>Rode o checklist de novo, numa <strong>janela nova</strong>, para confirmar que o crêÂ­tico sumiu.</li>
 </ol>
-<p class="text-neutral-400 text-sm">Esse ciclo â€” auditar, corrigir, reauditar â€” Ã© o coraÃ§Ã£o da entrega profissional.</p>
+<p class="text-neutral-400 text-sm">Esse ciclo ê¢â¬â auditar, corrigir, reauditar ê¢â¬â êÂ© o coraêÂ§êÂ£o da entrega profissional.</p>
 </div>
 </section>
 <!-- PROMPTS PRONTOS -->
 <section class="mb-12" id="prompts">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âš¡</span> Prompts prontos</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Å¡Â¡</span> Prompts prontos</h2>
 <p class="text-neutral-400 mb-4 text-sm">Copie, cole no seu assistente de IA e adapte ao seu caso.</p>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">pre-flight checklist (QA + seguranÃ§a)</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
-<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">VocÃª Ã© um engenheiro de QA sÃªnior e auditor de seguranÃ§a.
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">pre-flight checklist (QA + seguranêÂ§a)</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">VocêÂª êÂ© um engenheiro de QA sêÂªnior e auditor de seguranêÂ§a.
 Acabei de construir um projeto e preciso de um stress test antes da entrega.
-Conduza por fases (descoberta, dependÃªncias, seguranÃ§a, autenticaÃ§Ã£o,
-validaÃ§Ã£o de entrada, proteÃ§Ã£o de dados, API, infraestrutura, testes,
-compliance, acessibilidade, deploy, monitoramento, backup, prontidÃ£o de entrega).
-FaÃ§a perguntas quando precisar, identifique riscos e dÃª recomendaÃ§Ãµes acionÃ¡veis,
-marcando cada item como crÃ­tico, aviso ou ok.</pre>
+Conduza por fases (descoberta, dependêÂªncias, seguranêÂ§a, autenticaêÂ§êÂ£o,
+validaêÂ§êÂ£o de entrada, proteêÂ§êÂ£o de dados, API, infraestrutura, testes,
+compliance, acessibilidade, deploy, monitoramento, backup, prontidêÂ£o de entrega).
+FaêÂ§a perguntas quando precisar, identifique riscos e dêÂª recomendaêÂ§êÂµes acionêÂ¡veis,
+marcando cada item como crêÂ­tico, aviso ou ok.</pre>
 </div>
 <div class="bg-dark-900 border border-dark-600 rounded-xl overflow-hidden mb-4" data-prompt="">
-<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">revisÃ£o cÃ©tica em janela nova</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
+<div class="flex items-center justify-between px-4 py-2 bg-dark-700/50 border-b border-dark-600"><span class="text-xs text-neutral-400 font-mono">revisêÂ£o cêÂ©tica em janela nova</span><button class="text-xs px-2 py-1 rounded bg-amber-600 hover:bg-amber-500 text-white" onclick="copyPrompt(this)">Copiar</button></div>
 <pre class="p-4 text-sm text-neutral-200 whitespace-pre-wrap font-mono">Numa janela nova e sem contexto anterior:
-revise este cÃ³digo como um desenvolvedor sÃªnior altamente cÃ©tico
-e liste tudo o que quebraria em produÃ§Ã£o, do mais grave ao menos grave.
+revise este cêÂ³digo como um desenvolvedor sêÂªnior altamente cêÂ©tico
+e liste tudo o que quebraria em produêÂ§êÂ£o, do mais grave ao menos grave.
 Para cada item, diga por que quebra e como corrigir.</pre>
 </div>
 </section>
 <!-- RESUMO -->
 <section class="mb-12">
 <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
-<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">âœ…</span> Resumo do mÃ³dulo</h2>
+<h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">ê¢Åâ¦</span> Resumo do mêÂ³dulo</h2>
 <div class="space-y-4 mb-8">
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">De automaÃ§Ã£o a software</strong><span class="text-neutral-400"> â€” o software Ã© o produto; muda o valor do que vocÃª entrega.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Modelos de posse</strong><span class="text-neutral-400"> â€” licenÃ§a, entrega total ou (preferido) cliente dono + suporte de 30â€“90 dias.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Pre-Flight Checklist</strong><span class="text-neutral-400"> â€” QA sÃªnior + auditor, por fases, classificando CrÃ­tico/Aviso/OK.</span></div></div>
-<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">âœ“</span><div><strong class="text-white">Janela limpa + monitorar</strong><span class="text-neutral-400"> â€” fuja do context rot e prove o uptime: "nÃ£o confie, prove".</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">De automaêÂ§êÂ£o a software</strong><span class="text-neutral-400"> ê¢â¬â o software êÂ© o produto; muda o valor do que vocêÂª entrega.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Modelos de posse</strong><span class="text-neutral-400"> ê¢â¬â licenêÂ§a, entrega total ou (preferido) cliente dono + suporte de 30ê¢â¬â90 dias.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Pre-Flight Checklist</strong><span class="text-neutral-400"> ê¢â¬â QA sêÂªnior + auditor, por fases, classificando CrêÂ­tico/Aviso/OK.</span></div></div>
+<div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">ê¢Åâ</span><div><strong class="text-white">Janela limpa + monitorar</strong><span class="text-neutral-400"> ê¢â¬â fuja do context rot e prove o uptime: "nêÂ£o confie, prove".</span></div></div>
 </div>
-<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">PrÃ³xima trilha:</h3><p class="text-neutral-300">Trilha 5 â€” Maestria &amp; Biblioteca (incl. o Pre-Flight Checklist completo)</p></div>
+<div class="bg-dark-800/50 rounded-lg p-4 mb-8"><h3 class="font-semibold text-amber-400 mb-2">PrêÂ³xima trilha:</h3><p class="text-neutral-300">Trilha 5 ê¢â¬â Maestria &amp; Biblioteca (incl. o Pre-Flight Checklist completo)</p></div>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">â† Voltar para Trilha</a>
-<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Trilha 5: Maestria &amp; Biblioteca â†’</a>
+<a class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors" href="index.html">ê¢â Â Voltar para Trilha</a>
+<a class="flex-1 text-center px-6 py-3 bg-amber-600 text-white rounded-lg font-semibold hover:bg-amber-500 transition-colors" href="../trilha5/index.html">Trilha 5: Maestria &amp; Biblioteca ê¢â â</a>
 </div>
 </div>
 </section>
@@ -713,7 +713,7 @@ Para cada item, diga por que quebra e como corrigir.</pre>
 </main>
 <footer class="border-t border-dark-600 py-8 mt-16">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
-<p>AntiGravity â€” do Zero ao App Publicado com IA Â· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHÉ AI" target="_blank">ARCKHÉ AI</a> Â· 2026</p>
+<p>AntiGravity ê¢â¬â do Zero ao App Publicado com IA êÂ· <a class="text-sky-400 hover:text-sky-300" href="https://ARCKHê AI" target="_blank">ARCKHê AI</a> êÂ· 2026</p>
 </div>
 </footer>
 <script>
@@ -736,11 +736,11 @@ Para cada item, diga por que quebra e como corrigir.</pre>
       paint();
       themeToggle && themeToggle.addEventListener('click', () => {
         const nowDark = !html.classList.contains('dark');
-        if (window.ARCKHÉ && ARCKHÉ.setPref) { ARCKHÉ.setPref('theme', nowDark ? 'ARCKHÉ-dark' : 'claro'); }
+        if (window.ARCKHê && ARCKHê.setPref) { ARCKHê.setPref('theme', nowDark ? 'ARCKHê-dark' : 'claro'); }
         else { html.classList.toggle('dark'); localStorage.setItem('theme', nowDark ? 'dark' : 'light'); }
         paint();
       });
-      document.addEventListener('ARCKHÉ:progress', paint);
+      document.addEventListener('ARCKHê:progress', paint);
     })();
     function openModal(modalId) { const m = document.getElementById(modalId); if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } }
     function closeModal() { document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden')); document.body.style.overflow = 'auto'; }
@@ -748,22 +748,22 @@ Para cada item, diga por que quebra e como corrigir.</pre>
     function copyPrompt(btn) {
       const box = btn.closest('[data-prompt]'); const pre = box && box.querySelector('pre');
       const txt = pre ? pre.innerText : '';
-      function done(){ const o = btn.textContent; btn.textContent = 'âœ“ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
+      function done(){ const o = btn.textContent; btn.textContent = 'ê¢Åâ Copiado'; setTimeout(()=>{ btn.textContent = o; }, 1500); }
       function fallback(){ const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch(e){} ta.remove(); done(); }
       if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(txt).then(done).catch(fallback); } else { fallback(); }
     }
   </script>
 <script src="../assets/learn.js"></script>
 <script>
-    if (window.ARCKHÉ && typeof window.ARCKHÉ.init === 'function') { window.ARCKHÉ.init(); }
-    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) Ã  API do learn.js
+    if (window.ARCKHê && typeof window.ARCKHê.init === 'function') { window.ARCKHê.init(); }
+    // Liga controles da nav (fora do <main>, onde o learn.js delega cliques) êÂ  API do learn.js
     (function () {
       function wire() {
-        if (!window.ARCKHÉ) return;
-        document.querySelectorAll('[data-ARCKHÉ-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.openJourney && ARCKHÉ.openJourney(); }); });
-        document.querySelectorAll('[data-ARCKHÉ-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHÉ-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHÉ-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
-        [['data-ARCKHÉ-set-theme','theme'],['data-ARCKHÉ-set-font','font'],['data-ARCKHÉ-set-fontscale','fontScale'],['data-ARCKHÉ-set-leading','leading'],['data-ARCKHÉ-set-accent','accent'],['data-ARCKHÉ-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHÉ.setPref && ARCKHÉ.setPref(m[1], b.getAttribute(m[0])); }); }); });
-        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHÉ-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHÉ-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
+        if (!window.ARCKHê) return;
+        document.querySelectorAll('[data-ARCKHê-journey-open]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.openJourney && ARCKHê.openJourney(); }); });
+        document.querySelectorAll('[data-ARCKHê-appearance-toggle]').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function (e) { e.stopPropagation(); var sel = b.getAttribute('data-ARCKHê-appearance-toggle'); var p = sel ? document.querySelector(sel) : document.querySelector('[data-ARCKHê-appearance]'); if (!p) return; var open = p.getAttribute('data-open') === 'true'; p.setAttribute('data-open', open ? 'false' : 'true'); b.setAttribute('aria-expanded', open ? 'false' : 'true'); }); });
+        [['data-ARCKHê-set-theme','theme'],['data-ARCKHê-set-font','font'],['data-ARCKHê-set-fontscale','fontScale'],['data-ARCKHê-set-leading','leading'],['data-ARCKHê-set-accent','accent'],['data-ARCKHê-set-linewidth','lineWidth']].forEach(function (m) { document.querySelectorAll('[' + m[0] + ']').forEach(function (b) { if (b.__w) return; b.__w = 1; b.addEventListener('click', function () { ARCKHê.setPref && ARCKHê.setPref(m[1], b.getAttribute(m[0])); }); }); });
+        document.addEventListener('click', function (e) { var p = document.querySelector('[data-ARCKHê-appearance][data-open="true"]'); if (!p) return; var t = document.querySelector('[data-ARCKHê-appearance-toggle]'); if (!p.contains(e.target) && (!t || !t.contains(e.target))) { p.setAttribute('data-open', 'false'); t && t.setAttribute('aria-expanded', 'false'); } });
       }
       if (document.readyState !== 'loading') setTimeout(wire, 0); else document.addEventListener('DOMContentLoaded', wire);
     })();
